@@ -60,6 +60,7 @@ nav:
       - "Module 2: Reading order": module-2.md
       - "Module 3: Reading order": module-3.md
       - "Module 4: Reading order": module-4.md
+      - "Module 5: Reading order": module-5.md
       - Learning approach: learning-approach.md
   - "Model computation and semantics":
       - Overview: model-computation-and-semantics/index.md
@@ -86,6 +87,7 @@ nav:
       - "M4-C07: Online softmax and stable incremental reductions": numerics-and-correctness/m4-c07-online-softmax-and-stable-incremental-reductions.md
       - "M4-C19: Randomness, reproducibility, and sampling equivalence": numerics-and-correctness/m4-c19-randomness-reproducibility-and-sampling-equivalence.md
       - "M4-C20: Validating fused kernels and graph replay": numerics-and-correctness/m4-c20-validating-fused-kernels-and-graph-replay.md
+      - "M5-C23: Validating scheduling and memory invariants": numerics-and-correctness/m5-c23-validating-scheduling-and-memory-invariants.md
   - "Hardware architecture and topology":
       - Overview: hardware-architecture-and-topology/index.md
       - "M3-C01: Following a tensor from CPU to GPU": hardware-architecture-and-topology/m3-c01-following-a-tensor-from-cpu-to-gpu.md
@@ -142,10 +144,29 @@ nav:
       - "M4-C14: CPU-GPU synchronization and hidden serialization": runtime-and-concurrency/m4-c14-cpu-gpu-synchronization-and-hidden-serialization.md
       - "M4-C16: Replay constraints, graph variants, and buffer lifetimes": runtime-and-concurrency/m4-c16-replay-constraints-graph-variants-and-buffer-lifetimes.md
       - "M4-C23: Integrating a fused kernel into the generator": runtime-and-concurrency/m4-c23-integrating-a-fused-kernel-into-the-generator.md
+      - "M5-C02: Processes, threads, and operating-system scheduling": runtime-and-concurrency/m5-c02-processes-threads-and-operating-system-scheduling.md
+      - "M5-C03: IPC and shared-memory communication": runtime-and-concurrency/m5-c03-ipc-and-shared-memory-communication.md
+      - "M5-C04: Producer-consumer queues and bounded work": runtime-and-concurrency/m5-c04-producer-consumer-queues-and-bounded-work.md
+      - "M5-C05: Synchronization, ownership, and resource lifetimes": runtime-and-concurrency/m5-c05-synchronization-ownership-and-resource-lifetimes.md
+      - "M5-C06: Asynchronous execution and completion-driven progress": runtime-and-concurrency/m5-c06-asynchronous-execution-and-completion-driven-progress.md
+      - "M5-C22: Designing the scheduler state machine and executor contract": runtime-and-concurrency/m5-c22-designing-the-scheduler-state-machine-and-executor-contract.md
   - "Scheduling and queueing":
       - Overview: scheduling-and-queueing/index.md
       - "M2-C15: Admission and growth under a finite KV budget": scheduling-and-queueing/m2-c15-admission-and-growth-under-a-finite-kv-budget.md
       - "M3-C17: Batching, weight reuse, and shifting bottlenecks": scheduling-and-queueing/m3-c17-batching-weight-reuse-and-shifting-bottlenecks.md
+      - "M5-C01: Separating the model executor from the serving scheduler": scheduling-and-queueing/m5-c01-separating-the-model-executor-from-the-serving-scheduler.md
+      - "M5-C08: Queueing delay, service time, and request latency": scheduling-and-queueing/m5-c08-queueing-delay-service-time-and-request-latency.md
+      - "M5-C09: Applying Little’s law with consistent boundaries": scheduling-and-queueing/m5-c09-applying-little-s-law-with-consistent-boundaries.md
+      - "M5-C10: Utilization, variability, and tail latency": scheduling-and-queueing/m5-c10-utilization-variability-and-tail-latency.md
+      - "M5-C11: Defining a static batching baseline": scheduling-and-queueing/m5-c11-defining-a-static-batching-baseline.md
+      - "M5-C12: Continuous batching at execution boundaries": scheduling-and-queueing/m5-c12-continuous-batching-at-execution-boundaries.md
+      - "M5-C13: Budgeting work for each execution iteration": scheduling-and-queueing/m5-c13-budgeting-work-for-each-execution-iteration.md
+      - "M5-C14: Planning for future KV-cache growth": scheduling-and-queueing/m5-c14-planning-for-future-kv-cache-growth.md
+      - "M5-C15: Admission control and backpressure": scheduling-and-queueing/m5-c15-admission-control-and-backpressure.md
+      - "M5-C16: Fairness, priorities, and starvation prevention": scheduling-and-queueing/m5-c16-fairness-priorities-and-starvation-prevention.md
+      - "M5-C17: Chunked prefill and resumable prompt processing": scheduling-and-queueing/m5-c17-chunked-prefill-and-resumable-prompt-processing.md
+      - "M5-C18: Choosing chunk sizes and balancing prefill with decode": scheduling-and-queueing/m5-c18-choosing-chunk-sizes-and-balancing-prefill-with-decode.md
+      - "M5-C19: Preemption, resumption, and the cost of lost progress": scheduling-and-queueing/m5-c19-preemption-resumption-and-the-cost-of-lost-progress.md
   - "Parallelism and decomposition":
       - Overview: parallelism-and-decomposition/index.md
   - "Networking and communication":
@@ -159,9 +180,11 @@ nav:
       - Overview: interfaces-protocols-and-streaming/index.md
       - "M1-C02: Representing text as tokens": interfaces-protocols-and-streaming/m1-c02-representing-text-as-tokens.md
       - "M1-C16: Building the single-request generation loop": interfaces-protocols-and-streaming/m1-c16-building-the-single-request-generation-loop.md
+      - "M5-C21: Streaming results without unbounded buffering": interfaces-protocols-and-streaming/m5-c21-streaming-results-without-unbounded-buffering.md
   - "Reliability and capacity control":
       - Overview: reliability-and-capacity-control/index.md
       - "M2-C16: Completion, cancellation, and allocation failure": reliability-and-capacity-control/m2-c16-completion-cancellation-and-allocation-failure.md
+      - "M5-C20: Cancellation, deadlines, and worker failure": reliability-and-capacity-control/m5-c20-cancellation-deadlines-and-worker-failure.md
   - "Measurement, experimentation, and economics":
       - Overview: measurement-experimentation-and-economics/index.md
       - "M1-C08: Operation counts and actual execution cost": measurement-experimentation-and-economics/m1-c08-operation-counts-and-actual-execution-cost.md
@@ -177,3 +200,6 @@ nav:
       - "M4-C21: Tuning kernels with controlled experiments": measurement-experimentation-and-economics/m4-c21-tuning-kernels-with-controlled-experiments.md
       - "M4-C22: Benchmarking realistic shapes and execution modes": measurement-experimentation-and-economics/m4-c22-benchmarking-realistic-shapes-and-execution-modes.md
       - "M4-C24: Verifying end-to-end generator improvements": measurement-experimentation-and-economics/m4-c24-verifying-end-to-end-generator-improvements.md
+      - "M5-C07: Describing mixed serving workloads and arrival traces": measurement-experimentation-and-economics/m5-c07-describing-mixed-serving-workloads-and-arrival-traces.md
+      - "M5-C24: Comparing scheduling policies on the same arrival trace": measurement-experimentation-and-economics/m5-c24-comparing-scheduling-policies-on-the-same-arrival-trace.md
+      - "M5-C25: Measuring sustainable capacity, fairness, and tail behavior": measurement-experimentation-and-economics/m5-c25-measuring-sustainable-capacity-fairness-and-tail-behavior.md

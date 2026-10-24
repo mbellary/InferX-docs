@@ -54,3 +54,16 @@ Follow the complete [Module 3 reading order](../module-3.md) to move between cat
 | M4-C23 | [Integrating a fused kernel into the generator](m4-c23-integrating-a-fused-kernel-into-the-generator.md) | Rust host boundary, backend capability checks, kernel dispatch contracts, stream compatibility, buffer lifetimes, RNG ownership, graph integration, correct fallback and failure propagation |
 
 Follow the complete [Module 4 reading order](../module-4.md) to move between categories.
+
+### Module 5
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M5-C02 | [Processes, threads, and operating-system scheduling](m5-c02-processes-threads-and-operating-system-scheduling.md) | Address spaces, stacks and heaps, process isolation, threads, context switches, concurrency versus parallelism, CPU scheduling versus request scheduling, Rust execution contexts |
+| M5-C03 | [IPC and shared-memory communication](m5-c03-ipc-and-shared-memory-communication.md) | Inter-process communication, pipes, sockets and channels, serialization and copying, shared-memory regions, visibility, synchronization, ownership across process boundaries, worker failure |
+| M5-C04 | [Producer-consumer queues and bounded work](m5-c04-producer-consumer-queues-and-bounded-work.md) | Producers and consumers, bounded versus unbounded queues, enqueue and dequeue contracts, FIFO ordering, ownership transfer, blocking and nonblocking behavior, queue capacity |
+| M5-C05 | [Synchronization, ownership, and resource lifetimes](m5-c05-synchronization-ownership-and-resource-lifetimes.md) | Exclusive and shared access, mutexes, atomics and condition variables, Rust ownership and borrowing, contention, deadlock, lost wakeups, request and buffer lifetimes |
+| M5-C06 | [Asynchronous execution and completion-driven progress](m5-c06-asynchronous-execution-and-completion-driven-progress.md) | Tasks and futures, event loops, blocking versus asynchronous work, completion notifications, host-device dependencies, in-flight batches, single-owner scheduler state, safe reclamation |
+| M5-C22 | [Designing the scheduler state machine and executor contract](m5-c22-designing-the-scheduler-state-machine-and-executor-contract.md) | Queued, admitted, prefill, decode, preempted and terminal states, event ordering, batch descriptors, completion messages, cache allocator integration, Rust ownership boundaries, failure transitions |
+
+Follow the complete [Module 5 reading order](../module-5.md) to move between categories.

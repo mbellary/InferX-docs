@@ -58,3 +58,13 @@ Follow the complete [Module 3 reading order](../module-3.md) to move between cat
 | M4-C24 | [Verifying end-to-end generator improvements](m4-c24-verifying-end-to-end-generator-improvements.md) | Critical-path attribution, Amdahl-style speedup limits, prefill and decode separation, time to first token, inter-token and total latency, useful throughput, correctness gates, amortization, tail regressions |
 
 Follow the complete [Module 4 reading order](../module-4.md) to move between categories.
+
+### Module 5
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M5-C07 | [Describing mixed serving workloads and arrival traces](m5-c07-describing-mixed-serving-workloads-and-arrival-traces.md) | Prompt and output lengths, declared output caps versus realized lengths, arrival timestamps, bursts, skew and correlations, reuse, seeds, offered versus admitted load, open-loop versus closed-loop traffic |
+| M5-C24 | [Comparing scheduling policies on the same arrival trace](m5-c24-comparing-scheduling-policies-on-the-same-arrival-trace.md) | Static, continuous and chunked-prefill configurations, fixed arrivals and request contents, identical resource caps, controlled output demand, causal information boundaries, event tracing, warmup and drain, rejection and unfinished-request accounting |
+| M5-C25 | [Measuring sustainable capacity, fairness, and tail behavior](m5-c25-measuring-sustainable-capacity-fairness-and-tail-behavior.md) | Time to first token, inter-token and total latency distributions, SLO definitions, goodput, completed tokens per second, queue depth, KV occupancy, CPU and GPU profiling, offered-load sweeps, coordinated omission, uncertainty, per-class fairness |
+
+Follow the complete [Module 5 reading order](../module-5.md) to move between categories.

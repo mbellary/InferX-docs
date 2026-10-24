@@ -53,3 +53,11 @@ Follow the complete [Module 3 reading order](../module-3.md) to move between cat
 | M4-C20 | [Validating fused kernels and graph replay](m4-c20-validating-fused-kernels-and-graph-replay.md) | Reference comparisons, tolerances, extreme inputs, awkward shapes, strides, masks, aliasing, uninitialized reads, races, stale buffers, graph-versus-eager equivalence, supported input contracts |
 
 Follow the complete [Module 4 reading order](../module-4.md) to move between categories.
+
+### Module 5
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M5-C23 | [Validating scheduling and memory invariants](m5-c23-validating-scheduling-and-memory-invariants.md) | No lost or duplicate work, legal state transitions, request-token identity, future-growth budget invariants, live KV references, cancellation safety, fairness checks, per-request RNG state, batch-dependent numerical tolerances |
+
+Follow the complete [Module 5 reading order](../module-5.md) to move between categories.
