@@ -16,4 +16,14 @@ Discovery, membership, placement, load balancing, reservations, consistency, sta
 
 ## Chapters
 
-Chapters will be added here as the curriculum develops. This page defines the scope and learning goals for the category.
+Chapter outlines are grouped by module. Full content will be developed one chapter at a time.
+
+### Module 7
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M7-C15 | [Routing requests with load and cache locality](m7-c15-routing-requests-with-load-and-cache-locality.md) | Discovery and membership, replica selection, outstanding work versus request counts, prefix affinity, stale telemetry, reservations, locality versus fairness, overload and retry routing |
+| M7-C22 | [Coordinating requests and execution across workers](m7-c22-coordinating-requests-and-execution-across-workers.md) | Request and iteration IDs, agreed batch membership, control-plane versus data-plane messages, metadata consistency, stale events, epochs, completion aggregation, cancellation propagation |
+| M7-C26 | [Balancing disaggregated stages and transfer capacity](m7-c26-balancing-disaggregated-stages-and-transfer-capacity.md) | Prefill and decode pool sizing, phase-aware routing, KV availability, receiving capacity, bandwidth bottlenecks, reservations, stale telemetry, backpressure, admission and tail-latency objectives |
+
+Follow the complete [Module 7 reading order](../module-7.md) to move between categories.

@@ -62,6 +62,7 @@ nav:
       - "Module 4: Reading order": module-4.md
       - "Module 5: Reading order": module-5.md
       - "Module 6: Reading order": module-6.md
+      - "Module 7: Reading order": module-7.md
       - Learning approach: learning-approach.md
   - "Model computation and semantics":
       - Overview: model-computation-and-semantics/index.md
@@ -80,6 +81,7 @@ nav:
       - "M2-C18: Architecture-specific state: Multi-head Latent Attention": model-computation-and-semantics/m2-c18-architecture-specific-state-multi-head-latent-attention.md
       - "M6-C14: Draft proposals and parallel target verification": model-computation-and-semantics/m6-c14-draft-proposals-and-parallel-target-verification.md
       - "M6-C21: LoRA foundations and adapter-specific computation": model-computation-and-semantics/m6-c21-lora-foundations-and-adapter-specific-computation.md
+      - "M7-C16: Mixture-of-experts computation and storage": model-computation-and-semantics/m7-c16-mixture-of-experts-computation-and-storage.md
   - "Numerics and correctness":
       - Overview: numerics-and-correctness/index.md
       - "M1-C06: Reductions, probabilities, and stable softmax": numerics-and-correctness/m1-c06-reductions-probabilities-and-stable-softmax.md
@@ -98,6 +100,7 @@ nav:
       - "M6-C12: KV-cache quantization and attention numerics": numerics-and-correctness/m6-c12-kv-cache-quantization-and-attention-numerics.md
       - "M6-C13: Validating quantization quality and memory savings": numerics-and-correctness/m6-c13-validating-quantization-quality-and-memory-savings.md
       - "M6-C15: Distribution-preserving speculative acceptance": numerics-and-correctness/m6-c15-distribution-preserving-speculative-acceptance.md
+      - "M7-C27: Validating distributed computation and state": numerics-and-correctness/m7-c27-validating-distributed-computation-and-state.md
   - "Hardware architecture and topology":
       - Overview: hardware-architecture-and-topology/index.md
       - "M3-C01: Following a tensor from CPU to GPU": hardware-architecture-and-topology/m3-c01-following-a-tensor-from-cpu-to-gpu.md
@@ -107,6 +110,7 @@ nav:
       - "M3-C05: Device memory, HBM, and the cache hierarchy": hardware-architecture-and-topology/m3-c05-device-memory-hbm-and-the-cache-hierarchy.md
       - "M3-C06: Registers, shared memory, and local resource pressure": hardware-architecture-and-topology/m3-c06-registers-shared-memory-and-local-resource-pressure.md
       - "M3-C13: PCIe, NVLink, NUMA, and device topology": hardware-architecture-and-topology/m3-c13-pcie-nvlink-numa-and-device-topology.md
+      - "M7-C02: Mapping GPU and network topology before partitioning": hardware-architecture-and-topology/m7-c02-mapping-gpu-and-network-topology-before-partitioning.md
   - "Kernels, compilers, and execution":
       - Overview: kernels-compilers-and-execution/index.md
       - "M2-C07: How attention reads a paged KV layout": kernels-compilers-and-execution/m2-c07-how-attention-reads-a-paged-kv-layout.md
@@ -149,6 +153,7 @@ nav:
       - "M6-C04: Connecting a radix index to paged KV blocks": state-memory-and-caching/m6-c04-connecting-a-radix-index-to-paged-kv-blocks.md
       - "M6-C05: Reference-safe retention, eviction, and cancellation": state-memory-and-caching/m6-c05-reference-safe-retention-eviction-and-cancellation.md
       - "M6-C22: Adapter residency, lifetime, and cache compatibility": state-memory-and-caching/m6-c22-adapter-residency-lifetime-and-cache-compatibility.md
+      - "M7-C21: Distributed weights, KV caches, and memory accounting": state-memory-and-caching/m7-c21-distributed-weights-kv-caches-and-memory-accounting.md
   - "Runtime and concurrency":
       - Overview: runtime-and-concurrency/index.md
       - "M1-C18: Understanding prefill and decode": runtime-and-concurrency/m1-c18-understanding-prefill-and-decode.md
@@ -170,6 +175,9 @@ nav:
       - "M6-C16: Managing draft and target state during speculation": runtime-and-concurrency/m6-c16-managing-draft-and-target-state-during-speculation.md
       - "M6-C24: Composing optimizations without breaking contracts": runtime-and-concurrency/m6-c24-composing-optimizations-without-breaking-contracts.md
       - "M6-C27: Building prefix caching and one additional optimization": runtime-and-concurrency/m6-c27-building-prefix-caching-and-one-additional-optimization.md
+      - "M7-C03: Workers, ranks, process groups, and communicators": runtime-and-concurrency/m7-c03-workers-ranks-process-groups-and-communicators.md
+      - "M7-C09: Overlapping compute and communication safely": runtime-and-concurrency/m7-c09-overlapping-compute-and-communication-safely.md
+      - "M7-C28: Running a model across two GPUs": runtime-and-concurrency/m7-c28-running-a-model-across-two-gpus.md
   - "Scheduling and queueing":
       - Overview: scheduling-and-queueing/index.md
       - "M2-C15: Admission and growth under a finite KV budget": scheduling-and-queueing/m2-c15-admission-and-growth-under-a-finite-kv-budget.md
@@ -189,13 +197,33 @@ nav:
       - "M5-C19: Preemption, resumption, and the cost of lost progress": scheduling-and-queueing/m5-c19-preemption-resumption-and-the-cost-of-lost-progress.md
       - "M6-C06: Balancing cache locality, fairness, and load": scheduling-and-queueing/m6-c06-balancing-cache-locality-fairness-and-load.md
       - "M6-C23: Batching requests across multiple LoRA adapters": scheduling-and-queueing/m6-c23-batching-requests-across-multiple-lora-adapters.md
+      - "M7-C13: Pipeline bubbles, stage balance, and scheduling": scheduling-and-queueing/m7-c13-pipeline-bubbles-stage-balance-and-scheduling.md
+      - "M7-C18: Expert imbalance, capacity, and token correctness": scheduling-and-queueing/m7-c18-expert-imbalance-capacity-and-token-correctness.md
   - "Parallelism and decomposition":
       - Overview: parallelism-and-decomposition/index.md
+      - "M7-C01: Why distribute inference across GPUs?": parallelism-and-decomposition/m7-c01-why-distribute-inference-across-gpus.md
+      - "M7-C10: Tensor parallelism for linear layers": parallelism-and-decomposition/m7-c10-tensor-parallelism-for-linear-layers.md
+      - "M7-C11: Tensor-parallel attention and KV ownership": parallelism-and-decomposition/m7-c11-tensor-parallel-attention-and-kv-ownership.md
+      - "M7-C12: Pipeline parallelism for inference": parallelism-and-decomposition/m7-c12-pipeline-parallelism-for-inference.md
+      - "M7-C14: Data parallelism across serving replicas": parallelism-and-decomposition/m7-c14-data-parallelism-across-serving-replicas.md
+      - "M7-C17: Expert parallelism and dispatch-combine execution": parallelism-and-decomposition/m7-c17-expert-parallelism-and-dispatch-combine-execution.md
+      - "M7-C19: Context parallelism and distributed attention state": parallelism-and-decomposition/m7-c19-context-parallelism-and-distributed-attention-state.md
+      - "M7-C20: Combining parallelism strategies and placement": parallelism-and-decomposition/m7-c20-combining-parallelism-strategies-and-placement.md
+      - "M7-C24: Prefill-decode disaggregation and its tradeoffs": parallelism-and-decomposition/m7-c24-prefill-decode-disaggregation-and-its-tradeoffs.md
   - "Networking and communication":
       - Overview: networking-and-communication/index.md
       - "M3-C14: Moving tensors between devices and hosts": networking-and-communication/m3-c14-moving-tensors-between-devices-and-hosts.md
+      - "M7-C04: Point-to-point transfers and communication contracts": networking-and-communication/m7-c04-point-to-point-transfers-and-communication-contracts.md
+      - "M7-C05: Reductions and AllReduce from first principles": networking-and-communication/m7-c05-reductions-and-allreduce-from-first-principles.md
+      - "M7-C06: AllGather and ReduceScatter as layout transformations": networking-and-communication/m7-c06-allgather-and-reducescatter-as-layout-transformations.md
+      - "M7-C07: AllToAll and variable-size token exchange": networking-and-communication/m7-c07-alltoall-and-variable-size-token-exchange.md
+      - "M7-C08: Modeling communication latency and bandwidth costs": networking-and-communication/m7-c08-modeling-communication-latency-and-bandwidth-costs.md
+      - "M7-C25: Transferring KV state with a safe handoff": networking-and-communication/m7-c25-transferring-kv-state-with-a-safe-handoff.md
   - "Distributed coordination and routing":
       - Overview: distributed-coordination-and-routing/index.md
+      - "M7-C15: Routing requests with load and cache locality": distributed-coordination-and-routing/m7-c15-routing-requests-with-load-and-cache-locality.md
+      - "M7-C22: Coordinating requests and execution across workers": distributed-coordination-and-routing/m7-c22-coordinating-requests-and-execution-across-workers.md
+      - "M7-C26: Balancing disaggregated stages and transfer capacity": distributed-coordination-and-routing/m7-c26-balancing-disaggregated-stages-and-transfer-capacity.md
   - "Storage and persistence":
       - Overview: storage-and-persistence/index.md
   - "Interfaces, protocols, and streaming":
@@ -211,6 +239,7 @@ nav:
       - "M2-C16: Completion, cancellation, and allocation failure": reliability-and-capacity-control/m2-c16-completion-cancellation-and-allocation-failure.md
       - "M5-C20: Cancellation, deadlines, and worker failure": reliability-and-capacity-control/m5-c20-cancellation-deadlines-and-worker-failure.md
       - "M6-C25: Handling unsupported cases and optimization failures": reliability-and-capacity-control/m6-c25-handling-unsupported-cases-and-optimization-failures.md
+      - "M7-C23: Collective failures, timeouts, and recovery boundaries": reliability-and-capacity-control/m7-c23-collective-failures-timeouts-and-recovery-boundaries.md
   - "Measurement, experimentation, and economics":
       - Overview: measurement-experimentation-and-economics/index.md
       - "M1-C08: Operation counts and actual execution cost": measurement-experimentation-and-economics/m1-c08-operation-counts-and-actual-execution-cost.md
@@ -232,3 +261,5 @@ nav:
       - "M6-C17: When speculative decoding helps or hurts": measurement-experimentation-and-economics/m6-c17-when-speculative-decoding-helps-or-hurts.md
       - "M6-C26: Designing the optimization workload and comparison matrix": measurement-experimentation-and-economics/m6-c26-designing-the-optimization-workload-and-comparison-matrix.md
       - "M6-C28: Establishing end-to-end benefit and regression boundaries": measurement-experimentation-and-economics/m6-c28-establishing-end-to-end-benefit-and-regression-boundaries.md
+      - "M7-C29: Profiling compute, communication, and waiting": measurement-experimentation-and-economics/m7-c29-profiling-compute-communication-and-waiting.md
+      - "M7-C30: When adding a GPU reduces latency and when it does not": measurement-experimentation-and-economics/m7-c30-when-adding-a-gpu-reduces-latency-and-when-it-does-not.md

@@ -78,3 +78,13 @@ Follow the complete [Module 5 reading order](../module-5.md) to move between cat
 | M6-C27 | [Building prefix caching and one additional optimization](m6-c27-building-prefix-caching-and-one-additional-optimization.md) | Prefix-cache baseline integration, choosing weight or KV quantization, speculation, structured decoding or multi-LoRA, staged validation gates, runtime contracts, feature controls, reproducible configuration, no-code build specification |
 
 Follow the complete [Module 6 reading order](../module-6.md) to move between categories.
+
+### Module 7
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M7-C03 | [Workers, ranks, process groups, and communicators](m7-c03-workers-ranks-process-groups-and-communicators.md) | Worker processes, global and local ranks, device assignment, process groups, communicator membership, initialization and rendezvous, stream ownership, Rust and backend integration boundaries |
+| M7-C09 | [Overlapping compute and communication safely](m7-c09-overlapping-compute-and-communication-safely.md) | Dependency graphs, independent work, streams and completion events, buffer lifetimes, shared compute and memory resources, exposed versus hidden communication, stragglers, limits of overlap |
+| M7-C28 | [Running a model across two GPUs](m7-c28-running-a-model-across-two-gpus.md) | Supported backend selection, device and rank setup, model and shard compatibility, two-way tensor or pipeline partitioning, weight loading, collective readiness, correctness gates, startup and shutdown contracts |
+
+Follow the complete [Module 7 reading order](../module-7.md) to move between categories.

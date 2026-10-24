@@ -53,3 +53,11 @@ Follow the complete [Module 2 reading order](../module-2.md) to move between cat
 | M6-C21 | [LoRA foundations and adapter-specific computation](m6-c21-lora-foundations-and-adapter-specific-computation.md) | Low-rank updates, base weights, adapter matrices, rank and scaling, target layers, merged versus unmerged computation, adapter identity, reference outputs, heterogeneous adapter requests |
 
 Follow the complete [Module 6 reading order](../module-6.md) to move between categories.
+
+### Module 7
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M7-C16 | [Mixture-of-experts computation and storage](m7-c16-mixture-of-experts-computation-and-storage.md) | Routers and expert selection, top-k expert activation, shared versus routed experts, total parameters, active computation, stored weights, routing weights, sparse-compute limits |
+
+Follow the complete [Module 7 reading order](../module-7.md) to move between categories.

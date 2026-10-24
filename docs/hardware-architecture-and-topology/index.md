@@ -31,3 +31,11 @@ Chapter outlines are grouped by module. Full content will be developed one chapt
 | M3-C13 | [PCIe, NVLink, NUMA, and device topology](m3-c13-pcie-nvlink-numa-and-device-topology.md) | Link bandwidth and latency, PCIe generation and width, NVLink availability, peer-access support, CPU socket and NUMA placement, switch paths, NIC placement, topology inspection |
 
 Follow the complete [Module 3 reading order](../module-3.md) to move between categories.
+
+### Module 7
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M7-C02 | [Mapping GPU and network topology before partitioning](m7-c02-mapping-gpu-and-network-topology-before-partitioning.md) | GPU memory and capability, PCIe and NVLink paths, switches, NUMA placement, NIC affinity, intra-node versus inter-node links, peer access, measured versus advertised bandwidth |
+
+Follow the complete [Module 7 reading order](../module-7.md) to move between categories.

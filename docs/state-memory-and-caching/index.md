@@ -64,3 +64,11 @@ Follow the complete [Module 3 reading order](../module-3.md) to move between cat
 | M6-C22 | [Adapter residency, lifetime, and cache compatibility](m6-c22-adapter-residency-lifetime-and-cache-compatibility.md) | Adapter loading and residency, host versus device storage, versioned identities, in-flight references, eviction, load failures, adapter-aware KV reuse, memory competition with KV state |
 
 Follow the complete [Module 6 reading order](../module-6.md) to move between categories.
+
+### Module 7
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M7-C21 | [Distributed weights, KV caches, and memory accounting](m7-c21-distributed-weights-kv-caches-and-memory-accounting.md) | Shard loading, model and adapter identity, rank-local weights, KV partitions, replicated metadata, communication buffers, workspace peaks, transfer staging, headroom, ownership and reclamation |
+
+Follow the complete [Module 7 reading order](../module-7.md) to move between categories.

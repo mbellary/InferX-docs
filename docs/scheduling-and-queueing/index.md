@@ -62,3 +62,12 @@ Follow the complete [Module 5 reading order](../module-5.md) to move between cat
 | M6-C23 | [Batching requests across multiple LoRA adapters](m6-c23-batching-requests-across-multiple-lora-adapters.md) | Adapter selection, heterogeneous ranks, low-rank batched operations, grouping versus mixing, dispatch and padding costs, locality versus fairness, rare adapters, memory-aware admission |
 
 Follow the complete [Module 6 reading order](../module-6.md) to move between categories.
+
+### Module 7
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M7-C13 | [Pipeline bubbles, stage balance, and scheduling](m7-c13-pipeline-bubbles-stage-balance-and-scheduling.md) | Fill and drain, idle slots, stage imbalance, microbatch count and size, decode dependencies, queueing between stages, throughput versus single-request latency, tail effects |
+| M7-C18 | [Expert imbalance, capacity, and token correctness](m7-c18-expert-imbalance-capacity-and-token-correctness.md) | Hot experts, skewed token routing, variable expert batches, straggler ranks, capacity limits, padding, load redistribution costs, token dropping versus model-preserving handling |
+
+Follow the complete [Module 7 reading order](../module-7.md) to move between categories.

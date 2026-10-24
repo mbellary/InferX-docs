@@ -78,3 +78,12 @@ Follow the complete [Module 5 reading order](../module-5.md) to move between cat
 | M6-C28 | [Establishing end-to-end benefit and regression boundaries](m6-c28-establishing-end-to-end-benefit-and-regression-boundaries.md) | Correctness and quality gates, first-token and inter-token latency, tail distributions, goodput, capacity, CPU and GPU overhead, actual memory, compilation and loading amortization, fairness, cost, uncertainty, helps-versus-hurts results |
 
 Follow the complete [Module 6 reading order](../module-6.md) to move between categories.
+
+### Module 7
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M7-C29 | [Profiling compute, communication, and waiting](m7-c29-profiling-compute-communication-and-waiting.md) | Per-rank timelines, kernel and collective durations, host waits, overlap, exposed communication, critical-path attribution, timestamp correlation, profiler overhead, avoiding double-counted elapsed time |
+| M7-C30 | [When adding a GPU reduces latency and when it does not](m7-c30-when-adding-a-gpu-reduces-latency-and-when-it-does-not.md) | Matched single-GPU and two-GPU workloads, message-size sweeps, prefill and decode timing, strong and weak scaling, latency distributions, useful throughput, memory capacity, cost, topology, load balance, uncertainty |
+
+Follow the complete [Module 7 reading order](../module-7.md) to move between categories.

@@ -41,3 +41,11 @@ Follow the complete [Module 5 reading order](../module-5.md) to move between cat
 | M6-C25 | [Handling unsupported cases and optimization failures](m6-c25-handling-unsupported-cases-and-optimization-failures.md) | Capability checks, invalidated cache identities, missing adapters, grammar errors, allocation failures, safe fallback versus explicit rejection, cancellation, cleanup, bounded recovery costs |
 
 Follow the complete [Module 6 reading order](../module-6.md) to move between categories.
+
+### Module 7
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M7-C23 | [Collective failures, timeouts, and recovery boundaries](m7-c23-collective-failures-timeouts-and-recovery-boundaries.md) | Rank mismatch, divergent collective ordering, hung or failed workers, stragglers, asynchronous errors, timeout scopes, coordinated abort, retry boundaries, lost volatile state, safe cleanup |
+
+Follow the complete [Module 7 reading order](../module-7.md) to move between categories.

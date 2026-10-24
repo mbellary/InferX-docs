@@ -75,3 +75,11 @@ Follow the complete [Module 5 reading order](../module-5.md) to move between cat
 | M6-C15 | [Distribution-preserving speculative acceptance](m6-c15-distribution-preserving-speculative-acceptance.md) | Target and proposal probabilities, acceptance ratios, sequential acceptance, first rejection, positive-part residual distribution, all-accepted bonus sampling, support edge cases, greedy versus stochastic contracts |
 
 Follow the complete [Module 6 reading order](../module-6.md) to move between categories.
+
+### Module 7
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M7-C27 | [Validating distributed computation and state](m7-c27-validating-distributed-computation-and-state.md) | Single-device reference outputs, reduction tolerances, rank and shard reconstruction, token and expert routing identity, causal masks, KV consistency, cancellation and fault tests, RNG ownership |
+
+Follow the complete [Module 7 reading order](../module-7.md) to move between categories.
