@@ -6,7 +6,7 @@ Assume an absolute beginner with basic programming knowledge. Introduce systems,
 
 Rust is the primary programming language for the eventual inference engine. Use Python or C++ when Rust is unsupported, explaining the reason. Chapters provide explanations and experimental procedures without code implementation.
 
-Develop one module at a time and one chapter at a time. Preserve the 14 top-level categories; place each chapter under its assigned category and connect chapters through the module reading order.
+Establish chapter outlines for the learning modules first, proceeding through the modules in sequence. Then develop full chapter content one chapter at a time. Preserve the 14 top-level categories; place each chapter under its assigned category and connect chapters through the module reading order.
 
 ## Chapter structure
 

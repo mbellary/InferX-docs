@@ -16,4 +16,12 @@ Continuous batching, chunked prefill, priorities, fairness, admission, backpress
 
 ## Chapters
 
-Chapters will be added here as the curriculum develops. This page defines the scope and learning goals for the category.
+Chapter outlines are grouped by module. Full content will be developed one chapter at a time.
+
+### Module 2
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M2-C15 | [Admission and growth under a finite KV budget](m2-c15-admission-and-growth-under-a-finite-kv-budget.md) | Free-block budgets, growth reservations, headroom, admit-wait-reject decisions, backpressure, mixed request lengths, fairness, capacity versus latency |
+
+Follow the complete [Module 2 reading order](../module-2.md) to move between categories.

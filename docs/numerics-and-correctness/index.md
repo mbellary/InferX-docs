@@ -16,7 +16,9 @@ Precision, quantization, numerical stability, determinism, batch invariance, qua
 
 ## Chapters
 
-Module 1 chapter outlines, listed in learning order. Full content will be developed one chapter at a time.
+Full content will be developed one chapter at a time.
+
+### Module 1
 
 | Chapter ID | Chapter name | Target concepts |
 | --- | --- | --- |
@@ -25,3 +27,11 @@ Module 1 chapter outlines, listed in learning order. Full content will be develo
 | M1-C19 | [Validating cached and uncached generation](m1-c19-validating-cached-and-uncached-generation.md) | Full-prefix reference execution, matching next-token logits, numerical tolerances, greedy output comparison, cache lengths, position and masking errors, edge cases |
 
 Follow the complete [Module 1 reading order](../module-1.md) to move between categories.
+
+### Module 2
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M2-C20 | [Validating allocator and cache safety](m2-c20-validating-allocator-and-cache-safety.md) | Reference state model, free-live-retained-pinned accounting, live-reference validity, shared-data immutability, randomized lifecycle traces, stale-handle detection, fault injection, cached-logit equivalence |
+
+Follow the complete [Module 2 reading order](../module-2.md) to move between categories.

@@ -16,7 +16,9 @@ Transformers, attention, MoE, multimodal encoders, positional encoding, sampling
 
 ## Chapters
 
-Module 1 chapter outlines, listed in learning order. Full content will be developed one chapter at a time.
+Full content will be developed one chapter at a time.
+
+### Module 1
 
 | Chapter ID | Chapter name | Target concepts |
 | --- | --- | --- |
@@ -32,3 +34,13 @@ Module 1 chapter outlines, listed in learning order. Full content will be develo
 | M1-C15 | [Turning logits into the next token](m1-c15-turning-logits-into-the-next-token.md) | Greedy decoding, temperature, top-k and top-p filtering, probability renormalization, random sampling, seeds, tie handling |
 
 Follow the complete [Module 1 reading order](../module-1.md) to move between categories.
+
+### Module 2
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M2-C02 | [Attention head sharing: MHA, GQA, and MQA](m2-c02-attention-head-sharing-mha-gqa-and-mqa.md) | Query heads versus KV heads, multi-head attention, grouped-query attention, multi-query attention, cache shapes, architecture-dependent memory requirements |
+| M2-C17 | [Sliding-window attention and bounded cache state](m2-c17-sliding-window-attention-and-bounded-cache-state.md) | Model-defined attention windows, retained token ranges, logical versus physical positions, ring-buffer mapping, per-layer windows, hybrid attention, limits of dropping old state |
+| M2-C18 | [Architecture-specific state: Multi-head Latent Attention](m2-c18-architecture-specific-state-multi-head-latent-attention.md) | MLA compressed latent state, positional components, architecture-specific cache representations, storage versus reconstruction work, limits of the conventional KV formula |
+
+Follow the complete [Module 2 reading order](../module-2.md) to move between categories.

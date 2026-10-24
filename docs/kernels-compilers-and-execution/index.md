@@ -16,4 +16,12 @@ GEMMs, attention kernels, tiling, fusion, layouts, compilation, graph replay.
 
 ## Chapters
 
-Chapters will be added here as the curriculum develops. This page defines the scope and learning goals for the category.
+Chapter outlines are grouped by module. Full content will be developed one chapter at a time.
+
+### Module 2
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M2-C07 | [How attention reads a paged KV layout](m2-c07-how-attention-reads-a-paged-kv-layout.md) | Block-table lookup, KV tensor strides and layouts, valid token counts, partial tail blocks, gather access, kernel-layout compatibility, metadata and data movement |
+
+Follow the complete [Module 2 reading order](../module-2.md) to move between categories.

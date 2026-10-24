@@ -1,0 +1,64 @@
+# Module 2: Treat the KV cache as a first-class systems problem
+
+> **Status: Chapter outlines available.** Full chapters will be developed one at a time after the module outlines are in place.
+
+## Learning goal
+
+Understand the KV cache as allocated, owned, shared, and reclaimed state. Connect attention semantics to memory capacity, request concurrency, and latency. Assume only basic programming knowledge and introduce memory-management terminology from first principles.
+
+Build toward a fixed-size KV block allocator in a Rust-first learning path. Completed and cancelled requests must release their ownership; live requests must never reference freed or reassigned blocks. Shared or in-flight blocks remain protected until all owners and readers release them. Chapters specify concepts and experimental procedures without code implementation.
+
+## Prerequisites and scope
+
+Follow [Module 1](module-1.md) first, especially its chapters on attention variants, tensor memory, KV caching, prefill/decode, and cached-logit validation. This module deepens those foundations into block management. CPU-side models can establish allocator invariants; future device experiments must also account for asynchronous readers and completion. GPU architecture, detailed kernel optimization, and distributed cache transfer belong to later modules.
+
+## Memory model to investigate
+
+For conventional Transformer layers with uniform full attention, the logical KV payload is:
+
+**M_KV = 2 × L × N_cached × H_KV × D_head × s**
+
+Here L is the number of layers, N_cached is the total cached token positions across requests, H_KV is the number of KV heads, D_head is the head dimension, and s is bytes per stored element. The factor of two accounts for keys and values.
+
+With 32 layers, 8 KV heads, head dimension 128, and two-byte elements, the payload is 131,072 bytes, or **128 KiB per token**. An 8,192-token sequence needs **1 GiB**, excluding allocator overhead.
+
+Later chapters distinguish this logical payload from unique physical storage after sharing, block rounding, metadata, and reserved capacity. Sliding windows, heterogeneous layers, and compressed latent caches require architecture-specific accounting.
+
+## Reading order
+
+Chapters remain under their assigned top-level categories. Follow this sequence across categories.
+
+| Chapter ID | Category | Chapter name | Target concepts |
+| --- | --- | --- | --- |
+| M2-C01 | [State, memory, and caching](state-memory-and-caching/index.md) | [What the KV cache retains and why](state-memory-and-caching/m2-c01-what-the-kv-cache-retains-and-why.md) | Cached keys and values, model weights versus request state, reuse versus recomputation, prefill and decode cache access, logical token positions |
+| M2-C02 | [Model computation and semantics](model-computation-and-semantics/index.md) | [Attention head sharing: MHA, GQA, and MQA](model-computation-and-semantics/m2-c02-attention-head-sharing-mha-gqa-and-mqa.md) | Query heads versus KV heads, multi-head attention, grouped-query attention, multi-query attention, cache shapes, architecture-dependent memory requirements |
+| M2-C03 | [State, memory, and caching](state-memory-and-caching/index.md) | [Calculating KV memory and request capacity](state-memory-and-caching/m2-c03-calculating-kv-memory-and-request-capacity.md) | Uniform full-attention KV formula, bytes per element, KiB and GiB, cached token counts, 128 KiB per token example, concurrency and context budgets, payload versus overhead |
+| M2-C04 | [State, memory, and caching](state-memory-and-caching/index.md) | [Memory ownership, handles, and lifetimes from first principles](state-memory-and-caching/m2-c04-memory-ownership-handles-and-lifetimes-from-first-principles.md) | Allocation and reclamation, addresses versus handles, Rust ownership and borrowing concepts, request identity, stale handles, use-after-free, double-free |
+| M2-C05 | [State, memory, and caching](state-memory-and-caching/index.md) | [Contiguous KV storage and its limits](state-memory-and-caching/m2-c05-contiguous-kv-storage-and-its-limits.md) | Contiguous allocation, reserved versus used capacity, growth and copying, external fragmentation, allocation failure despite free space, contiguous baseline |
+| M2-C06 | [State, memory, and caching](state-memory-and-caching/index.md) | [Paged KV storage and logical-to-physical mapping](state-memory-and-caching/m2-c06-paged-kv-storage-and-logical-to-physical-mapping.md) | Operating-system paging analogy and limits, fixed-size token blocks, block tables, block offsets, noncontiguous physical storage, PagedAttention, mapping metadata |
+| M2-C07 | [Kernels, compilers, and execution](kernels-compilers-and-execution/index.md) | [How attention reads a paged KV layout](kernels-compilers-and-execution/m2-c07-how-attention-reads-a-paged-kv-layout.md) | Block-table lookup, KV tensor strides and layouts, valid token counts, partial tail blocks, gather access, kernel-layout compatibility, metadata and data movement |
+| M2-C08 | [State, memory, and caching](state-memory-and-caching/index.md) | [Designing a fixed-size KV block allocator](state-memory-and-caching/m2-c08-designing-a-fixed-size-kv-block-allocator.md) | Preallocated block pools, block IDs, free lists, allocation and release contracts, capacity accounting, all-or-nothing multi-block allocation, rollback |
+| M2-C09 | [State, memory, and caching](state-memory-and-caching/index.md) | [Choosing block size and measuring fragmentation](state-memory-and-caching/m2-c09-choosing-block-size-and-measuring-fragmentation.md) | Tokens per block, ceiling-based block counts, internal versus external fragmentation, tail waste, metadata overhead, allocation granularity, block-size tradeoffs |
+| M2-C10 | [Runtime and concurrency](runtime-and-concurrency/index.md) | [Request state transitions and safe block reuse](runtime-and-concurrency/m2-c10-request-state-transitions-and-safe-block-reuse.md) | Allocate-write-read-release lifecycle, exclusive mutation, host and device readers, in-flight work, completion versus submission, pinning, deferred reclamation |
+| M2-C11 | [State, memory, and caching](state-memory-and-caching/index.md) | [Reference counting and shared block ownership](state-memory-and-caching/m2-c11-reference-counting-and-shared-block-ownership.md) | Multiple owners, request references versus cache references, retain and release rules, reference-count invariants, zero-reference eligibility, in-flight pins |
+| M2-C12 | [State, memory, and caching](state-memory-and-caching/index.md) | [Copy-on-write for branching requests](state-memory-and-caching/m2-c12-copy-on-write-for-branching-requests.md) | Immutable shared blocks, divergent continuations, partially filled blocks, private writable tails, copying costs, ownership transfer, failure-safe copy-on-write |
+| M2-C13 | [State, memory, and caching](state-memory-and-caching/index.md) | [Prefix reuse and cache identity](state-memory-and-caching/m2-c13-prefix-reuse-and-cache-identity.md) | Exact token-prefix matching, block-granular reuse, prefix indexes, model and adapter identity, position and mask compatibility, dtype and layout compatibility, collision checks, isolation boundaries |
+| M2-C14 | [State, memory, and caching](state-memory-and-caching/index.md) | [Eviction, retention, and reconstruction](state-memory-and-caching/m2-c14-eviction-retention-and-reconstruction.md) | Active versus retained blocks, eviction eligibility, recency and reuse, policy metadata, reference-safe eviction, recomputation cost, exact reconstruction versus lossy state removal |
+| M2-C15 | [Scheduling and queueing](scheduling-and-queueing/index.md) | [Admission and growth under a finite KV budget](scheduling-and-queueing/m2-c15-admission-and-growth-under-a-finite-kv-budget.md) | Free-block budgets, growth reservations, headroom, admit-wait-reject decisions, backpressure, mixed request lengths, fairness, capacity versus latency |
+| M2-C16 | [Reliability and capacity control](reliability-and-capacity-control/index.md) | [Completion, cancellation, and allocation failure](reliability-and-capacity-control/m2-c16-completion-cancellation-and-allocation-failure.md) | Terminal request states, idempotent cleanup, cancellation during growth or sharing, partial-allocation rollback, draining in-flight work, worker loss and volatile-state recovery |
+| M2-C17 | [Model computation and semantics](model-computation-and-semantics/index.md) | [Sliding-window attention and bounded cache state](model-computation-and-semantics/m2-c17-sliding-window-attention-and-bounded-cache-state.md) | Model-defined attention windows, retained token ranges, logical versus physical positions, ring-buffer mapping, per-layer windows, hybrid attention, limits of dropping old state |
+| M2-C18 | [Model computation and semantics](model-computation-and-semantics/index.md) | [Architecture-specific state: Multi-head Latent Attention](model-computation-and-semantics/m2-c18-architecture-specific-state-multi-head-latent-attention.md) | MLA compressed latent state, positional components, architecture-specific cache representations, storage versus reconstruction work, limits of the conventional KV formula |
+| M2-C19 | [Runtime and concurrency](runtime-and-concurrency/index.md) | [Connecting block allocation to the request generator](runtime-and-concurrency/m2-c19-connecting-block-allocation-to-the-request-generator.md) | Request-owned block tables, prefill writes, decode appends, block-boundary growth, full attention versus retained windows, cache-reader interface, completion and cancellation integration |
+| M2-C20 | [Numerics and correctness](numerics-and-correctness/index.md) | [Validating allocator and cache safety](numerics-and-correctness/m2-c20-validating-allocator-and-cache-safety.md) | Reference state model, free-live-retained-pinned accounting, live-reference validity, shared-data immutability, randomized lifecycle traces, stale-handle detection, fault injection, cached-logit equivalence |
+| M2-C21 | [Measurement, experimentation, and economics](measurement-experimentation-and-economics/index.md) | [Benchmarking KV management end to end](measurement-experimentation-and-economics/m2-c21-benchmarking-kv-management-end-to-end.md) | Contiguous versus paged baselines, context and concurrency sweeps, reuse skew, cancellation churn, allocation and reclamation latency, tail distributions, fragmentation, useful throughput, full-request latency, reproducible profiling |
+
+## How chapters will be developed
+
+Every chapter follows **Concepts → Experiments → Verification**, applying all [six dimensions and eight engineering principles](learning-approach.md). Experiments connect KV-cache behavior to systems engineering and High-Frequency Trading concerns such as preallocation, ownership, predictable reclamation, bounded work, and tail latency. Each analogy must state its limits.
+
+This is an outline of the learning path, not a completed allocator or a benchmark result. The eventual validation must cover completed and cancelled requests, shared blocks, failed allocations, stale references, and deferred reclamation, followed by correctness and performance comparisons against the reference generator.
+
+## Sources
+
+- [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180): the primary paper for paged KV storage and sharing.
+- [DeepSeek-V2](https://arxiv.org/abs/2405.04434): a primary source for Multi-head Latent Attention and compressed KV state.

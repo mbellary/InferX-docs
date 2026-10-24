@@ -16,7 +16,9 @@ Profiling, benchmarks, p50/p99, goodput, workload design, statistical uncertaint
 
 ## Chapters
 
-Module 1 chapter outlines, listed in learning order. Full content will be developed one chapter at a time.
+Full content will be developed one chapter at a time.
+
+### Module 1
 
 | Chapter ID | Chapter name | Target concepts |
 | --- | --- | --- |
@@ -24,3 +26,11 @@ Module 1 chapter outlines, listed in learning order. Full content will be develo
 | M1-C20 | [Measuring and explaining generation latency](m1-c20-measuring-and-explaining-generation-latency.md) | Input-length and output-length sweeps, prefill time, time to first token, per-token decode latency, total latency, warmup, repeated measurements, correctness checks, predicted versus observed bottlenecks |
 
 Follow the complete [Module 1 reading order](../module-1.md) to move between categories.
+
+### Module 2
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M2-C21 | [Benchmarking KV management end to end](m2-c21-benchmarking-kv-management-end-to-end.md) | Contiguous versus paged baselines, context and concurrency sweeps, reuse skew, cancellation churn, allocation and reclamation latency, tail distributions, fragmentation, useful throughput, full-request latency, reproducible profiling |
+
+Follow the complete [Module 2 reading order](../module-2.md) to move between categories.

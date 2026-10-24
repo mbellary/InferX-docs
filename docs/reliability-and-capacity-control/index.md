@@ -16,4 +16,12 @@ Timeouts, retries, draining, migration, failure domains, autoscaling, headroom.
 
 ## Chapters
 
-Chapters will be added here as the curriculum develops. This page defines the scope and learning goals for the category.
+Chapter outlines are grouped by module. Full content will be developed one chapter at a time.
+
+### Module 2
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M2-C16 | [Completion, cancellation, and allocation failure](m2-c16-completion-cancellation-and-allocation-failure.md) | Terminal request states, idempotent cleanup, cancellation during growth or sharing, partial-allocation rollback, draining in-flight work, worker loss and volatile-state recovery |
+
+Follow the complete [Module 2 reading order](../module-2.md) to move between categories.
