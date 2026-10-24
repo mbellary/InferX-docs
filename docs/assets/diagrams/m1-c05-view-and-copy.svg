@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="555" viewBox="0 0 880 555" role="img" aria-labelledby="title desc">
+<title id="title">A transpose view and an independent packed copy</title><desc id="desc">A and transpose T share one allocation. The packed transpose copy owns a second allocation. Both transpose outputs have the same logical values.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#4f6b87"/></marker></defs>
+<rect width="880" height="555" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#203247">
+<text x="440" y="35" text-anchor="middle" font-size="25">Same transpose values; different ownership</text>
+<rect x="35" y="75" width="370" height="95" rx="8" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="220" y="107" text-anchor="middle" font-size="19">A: shape (2, 3), strides (12, 4)</text>
+<text x="220" y="140" text-anchor="middle" font-size="19">T: shape (3, 2), strides (4, 12)</text>
+<rect x="475" y="75" width="370" height="95" rx="8" fill="#fff0cc" stroke="#4f6b87" stroke-width="2"/>
+<text x="660" y="107" text-anchor="middle" font-size="19">Packed T: shape (3, 2)</text>
+<text x="660" y="140" text-anchor="middle" font-size="19">Byte strides (8, 4)</text>
+<path d="M220,175 L220,198" stroke="#4f6b87" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M660,175 L660,198" stroke="#4f6b87" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<text x="220" y="222" text-anchor="middle" font-size="19">Shared allocation</text>
+<text x="660" y="222" text-anchor="middle" font-size="19">Independent allocation</text>
+<rect x="35" y="245" width="57" height="55" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="63" y="279" text-anchor="middle" font-size="19">10</text>
+<rect x="97" y="245" width="57" height="55" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="125" y="279" text-anchor="middle" font-size="19">11</text>
+<rect x="159" y="245" width="57" height="55" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="187" y="279" text-anchor="middle" font-size="19">12</text>
+<rect x="221" y="245" width="57" height="55" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="249" y="279" text-anchor="middle" font-size="19">20</text>
+<rect x="283" y="245" width="57" height="55" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="311" y="279" text-anchor="middle" font-size="19">21</text>
+<rect x="345" y="245" width="57" height="55" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="373" y="279" text-anchor="middle" font-size="19">22</text>
+<rect x="475" y="245" width="57" height="55" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="503" y="279" text-anchor="middle" font-size="19">10</text>
+<rect x="537" y="245" width="57" height="55" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="565" y="279" text-anchor="middle" font-size="19">20</text>
+<rect x="599" y="245" width="57" height="55" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="627" y="279" text-anchor="middle" font-size="19">11</text>
+<rect x="661" y="245" width="57" height="55" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="689" y="279" text-anchor="middle" font-size="19">21</text>
+<rect x="723" y="245" width="57" height="55" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="751" y="279" text-anchor="middle" font-size="19">12</text>
+<rect x="785" y="245" width="57" height="55" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="813" y="279" text-anchor="middle" font-size="19">22</text>
+<text x="220" y="334" text-anchor="middle" font-size="17">24 bytes, one live backing buffer</text>
+<text x="660" y="334" text-anchor="middle" font-size="17">24 additional bytes of element storage</text>
+<rect x="80" y="365" width="720" height="105" rx="8" fill="#f4f6f8" stroke="#4f6b87" stroke-width="2"/>
+<text x="440" y="400" text-anchor="middle" font-size="19">T and packed T both read: [10, 20]; [11, 21]; [12, 22]</text>
+<text x="440" y="438" text-anchor="middle" font-size="18">Changing A[0, 1] changes T[1, 0], but not the packed copy.</text>
+<text x="440" y="512" text-anchor="middle" font-size="19">A shared buffer must outlive every reader.</text>
+</g></svg>

@@ -25,7 +25,7 @@ Use the [detailed chapter authoring order](chapter-authoring-order.md) to create
 
 Follow the [chapter execution plan and progress ledger](chapter-execution-plan.md) to create and review one detailed chapter at a time and track its concepts, experiments, verification, and completion evidence.
 
-The 14 categories below define the curriculum. Category overviews and 201 chapter entries across Modules 1–7 and 9 are available. [M1-C01](model-computation-and-semantics/m1-c01-from-a-prompt-to-the-next-token.md), [M1-C02](interfaces-protocols-and-streaming/m1-c02-representing-text-as-tokens.md), [M1-C03](model-computation-and-semantics/m1-c03-numbers-vectors-matrices-and-tensors.md) and [M1-C04](model-computation-and-semantics/m1-c04-dot-products-and-matrix-multiplication.md) are completed detailed chapters; 197 remain outlines. Full chapters are developed one at a time in the dependency-aware authoring order.
+The 14 categories below define the curriculum. Category overviews and 201 chapter entries across Modules 1–7 and 9 are available. [M1-C01](model-computation-and-semantics/m1-c01-from-a-prompt-to-the-next-token.md), [M1-C02](interfaces-protocols-and-streaming/m1-c02-representing-text-as-tokens.md), [M1-C03](model-computation-and-semantics/m1-c03-numbers-vectors-matrices-and-tensors.md), [M1-C04](model-computation-and-semantics/m1-c04-dot-products-and-matrix-multiplication.md) and [M1-C05](state-memory-and-caching/m1-c05-how-tensors-occupy-memory.md) are completed detailed chapters; 196 remain outlines. Full chapters are developed one at a time in the dependency-aware authoring order.
 
 | # | Category | Central question | Includes |
 | --- | --- | --- | --- |

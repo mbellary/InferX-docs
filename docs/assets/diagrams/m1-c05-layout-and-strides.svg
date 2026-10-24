@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="545" viewBox="0 0 880 545" role="img" aria-labelledby="title desc">
+<title id="title">One logical matrix, two physical layouts</title><desc id="desc">A has rows 10 11 12 and 20 21 22. Row-major storage follows rows; column-major storage follows columns.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#4f6b87"/></marker></defs>
+<rect width="880" height="545" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#203247">
+<text x="440" y="35" text-anchor="middle" font-size="25">One logical matrix, two physical layouts</text>
+<text x="440" y="80" text-anchor="middle" font-size="19">A, shape (2, 3); FP32 = 4 bytes per element</text>
+<rect x="320" y="100" width="72" height="42" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="356" y="127" text-anchor="middle" font-size="19">10</text>
+<rect x="400" y="100" width="72" height="42" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="436" y="127" text-anchor="middle" font-size="19">11</text>
+<rect x="480" y="100" width="72" height="42" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="516" y="127" text-anchor="middle" font-size="19">12</text>
+<rect x="320" y="148" width="72" height="42" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="356" y="175" text-anchor="middle" font-size="19">20</text>
+<rect x="400" y="148" width="72" height="42" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="436" y="175" text-anchor="middle" font-size="19">21</text>
+<rect x="480" y="148" width="72" height="42" rx="8" fill="#fff0cc" stroke="#4f6b87" stroke-width="2"/>
+<text x="516" y="175" text-anchor="middle" font-size="19">22</text>
+<text x="45" y="242" text-anchor="start" font-size="20">Row-major</text>
+<rect x="45" y="259" width="120" height="48" rx="8" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="105" y="290" text-anchor="middle" font-size="19">10</text>
+<text x="105" y="330" text-anchor="middle" font-size="16">byte 0</text>
+<rect x="177" y="259" width="120" height="48" rx="8" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="237" y="290" text-anchor="middle" font-size="19">11</text>
+<text x="237" y="330" text-anchor="middle" font-size="16">byte 4</text>
+<rect x="309" y="259" width="120" height="48" rx="8" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="369" y="290" text-anchor="middle" font-size="19">12</text>
+<text x="369" y="330" text-anchor="middle" font-size="16">byte 8</text>
+<rect x="441" y="259" width="120" height="48" rx="8" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="501" y="290" text-anchor="middle" font-size="19">20</text>
+<text x="501" y="330" text-anchor="middle" font-size="16">byte 12</text>
+<rect x="573" y="259" width="120" height="48" rx="8" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="633" y="290" text-anchor="middle" font-size="19">21</text>
+<text x="633" y="330" text-anchor="middle" font-size="16">byte 16</text>
+<rect x="705" y="259" width="120" height="48" rx="8" fill="#fff0cc" stroke="#4f6b87" stroke-width="2"/>
+<text x="765" y="290" text-anchor="middle" font-size="19">22</text>
+<text x="765" y="330" text-anchor="middle" font-size="16">byte 20</text>
+<text x="440" y="361" text-anchor="middle" font-size="18">Byte strides (12, 4)</text>
+<text x="45" y="380" text-anchor="start" font-size="20">Column-major</text>
+<rect x="45" y="397" width="120" height="48" rx="8" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="105" y="428" text-anchor="middle" font-size="19">10</text>
+<text x="105" y="468" text-anchor="middle" font-size="16">byte 0</text>
+<rect x="177" y="397" width="120" height="48" rx="8" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="237" y="428" text-anchor="middle" font-size="19">20</text>
+<text x="237" y="468" text-anchor="middle" font-size="16">byte 4</text>
+<rect x="309" y="397" width="120" height="48" rx="8" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="369" y="428" text-anchor="middle" font-size="19">11</text>
+<text x="369" y="468" text-anchor="middle" font-size="16">byte 8</text>
+<rect x="441" y="397" width="120" height="48" rx="8" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="501" y="428" text-anchor="middle" font-size="19">21</text>
+<text x="501" y="468" text-anchor="middle" font-size="16">byte 12</text>
+<rect x="573" y="397" width="120" height="48" rx="8" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="633" y="428" text-anchor="middle" font-size="19">12</text>
+<text x="633" y="468" text-anchor="middle" font-size="16">byte 16</text>
+<rect x="705" y="397" width="120" height="48" rx="8" fill="#fff0cc" stroke="#4f6b87" stroke-width="2"/>
+<text x="765" y="428" text-anchor="middle" font-size="19">22</text>
+<text x="765" y="468" text-anchor="middle" font-size="16">byte 20</text>
+<text x="440" y="499" text-anchor="middle" font-size="18">Byte strides (4, 8)</text>
+<text x="440" y="532" text-anchor="middle" font-size="17">A[1, 2] = 22 in both; the physical sequences differ.</text>
+</g></svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="550" viewBox="0 0 880 550" role="img" aria-labelledby="title desc">
+<title id="title">Broadcasting reuses stored bias values</title><desc id="desc">A bias vector with three FP32 values is viewed as two rows using zero row stride. The output of adding the bias to A has six independently stored values.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#4f6b87"/></marker></defs>
+<rect width="880" height="550" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#203247">
+<text x="440" y="35" text-anchor="middle" font-size="25">Broadcasting: repeated coordinates, shared input</text>
+<text x="440" y="80" text-anchor="middle" font-size="19">Stored b = [1, 2, 3]: 12 bytes</text>
+<rect x="310" y="100" width="80" height="45" rx="8" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="350" y="130" text-anchor="middle" font-size="19">1</text>
+<rect x="400" y="100" width="80" height="45" rx="8" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="440" y="130" text-anchor="middle" font-size="19">2</text>
+<rect x="490" y="100" width="80" height="45" rx="8" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="530" y="130" text-anchor="middle" font-size="19">3</text>
+<text x="440" y="182" text-anchor="middle" font-size="20">Expanded B: shape (2, 3), byte strides (0, 4)</text>
+<rect x="310" y="210" width="80" height="44" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="350" y="239" text-anchor="middle" font-size="19">1</text>
+<rect x="400" y="210" width="80" height="44" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="440" y="239" text-anchor="middle" font-size="19">2</text>
+<rect x="490" y="210" width="80" height="44" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="530" y="239" text-anchor="middle" font-size="19">3</text>
+<rect x="310" y="262" width="80" height="44" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="350" y="291" text-anchor="middle" font-size="19">1</text>
+<rect x="400" y="262" width="80" height="44" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="440" y="291" text-anchor="middle" font-size="19">2</text>
+<rect x="490" y="262" width="80" height="44" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="530" y="291" text-anchor="middle" font-size="19">3</text>
+<text x="195" y="240" text-anchor="middle" font-size="18">Logical row 0</text>
+<text x="195" y="292" text-anchor="middle" font-size="18">Logical row 1</text>
+<text x="440" y="340" text-anchor="middle" font-size="18">B[0, 1] and B[1, 1] address the same stored value 2.</text>
+<rect x="80" y="370" width="720" height="106" rx="8" fill="#fff0cc" stroke="#4f6b87" stroke-width="2"/>
+<text x="440" y="404" text-anchor="middle" font-size="19">Y = A + b has rows [11, 13, 15] and [21, 23, 25]</text>
+<text x="440" y="443" text-anchor="middle" font-size="19">Independent FP32 output: 6 values = 24 bytes</text>
+<text x="440" y="518" text-anchor="middle" font-size="18">Treat expanded input as read-only; budget the output separately.</text>
+</g></svg>

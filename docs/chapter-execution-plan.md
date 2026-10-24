@@ -11,13 +11,13 @@ Turn 201 outlines into a coherent collection of detailed chapters that helps a r
 
 The reader should be able to open any completed chapter, understand every introduced term, follow a worked numerical example and diagram, describe a reproducible experiment, and explain its pass/fail conditions and limits. High-Frequency Trading (HFT), meaning systems that process market events and make trading decisions under tight timing constraints, provides a lens for critical paths, bounded queues, stale information, and tail latency. A tail is the slower end of a latency distribution. Explain what transfers to inference and what does not; do not present trading advice, assert trading results, or equate inference semantics with exchange behavior.
 
-The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01, M1-C02, M1-C03 and M1-C04 are now complete and the next chapter is M1-C05.
+The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01–M1-C05 are now complete and the next chapter is M1-C06.
 
 
 ## Progress
 
 
-Last updated: 2026-10-24 19:04 IST. Planning setup is complete. Detailed chapter totals: **4 complete, 0 active, 197 not started, 0 blocked**. Next chapter: **M1-C05**, authoring position 5. An unchecked chapter below is incomplete; update its stage record when work starts or stops. Check a chapter only after its full acceptance gate passes.
+Last updated: 2026-10-24 21:21 IST. Detailed chapter totals: **5 complete, 0 active, 196 not started, 0 blocked**. Next chapter: **M1-C06**, authoring position 6. Check a chapter only after its full acceptance gate passes.
 
 - [x] (2026-10-24 17:21 IST) Read the uploaded PLANS.md, the learning requirements, the chapter inventory, and the dependency schedule; confirm Modules 1–7 plus supporting Module 9 and no Module 8.
 - [x] (2026-10-24 17:21 IST) Preserve the planning reference as repository-root PLANS.md and create this living execution plan with all 201 ordered chapter records and their target concepts and direct prerequisites.
@@ -54,11 +54,11 @@ Each record contains the authoring position, chapter ID, target concepts, source
   Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
   Module 9 application: M9-C01 mathematical reference and exact small-fixture invariants; M9-C02 completion/timing boundaries; M9-C11 controlled workload comparisons. These remain outlines; required checks are introduced locally, with general floating-point tolerances deferred to M1-C07/M9-C17. Updated: 2026-10-24 19:04 IST. Evidence: All six target concepts mapped to explanations and checks; E1–E4 required fields, matched verification, six dimensions, eight principles, HFT limits and CPU requirements reviewed. Checked primary operation specifications and projection orientation. Independent arithmetic checks passed for dot/matrix/bias/order/shared/distinct-weight results, byte/work counts and bounded exact binary32 benchmark fixtures. Strict build passed without warnings after completion tracking (4.06 seconds). Browser reviewed chapter formulas and verification tables plus all three SVG diagrams in full at /InferX-docs/model-computation-and-semantics/m1-c04-dot-products-and-matrix-multiplication/. No runtime benchmark executed. Next action: M1-C05; all later chapters remain unstarted.
 
-- [ ] 005 — **M1-C05: How tensors occupy memory** — Not started.
+- [x] 005 — **M1-C05: How tensors occupy memory** — Complete.
   File: [How tensors occupy memory](state-memory-and-caching/m1-c05-how-tensors-occupy-memory.md). Category: State, memory, and caching. Phase: 1. Model and numerical foundations.
   Direct prerequisites: M1-C03. Target concepts: Bytes, contiguous storage, strides, row-major and column-major layouts, reshaping, transposing, views versus copies, broadcasting.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: M9-C01 coordinate references; M9-C02 completion/timing boundaries; M9-C11 paired comparisons; M9-C15 unique retained storage; M9-C22 alias/lifetime safety. Supporting chapters remain outlines; required introductory checks are supplied locally. Updated: 2026-10-24 21:21 IST. Evidence: All eight target concepts mapped to explanations and E1–E4 verification; required experiment fields, HFT limits, six dimensions, eight principles, primary sources and CPU requirements reviewed. Checked NumPy 2.3, PyTorch 2.14, ndarray 0.16.1, Rust borrowing documentation and the original NumPy article. Independent checks passed for byte positions, row/column orders, transpose enumeration, broadcast outputs, retained bytes, packing budgets and crossover arithmetic; every E4 fixture output was checked for exact FP32 representation. Final strict build passed with no warnings after completion tracking (2.51 seconds). Browser reviewed the chapter at /InferX-docs/state-memory-and-caching/m1-c05-how-tensors-occupy-memory/, layout formulas, verification table and all three SVG diagrams. Rechecked simplified formula notation and corrected diagram arrows after visual review. No tensor runtime benchmark or hardware experiment executed. Next action: M1-C06; all later chapters remain unstarted.
 
 - [ ] 006 — **M1-C06: Reductions, probabilities, and stable softmax** — Not started.
   File: [Reductions, probabilities, and stable softmax](numerics-and-correctness/m1-c06-reductions-probabilities-and-stable-softmax.md). Category: Numerics and correctness. Phase: 1. Model and numerical foundations.
@@ -1239,6 +1239,8 @@ Each record contains the authoring position, chapter ID, target concepts, source
 
 ## Surprises & Discoveries
 
+Observation (2026-10-24 21:21 IST): a transpose need not be non-contiguous in every order: this chapter's dense C-order (2, 3) array becomes F-contiguous after transposition. C-order flattening of that transpose still needs a copy because its original byte-position differences alternate 12 and −8. Browser review also exposed cramped product limits and arrow/label overlap; both were corrected and visually rechecked. The interrupted preview was restarted before final review.
+
 Observation (2026-10-24 19:04 IST): shape compatibility alone does not establish projection equivalence. M1-C04 uses an explicitly transposed stored-weight example and a shape-compatible wrong-orientation negative control. Its E4 fixtures bound every partial sum to 512, allowing exact binary32 checks without prematurely teaching general numerical tolerances.
 
 
@@ -1259,6 +1261,8 @@ Observation (2026-10-24 17:23 IST): the documentation preview retains the /Infer
 
 
 ## Decision Log
+
+Decision (2026-10-24 21:21 IST, Codex): use explicit C logical enumeration, byte strides and independent numeric output as M1-C05's contract. Separate logical element bytes, unique backing allocations and allocator reserves; benchmark packing through completed consumption and temporary release. Rationale: these distinctions prevent shape equality, metadata timing and view sizes from being mistaken for semantic equivalence, full latency or capacity evidence. Keep unsafe lifetime failures as rejected traces or supported runtime fault cases.
 
 Decision (2026-10-24 19:04 IST, Codex): distinguish shared projections, distinct per-batch weights and affine bias explicitly. Compare only already-ready rows in E4; treat batch-formation waiting separately. Rationale: algebraic batching equivalence does not establish safe request identity, absence of copies, or caller-latency improvement.
 
@@ -1283,6 +1287,8 @@ Decision: create and validate the plan now with all chapter stages unstarted. Ra
 
 
 ## Outcomes & Retrospective
+
+Chapter outcome (2026-10-24 21:21 IST): M1-C05 is Complete, including all eight target concepts, addressing/layout/reshape/broadcast/lifetime examples, three diagrams, four experiment designs and matched verification, six dimensions, eight principles and primary references/hardware requirements. Arithmetic/content checks, strict build and rendered chapter/diagram review passed. Totals: 5/201 complete, 196 not started, no active chapter. M1-C06 is next. Runtime performance studies remain proposed.
 
 Chapter outcome (2026-10-24 19:04 IST): M1-C04 is Complete with six target concepts, worked formulas, three diagrams, four experiment designs and matched verification, all six dimensions and eight principles, primary references and hardware requirements. Arithmetic, strict build and rendered-page/diagram review passed. Current totals: 4/201 complete, 197 not started, no active chapter. M1-C05 is next. All runtime performance experiments remain proposed.
 
@@ -1309,7 +1315,7 @@ The repository-root `PLANS.md` is the uploaded execution-plan guidance. This fil
 
 `docs/learning-approach.md` defines the shared learning contract. `templates/chapter.md` is the authoring scaffold. `docs/module-1.md` through `docs/module-7.md`, plus `docs/module-9.md`, provide module reading orders. The 14 category directories organize subjects; their `index.md` pages list member chapters. A chapter ID such as M2-C04 identifies Module 2, Chapter 4; authoring position is separate and controls creation order. Do not create Module 8 or infer chapters for the empty Storage and persistence category.
 
-The chapter files already exist and contain target-concept paragraphs. M1-C01, M1-C02, M1-C03 and M1-C04 are Complete; the remaining 197 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
+The chapter files already exist and contain target-concept paragraphs. M1-C01–M1-C05 are Complete; the remaining 196 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
 
 
 ## Plan of Work
@@ -1481,6 +1487,8 @@ The working tree already contains curriculum and inventory changes from prior re
 
 ## Artifacts and Notes
 
+Observed M1-C05 evidence (2026-10-24 21:21 IST): source docs/state-memory-and-caching/m1-c05-how-tensors-occupy-memory.md and assets m1-c05-layout-and-strides.svg, m1-c05-view-and-copy.svg, m1-c05-broadcast-storage.svg under docs/assets/diagrams/. Independent documentation checks covered all experiment fields/local links, every E4 coordinate/output and the worked arithmetic. Browser screenshots confirmed physical sequences, sharing/copy labels, zero-stride broadcast storage, formulas and matched verification. Local preview required restart after interruption. No runtime measurements, model results or CI rerun are asserted.
+
 
 Observed chapter evidence (2026-10-24 18:36 IST): M1-C03 replaces its outline; its assets are docs/assets/diagrams/m1-c03-rank-and-shape.svg and docs/assets/diagrams/m1-c03-coordinate-contract.svg. Required experiment fields, local links, exact shape/count/index/padding calculations and large-fixture labels passed independent checks. The strict build succeeded without warnings (3.98 seconds). Browser screenshots inspected chapter notation, scalar/empty cases, Rust representation and verification tables; full SVG browser views confirmed all diagram cells, labels and the equal-axis negative control. One trailing whitespace issue found during review was removed before final checks. No engine, tensor benchmark, GPU or market experiment is claimed. Existing unrelated working-tree changes remain preserved.
 
@@ -1537,3 +1545,9 @@ Primary-source research is required when writing each chapter, not as a claim th
 
 
 2026-10-24 19:04 IST: Completed M1-C04 after source, content, arithmetic, strict-build and browser review. Reconciled chapter, ledger, module, category, inventory and landing-page summaries to 4 complete and 197 unstarted. No later chapter started.
+
+
+2026-10-24 19:12 IST: Began M1-C05 as the only active chapter after confirming M1-C03 prerequisite completion. Preserved existing README.md, templates/chapter.md and PLANS.md changes. No later chapter started.
+
+
+2026-10-24 21:21 IST: Completed M1-C05 after content/source, numerical and browser review; reconciled chapter banner, ledger and curriculum summaries to 5 complete and 196 unstarted, with M1-C06 next. Clarified product notation and removed arrow/label overlap after rendered inspection. Preserved existing unrelated changes.

@@ -16,7 +16,7 @@ KV allocation, paging, prefix reuse, window state, snapshots, eviction, replay.
 
 ## Chapters
 
-Full content will be developed one chapter at a time.
+[M1-C05](m1-c05-how-tensors-occupy-memory.md) is a completed detailed chapter; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
 
 ### Module 1
 

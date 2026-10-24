@@ -1,6 +1,6 @@
 # Module 1: Understand exactly what happens when an LLM generates a token
 
-> **Status: 4 of 20 detailed chapters complete.** [M1-C01](model-computation-and-semantics/m1-c01-from-a-prompt-to-the-next-token.md), [M1-C02](interfaces-protocols-and-streaming/m1-c02-representing-text-as-tokens.md), [M1-C03](model-computation-and-semantics/m1-c03-numbers-vectors-matrices-and-tensors.md) and [M1-C04](model-computation-and-semantics/m1-c04-dot-products-and-matrix-multiplication.md) are complete; M1-C05–C20 remain outlines. Track sequential development in the [execution plan](chapter-execution-plan.md).
+> **Status: 5 of 20 detailed chapters complete.** [M1-C01](model-computation-and-semantics/m1-c01-from-a-prompt-to-the-next-token.md), [M1-C02](interfaces-protocols-and-streaming/m1-c02-representing-text-as-tokens.md), [M1-C03](model-computation-and-semantics/m1-c03-numbers-vectors-matrices-and-tensors.md), [M1-C04](model-computation-and-semantics/m1-c04-dot-products-and-matrix-multiplication.md) and [M1-C05](state-memory-and-caching/m1-c05-how-tensors-occupy-memory.md) are complete; M1-C06–C20 remain outlines. Track sequential development in the [execution plan](chapter-execution-plan.md).
 
 ## Learning goal
 
