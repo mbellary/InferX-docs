@@ -48,3 +48,13 @@ Follow the complete [Module 2 reading order](../module-2.md) to move between cat
 | M3-C23 | [Explaining GPU profiles and end-to-end serving effects](m3-c23-explaining-gpu-profiles-and-end-to-end-serving-effects.md) | Nsight Systems timelines, Nsight Compute counters, kernel versus request critical paths, memory traffic, occupancy and stalls, roofline reconciliation, controlled comparisons, tail latency, reproducible evidence |
 
 Follow the complete [Module 3 reading order](../module-3.md) to move between categories.
+
+### Module 4
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M4-C21 | [Tuning kernels with controlled experiments](m4-c21-tuning-kernels-with-controlled-experiments.md) | Tile sizes, warps and stages, register and shared-memory limits, profiling hypotheses, tuning cost, separate tuning and evaluation workloads, specialization regressions, cold-start cost |
+| M4-C22 | [Benchmarking realistic shapes and execution modes](m4-c22-benchmarking-realistic-shapes-and-execution-modes.md) | Hidden and vocabulary dimensions, batch sizes, dtypes and layouts, fused versus unfused baselines, eager versus graph replay, launch counts, memory traffic, warmup, timing boundaries, latency distributions |
+| M4-C24 | [Verifying end-to-end generator improvements](m4-c24-verifying-end-to-end-generator-improvements.md) | Critical-path attribution, Amdahl-style speedup limits, prefill and decode separation, time to first token, inter-token and total latency, useful throughput, correctness gates, amortization, tail regressions |
+
+Follow the complete [Module 4 reading order](../module-4.md) to move between categories.

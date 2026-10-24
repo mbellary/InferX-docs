@@ -43,3 +43,13 @@ Follow the complete [Module 2 reading order](../module-2.md) to move between cat
 | M3-C18 | [Validating GPU computation and memory movement](m3-c18-validating-gpu-computation-and-memory-movement.md) | Reference GEMV and GEMM outputs, accumulation precision, absolute and relative tolerances, reduction-order differences, transfer integrity, shape and stride checks, race and lifetime faults |
 
 Follow the complete [Module 3 reading order](../module-3.md) to move between categories.
+
+### Module 4
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M4-C07 | [Online softmax and stable incremental reductions](m4-c07-online-softmax-and-stable-incremental-reductions.md) | Running maximum, rescaled exponential sums, mergeable reduction state, chunked processing, online weighted sums, masking, numerical stability, equivalence within tolerance |
+| M4-C19 | [Randomness, reproducibility, and sampling equivalence](m4-c19-randomness-reproducibility-and-sampling-equivalence.md) | Seed and random-stream ownership, per-request RNG state, draw ordering, counter mapping, deterministic replay conditions, distributional versus token-wise equivalence, statistical uncertainty |
+| M4-C20 | [Validating fused kernels and graph replay](m4-c20-validating-fused-kernels-and-graph-replay.md) | Reference comparisons, tolerances, extreme inputs, awkward shapes, strides, masks, aliasing, uninitialized reads, races, stale buffers, graph-versus-eager equivalence, supported input contracts |
+
+Follow the complete [Module 4 reading order](../module-4.md) to move between categories.

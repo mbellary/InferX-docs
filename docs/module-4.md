@@ -1,0 +1,75 @@
+# Module 4: Understand kernels and execution overhead
+
+> **Status: Chapter outlines available.** Full chapters will be developed one at a time after the module outlines are in place.
+
+## Learning goal
+
+Understand how to map an operation into a GPU kernel, reduce unnecessary data movement and execution overhead, and test whether a local optimization improves the complete generator. Build toward a fused normalization or sampling kernel, validating numerical behavior before benchmarking realistic shapes and end-to-end requests.
+
+## Prerequisites and scope
+
+Use [Module 1](module-1.md) for model computation and sampling, [Module 2](module-2.md) for KV ownership and layout, and [Module 3](module-3.md) for GPU architecture, data movement, roofline reasoning, and asynchronous timing. This module develops kernel-design and execution concepts rather than repeating the hardware introduction.
+
+Assume only basic programming knowledge and introduce compiler, synchronization, and GPU-programming terms as needed. Rust remains the primary language for host-side systems reasoning. Study Triton's Python-based programming interface and CUDA/C++ concepts when those toolchains are needed, explaining the integration boundary. Chapter content and experimental procedures contain no implementation code.
+
+The eventual build offers two alternative tracks: a fused normalization kernel (M4-C17) or a fused sampling kernel (M4-C18). Select one for the build; keep both outlines in the curriculum. Sampling-specific randomness verification is required when the sampling track is chosen. Both tracks must satisfy reference validation, realistic benchmarking, safe integration, and end-to-end verification.
+
+## Techniques to distinguish
+
+| Technique | Main constraint addressed | Scope to preserve |
+| --- | --- | --- |
+| FlashAttention | Movement of attention intermediates between memory levels | Tiled full attention with online softmax; mathematical equivalence with floating-point differences |
+| PagedAttention | Dynamic KV storage and attention over that layout | Correct logical-to-physical mapping and access to live cached state |
+| Prefix caching | Repeated prefix computation | Reuse only when the prefix and cache identity are compatible |
+
+FlashAttention avoids materializing the full attention matrix in HBM through tiling and online softmax. Full dense attention still has quadratic arithmetic complexity in sequence length; reduced memory traffic does not imply removing that arithmetic. See the [FlashAttention paper](https://arxiv.org/abs/2205.14135). The three techniques address different constraints and may be combined when their execution contracts are compatible.
+
+## Reading order
+
+Chapters remain under their assigned top-level categories. Follow this sequence across categories.
+
+| Chapter ID | Category | Chapter name | Target concepts |
+| --- | --- | --- | --- |
+| M4-C01 | [Kernels, compilers, and execution](kernels-compilers-and-execution/index.md) | [Defining a GPU kernel and its contract](kernels-compilers-and-execution/m4-c01-defining-a-gpu-kernel-and-its-contract.md) | Kernel inputs and outputs, shapes, strides, dtypes, devices, aliasing, valid memory ranges, mathematical reference behavior, launch configuration |
+| M4-C02 | [Kernels, compilers, and execution](kernels-compilers-and-execution/index.md) | [Mapping an operation onto CUDA threads and blocks](kernels-compilers-and-execution/m4-c02-mapping-an-operation-onto-cuda-threads-and-blocks.md) | CUDA execution model, thread and block indexing, SIMT execution, memory access, masked boundaries, warp and block cooperation, synchronization scope |
+| M4-C03 | [Kernels, compilers, and execution](kernels-compilers-and-execution/index.md) | [Understanding the Triton programming model](kernels-compilers-and-execution/m4-c03-understanding-the-triton-programming-model.md) | Triton programs and launch grids, block-oriented operations, masks, loads and stores, reductions, compile-time parameters, comparison with CUDA, Rust host integration boundaries |
+| M4-C04 | [Kernels, compilers, and execution](kernels-compilers-and-execution/index.md) | [Compilation, specialization, and the warm execution path](kernels-compilers-and-execution/m4-c04-compilation-specialization-and-the-warm-execution-path.md) | Ahead-of-time and just-in-time compilation, device targets, generated artifacts, specialization keys, compilation caches, first-use overhead, cold versus warm execution, version compatibility |
+| M4-C05 | [Kernels, compilers, and execution](kernels-compilers-and-execution/index.md) | [Tiling an operation for data reuse](kernels-compilers-and-execution/m4-c05-tiling-an-operation-for-data-reuse.md) | Tile selection, register and shared-memory reuse, coalesced accesses, edge tiles, redundant work, data-movement accounting, synchronization costs |
+| M4-C06 | [Kernels, compilers, and execution](kernels-compilers-and-execution/index.md) | [Parallel reductions and synchronization](kernels-compilers-and-execution/m4-c06-parallel-reductions-and-synchronization.md) | Tree reductions, warp and block reductions, cross-block decomposition, neutral elements, masked lanes, synchronization, reduction order, accumulation precision |
+| M4-C07 | [Numerics and correctness](numerics-and-correctness/index.md) | [Online softmax and stable incremental reductions](numerics-and-correctness/m4-c07-online-softmax-and-stable-incremental-reductions.md) | Running maximum, rescaled exponential sums, mergeable reduction state, chunked processing, online weighted sums, masking, numerical stability, equivalence within tolerance |
+| M4-C08 | [Kernels, compilers, and execution](kernels-compilers-and-execution/index.md) | [Kernel fusion and its tradeoffs](kernels-compilers-and-execution/m4-c08-kernel-fusion-and-its-tradeoffs.md) | Producer-consumer fusion, intermediate tensors, eliminated reads and writes, reduced launches, dependency boundaries, resource growth, fusion versus recomputation |
+| M4-C09 | [Kernels, compilers, and execution](kernels-compilers-and-execution/index.md) | [Register pressure, occupancy, and spills in kernel design](kernels-compilers-and-execution/m4-c09-register-pressure-occupancy-and-spills-in-kernel-design.md) | Live values, register allocation, tile and fusion choices, occupancy limits, local-memory spills, instruction parallelism, measured utilization versus occupancy |
+| M4-C10 | [Kernels, compilers, and execution](kernels-compilers-and-execution/index.md) | [Shape specialization, padding, and dispatch](kernels-compilers-and-execution/m4-c10-shape-specialization-padding-and-dispatch.md) | Shape families, strides and alignment, padding overhead, masked lanes, padded reduction identities, specialization count, dispatch guards, generic fallbacks |
+| M4-C11 | [Kernels, compilers, and execution](kernels-compilers-and-execution/index.md) | [FlashAttention as an IO-aware attention algorithm](kernels-compilers-and-execution/m4-c11-flashattention-as-an-io-aware-attention-algorithm.md) | Tiled QK and value aggregation, online softmax, HBM versus on-chip storage, avoiding full attention-matrix materialization, mathematical exactness versus floating-point differences, quadratic full-attention arithmetic |
+| M4-C12 | [Kernels, compilers, and execution](kernels-compilers-and-execution/index.md) | [Distinguishing FlashAttention, PagedAttention, and prefix caching](kernels-compilers-and-execution/m4-c12-distinguishing-flashattention-pagedattention-and-prefix-caching.md) | Intermediate-data movement, dynamic KV layout, exact-prefix reuse, complementary techniques, applicability and compatibility, correctness boundaries, choosing the constrained stage |
+| M4-C13 | [Runtime and concurrency](runtime-and-concurrency/index.md) | [Tracing CPU-to-GPU launch overhead](runtime-and-concurrency/m4-c13-tracing-cpu-to-gpu-launch-overhead.md) | Host dispatch, language and runtime boundaries, driver submission, launch latency, device scheduling, small-kernel overhead, kernel execution versus request time |
+| M4-C14 | [Runtime and concurrency](runtime-and-concurrency/index.md) | [CPU-GPU synchronization and hidden serialization](runtime-and-concurrency/m4-c14-cpu-gpu-synchronization-and-hidden-serialization.md) | Host waits, stream and event dependencies, device-to-host results, implicit synchronization, critical paths, unnecessary barriers, safe asynchronous buffer ownership |
+| M4-C15 | [Kernels, compilers, and execution](kernels-compilers-and-execution/index.md) | [CUDA Graph capture, instantiation, and replay](kernels-compilers-and-execution/m4-c15-cuda-graph-capture-instantiation-and-replay.md) | Graph nodes and dependencies, explicit construction versus stream capture, instantiation, repeated submission, setup amortization, capture restrictions, graph versus kernel fusion |
+| M4-C16 | [Runtime and concurrency](runtime-and-concurrency/index.md) | [Replay constraints, graph variants, and buffer lifetimes](runtime-and-concurrency/m4-c16-replay-constraints-graph-variants-and-buffer-lifetimes.md) | Captured parameters and addresses, buffer stability, supported graph updates, changing shapes and batch sizes, graph variants, warmup, memory-pool ownership, invalidation, cancellation and safe fallback |
+| M4-C17 | [Kernels, compilers, and execution](kernels-compilers-and-execution/index.md) | [Designing a fused normalization kernel](kernels-compilers-and-execution/m4-c17-designing-a-fused-normalization-kernel.md) | LayerNorm versus RMSNorm, row-wise reductions, epsilon placement, affine parameters, residual fusion options, accumulation precision, output dtype, traffic and launch savings |
+| M4-C18 | [Kernels, compilers, and execution](kernels-compilers-and-execution/index.md) | [Designing a fused sampling kernel](kernels-compilers-and-execution/m4-c18-designing-a-fused-sampling-kernel.md) | Logit transforms, temperature, greedy selection, top-k and top-p boundaries, normalization, random draws, tie rules, vocabulary padding, exact versus approximate sampling contracts |
+| M4-C19 | [Numerics and correctness](numerics-and-correctness/index.md) | [Randomness, reproducibility, and sampling equivalence](numerics-and-correctness/m4-c19-randomness-reproducibility-and-sampling-equivalence.md) | Seed and random-stream ownership, per-request RNG state, draw ordering, counter mapping, deterministic replay conditions, distributional versus token-wise equivalence, statistical uncertainty |
+| M4-C20 | [Numerics and correctness](numerics-and-correctness/index.md) | [Validating fused kernels and graph replay](numerics-and-correctness/m4-c20-validating-fused-kernels-and-graph-replay.md) | Reference comparisons, tolerances, extreme inputs, awkward shapes, strides, masks, aliasing, uninitialized reads, races, stale buffers, graph-versus-eager equivalence, supported input contracts |
+| M4-C21 | [Measurement, experimentation, and economics](measurement-experimentation-and-economics/index.md) | [Tuning kernels with controlled experiments](measurement-experimentation-and-economics/m4-c21-tuning-kernels-with-controlled-experiments.md) | Tile sizes, warps and stages, register and shared-memory limits, profiling hypotheses, tuning cost, separate tuning and evaluation workloads, specialization regressions, cold-start cost |
+| M4-C22 | [Measurement, experimentation, and economics](measurement-experimentation-and-economics/index.md) | [Benchmarking realistic shapes and execution modes](measurement-experimentation-and-economics/m4-c22-benchmarking-realistic-shapes-and-execution-modes.md) | Hidden and vocabulary dimensions, batch sizes, dtypes and layouts, fused versus unfused baselines, eager versus graph replay, launch counts, memory traffic, warmup, timing boundaries, latency distributions |
+| M4-C23 | [Runtime and concurrency](runtime-and-concurrency/index.md) | [Integrating a fused kernel into the generator](runtime-and-concurrency/m4-c23-integrating-a-fused-kernel-into-the-generator.md) | Rust host boundary, backend capability checks, kernel dispatch contracts, stream compatibility, buffer lifetimes, RNG ownership, graph integration, correct fallback and failure propagation |
+| M4-C24 | [Measurement, experimentation, and economics](measurement-experimentation-and-economics/index.md) | [Verifying end-to-end generator improvements](measurement-experimentation-and-economics/m4-c24-verifying-end-to-end-generator-improvements.md) | Critical-path attribution, Amdahl-style speedup limits, prefill and decode separation, time to first token, inter-token and total latency, useful throughput, correctness gates, amortization, tail regressions |
+
+## How chapters will be developed
+
+Every chapter follows **Concepts → Experiments → Verification**, applying all [six dimensions and eight engineering principles](learning-approach.md). Connect kernel and replay decisions to systems engineering and High-Frequency Trading concerns such as predictable work, avoiding allocation and compilation on the warm path, explicit ownership, synchronization costs, and tail latency. State the limits of each analogy.
+
+The intended validation compares reference and fused behavior, checks numerical and memory safety, separates compilation and graph setup from steady-state execution, benchmarks representative dimensions and precision, and evaluates the complete generator. Supported graph updates and capture restrictions must be documented for the actual CUDA version; do not assume every graph parameter is immutable or that arbitrary changes are safe. Any unsupported operation or shape needs a correct fallback.
+
+No benchmarks have been run for this module; all pages are outlines rather than completed experiments or implementations.
+
+## Sources
+
+- [FlashAttention paper](https://arxiv.org/abs/2205.14135): IO-aware exact attention and its tiled algorithm.
+- [Triton tutorials](https://triton-lang.org/main/getting-started/tutorials/index.html): programming-model examples including softmax, normalization, and attention.
+- [CUDA Programming Guide](https://docs.nvidia.com/cuda/cuda-programming-guide/): kernel execution, synchronization, and architecture capabilities.
+- [CUDA Graphs guide](https://docs.nvidia.com/cuda/cuda-programming-guide/04-special-topics/cuda-graphs.html): graph creation, capture, instantiation, updates, and replay constraints.
+- [Nsight Compute Profiling Guide](https://docs.nvidia.com/nsight-compute/ProfilingGuide/): kernel resource and performance measurements.
+- [Nsight Systems User Guide](https://docs.nvidia.com/nsight-systems/UserGuide/): launch, synchronization, and application-level timelines.
+
+Record source, toolchain, and hardware versions when the chapters are authored.

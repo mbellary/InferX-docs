@@ -59,6 +59,7 @@ nav:
       - "Module 1: Reading order": module-1.md
       - "Module 2: Reading order": module-2.md
       - "Module 3: Reading order": module-3.md
+      - "Module 4: Reading order": module-4.md
       - Learning approach: learning-approach.md
   - "Model computation and semantics":
       - Overview: model-computation-and-semantics/index.md
@@ -82,6 +83,9 @@ nav:
       - "M1-C19: Validating cached and uncached generation": numerics-and-correctness/m1-c19-validating-cached-and-uncached-generation.md
       - "M2-C20: Validating allocator and cache safety": numerics-and-correctness/m2-c20-validating-allocator-and-cache-safety.md
       - "M3-C18: Validating GPU computation and memory movement": numerics-and-correctness/m3-c18-validating-gpu-computation-and-memory-movement.md
+      - "M4-C07: Online softmax and stable incremental reductions": numerics-and-correctness/m4-c07-online-softmax-and-stable-incremental-reductions.md
+      - "M4-C19: Randomness, reproducibility, and sampling equivalence": numerics-and-correctness/m4-c19-randomness-reproducibility-and-sampling-equivalence.md
+      - "M4-C20: Validating fused kernels and graph replay": numerics-and-correctness/m4-c20-validating-fused-kernels-and-graph-replay.md
   - "Hardware architecture and topology":
       - Overview: hardware-architecture-and-topology/index.md
       - "M3-C01: Following a tensor from CPU to GPU": hardware-architecture-and-topology/m3-c01-following-a-tensor-from-cpu-to-gpu.md
@@ -97,6 +101,20 @@ nav:
       - "M3-C07: Memory coalescing, alignment, and tensor layouts": kernels-compilers-and-execution/m3-c07-memory-coalescing-alignment-and-tensor-layouts.md
       - "M3-C08: Tiling and reuse through the memory hierarchy": kernels-compilers-and-execution/m3-c08-tiling-and-reuse-through-the-memory-hierarchy.md
       - "M3-C09: Tensor cores and supported matrix operations": kernels-compilers-and-execution/m3-c09-tensor-cores-and-supported-matrix-operations.md
+      - "M4-C01: Defining a GPU kernel and its contract": kernels-compilers-and-execution/m4-c01-defining-a-gpu-kernel-and-its-contract.md
+      - "M4-C02: Mapping an operation onto CUDA threads and blocks": kernels-compilers-and-execution/m4-c02-mapping-an-operation-onto-cuda-threads-and-blocks.md
+      - "M4-C03: Understanding the Triton programming model": kernels-compilers-and-execution/m4-c03-understanding-the-triton-programming-model.md
+      - "M4-C04: Compilation, specialization, and the warm execution path": kernels-compilers-and-execution/m4-c04-compilation-specialization-and-the-warm-execution-path.md
+      - "M4-C05: Tiling an operation for data reuse": kernels-compilers-and-execution/m4-c05-tiling-an-operation-for-data-reuse.md
+      - "M4-C06: Parallel reductions and synchronization": kernels-compilers-and-execution/m4-c06-parallel-reductions-and-synchronization.md
+      - "M4-C08: Kernel fusion and its tradeoffs": kernels-compilers-and-execution/m4-c08-kernel-fusion-and-its-tradeoffs.md
+      - "M4-C09: Register pressure, occupancy, and spills in kernel design": kernels-compilers-and-execution/m4-c09-register-pressure-occupancy-and-spills-in-kernel-design.md
+      - "M4-C10: Shape specialization, padding, and dispatch": kernels-compilers-and-execution/m4-c10-shape-specialization-padding-and-dispatch.md
+      - "M4-C11: FlashAttention as an IO-aware attention algorithm": kernels-compilers-and-execution/m4-c11-flashattention-as-an-io-aware-attention-algorithm.md
+      - "M4-C12: Distinguishing FlashAttention, PagedAttention, and prefix caching": kernels-compilers-and-execution/m4-c12-distinguishing-flashattention-pagedattention-and-prefix-caching.md
+      - "M4-C15: CUDA Graph capture, instantiation, and replay": kernels-compilers-and-execution/m4-c15-cuda-graph-capture-instantiation-and-replay.md
+      - "M4-C17: Designing a fused normalization kernel": kernels-compilers-and-execution/m4-c17-designing-a-fused-normalization-kernel.md
+      - "M4-C18: Designing a fused sampling kernel": kernels-compilers-and-execution/m4-c18-designing-a-fused-sampling-kernel.md
   - "State, memory, and caching":
       - Overview: state-memory-and-caching/index.md
       - "M1-C05: How tensors occupy memory": state-memory-and-caching/m1-c05-how-tensors-occupy-memory.md
@@ -120,6 +138,10 @@ nav:
       - "M2-C19: Connecting block allocation to the request generator": runtime-and-concurrency/m2-c19-connecting-block-allocation-to-the-request-generator.md
       - "M3-C11: Streams, events, and dependency ordering": runtime-and-concurrency/m3-c11-streams-events-and-dependency-ordering.md
       - "M3-C12: Asynchronous copies and useful overlap": runtime-and-concurrency/m3-c12-asynchronous-copies-and-useful-overlap.md
+      - "M4-C13: Tracing CPU-to-GPU launch overhead": runtime-and-concurrency/m4-c13-tracing-cpu-to-gpu-launch-overhead.md
+      - "M4-C14: CPU-GPU synchronization and hidden serialization": runtime-and-concurrency/m4-c14-cpu-gpu-synchronization-and-hidden-serialization.md
+      - "M4-C16: Replay constraints, graph variants, and buffer lifetimes": runtime-and-concurrency/m4-c16-replay-constraints-graph-variants-and-buffer-lifetimes.md
+      - "M4-C23: Integrating a fused kernel into the generator": runtime-and-concurrency/m4-c23-integrating-a-fused-kernel-into-the-generator.md
   - "Scheduling and queueing":
       - Overview: scheduling-and-queueing/index.md
       - "M2-C15: Admission and growth under a finite KV budget": scheduling-and-queueing/m2-c15-admission-and-growth-under-a-finite-kv-budget.md
@@ -152,3 +174,6 @@ nav:
       - "M3-C21: Benchmarking matrix-vector multiplication across shapes": measurement-experimentation-and-economics/m3-c21-benchmarking-matrix-vector-multiplication-across-shapes.md
       - "M3-C22: Benchmarking matrix-matrix multiplication across shapes": measurement-experimentation-and-economics/m3-c22-benchmarking-matrix-matrix-multiplication-across-shapes.md
       - "M3-C23: Explaining GPU profiles and end-to-end serving effects": measurement-experimentation-and-economics/m3-c23-explaining-gpu-profiles-and-end-to-end-serving-effects.md
+      - "M4-C21: Tuning kernels with controlled experiments": measurement-experimentation-and-economics/m4-c21-tuning-kernels-with-controlled-experiments.md
+      - "M4-C22: Benchmarking realistic shapes and execution modes": measurement-experimentation-and-economics/m4-c22-benchmarking-realistic-shapes-and-execution-modes.md
+      - "M4-C24: Verifying end-to-end generator improvements": measurement-experimentation-and-economics/m4-c24-verifying-end-to-end-generator-improvements.md

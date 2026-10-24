@@ -6,11 +6,11 @@ Follow a request from input processing and model execution to scheduling, distri
 
 ## Start learning
 
-Begin with [Module 1: Understand exactly what happens when an LLM generates a token](module-1.md). Its reading order connects chapters across categories. Continue with [Module 2: Treat the KV cache as a first-class systems problem](module-2.md). Then explore [Module 3: Learn GPU architecture through data movement](module-3.md). Read the [learning approach](learning-approach.md) for the beginner assumptions and chapter requirements.
+Begin with [Module 1: Understand exactly what happens when an LLM generates a token](module-1.md). Its reading order connects chapters across categories. Continue with [Module 2: Treat the KV cache as a first-class systems problem](module-2.md). Then explore [Module 3: Learn GPU architecture through data movement](module-3.md). Continue with [Module 4: Understand kernels and execution overhead](module-4.md). Read the [learning approach](learning-approach.md) for the beginner assumptions and chapter requirements.
 
 ## Explore the curriculum
 
-The 14 categories below define the curriculum. Category overviews and 64 chapter outlines across Modules 1, 2, and 3 are available. We are establishing the module outlines first; full chapters will then be developed one at a time.
+The 14 categories below define the curriculum. Category overviews and 88 chapter outlines across Modules 1–4 are available. We are establishing the module outlines first; full chapters will then be developed one at a time.
 
 | # | Category | Central question | Includes |
 | --- | --- | --- | --- |
