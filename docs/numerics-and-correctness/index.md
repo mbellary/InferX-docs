@@ -16,7 +16,7 @@ Precision, quantization, numerical stability, determinism, batch invariance, qua
 
 ## Chapters
 
-Full content will be developed one chapter at a time.
+[M1-C06](m1-c06-reductions-probabilities-and-stable-softmax.md) is a completed detailed chapter; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
 
 ### Module 1
 

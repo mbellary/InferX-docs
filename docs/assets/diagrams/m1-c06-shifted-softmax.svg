@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="620" viewBox="0 0 880 620" role="img" aria-labelledby="title desc">
+<title id="title">Subtract the maximum before exponential normalization</title><desc id="desc">Scores 1000 1001 1002 can overflow a direct exponential evaluation. Shifting by maximum 1002 gives minus 2 minus 1 zero, bounded weights, denominator about 1.5032 and correct probabilities.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#4f6b87"/></marker></defs>
+<rect width="880" height="620" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#203247">
+<text x="440" y="35" text-anchor="middle" font-size="25">Same distribution; safer exponential arguments</text>
+<rect x="160" y="65" width="560" height="60" rx="8" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="440" y="103" text-anchor="middle" font-size="23">Scores x = [1000, 1001, 1002]</text>
+<path d="M440,132 L440,166" fill="none" stroke="#4f6b87" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="440" y="195" text-anchor="middle" font-size="20">Maximum m = 1002; shift every score in this group</text>
+<rect x="160" y="215" width="560" height="55" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="440" y="249" text-anchor="middle" font-size="23">x − m = [−2, −1, 0]</text>
+<path d="M440,278 L440,308" fill="none" stroke="#4f6b87" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="90" y="325" width="700" height="80" rx="8" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="440" y="357" text-anchor="middle" font-size="19">Weights ≈ [0.135335, 0.367879, 1]</text>
+<text x="440" y="388" text-anchor="middle" font-size="19">Denominator D ≈ 1.503215</text>
+<path d="M440,413 L440,443" fill="none" stroke="#4f6b87" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="90" y="460" width="700" height="60" rx="8" fill="#fff0cc" stroke="#4f6b87" stroke-width="2"/>
+<text x="440" y="498" text-anchor="middle" font-size="22">Probabilities ≈ [0.090031, 0.244728, 0.665241]</text>
+<text x="440" y="557" text-anchor="middle" font-size="18">Direct exp(1000) exceeds FP64 range; shifted weights are at most 1.</text>
+<text x="440" y="595" text-anchor="middle" font-size="18">Tiny tails may still underflow. Stability does not mean exact arithmetic.</text>
+</g></svg>
