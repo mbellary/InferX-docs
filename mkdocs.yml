@@ -1,0 +1,85 @@
+site_name: InferX
+site_description: Learning LLM inference and serving engines, from model semantics to production systems.
+site_url: https://mbellary.github.io/InferX-docs/
+repo_url: https://github.com/mbellary/InferX-docs
+repo_name: mbellary/InferX-docs
+edit_uri: edit/main/docs/
+strict: true
+
+theme:
+  name: material
+  language: en
+  font: false
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+validation:
+  nav:
+    omitted_files: warn
+  links:
+    not_found: warn
+    unrecognized_links: warn
+    anchors: warn
+
+nav:
+  - Home: index.md
+  - "Model computation and semantics":
+      - Overview: model-computation-and-semantics/index.md
+  - "Numerics and correctness":
+      - Overview: numerics-and-correctness/index.md
+  - "Hardware architecture and topology":
+      - Overview: hardware-architecture-and-topology/index.md
+  - "Kernels, compilers, and execution":
+      - Overview: kernels-compilers-and-execution/index.md
+  - "State, memory, and caching":
+      - Overview: state-memory-and-caching/index.md
+  - "Runtime and concurrency":
+      - Overview: runtime-and-concurrency/index.md
+  - "Scheduling and queueing":
+      - Overview: scheduling-and-queueing/index.md
+  - "Parallelism and decomposition":
+      - Overview: parallelism-and-decomposition/index.md
+  - "Networking and communication":
+      - Overview: networking-and-communication/index.md
+  - "Distributed coordination and routing":
+      - Overview: distributed-coordination-and-routing/index.md
+  - "Storage and persistence":
+      - Overview: storage-and-persistence/index.md
+  - "Interfaces, protocols, and streaming":
+      - Overview: interfaces-protocols-and-streaming/index.md
+  - "Reliability and capacity control":
+      - Overview: reliability-and-capacity-control/index.md
+  - "Measurement, experimentation, and economics":
+      - Overview: measurement-experimentation-and-economics/index.md
