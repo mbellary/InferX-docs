@@ -11,13 +11,13 @@ Turn 201 outlines into a coherent collection of detailed chapters that helps a r
 
 The reader should be able to open any completed chapter, understand every introduced term, follow a worked numerical example and diagram, describe a reproducible experiment, and explain its pass/fail conditions and limits. High-Frequency Trading (HFT), meaning systems that process market events and make trading decisions under tight timing constraints, provides a lens for critical paths, bounded queues, stale information, and tail latency. A tail is the slower end of a latency distribution. Explain what transfers to inference and what does not; do not present trading advice, assert trading results, or equate inference semantics with exchange behavior.
 
-The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01–M1-C09 are now complete and the next chapter is M1-C10.
+The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01–M1-C10 are now complete and the next chapter is M1-C11.
 
 
 ## Progress
 
 
-Last updated: 2026-10-24 22:19 IST. Detailed chapter totals: **9 complete, 0 active, 192 not started, 0 blocked**. Active chapter: **None**. Next chapter: **M1-C10**, authoring position 10. Check a chapter only after its full acceptance gate passes.
+Last updated: 2026-10-24 22:31 IST. Detailed chapter totals: **10 complete, 0 active, 191 not started, 0 blocked**. Active chapter: **None**. Next chapter: **M1-C11**, authoring position 11. Check a chapter only after its full acceptance gate passes.
 
 - [x] (2026-10-24 17:21 IST) Read the uploaded PLANS.md, the learning requirements, the chapter inventory, and the dependency schedule; confirm Modules 1–7 plus supporting Module 9 and no Module 8.
 - [x] (2026-10-24 17:21 IST) Preserve the planning reference as repository-root PLANS.md and create this living execution plan with all 201 ordered chapter records and their target concepts and direct prerequisites.
@@ -84,11 +84,11 @@ Each record contains the authoring position, chapter ID, target concepts, source
   Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
   Module 9 application: M9-C01 coordinate reference and invariants; M9-C02 completed timing; M9-C11 paired sessions; M9-C15 unique/live storage; M9-C19 tokenizer/model identity. Supporting chapters remain outlines; needed checks are supplied locally. Updated: 2026-10-24 22:19 IST. Evidence: All six target concepts, E1–E4 required fields with matched verification, six dimensions/eight principles, HFT limits, no-code scope and hardware requirements reviewed. Checked primary Transformer paper, PyTorch 2.14 Embedding/Linear/benchmark and ONNX Gather-13 contracts. Independent arithmetic checks passed for lookup/projection values, linear versus affine algebra, orientation, shapes, storage and all 19,008 E4 output references with FP32 partial-sum bounds. Strict build passed without warnings (2.58 seconds before completion tracking); final build recorded under Artifacts. Browser reviewed the chapter, worked formulas, benchmark ledger, corrected right-padding case, navigation and both full SVG diagrams. No runtime performance study executed. Next action: M1-C10; all later chapters remain unstarted.
 
-- [ ] 010 — **M1-C10: Attention, one dimension at a time** — Not started.
+- [x] 010 — **M1-C10: Attention, one dimension at a time** — Complete.
   File: [Attention, one dimension at a time](model-computation-and-semantics/m1-c10-attention-one-dimension-at-a-time.md). Category: Model computation and semantics. Phase: 1. Model and numerical foundations.
   Direct prerequisites: M1-C09, M1-C06. Target concepts: Queries, keys, values, batch and sequence axes, heads, head dimensions, QKᵀ, scaling by √dₖ, softmax axes, weighted value aggregation.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: M9-C01 stage references/invariants; M9-C02 completed core timing; M9-C11 controlled sessions; M9-C15 live intermediate storage; M9-C17 fixture-specific numerical budgets. Supporting chapters remain outlines; introductory contracts are supplied locally. Updated: 2026-10-24 22:31 IST. Evidence: All assigned target concepts, E1–E4 required fields with matched verification, six dimensions/eight principles, HFT limits, hardware requirements and no-code scope reviewed. Checked primary Transformer paper, PyTorch 2.14 attention/benchmark contracts and ONNX attention shape specification. Independent 80/120-digit references passed for toy and all 136 E4 output coordinates; per-key/grouped sums, 24 batched/head outputs, scale/axis/shift/pairing/extreme-tail checks and byte/work/budget calculations passed. Corrected draft batched operation count to 432 before acceptance. Strict build passed without warnings (2.77 seconds before completion tracking); final build recorded under Artifacts. Browser reviewed the chapter, softmax formulas/tables, benchmark reference/ledger, navigation and both full SVG diagrams including revised axis labels. No runtime performance study executed. Next action: M1-C11; all later chapters remain unstarted.
 
 - [ ] 011 — **M1-C11: Causal masking and positional information** — Not started.
   File: [Causal masking and positional information](model-computation-and-semantics/m1-c11-causal-masking-and-positional-information.md). Category: Model computation and semantics. Phase: 1. Model and numerical foundations.
@@ -1239,6 +1239,8 @@ Each record contains the authoring position, chapter ID, target concepts, source
 
 ## Surprises & Discoveries
 
+Observation (2026-10-24 22:31 IST): normalizing the rectangular (2, 3) fixture down queries yields valid-looking column distributions but row sums 1.5. Swapping only keys changes query 0 output coordinate 0 by about −0.5339127895, whereas a paired K/V permutation preserves it. Independent arithmetic review caught and corrected the draft batched product count: 288 + 144 = 432 conventional operations. These checks show why shape, row-sum and coordinate evidence must be combined.
+
 Observation (2026-10-24 22:19 IST): the shape-compatible reinterpretation of a transposed projection weight gives [0, −3] instead of [2, −4] for ID 1. A zero embedding also becomes [1, −2] after bias, so numeric zero cannot establish padding validity. The padding extension was made explicitly right-padded while preserving the base fixture. All 19,008 larger-fixture outputs and FP32 partial-sum bounds passed independent checks.
 
 Observation (2026-10-24 22:03 IST): identical formulas can describe different quantities: q(MK + KN + MN) is both three-tensor element storage and a stipulated one-read/one-write transfer model, but neither establishes actual DRAM traffic. Warm cached weights can invalidate a DRAM floor based on that proxy. Review also distinguished exact direct-operation scaling from the conventional eightfold 2MKN scaling and reconciled the largest fixture to 800 KiB before copies/workspace.
@@ -1269,6 +1271,8 @@ Observation (2026-10-24 17:23 IST): the documentation preview retains the /Infer
 
 
 ## Decision Log
+
+Decision (2026-10-24 22:31 IST, Codex): teach a fully unmasked attention core with distinct query/key lengths, explicit head axes and different comparison/value widths; defer key eligibility and position encoding to M1-C11. Use deterministic synthetic FP64 benchmark fixtures with independently grouped and per-key references and a propagated output budget. Rationale: isolate axis and association semantics before decoder masking and backend performance, without introducing code or claiming production measurements.
 
 Decision (2026-10-24 22:19 IST, Codex): keep lookup and affine projection distinct, use a for bias to avoid the batch-index symbol, and compare hot versus dispersed token IDs as different workloads rather than equivalent-output optimizations. Rationale: row identity, weight orientation, request validity and parameter lifetime must survive before locality or stage timing can support a performance claim. Use CPU-only existing-harness benchmark designs; no implementation or measured speedup is supplied.
 
@@ -1303,6 +1307,8 @@ Decision: create and validate the plan now with all chapter stages unstarted. Ra
 
 
 ## Outcomes & Retrospective
+
+Chapter outcome (2026-10-24 22:31 IST): M1-C10 is Complete with all assigned target concepts, worked QKᵀ/scaling/softmax/PV/axis/storage examples, two diagrams, four experiment designs with matched verification, six dimensions/eight principles, primary references and hardware requirements. High-precision arithmetic, strict build and rendered-page review passed. Totals: 10/201 complete, 191 not started, no active chapter. M1-C11 is next. Runtime benchmarks and production-tail claims remain proposed.
 
 Chapter outcome (2026-10-24 22:19 IST): M1-C09 is Complete with all six target concepts, worked lookup/projection/shape/storage examples, two diagrams, four experiment designs and matched verification, six dimensions/eight principles, primary references and hardware requirements. Independent numerical checks, strict build and rendered-page review passed. Totals: 9/201 complete, 192 not started, no active chapter. M1-C10 is next. Runtime benchmarks remain proposed.
 
@@ -1339,7 +1345,7 @@ The repository-root `PLANS.md` is the uploaded execution-plan guidance. This fil
 
 `docs/learning-approach.md` defines the shared learning contract. `templates/chapter.md` is the authoring scaffold. `docs/module-1.md` through `docs/module-7.md`, plus `docs/module-9.md`, provide module reading orders. The 14 category directories organize subjects; their `index.md` pages list member chapters. A chapter ID such as M2-C04 identifies Module 2, Chapter 4; authoring position is separate and controls creation order. Do not create Module 8 or infer chapters for the empty Storage and persistence category.
 
-The chapter files already exist and contain target-concept paragraphs. M1-C01–M1-C09 are Complete; the remaining 192 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
+The chapter files already exist and contain target-concept paragraphs. M1-C01–M1-C10 are Complete; the remaining 191 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
 
 
 ## Plan of Work
@@ -1511,6 +1517,8 @@ The working tree already contains curriculum and inventory changes from prior re
 
 ## Artifacts and Notes
 
+Observed M1-C10 evidence (2026-10-24 22:31 IST): docs/model-computation-and-semantics/m1-c10-attention-one-dimension-at-a-time.md replaces its outline. Assets are docs/assets/diagrams/m1-c10-attention-flow.svg and m1-c10-axis-boundaries.svg. Independent documentation checks validated experiment fields, local links, SVG structure, toy scores/probabilities/outputs, all 24 batch/head coordinates and all 136 benchmark-fixture outputs with 80/120-digit agreement and separate per-key/grouped sums. Scale/axis/shift/pairing/extreme-tail references, storage/work and error propagation were checked. Browser reviewed /InferX-docs/model-computation-and-semantics/m1-c10-attention-one-dimension-at-a-time/, its formulas/tables, benchmark reference and both diagrams in full; final P-axis labels rechecked. Final strict build after completion tracking passed without warnings in 2.75 seconds; whitespace checks passed. No runtime, model-quality, trading or CI-run result is asserted.
+
 Observed M1-C09 evidence (2026-10-24 22:19 IST): docs/model-computation-and-semantics/m1-c09-token-embeddings-and-learned-projections.md replaces its outline. Assets are docs/assets/diagrams/m1-c09-lookup-projection.svg and m1-c09-state-lifetime.svg. Independent documentation checks validated all experiment fields, local links, SVG structure, toy outputs/algebra/orientation/shape mappings, byte/work counts and all 19,008 larger-fixture outputs including exact FP32 partial sums. Browser review at /InferX-docs/model-computation-and-semantics/m1-c09-token-embeddings-and-learned-projections/ confirmed navigation, formulas, verification ledger, the revised right-padding case and both diagrams in full. Final strict documentation build after completion tracking passed without warnings in 2.77 seconds; whitespace checks passed. No hardware runtime, trained-model, trading or CI-run result is asserted.
 
 Observed M1-C08 evidence (2026-10-24 22:03 IST): docs/measurement-experimentation-and-economics/m1-c08-operation-counts-and-actual-execution-cost.md replaces its outline. Assets are docs/assets/diagrams/m1-c08-cost-model.svg and m1-c08-timing-boundaries.svg. Independent documentation checks validated experiment fields, local links, SVG structure, count/storage/intensity/resource-time/rate/budget/copy calculations and all six complete integer matrix references with bounded exact FP32 partial sums. Setup-inclusive hypothetical estimates were checked separately. Browser screenshots confirmed formulas, revised notation, matched verification and both full diagrams. No hardware calibration, runtime experiment, CI rerun or model result is asserted.
@@ -1606,3 +1614,7 @@ Primary-source research is required when writing each chapter, not as a claim th
 2026-10-24 22:07 IST: Began M1-C09 as the sole active chapter after confirming all three prerequisites. Preserved existing README.md, templates/chapter.md and PLANS.md changes.
 
 2026-10-24 22:19 IST: Completed M1-C09 after primary-source, content, arithmetic and browser review. Reconciled chapter banner, ledger, module/category/inventory and landing-page summaries to 9 complete and 192 unstarted, with M1-C10 next. Preserved unrelated worktree changes; no later chapter started.
+
+2026-10-24 22:23 IST: Began M1-C10 as the sole active chapter after confirming M1-C09 and M1-C06. Preserved existing README.md, templates/chapter.md and PLANS.md changes.
+
+2026-10-24 22:31 IST: Completed M1-C10 after primary-source, content, high-precision arithmetic and browser review. Reconciled chapter banner, ledger, module/category/inventory and landing-page summaries to 10 complete and 191 unstarted, with M1-C11 next. Preserved unrelated worktree changes; no later chapter started.
