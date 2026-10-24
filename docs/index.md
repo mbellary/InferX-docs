@@ -25,7 +25,7 @@ Use the [detailed chapter authoring order](chapter-authoring-order.md) to create
 
 Follow the [chapter execution plan and progress ledger](chapter-execution-plan.md) to create and review one detailed chapter at a time and track its concepts, experiments, verification, and completion evidence.
 
-The 14 categories below define the curriculum. Category overviews and 201 chapter outlines across Modules 1–7 and 9 are available. The planned module outlines are in place; full chapters will be developed one at a time in the dependency-aware authoring order.
+The 14 categories below define the curriculum. Category overviews and 201 chapter entries across Modules 1–7 and 9 are available. [M1-C01](model-computation-and-semantics/m1-c01-from-a-prompt-to-the-next-token.md) is the first completed detailed chapter; 200 remain outlines. Full chapters are developed one at a time in the dependency-aware authoring order.
 
 | # | Category | Central question | Includes |
 | --- | --- | --- | --- |

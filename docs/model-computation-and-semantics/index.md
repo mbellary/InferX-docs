@@ -16,7 +16,7 @@ Transformers, attention, MoE, positional encoding, sampling.
 
 ## Chapters
 
-Full content will be developed one chapter at a time.
+[M1-C01](m1-c01-from-a-prompt-to-the-next-token.md) is a completed detailed chapter; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
 
 ### Module 1
 

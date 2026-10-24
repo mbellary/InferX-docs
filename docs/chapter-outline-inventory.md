@@ -1,8 +1,8 @@
 # Chapter outline inventory
 
-Reviewed 24 October 2026. This inventory includes all **201 chapter outlines** across **Modules 1–7 and 9**, covering **13 of the 14 categories**. Module 8 is excluded; Module 9 supports Modules 1–7 throughout. Storage and persistence currently has no chapter outlines. M9-C25 covers integrated text-generation serving validation. All 201 chapters are marked as outlines, with full chapter content still to be authored.
+Reviewed 24 October 2026. This inventory includes all **201 chapter outlines** across **Modules 1–7 and 9**, covering **13 of the 14 categories**. Module 8 is excluded; Module 9 supports Modules 1–7 throughout. Storage and persistence currently has no chapter outlines. M9-C25 covers integrated text-generation serving validation. Detailed chapter progress: **1 complete, 200 outlines remaining**. M1-C01 is complete; the [execution plan](chapter-execution-plan.md) owns the current progress and acceptance evidence.
 
-The table is ordered by module and chapter ID. Chapter names link to their source outlines. Target concepts are reproduced from each outline and cross-checked against its module reading-order table.
+The table is ordered by module and chapter ID. Chapter names link to their source files, which retain the original outline scope as detailed content is authored. Target concepts are reproduced from each outline and cross-checked against its module reading-order table.
 
 For the recommended order of creating detailed chapters and their prerequisites, see the [detailed chapter authoring order](chapter-authoring-order.md).
 
