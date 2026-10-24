@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="570" viewBox="0 0 880 570" role="img" aria-labelledby="title desc">
+<title id="title">Conversion loss and arithmetic error need separate references</title><desc id="desc">The exact input one plus two to the minus eight becomes one in BF16. Widening to FP32 keeps one. Comparing to stored-input reference gives zero arithmetic error while original-input error is two to the minus eight.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#4f6b87"/></marker></defs>
+<rect width="880" height="570" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#203247">
+<text x="440" y="35" text-anchor="middle" font-size="25">Two references locate the lost information</text>
+<rect x="40" y="95" width="350" height="105" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="215" y="132" text-anchor="middle" font-size="19">Original exact input</text>
+<text x="215" y="171" text-anchor="middle" font-size="22">x = 1 + 2⁻⁸ = 1.00390625</text>
+<path d="M400,145 L465,145" stroke="#4f6b87" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="480" y="95" width="360" height="105" rx="8" fill="#fff0cc" stroke="#4f6b87" stroke-width="2"/>
+<text x="660" y="132" text-anchor="middle" font-size="19">BF16 nearest-even conversion</text>
+<text x="660" y="171" text-anchor="middle" font-size="22">Stored value = 1</text>
+<path d="M660,210 L660,265" stroke="#4f6b87" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="480" y="280" width="360" height="100" rx="8" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="660" y="318" text-anchor="middle" font-size="19">Widen to FP32</text>
+<text x="660" y="355" text-anchor="middle" font-size="22">Observed value = 1</text>
+<rect x="40" y="280" width="350" height="100" rx="8" fill="#f4f6f8" stroke="#4f6b87" stroke-width="2"/>
+<text x="215" y="315" text-anchor="middle" font-size="19">Stored-input reference = 1</text>
+<text x="215" y="350" text-anchor="middle" font-size="20">Arithmetic error here = 0</text>
+<rect x="60" y="425" width="760" height="90" rx="8" fill="#fff0cc" stroke="#4f6b87" stroke-width="2"/>
+<text x="440" y="460" text-anchor="middle" font-size="19">Original-input reference = 1 + 2⁻⁸</text>
+<text x="440" y="493" text-anchor="middle" font-size="20">Total conversion-plus-arithmetic error = 2⁻⁸ = 0.00390625</text>
+<text x="440" y="550" text-anchor="middle" font-size="19">A wider accumulator cannot reconstruct bits already discarded.</text>
+</g></svg>

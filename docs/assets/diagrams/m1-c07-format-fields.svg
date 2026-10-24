@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="600" viewBox="0 0 880 600" role="img" aria-labelledby="title desc">
+<title id="title">Floating point field widths</title><desc id="desc">FP16 uses one sign, five exponent and ten fraction bits; BF16 uses one sign, eight exponent and seven fraction bits; FP32 uses one sign, eight exponent and twenty-three fraction bits.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#4f6b87"/></marker></defs>
+<rect width="880" height="600" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#203247">
+<text x="440" y="35" text-anchor="middle" font-size="25">Same storage width can buy different numerical properties</text>
+<text x="440" y="78" text-anchor="middle" font-size="19">S = sign; exponent selects scale; fraction refines the value.</text>
+<text x="90" y="115" text-anchor="start" font-size="22">FP16</text>
+<rect x="90" y="130" width="24" height="55" rx="0" fill="#fff0cc" stroke="#4f6b87" stroke-width="2"/>
+<text x="102" y="165" text-anchor="middle" font-size="17">S</text>
+<rect x="114" y="130" width="120" height="55" rx="0" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="174" y="165" text-anchor="middle" font-size="17">Exponent (5)</text>
+<rect x="234" y="130" width="240" height="55" rx="0" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="354" y="165" text-anchor="middle" font-size="17">Fraction (10)</text>
+<text x="90" y="218" text-anchor="start" font-size="18">16 stored bits; 11 significant bits for normal values</text>
+<text x="90" y="260" text-anchor="start" font-size="22">BF16</text>
+<rect x="90" y="275" width="24" height="55" rx="0" fill="#fff0cc" stroke="#4f6b87" stroke-width="2"/>
+<text x="102" y="310" text-anchor="middle" font-size="17">S</text>
+<rect x="114" y="275" width="192" height="55" rx="0" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="210" y="310" text-anchor="middle" font-size="17">Exponent (8)</text>
+<rect x="306" y="275" width="168" height="55" rx="0" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="390" y="310" text-anchor="middle" font-size="17">Fraction (7)</text>
+<text x="90" y="363" text-anchor="start" font-size="18">16 stored bits; 8 significant bits for normal values</text>
+<text x="90" y="405" text-anchor="start" font-size="22">FP32</text>
+<rect x="90" y="420" width="24" height="55" rx="0" fill="#fff0cc" stroke="#4f6b87" stroke-width="2"/>
+<text x="102" y="455" text-anchor="middle" font-size="17">S</text>
+<rect x="114" y="420" width="192" height="55" rx="0" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="210" y="455" text-anchor="middle" font-size="17">Exponent (8)</text>
+<rect x="306" y="420" width="552" height="55" rx="0" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="582" y="455" text-anchor="middle" font-size="17">Fraction (23)</text>
+<text x="90" y="508" text-anchor="start" font-size="18">32 stored bits; 24 significant bits for normal values</text>
+<text x="440" y="550" text-anchor="middle" font-size="19">Normal values have an implicit leading 1 beyond the stored fraction.</text>
+<text x="440" y="583" text-anchor="middle" font-size="18">More exponent bits expand range; more fraction bits refine spacing.</text>
+</g></svg>
