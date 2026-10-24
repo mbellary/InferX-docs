@@ -34,3 +34,12 @@ Follow the complete [Module 1 reading order](../module-1.md) to move between cat
 | M2-C19 | [Connecting block allocation to the request generator](m2-c19-connecting-block-allocation-to-the-request-generator.md) | Request-owned block tables, prefill writes, decode appends, block-boundary growth, full attention versus retained windows, cache-reader interface, completion and cancellation integration |
 
 Follow the complete [Module 2 reading order](../module-2.md) to move between categories.
+
+### Module 3
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M3-C11 | [Streams, events, and dependency ordering](m3-c11-streams-events-and-dependency-ordering.md) | Asynchronous submission versus completion, stream ordering, cross-stream events, default-stream semantics, synchronization scope, producer-consumer dependencies, safe buffer reuse |
+| M3-C12 | [Asynchronous copies and useful overlap](m3-c12-asynchronous-copies-and-useful-overlap.md) | Copy engines, pinned-memory requirements, double buffering, copy-compute overlap, independence and resource constraints, backpressure, cancellation with in-flight work, asynchronous error observation |
+
+Follow the complete [Module 3 reading order](../module-3.md) to move between categories.

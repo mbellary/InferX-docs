@@ -16,4 +16,18 @@ CPUs, GPUs/NPUs, memory hierarchy, NUMA, PCIe, NVLink, NIC placement.
 
 ## Chapters
 
-Chapters will be added here as the curriculum develops. This page defines the scope and learning goals for the category.
+Chapter outlines are grouped by module. Full content will be developed one chapter at a time.
+
+### Module 3
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M3-C01 | [Following a tensor from CPU to GPU](m3-c01-following-a-tensor-from-cpu-to-gpu.md) | Host versus device, CPU and GPU roles, host RAM and device memory, kernels, weights, activations, KV state, input and output movement |
+| M3-C02 | [Reading GPU specifications and capability limits](m3-c02-reading-gpu-specifications-and-capability-limits.md) | GPU model and compute capability, SM count, memory capacity and bandwidth, cache sizes, precision-specific dense versus sparse throughput, power and clock limits, software versions |
+| M3-C03 | [Threads, warps, blocks, grids, and streaming multiprocessors](m3-c03-threads-warps-blocks-grids-and-streaming-multiprocessors.md) | SIMT execution, thread indexing, warps, thread blocks, grids, SM assignment, warp scheduling, divergence, block independence |
+| M3-C04 | [Occupancy, latency hiding, and hardware utilization](m3-c04-occupancy-latency-hiding-and-hardware-utilization.md) | Resident versus active and eligible warps, occupancy limits, registers and shared-memory budgets, available parallel work, latency hiding, utilization versus occupancy |
+| M3-C05 | [Device memory, HBM, and the cache hierarchy](m3-c05-device-memory-hbm-and-the-cache-hierarchy.md) | Global memory, HBM versus GDDR, L2 and L1 caches, cache lines and transactions, bandwidth versus access latency, capacity, working sets, cache hits and misses |
+| M3-C06 | [Registers, shared memory, and local resource pressure](m3-c06-registers-shared-memory-and-local-resource-pressure.md) | Per-thread registers, per-block shared memory, storage scope and lifetime, register spills and local memory, bank conflicts, synchronization, architecture-specific resource limits |
+| M3-C13 | [PCIe, NVLink, NUMA, and device topology](m3-c13-pcie-nvlink-numa-and-device-topology.md) | Link bandwidth and latency, PCIe generation and width, NVLink availability, peer-access support, CPU socket and NUMA placement, switch paths, NIC placement, topology inspection |
+
+Follow the complete [Module 3 reading order](../module-3.md) to move between categories.

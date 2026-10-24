@@ -44,3 +44,11 @@ Follow the complete [Module 1 reading order](../module-1.md) to move between cat
 | M2-C14 | [Eviction, retention, and reconstruction](m2-c14-eviction-retention-and-reconstruction.md) | Active versus retained blocks, eviction eligibility, recency and reuse, policy metadata, reference-safe eviction, recomputation cost, exact reconstruction versus lossy state removal |
 
 Follow the complete [Module 2 reading order](../module-2.md) to move between categories.
+
+### Module 3
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M3-C10 | [Host and device buffer placement and lifetime](m3-c10-host-and-device-buffer-placement-and-lifetime.md) | Pageable versus pinned host memory, device allocations, unified addressing versus unified memory, migration and residency, buffer reuse, ownership across transfers, allocation outside timed regions |
+
+Follow the complete [Module 3 reading order](../module-3.md) to move between categories.

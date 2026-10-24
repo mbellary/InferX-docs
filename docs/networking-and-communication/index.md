@@ -16,4 +16,12 @@ Collectives, dispatch/combine, RPC transport, RDMA, transfer completion, congest
 
 ## Chapters
 
-Chapters will be added here as the curriculum develops. This page defines the scope and learning goals for the category.
+Chapter outlines are grouped by module. Full content will be developed one chapter at a time.
+
+### Module 3
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M3-C14 | [Moving tensors between devices and hosts](m3-c14-moving-tensors-between-devices-and-hosts.md) | Host-device, device-device, peer-to-peer and staged transfers, network fabrics, RDMA and GPUDirect concepts, transfer completion, shared-link contention, communication scope and limits |
+
+Follow the complete [Module 3 reading order](../module-3.md) to move between categories.

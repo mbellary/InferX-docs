@@ -35,3 +35,11 @@ Follow the complete [Module 1 reading order](../module-1.md) to move between cat
 | M2-C20 | [Validating allocator and cache safety](m2-c20-validating-allocator-and-cache-safety.md) | Reference state model, free-live-retained-pinned accounting, live-reference validity, shared-data immutability, randomized lifecycle traces, stale-handle detection, fault injection, cached-logit equivalence |
 
 Follow the complete [Module 2 reading order](../module-2.md) to move between categories.
+
+### Module 3
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M3-C18 | [Validating GPU computation and memory movement](m3-c18-validating-gpu-computation-and-memory-movement.md) | Reference GEMV and GEMM outputs, accumulation precision, absolute and relative tolerances, reduction-order differences, transfer integrity, shape and stride checks, race and lifetime faults |
+
+Follow the complete [Module 3 reading order](../module-3.md) to move between categories.
