@@ -10,7 +10,7 @@
 
 ## Target concepts
 
-Token prefixes, model and weight versions, adapters, positions, attention masks, multimodal identity, cache precision and layout, isolation namespaces, compatibility checks.
+Token prefixes, model and weight versions, adapters, positions, attention masks, cache precision and layout, isolation namespaces, compatibility checks.
 
 ## Concepts
 

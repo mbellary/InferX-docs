@@ -6,7 +6,7 @@
 
 **Category:** [Reliability and capacity control](index.md)
 
-[Module 9 reading order](../module-9.md) · [Previous: M9-C25](../numerics-and-correctness/m9-c25-validating-one-multimodal-pipeline-end-to-end.md) · [Next: M9-C27](../measurement-experimentation-and-economics/m9-c27-designing-regression-experiments-and-validation-gates.md)
+[Module 9 reading order](../module-9.md) · [Previous: M9-C25](../numerics-and-correctness/m9-c25-validating-the-text-generation-serving-pipeline-end-to-end.md) · [Next: M9-C27](../measurement-experimentation-and-economics/m9-c27-designing-regression-experiments-and-validation-gates.md)
 
 ## Target concepts
 

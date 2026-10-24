@@ -10,7 +10,7 @@
 
 ## Target concepts
 
-Context and output lengths, arrival patterns, bursts, correlations, prefix reuse and skew, modality sizes, adapter and precision settings, real versus synthetic traces, stratified workload reporting.
+Context and output lengths, arrival patterns, bursts, correlations, prefix reuse and skew, adapter and precision settings, real versus synthetic traces, stratified workload reporting.
 
 ## Concepts
 

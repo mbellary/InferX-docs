@@ -10,7 +10,7 @@
 
 ## Target concepts
 
-Single-request reference, KV and static batching, cancellation, paging, prefix reuse and chunking, kernel and graph changes, quantization or speculation, multi-GPU execution, multimodal API acceptance gates.
+Single-request reference, KV and static batching, cancellation, paging, prefix reuse and chunking, kernel and graph changes, quantization or speculation, multi-GPU execution, text-generation serving API acceptance gates.
 
 ## Concepts
 

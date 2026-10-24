@@ -15,22 +15,28 @@ Follow a request from input processing and model execution to scheduling, distri
 - [Module 7: Learn distributed inference after understanding one GPU](module-7.md)
 - [Module 9: Make measurement and correctness part of the foundation](module-9.md)
 
-Module 8 is awaiting its outline. Module 9 provides measurement and correctness foundations to use throughout the earlier modules. Read the [learning approach](learning-approach.md) for the beginner assumptions and chapter requirements.
+Module 8 is excluded from the curriculum. Module 9 must support Modules 1–7 throughout, providing the relevant measurement and correctness foundations as each capability is developed. Read the [learning approach](learning-approach.md) for the beginner assumptions and chapter requirements.
 
 ## Explore the curriculum
 
-The 14 categories below define the curriculum. Category overviews and 201 chapter outlines across Modules 1–7 and 9 are available. We are establishing the module outlines first; full chapters will then be developed one at a time.
+See the [complete chapter outline inventory](chapter-outline-inventory.md) for chapter IDs, categories, chapter names, and target concepts in one table.
+
+Use the [detailed chapter authoring order](chapter-authoring-order.md) to create full chapters with their prerequisites in place, including measurement and correctness chapters from Module 9.
+
+Follow the [chapter execution plan and progress ledger](chapter-execution-plan.md) to create and review one detailed chapter at a time and track its concepts, experiments, verification, and completion evidence.
+
+The 14 categories below define the curriculum. Category overviews and 201 chapter outlines across Modules 1–7 and 9 are available. The planned module outlines are in place; full chapters will be developed one at a time in the dependency-aware authoring order.
 
 | # | Category | Central question | Includes |
 | --- | --- | --- | --- |
-| 1 | [Model computation and semantics](model-computation-and-semantics/index.md) | What computation produces a correct output? | Transformers, attention, MoE, multimodal encoders, positional encoding, sampling |
+| 1 | [Model computation and semantics](model-computation-and-semantics/index.md) | What computation produces a correct output? | Transformers, attention, MoE, positional encoding, sampling |
 | 2 | [Numerics and correctness](numerics-and-correctness/index.md) | Which transformations preserve behavior, and which introduce approximation? | Precision, quantization, numerical stability, determinism, batch invariance, quality validation |
 | 3 | [Hardware architecture and topology](hardware-architecture-and-topology/index.md) | What resources execute the work, and how are they connected? | CPUs, GPUs/NPUs, memory hierarchy, NUMA, PCIe, NVLink, NIC placement |
 | 4 | [Kernels, compilers, and execution](kernels-compilers-and-execution/index.md) | How is computation mapped efficiently onto hardware? | GEMMs, attention kernels, tiling, fusion, layouts, compilation, graph replay |
 | 5 | [State, memory, and caching](state-memory-and-caching/index.md) | What must be retained, shared, fetched, or reconstructed? | KV allocation, paging, prefix reuse, window state, snapshots, eviction, replay |
 | 6 | [Runtime and concurrency](runtime-and-concurrency/index.md) | How do concurrent operations progress without violating dependencies? | Processes, threads, async execution, synchronization, ownership, buffer lifetimes, CPU/device overlap |
 | 7 | [Scheduling and queueing](scheduling-and-queueing/index.md) | Which work runs next, with what budget? | Continuous batching, chunked prefill, priorities, fairness, admission, backpressure, queueing theory |
-| 8 | [Parallelism and decomposition](parallelism-and-decomposition/index.md) | How is computation divided across devices and stages? | DP, TP, PP, EP, CP, encoder/prefill/decode separation |
+| 8 | [Parallelism and decomposition](parallelism-and-decomposition/index.md) | How is computation divided across devices and stages? | DP, TP, PP, EP, CP, prefill/decode separation |
 | 9 | [Networking and communication](networking-and-communication/index.md) | How does data move between execution domains? | Collectives, dispatch/combine, RPC transport, RDMA, transfer completion, congestion, overlap |
 | 10 | [Distributed coordination and routing](distributed-coordination-and-routing/index.md) | How do independent workers cooperate using incomplete information? | Discovery, membership, placement, load balancing, reservations, consistency, stale telemetry |
 | 11 | [Storage and persistence](storage-and-persistence/index.md) | What survives beyond a worker’s memory or lifetime? | Shared block storage, metadata indexes, durability, replication, erasure coding, retention, GC |

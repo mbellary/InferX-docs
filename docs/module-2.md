@@ -54,6 +54,8 @@ Chapters remain under their assigned top-level categories. Follow this sequence 
 
 ## How chapters will be developed
 
+Use the relevant [Module 9 support guidance](module-9.md#support-for-modules-1-7) throughout this module for reference behavior, correctness, measurement, and validation. Create detailed chapters using the [chapter authoring order](chapter-authoring-order.md).
+
 Every chapter follows **Concepts → Experiments → Verification**, applying all [six dimensions and eight engineering principles](learning-approach.md). Experiments connect KV-cache behavior to systems engineering and High-Frequency Trading concerns such as preallocation, ownership, predictable reclamation, bounded work, and tail latency. Each analogy must state its limits.
 
 This is an outline of the learning path, not a completed allocator or a benchmark result. The eventual validation must cover completed and cancelled requests, shared blocks, failed allocations, stale references, and deferred reclamation, followed by correctness and performance comparisons against the reference generator.

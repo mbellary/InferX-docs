@@ -57,6 +57,8 @@ Chapters remain under their assigned top-level categories. Follow this sequence 
 
 ## How chapters will be developed
 
+Use the relevant [Module 9 support guidance](module-9.md#support-for-modules-1-7) throughout this module for reference behavior, correctness, measurement, and validation. Create detailed chapters using the [chapter authoring order](chapter-authoring-order.md).
+
 Every chapter follows **Concepts → Experiments → Verification**, applying all [six dimensions and eight engineering principles](learning-approach.md). Connect kernel and replay decisions to systems engineering and High-Frequency Trading concerns such as predictable work, avoiding allocation and compilation on the warm path, explicit ownership, synchronization costs, and tail latency. State the limits of each analogy.
 
 The intended validation compares reference and fused behavior, checks numerical and memory safety, separates compilation and graph setup from steady-state execution, benchmarks representative dimensions and precision, and evaluates the complete generator. Supported graph updates and capture restrictions must be documented for the actual CUDA version; do not assume every graph parameter is immutable or that arbitrary changes are safe. Any unsupported operation or shape needs a correct fallback.

@@ -57,7 +57,7 @@ Follow the complete [Module 3 reading order](../module-3.md) to move between cat
 
 | Chapter ID | Chapter name | Target concepts |
 | --- | --- | --- |
-| M6-C02 | [Defining prefix identity through equivalent computation](m6-c02-defining-prefix-identity-through-equivalent-computation.md) | Token prefixes, model and weight versions, adapters, positions, attention masks, multimodal identity, cache precision and layout, isolation namespaces, compatibility checks |
+| M6-C02 | [Defining prefix identity through equivalent computation](m6-c02-defining-prefix-identity-through-equivalent-computation.md) | Token prefixes, model and weight versions, adapters, positions, attention masks, cache precision and layout, isolation namespaces, compatibility checks |
 | M6-C03 | [Tries, radix trees, and longest-prefix matching](m6-c03-tries-radix-trees-and-longest-prefix-matching.md) | Tree nodes and edges, token paths, path compression, longest-prefix lookup, insertion, edge splitting, lookup cost, metadata overhead, RadixAttention concepts |
 | M6-C04 | [Connecting a radix index to paged KV blocks](m6-c04-connecting-a-radix-index-to-paged-kv-blocks.md) | Logical prefix ranges, block-granular reuse, partial-block boundaries, tree-to-block mappings, immutable shared prefixes, copy-on-write tails, index and allocator consistency |
 | M6-C05 | [Reference-safe retention, eviction, and cancellation](m6-c05-reference-safe-retention-eviction-and-cancellation.md) | Request and cache ownership, reference counts, pinning, eviction eligibility, recency policies, memory pressure, cancellation, deferred reclamation, recomputation costs |

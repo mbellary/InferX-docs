@@ -6,7 +6,7 @@ This category examines model computation and semantics through the lens of LLM i
 
 ## Scope
 
-Transformers, attention, MoE, multimodal encoders, positional encoding, sampling.
+Transformers, attention, MoE, positional encoding, sampling.
 
 ## Learning objectives
 

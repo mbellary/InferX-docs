@@ -6,9 +6,11 @@ Assume an absolute beginner with basic programming knowledge. Introduce systems,
 
 Rust is the primary programming language for the eventual inference engine. Use Python or C++ when Rust is unsupported, explaining the reason. Chapters provide explanations and experimental procedures without code implementation.
 
-Establish chapter outlines for the learning modules first, proceeding through the modules in sequence. Then develop full chapter content one chapter at a time. Preserve the 14 top-level categories; place each chapter under its assigned category and connect chapters through the module reading order.
+The curriculum consists of Modules 1–7, with Module 9 providing required measurement and correctness support throughout. Module 8 is excluded. The planned module outlines are in place. Develop full chapter content one chapter at a time using the [detailed chapter authoring order](chapter-authoring-order.md). Preserve the 14 top-level categories; place each chapter under its assigned category and connect chapters through the module reading order.
 
 ## Chapter structure
+
+Use the [chapter execution plan](chapter-execution-plan.md) as the progress record. Keep at most one chapter active, update its concepts, experiments, verification, and review stages at every stopping point, and mark it complete only after its content review, strict documentation build, and rendered-page review pass.
 
 ### Concepts
 
@@ -69,5 +71,7 @@ These are practical principles rather than mathematical axioms.
 8. **Claims require reproducible evidence.** Use reference behavior, explicit invariants, representative workloads, fault tests, and clearly defined metrics.
 
 ## Completion standard
+
+Each detailed chapter in Modules 1–7 must identify and use the applicable Module 9 reference, correctness, measurement, workload, or validation guidance. Use the [Module 9 support map](module-9.md#support-for-modules-1-7) to select relevant chapters; do not make every Module 9 chapter a prerequisite for every chapter. Introduce the basic checks locally whenever the advanced treatment depends on later capabilities.
 
 An outline establishes scope; it is not a completed chapter. A completed chapter explains its target concepts, specifies experiments without providing implementation code, and defines how to verify the outcomes. All six dimensions and eight principles must be addressed with chapter-specific reasoning.

@@ -1,4 +1,4 @@
-# M9-C25: Validating one multimodal pipeline end to end
+# M9-C25: Validating the text-generation serving pipeline end to end
 
 > **Status: Outline — chapter content has not been authored.**
 
@@ -10,7 +10,11 @@
 
 ## Target concepts
 
-Input decoding and preprocessing, encoder outputs, projected features and token alignment, modality identity, feature reuse, reference comparisons, modality-size sweeps, invalid inputs, future Module 8 integration.
+Tokenizer and template identity, prompt preparation, prefill and decode, cache and scheduler integration, request-token identity, streamed output and stopping, single-GPU and multi-GPU reference comparisons, invalid inputs, terminal-state and resource-cleanup checks.
+
+## Scope
+
+Validate the integrated text-generation serving capabilities developed in Modules 1–7. Cover prompt preparation, model execution, KV state, scheduling, supported optimizations, distributed execution where applicable, streamed output, and terminal cleanup. Define comparisons against the single-request reference and appropriate single-GPU or multi-GPU configurations.
 
 ## Concepts
 

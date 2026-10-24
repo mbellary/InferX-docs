@@ -73,6 +73,8 @@ Chapters remain under their assigned top-level categories. Follow this sequence 
 
 ## How chapters will be developed
 
+Use the relevant [Module 9 support guidance](module-9.md#support-for-modules-1-7) throughout this module for reference behavior, correctness, measurement, and validation. Create detailed chapters using the [chapter authoring order](chapter-authoring-order.md).
+
 Every chapter follows **Concepts → Experiments → Verification**, applying all [six dimensions and eight engineering principles](learning-approach.md). Connect distributed inference to systems engineering and High-Frequency Trading concerns such as locality, communication startup costs, bounded queues, ownership handoff, synchronization, stragglers, stale information, and tail latency. Explain the limits of each analogy.
 
 ## Planned build and validation sequence

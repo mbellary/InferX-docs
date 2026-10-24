@@ -10,7 +10,7 @@ For each optimization, explain its mechanism, correctness conditions, failure ca
 
 Use [Module 1](module-1.md) for model semantics and sampling, [Module 2](module-2.md) for cache ownership and paging, [Module 3](module-3.md) for data movement and hardware, [Module 4](module-4.md) for kernels and execution, and [Module 5](module-5.md) for scheduling and workload comparisons. Introduce radix trees, quantization, rejection sampling, grammars, and low-rank adaptation from first principles.
 
-Rust remains the primary language context; use Python or C++ only when Rust is unsupported. Chapter content and experiments contain no implementation code. Multi-worker placement and multimodal processing are introduced only where they affect correctness or tradeoffs; their full pipelines belong to later modules.
+Rust remains the primary language context; use Python or C++ only when Rust is unsupported. Chapter content and experiments contain no implementation code. Multi-worker placement is introduced only where it affects correctness or tradeoffs; its full treatment belongs to Module 7. The curriculum covers text-generation serving.
 
 ## Optimization contracts to investigate
 
@@ -23,7 +23,7 @@ Rust remains the primary language context; use Python or C++ only when Rust is u
 | Structured decoding | Grammar state restricts legal next-token choices | Compilation and mask overhead, tokenizer compatibility, incomplete output, empty masks, supported schema semantics |
 | Multi-LoRA serving | Select and batch adapter-specific low-rank computation over a shared base model | Adapter residency, rank heterogeneity, dispatch overhead, fragmentation of batches, identity and cache compatibility |
 
-Prefix-cache identity must represent equivalent computation: token IDs alone are insufficient when models, adapters, positions, masks, or multimodal inputs differ. Validate the entire cache contract against uncached reference execution, including full-prefix hits and next-token logits. See the [SGLang paper](https://arxiv.org/abs/2312.07104).
+Prefix-cache identity must represent equivalent computation: token IDs alone are insufficient when models, adapters, positions, or masks differ. Validate the entire cache contract against uncached reference execution, including full-prefix hits and next-token logits. See the [SGLang paper](https://arxiv.org/abs/2312.07104).
 
 The original speculative-sampling method preserves the target distribution through modified rejection sampling within numerical limits; accepting merely plausible draft tokens is not sufficient. Validation must distinguish target-distribution equivalence from identical random streams or token sequences. See the [speculative-sampling paper](https://arxiv.org/abs/2302.01318).
 
@@ -34,7 +34,7 @@ Chapters remain under their assigned top-level categories. Follow this sequence 
 | Chapter ID | Category | Chapter name | Target concepts |
 | --- | --- | --- | --- |
 | M6-C01 | [Numerics and correctness](numerics-and-correctness/index.md) | [Defining an optimization’s correctness and cost contract](numerics-and-correctness/m6-c01-defining-an-optimization-s-correctness-and-cost-contract.md) | Mechanism, semantic equivalence, numerical approximation, intentional output constraints, reference behavior, resource savings, added overhead, failure cases, workload-dependent benefit |
-| M6-C02 | [State, memory, and caching](state-memory-and-caching/index.md) | [Defining prefix identity through equivalent computation](state-memory-and-caching/m6-c02-defining-prefix-identity-through-equivalent-computation.md) | Token prefixes, model and weight versions, adapters, positions, attention masks, multimodal identity, cache precision and layout, isolation namespaces, compatibility checks |
+| M6-C02 | [State, memory, and caching](state-memory-and-caching/index.md) | [Defining prefix identity through equivalent computation](state-memory-and-caching/m6-c02-defining-prefix-identity-through-equivalent-computation.md) | Token prefixes, model and weight versions, adapters, positions, attention masks, cache precision and layout, isolation namespaces, compatibility checks |
 | M6-C03 | [State, memory, and caching](state-memory-and-caching/index.md) | [Tries, radix trees, and longest-prefix matching](state-memory-and-caching/m6-c03-tries-radix-trees-and-longest-prefix-matching.md) | Tree nodes and edges, token paths, path compression, longest-prefix lookup, insertion, edge splitting, lookup cost, metadata overhead, RadixAttention concepts |
 | M6-C04 | [State, memory, and caching](state-memory-and-caching/index.md) | [Connecting a radix index to paged KV blocks](state-memory-and-caching/m6-c04-connecting-a-radix-index-to-paged-kv-blocks.md) | Logical prefix ranges, block-granular reuse, partial-block boundaries, tree-to-block mappings, immutable shared prefixes, copy-on-write tails, index and allocator consistency |
 | M6-C05 | [State, memory, and caching](state-memory-and-caching/index.md) | [Reference-safe retention, eviction, and cancellation](state-memory-and-caching/m6-c05-reference-safe-retention-eviction-and-cancellation.md) | Request and cache ownership, reference counts, pinning, eviction eligibility, recency policies, memory pressure, cancellation, deferred reclamation, recomputation costs |
@@ -63,6 +63,8 @@ Chapters remain under their assigned top-level categories. Follow this sequence 
 | M6-C28 | [Measurement, experimentation, and economics](measurement-experimentation-and-economics/index.md) | [Establishing end-to-end benefit and regression boundaries](measurement-experimentation-and-economics/m6-c28-establishing-end-to-end-benefit-and-regression-boundaries.md) | Correctness and quality gates, first-token and inter-token latency, tail distributions, goodput, capacity, CPU and GPU overhead, actual memory, compilation and loading amortization, fairness, cost, uncertainty, helps-versus-hurts results |
 
 ## How chapters will be developed
+
+Use the relevant [Module 9 support guidance](module-9.md#support-for-modules-1-7) throughout this module for reference behavior, correctness, measurement, and validation. Create detailed chapters using the [chapter authoring order](chapter-authoring-order.md).
 
 Every chapter follows **Concepts → Experiments → Verification**, applying all [six dimensions and eight engineering principles](learning-approach.md). Connect optimization choices to systems engineering and High-Frequency Trading concerns such as cache locality, workload skew, predictable work, resource ownership, warm-path overhead, fair service, and tail latency. Explain each analogy's limits.
 

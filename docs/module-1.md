@@ -37,6 +37,8 @@ Chapters live under the 14 top-level subject categories. Follow this sequence ac
 
 ## How chapters will be developed
 
+Use the relevant [Module 9 support guidance](module-9.md#support-for-modules-1-7) throughout this module for reference behavior, correctness, measurement, and validation. Create detailed chapters using the [chapter authoring order](chapter-authoring-order.md).
+
 Every chapter follows **Concepts → Experiments → Verification**, applying the [learning approach](learning-approach.md). Measurement and correctness begin with the first chapter and continue throughout the module.
 
 The single-request experiments establish a baseline. Broader workload and operating-point comparisons will clearly state when they require capabilities beyond this module's build.

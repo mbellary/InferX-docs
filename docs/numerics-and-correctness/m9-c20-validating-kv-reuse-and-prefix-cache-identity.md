@@ -10,7 +10,7 @@
 
 ## Target concepts
 
-Cached versus uncached references, model and adapter identity, positions and masks, multimodal compatibility, partial and full-prefix hits, copy-on-write, eviction, cache-format changes.
+Cached versus uncached references, model and adapter identity, positions and masks, partial and full-prefix hits, copy-on-write, eviction, cache-format changes.
 
 ## Concepts
 

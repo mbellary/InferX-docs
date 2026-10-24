@@ -58,6 +58,8 @@ Chapters remain under their assigned top-level categories. Follow this sequence 
 
 ## How chapters will be developed
 
+Use the relevant [Module 9 support guidance](module-9.md#support-for-modules-1-7) throughout this module for reference behavior, correctness, measurement, and validation. Create detailed chapters using the [chapter authoring order](chapter-authoring-order.md).
+
 Every chapter follows **Concepts → Experiments → Verification**, applying all [six dimensions and eight engineering principles](learning-approach.md). Connect inference data movement to systems engineering and High-Frequency Trading concerns such as critical-path latency, preallocated buffers, bounded resource use, ownership, asynchronous completion, and variability. Explain the limits of each analogy.
 
 The eventual build is a benchmark suite for memory copies, matrix-vector multiplication, and matrix-matrix multiplication. Require correctness before performance comparisons; record shapes, precision, layouts, placement, hardware, software, cache state, and timing boundaries. Compare predictions with measured traffic and utilization, then assess implications for full-request behavior. This page and its chapter outlines contain no benchmark results or implementation code.
