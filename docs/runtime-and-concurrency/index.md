@@ -16,4 +16,10 @@ Processes, threads, async execution, synchronization, ownership, buffer lifetime
 
 ## Chapters
 
-Chapters will be added here as the curriculum develops. This page defines the scope and learning goals for the category.
+Module 1 chapter outlines, listed in learning order. Full content will be developed one chapter at a time.
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M1-C18 | [Understanding prefill and decode](m1-c18-understanding-prefill-and-decode.md) | Prompt processing, first-token selection, subsequent decode steps, phase-specific tensor shapes, cache reads and writes, context-length and batch-size effects |
+
+Follow the complete [Module 1 reading order](../module-1.md) to move between categories.

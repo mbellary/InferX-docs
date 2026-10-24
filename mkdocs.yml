@@ -54,19 +54,38 @@ validation:
     anchors: warn
 
 nav:
-  - Home: index.md
+  - Home:
+      - Overview: index.md
+      - "Module 1: Reading order": module-1.md
+      - Learning approach: learning-approach.md
   - "Model computation and semantics":
       - Overview: model-computation-and-semantics/index.md
+      - "M1-C01: From a prompt to the next token": model-computation-and-semantics/m1-c01-from-a-prompt-to-the-next-token.md
+      - "M1-C03: Numbers, vectors, matrices, and tensors": model-computation-and-semantics/m1-c03-numbers-vectors-matrices-and-tensors.md
+      - "M1-C04: Dot products and matrix multiplication": model-computation-and-semantics/m1-c04-dot-products-and-matrix-multiplication.md
+      - "M1-C09: Token embeddings and learned projections": model-computation-and-semantics/m1-c09-token-embeddings-and-learned-projections.md
+      - "M1-C10: Attention, one dimension at a time": model-computation-and-semantics/m1-c10-attention-one-dimension-at-a-time.md
+      - "M1-C11: Causal masking and positional information": model-computation-and-semantics/m1-c11-causal-masking-and-positional-information.md
+      - "M1-C12: Multi-head attention and its variants": model-computation-and-semantics/m1-c12-multi-head-attention-and-its-variants.md
+      - "M1-C13: Building a complete Transformer block": model-computation-and-semantics/m1-c13-building-a-complete-transformer-block.md
+      - "M1-C14: Assembling a small decoder-only Transformer": model-computation-and-semantics/m1-c14-assembling-a-small-decoder-only-transformer.md
+      - "M1-C15: Turning logits into the next token": model-computation-and-semantics/m1-c15-turning-logits-into-the-next-token.md
   - "Numerics and correctness":
       - Overview: numerics-and-correctness/index.md
+      - "M1-C06: Reductions, probabilities, and stable softmax": numerics-and-correctness/m1-c06-reductions-probabilities-and-stable-softmax.md
+      - "M1-C07: Floating-point arithmetic and numerical correctness": numerics-and-correctness/m1-c07-floating-point-arithmetic-and-numerical-correctness.md
+      - "M1-C19: Validating cached and uncached generation": numerics-and-correctness/m1-c19-validating-cached-and-uncached-generation.md
   - "Hardware architecture and topology":
       - Overview: hardware-architecture-and-topology/index.md
   - "Kernels, compilers, and execution":
       - Overview: kernels-compilers-and-execution/index.md
   - "State, memory, and caching":
       - Overview: state-memory-and-caching/index.md
+      - "M1-C05: How tensors occupy memory": state-memory-and-caching/m1-c05-how-tensors-occupy-memory.md
+      - "M1-C17: Reusing attention state with a KV cache": state-memory-and-caching/m1-c17-reusing-attention-state-with-a-kv-cache.md
   - "Runtime and concurrency":
       - Overview: runtime-and-concurrency/index.md
+      - "M1-C18: Understanding prefill and decode": runtime-and-concurrency/m1-c18-understanding-prefill-and-decode.md
   - "Scheduling and queueing":
       - Overview: scheduling-and-queueing/index.md
   - "Parallelism and decomposition":
@@ -79,7 +98,11 @@ nav:
       - Overview: storage-and-persistence/index.md
   - "Interfaces, protocols, and streaming":
       - Overview: interfaces-protocols-and-streaming/index.md
+      - "M1-C02: Representing text as tokens": interfaces-protocols-and-streaming/m1-c02-representing-text-as-tokens.md
+      - "M1-C16: Building the single-request generation loop": interfaces-protocols-and-streaming/m1-c16-building-the-single-request-generation-loop.md
   - "Reliability and capacity control":
       - Overview: reliability-and-capacity-control/index.md
   - "Measurement, experimentation, and economics":
       - Overview: measurement-experimentation-and-economics/index.md
+      - "M1-C08: Operation counts and actual execution cost": measurement-experimentation-and-economics/m1-c08-operation-counts-and-actual-execution-cost.md
+      - "M1-C20: Measuring and explaining generation latency": measurement-experimentation-and-economics/m1-c20-measuring-and-explaining-generation-latency.md

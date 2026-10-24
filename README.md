@@ -27,6 +27,8 @@ Generated files go into `site/` and are excluded from Git.
 
 ## Add a chapter
 
+Module 1 has 20 chapter outlines. Its reading order is in `docs/module-1.md`; the authoring requirements are in `docs/learning-approach.md`. Develop the outlines one chapter at a time. Each chapter follows Concepts, Experiments, and Verification, with no code implementation.
+
 1. Choose one of the existing category directories under `docs/`.
 2. Copy `templates/chapter.md` into that directory with a descriptive filename.
 3. Write the chapter through the lens of LLM inference and serving engines. Mark drafts clearly and cite primary sources for technical claims.

@@ -1,47 +1,46 @@
-# Chapter title
+# Chapter ID: Chapter title
 
-> **Status:** Draft
+> **Status: Outline — chapter content has not been authored.**
 
-## Serving problem
+**Module:** Module name
 
-Describe the concrete inference or serving problem this chapter addresses.
+**Category:** Assigned top-level category
 
-## Learning objectives
+Add relative links to the module reading order and previous/next chapters. Follow the published learning approach. Assume basic programming knowledge only; use Rust first and include no code implementation.
 
-- State what the reader will be able to explain, implement, or measure.
+## Target concepts
 
-## Prerequisites
+List the concepts assigned to this chapter.
 
-Link to prerequisite chapters and state any required background.
+## Concepts
 
-## Concepts and mental model
+Explain foundations before advanced ideas. Define terms, symbols, units, and prerequisites. Include formulas, worked examples, illustrative diagrams, and specifications. Connect the target module to systems engineering and High-Frequency Trading, explaining the limits of analogies.
 
-Define terms, assumptions, units, and the model of execution.
+## Experiments
 
-## Walkthrough in a serving engine
+### Experiment name
 
-Trace a request, operation, or state transition. Name the engine and version or commit for implementation-specific examples.
+- **Description:** What is varied, observed, and compared?
+- **Purpose/objective:** What question or hypothesis is investigated?
+- **Target concepts:** Which concepts does this exercise?
+- **Exit criteria:** What observable conditions establish completion?
 
-## Correctness conditions
+State hardware requirements, prerequisites, workload, baseline, controlled variables, prediction, and procedure. Explain the inference and HFT engineering connections. Provide no implementation code. Repeat this structure for each experiment.
 
-State invariants, ownership rules, numerical assumptions, and failure conditions.
+## Verification
 
-## Performance and tradeoffs
+For each experiment, define correctness checks, reference behavior, invariants, tolerances, measurement boundaries, benchmark procedure, profiling approach, and acceptance criteria. Include representative workloads, variability, relevant fault cases, end-to-end effects, repetition counts, and uncertainty. Distinguish expected outcomes from measured results.
 
-Explain which resources or service objectives are affected and under which workload assumptions.
+## Engineering dimensions and principles
 
-## Experiment or exercise
+Address all six dimensions with chapter-specific reasoning: semantics and invariants; workload and variability; resources and bottlenecks; time and distributions; ownership and coordination; failure and adaptation.
 
-Provide a reproducible setup, workload, expected observations, and validation criteria. Record hardware, software versions, warmup, and measurement uncertainty where relevant.
+Apply all eight principles: correctness boundaries; workload dependence; data movement; state lifetime and recovery; dependencies and capacity; variability and tails; end-to-end evaluation; reproducible evidence.
+
+## Specifications, articles, and hardware
+
+Provide relevant primary sources and articles. Explain hardware requirements and record specifications for measurements. Cite versions or commits where behavior depends on them. State justified limits when an item is not applicable.
 
 ## Key takeaways
 
 Summarize the ideas the reader should retain.
-
-## Related chapters
-
-Link to related material across categories.
-
-## References
-
-Link to primary sources and the implementation versions used.

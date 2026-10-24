@@ -4,9 +4,13 @@ InferX is a growing collection of learning modules about the computation and sys
 
 Follow a request from input processing and model execution to scheduling, distributed state, streamed results, and production operations. Each chapter will connect its concepts to decisions an inference engine makes and the evidence needed to evaluate them.
 
+## Start learning
+
+Begin with [Module 1: Understand exactly what happens when an LLM generates a token](module-1.md). Its reading order connects chapters across categories. Read the [learning approach](learning-approach.md) for the beginner assumptions and chapter requirements.
+
 ## Explore the curriculum
 
-The 14 categories below define the curriculum. Category overviews are available now; individual chapters will be added as the material develops.
+The 14 categories below define the curriculum. Category overviews and the 20 chapter outlines for Module 1 are available. Full chapters will be developed one at a time.
 
 | # | Category | Central question | Includes |
 | --- | --- | --- | --- |

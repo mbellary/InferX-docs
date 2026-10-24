@@ -1,0 +1,42 @@
+# Module 1: Understand exactly what happens when an LLM generates a token
+
+> **Status: Chapter outlines available.** Full chapters will be developed one at a time.
+
+## Learning goal
+
+Trace a request from text to generated tokens and understand the computation and state involved. The eventual build is a single-request generator with and without a KV cache, with comparisons of logits and latency as input and output lengths change.
+
+Assume only basic programming knowledge. Rust is the primary language for the eventual build; Python or C++ will be used when Rust is unsupported. Chapters explain concepts and experimental procedures without code implementation.
+
+## Reading order
+
+Chapters live under the 14 top-level subject categories. Follow this sequence across categories to preserve the learning path.
+
+| Chapter ID | Category | Chapter name | Target concepts |
+| --- | --- | --- | --- |
+| M1-C01 | [Model computation and semantics](model-computation-and-semantics/index.md) | [From a prompt to the next token](model-computation-and-semantics/m1-c01-from-a-prompt-to-the-next-token.md) | LLMs, inference, decoder-only models, model weights, token-by-token generation, stages of a single request |
+| M1-C02 | [Interfaces, protocols, and streaming](interfaces-protocols-and-streaming/index.md) | [Representing text as tokens](interfaces-protocols-and-streaming/m1-c02-representing-text-as-tokens.md) | Vocabulary, token IDs, tokenization, encoding and decoding, special tokens, chat templates, preserving token identity |
+| M1-C03 | [Model computation and semantics](model-computation-and-semantics/index.md) | [Numbers, vectors, matrices, and tensors](model-computation-and-semantics/m1-c03-numbers-vectors-matrices-and-tensors.md) | Scalars, vectors, matrices, tensors, axes, dimensions, shapes, indexing, basic Rust representations |
+| M1-C04 | [Model computation and semantics](model-computation-and-semantics/index.md) | [Dot products and matrix multiplication](model-computation-and-semantics/m1-c04-dot-products-and-matrix-multiplication.md) | Weighted sums, dot products, matrix multiplication, dimension compatibility, batched multiplication, model projections |
+| M1-C05 | [State, memory, and caching](state-memory-and-caching/index.md) | [How tensors occupy memory](state-memory-and-caching/m1-c05-how-tensors-occupy-memory.md) | Bytes, contiguous storage, strides, row-major and column-major layouts, reshaping, transposing, views versus copies, broadcasting |
+| M1-C06 | [Numerics and correctness](numerics-and-correctness/index.md) | [Reductions, probabilities, and stable softmax](numerics-and-correctness/m1-c06-reductions-probabilities-and-stable-softmax.md) | Sums, means, maxima, reduction axes, probability distributions, exponentials, softmax, overflow, underflow, subtracting the maximum |
+| M1-C07 | [Numerics and correctness](numerics-and-correctness/index.md) | [Floating-point arithmetic and numerical correctness](numerics-and-correctness/m1-c07-floating-point-arithmetic-and-numerical-correctness.md) | Floating-point representation, FP32, FP16, BF16, representable range, precision, rounding error, accumulation precision, comparison tolerances |
+| M1-C08 | [Measurement, experimentation, and economics](measurement-experimentation-and-economics/index.md) | [Operation counts and actual execution cost](measurement-experimentation-and-economics/m1-c08-operation-counts-and-actual-execution-cost.md) | Computational complexity, matrix multiplication costs, memory capacity, data movement, bandwidth, throughput, latency, allocation overhead, bottleneck predictions |
+| M1-C09 | [Model computation and semantics](model-computation-and-semantics/index.md) | [Token embeddings and learned projections](model-computation-and-semantics/m1-c09-token-embeddings-and-learned-projections.md) | Embedding lookup, embedding dimensions, learned weights, linear transformations, intermediate activations, tensor shape tracing |
+| M1-C10 | [Model computation and semantics](model-computation-and-semantics/index.md) | [Attention, one dimension at a time](model-computation-and-semantics/m1-c10-attention-one-dimension-at-a-time.md) | Queries, keys, values, batch and sequence axes, heads, head dimensions, QKᵀ, scaling by √dₖ, softmax axes, weighted value aggregation |
+| M1-C11 | [Model computation and semantics](model-computation-and-semantics/index.md) | [Causal masking and positional information](model-computation-and-semantics/m1-c11-causal-masking-and-positional-information.md) | Autoregressive dependencies, causal masks, position indices, positional encoding, RoPE, position handling during generation |
+| M1-C12 | [Model computation and semantics](model-computation-and-semantics/index.md) | [Multi-head attention and its variants](model-computation-and-semantics/m1-c12-multi-head-attention-and-its-variants.md) | Splitting and combining heads, attention output projection, multi-head attention, multi-query attention, grouped-query attention, query-head versus KV-head counts |
+| M1-C13 | [Model computation and semantics](model-computation-and-semantics/index.md) | [Building a complete Transformer block](model-computation-and-semantics/m1-c13-building-a-complete-transformer-block.md) | Residual connections, normalization, LayerNorm and RMSNorm, MLPs, activation functions, gated MLPs, operation ordering |
+| M1-C14 | [Model computation and semantics](model-computation-and-semantics/index.md) | [Assembling a small decoder-only Transformer](model-computation-and-semantics/m1-c14-assembling-a-small-decoder-only-transformer.md) | Model configuration, stacked blocks, final normalization, vocabulary projection, logits, fixed weights, loading weights, inference versus training |
+| M1-C15 | [Model computation and semantics](model-computation-and-semantics/index.md) | [Turning logits into the next token](model-computation-and-semantics/m1-c15-turning-logits-into-the-next-token.md) | Greedy decoding, temperature, top-k and top-p filtering, probability renormalization, random sampling, seeds, tie handling |
+| M1-C16 | [Interfaces, protocols, and streaming](interfaces-protocols-and-streaming/index.md) | [Building the single-request generation loop](interfaces-protocols-and-streaming/m1-c16-building-the-single-request-generation-loop.md) | Prompt preparation, repeated forward passes, appending tokens, end-of-sequence tokens, output limits, stop sequences, incremental detokenization, partial text handling |
+| M1-C17 | [State, memory, and caching](state-memory-and-caching/index.md) | [Reusing attention state with a KV cache](state-memory-and-caching/m1-c17-reusing-attention-state-with-a-kv-cache.md) | Repeated computation without caching, per-layer keys and values, cache shapes, appending state, cache growth, position offsets, cached causal masking |
+| M1-C18 | [Runtime and concurrency](runtime-and-concurrency/index.md) | [Understanding prefill and decode](runtime-and-concurrency/m1-c18-understanding-prefill-and-decode.md) | Prompt processing, first-token selection, subsequent decode steps, phase-specific tensor shapes, cache reads and writes, context-length and batch-size effects |
+| M1-C19 | [Numerics and correctness](numerics-and-correctness/index.md) | [Validating cached and uncached generation](numerics-and-correctness/m1-c19-validating-cached-and-uncached-generation.md) | Full-prefix reference execution, matching next-token logits, numerical tolerances, greedy output comparison, cache lengths, position and masking errors, edge cases |
+| M1-C20 | [Measurement, experimentation, and economics](measurement-experimentation-and-economics/index.md) | [Measuring and explaining generation latency](measurement-experimentation-and-economics/m1-c20-measuring-and-explaining-generation-latency.md) | Input-length and output-length sweeps, prefill time, time to first token, per-token decode latency, total latency, warmup, repeated measurements, correctness checks, predicted versus observed bottlenecks |
+
+## How chapters will be developed
+
+Every chapter follows **Concepts → Experiments → Verification**, applying the [learning approach](learning-approach.md). Measurement and correctness begin with the first chapter and continue throughout the module.
+
+The single-request experiments establish a baseline. Broader workload and operating-point comparisons will clearly state when they require capabilities beyond this module's build.

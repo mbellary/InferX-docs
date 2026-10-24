@@ -16,4 +16,11 @@ API contracts, templates, tokenization, control-token identity, incremental pars
 
 ## Chapters
 
-Chapters will be added here as the curriculum develops. This page defines the scope and learning goals for the category.
+Module 1 chapter outlines, listed in learning order. Full content will be developed one chapter at a time.
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M1-C02 | [Representing text as tokens](m1-c02-representing-text-as-tokens.md) | Vocabulary, token IDs, tokenization, encoding and decoding, special tokens, chat templates, preserving token identity |
+| M1-C16 | [Building the single-request generation loop](m1-c16-building-the-single-request-generation-loop.md) | Prompt preparation, repeated forward passes, appending tokens, end-of-sequence tokens, output limits, stop sequences, incremental detokenization, partial text handling |
+
+Follow the complete [Module 1 reading order](../module-1.md) to move between categories.
