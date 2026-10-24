@@ -16,7 +16,7 @@ API contracts, templates, tokenization, control-token identity, incremental pars
 
 ## Chapters
 
-Module 1 chapter outlines, listed in learning order. Full content will be developed one chapter at a time.
+[M1-C02](m1-c02-representing-text-as-tokens.md) is a completed detailed chapter; the other chapters in this category remain outlines. Module 1 chapters below are listed in learning order. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
 
 | Chapter ID | Chapter name | Target concepts |
 | --- | --- | --- |

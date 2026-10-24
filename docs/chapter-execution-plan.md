@@ -11,13 +11,13 @@ Turn 201 outlines into a coherent collection of detailed chapters that helps a r
 
 The reader should be able to open any completed chapter, understand every introduced term, follow a worked numerical example and diagram, describe a reproducible experiment, and explain its pass/fail conditions and limits. High-Frequency Trading (HFT), meaning systems that process market events and make trading decisions under tight timing constraints, provides a lens for critical paths, bounded queues, stale information, and tail latency. A tail is the slower end of a latency distribution. Explain what transfers to inference and what does not; do not present trading advice, assert trading results, or equate inference semantics with exchange behavior.
 
-The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01 is now complete and the next chapter is M1-C02.
+The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01 and M1-C02 are now complete and the next chapter is M1-C03.
 
 
 ## Progress
 
 
-Last updated: 2026-10-24 17:39 IST. Planning setup is complete. Detailed chapter totals: **1 complete, 0 active, 200 not started, 0 blocked**. Active chapter: **None**. Next chapter: **M1-C02**, authoring position 2. An unchecked chapter below is incomplete; update its stage record when work starts or stops. Check a chapter only after its full acceptance gate passes.
+Last updated: 2026-10-24 18:16 IST. Planning setup is complete. Detailed chapter totals: **2 complete, 0 active, 199 not started, 0 blocked**. Active chapter: **None**. Next chapter: **M1-C03**, authoring position 3. An unchecked chapter below is incomplete; update its stage record when work starts or stops. Check a chapter only after its full acceptance gate passes.
 
 - [x] (2026-10-24 17:21 IST) Read the uploaded PLANS.md, the learning requirements, the chapter inventory, and the dependency schedule; confirm Modules 1–7 plus supporting Module 9 and no Module 8.
 - [x] (2026-10-24 17:21 IST) Preserve the planning reference as repository-root PLANS.md and create this living execution plan with all 201 ordered chapter records and their target concepts and direct prerequisites.
@@ -34,11 +34,11 @@ Each record contains the authoring position, chapter ID, target concepts, source
   Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
   Module 9 application: M9-C01 reference contract; M9-C02 timing boundaries; M9-C11 controlled comparisons; M9-C19 token identity and stopping. These supporting chapters remain outlines; introduce the needed checks locally. Updated: 2026-10-24 17:39 IST. Evidence: All six target concepts mapped to explanations and checks; E1–E3 have required fields and matched verification, six-dimension/eight-principle applications, HFT limits, hardware assumptions, and no implementation. Checked original papers, Transformers v4.57.1 documentation, Qwen snapshot eaa56b503cc0a8a4d15de1dd8bd2a7e95a716be2, and NVIDIA specifications. Strict build passed without warnings (3.91 seconds); browser review at /InferX-docs/model-computation-and-semantics/m1-c01-from-a-prompt-to-the-next-token/ confirmed formulas, both diagrams, captions, tables, headings and navigation. Final diagram revision reviewed after refreshing preview. No hardware experiments executed. Next action: Start M1-C02 only after this completion record; no second chapter has been started.
 
-- [ ] 002 — **M1-C02: Representing text as tokens** — Not started.
+- [x] 002 — **M1-C02: Representing text as tokens** — Complete.
   File: [Representing text as tokens](interfaces-protocols-and-streaming/m1-c02-representing-text-as-tokens.md). Category: Interfaces, protocols, and streaming. Phase: 1. Model and numerical foundations.
   Direct prerequisites: M1-C01. Target concepts: Vocabulary, token IDs, tokenization, encoding and decoding, special tokens, chat templates, preserving token identity.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: M9-C01 exact reference contract; M9-C02 preparation timing boundaries; M9-C11 reproducibility and controlled comparisons; M9-C19 tokenizer/template identity and final-output decoding. These remain outlines; explain the required checks locally. Updated: 2026-10-24 18:16 IST. Evidence: Seven target concepts mapped to explanation and checks; E1–E4 required fields and matched verification reviewed; six dimensions, eight principles, HFT limits, CPU requirements and no-code scope covered. Checked RFC 3629, UAX #15 revision 57, the original subword paper, versioned tokenizer/template documentation and Qwen snapshot eaa56b503cc0a8a4d15de1dd8bd2a7e95a716be2. Independent byte/count calculations and local links passed. Strict build passed with zero warnings (4.05 seconds). Browser reviewed /InferX-docs/interfaces-protocols-and-streaming/m1-c02-representing-text-as-tokens/, including both SVG diagrams, captions, formulas, context-budget example, verification table and chapter navigation. No tokenizer or model benchmark executed. Next action: Start M1-C03; all later chapters remain unstarted.
 
 - [ ] 003 — **M1-C03: Numbers, vectors, matrices, and tensors** — Not started.
   File: [Numbers, vectors, matrices, and tensors](model-computation-and-semantics/m1-c03-numbers-vectors-matrices-and-tensors.md). Category: Model computation and semantics. Phase: 1. Model and numerical foundations.
@@ -1238,6 +1238,8 @@ Each record contains the authoring position, chapter ID, target concepts, source
 ## Surprises & Discoveries
 
 
+Observation (2026-10-24 18:16 IST): the pinned Qwen tokenizer metadata lists 131072 maximum length while model configuration lists 32768 maximum positions. Its template also supplies a default system message when absent. Evidence: snapshot tokenizer_config.json and config.json. M1-C02 therefore checks full prepared length against a declared model/runtime budget rather than trusting tokenizer metadata or content-only counts. Direct template-to-IDs does not by itself prove that internal text rendering or copying is absent.
+
 Observation (2026-10-24 17:39 IST): the pinned example checkpoint enables sampling in its generation defaults and lists two EOS IDs, while model configuration lists one. The chapter therefore declares effective greedy settings and a compatible explicit EOS list. Evidence: the Qwen snapshot generation_config.json and config.json in commit eaa56b503cc0a8a4d15de1dd8bd2a7e95a716be2. The preview process also ended during review; restarting it and refreshing confirmed the final diagram and caption rather than a cached draft.
 
 Observation (2026-10-24 17:21 IST): all 201 existing chapter files are still labelled Outline. Evidence: the inventory and ordered schedule each contain 201 chapter IDs, and the source files read during plan preparation contain the outline status banner. Consequently this plan starts at zero completed chapters; the inventory and dependency work completed earlier do not count as detailed chapter completion.
@@ -1250,6 +1252,8 @@ Observation (2026-10-24 17:23 IST): the documentation preview retains the /Infer
 
 ## Decision Log
 
+
+Decision (2026-10-24 18:16 IST, Codex): use constructed ID and byte examples plus four existing-tool experiment designs for M1-C02. Rationale: exact identity, template equivalence, incremental display and preparation performance need distinct checks, without supplying implementation or inventing ordinary-text checkpoint IDs. Choose explicit exercise policies for invalid inputs and reserved-marker user content, and keep these separate from raw library behavior. Preserve fixed documentation versions as explanatory references without asserting package compatibility.
 
 Decision (2026-10-24 17:39 IST, Codex): use one hand-traced experiment plus two inspectable-tool experiment designs for the introductory chapter. Rationale: these exercise every target concept without requiring an implementation or claiming later Module 9 chapters are detailed. Pin a small concrete checkpoint, keep hardware requirements illustrative, and separate initialization-inclusive caller timing from service latency. Preserve existing user changes; no commits or publication are part of chapter completion.
 
@@ -1267,6 +1271,8 @@ Decision: create and validate the plan now with all chapter stages unstarted. Ra
 ## Outcomes & Retrospective
 
 
+Chapter outcome (2026-10-24 18:16 IST): M1-C02 is Complete. It explains all seven target concepts with worked byte/ID, template-overhead, context-budget, storage and latency calculations, two diagrams, four experiment designs, matched verification and introductory Module 9 support. Strict build and rendered-page review passed. Current totals are 2/201 complete, 199 not started, and no active chapter; M1-C03 is next. Exact identity is the acceptance boundary; displayed-text equality and faster preparation alone cannot establish preserved inference behavior or an end-to-end improvement. All performance experiments remain proposed.
+
 Chapter outcome (2026-10-24 17:39 IST): M1-C01 is Complete, with foundational explanations, worked probability/storage/timing calculations, two SVG diagrams, three experiment designs and corresponding verification, six dimensions, eight principles, primary references, hardware requirements, and introductory Module 9 support. Content, strict build, and rendered-page gates passed. Current totals are 1/201 complete and 200 not started; M1-C02 is next, with no active chapter. No inference runtime, experiment results, or performance gains are claimed.
 
 Planning outcome (2026-10-24 17:23 IST): the execution plan is complete and validated. It embeds all 201 chapter records and 535 direct prerequisite relationships, source paths, and target concepts, together with the no-code content contract, six dimensions, eight principles, Module 9 support, and per-chapter acceptance process. The strict documentation build succeeds without warnings, and the rendered plan and navigation have been inspected. Detailed chapter authorship remains at 0/201; no chapter is active. M1-C01 is next. A useful discovery was that the local preview retains the configured /InferX-docs/ URL prefix; the corrected exact preview address is recorded below.
@@ -1283,7 +1289,7 @@ The repository-root `PLANS.md` is the uploaded execution-plan guidance. This fil
 
 `docs/learning-approach.md` defines the shared learning contract. `templates/chapter.md` is the authoring scaffold. `docs/module-1.md` through `docs/module-7.md`, plus `docs/module-9.md`, provide module reading orders. The 14 category directories organize subjects; their `index.md` pages list member chapters. A chapter ID such as M2-C04 identifies Module 2, Chapter 4; authoring position is separate and controls creation order. Do not create Module 8 or infer chapters for the empty Storage and persistence category.
 
-The chapter files already exist and contain target-concept paragraphs. M1-C01 is Complete; the remaining 200 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
+The chapter files already exist and contain target-concept paragraphs. M1-C01 and M1-C02 are Complete; the remaining 199 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
 
 
 ## Plan of Work
@@ -1456,6 +1462,8 @@ The working tree already contains curriculum and inventory changes from prior re
 ## Artifacts and Notes
 
 
+Observed chapter evidence (2026-10-24 18:16 IST): M1-C02 now replaces its outline. Its assets are docs/assets/diagrams/m1-c02-text-to-token-contract.svg and docs/assets/diagrams/m1-c02-identity-and-display.svg. The strict build passed with zero warnings (4.05 seconds); required experiment fields, local links, byte/count examples and git diff --check passed. Browser screenshots confirmed the full preparation path, both identity/display examples, readable notation, context-budget/storage arithmetic and the experiment-verification table. This is documentation-validation evidence, not runtime tokenizer or hardware evidence. Existing unrelated user changes remain preserved.
+
 Observed chapter evidence (2026-10-24 17:39 IST): M1-C01 and two assets, docs/assets/diagrams/m1-c01-request-lifecycle.svg and docs/assets/diagrams/m1-c01-request-timeline.svg, replace the starting outline with detailed educational content. Required experiment fields and local links were checked, git diff --check passed, and the strict MkDocs build succeeded without warnings. Browser screenshots reviewed the chain-rule notation and worked-example table, the request timeline with units, the experiment-verification table, and the final lifecycle branch including output finalization. A content review checked all six target concepts, dimensions, principles, and no-code/no-invented-measurement boundaries. Existing working-tree edits outside this chapter remain preserved.
 
 The durable artifacts are repository-root `PLANS.md`, this execution plan, the ordered 201 chapter source files named in the ledger, and any chapter-specific diagrams or cited source notes required during authorship. Generated web pages live under `site/` and are not the progress source of truth. Do not add temporary authoring programs or an inference implementation to the deliverables.
@@ -1486,3 +1494,9 @@ Primary-source research is required when writing each chapter, not as a claim th
 
 
 2026-10-24 17:39 IST: Completed M1-C01 after content, strict-build and rendered-page review; reconciled chapter banner, ledger stages, curriculum summaries, current totals and next chapter. Recorded reference-policy discovery and timing-boundary decisions. All remaining 200 chapters remain unstarted.
+
+
+2026-10-24 17:43 IST: Began M1-C02 as the only active chapter after confirming M1-C01 is Complete. Preserved the existing README.md, mkdocs.yml, templates/chapter.md and PLANS.md working-tree changes.
+
+
+2026-10-24 18:16 IST: Completed M1-C02 after checking primary sources, all seven target concepts, four experiment/verification designs, diagrams, no-code scope, strict build and rendered-page presentation. Updated chapter/category/module status, inventory, summaries and the ledger to 2 complete and 199 unstarted, with M1-C03 next.

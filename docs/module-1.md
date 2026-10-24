@@ -1,6 +1,6 @@
 # Module 1: Understand exactly what happens when an LLM generates a token
 
-> **Status: 1 of 20 detailed chapters complete.** [M1-C01](model-computation-and-semantics/m1-c01-from-a-prompt-to-the-next-token.md) is complete; M1-C02–C20 remain outlines. Track sequential development in the [execution plan](chapter-execution-plan.md).
+> **Status: 2 of 20 detailed chapters complete.** [M1-C01](model-computation-and-semantics/m1-c01-from-a-prompt-to-the-next-token.md) and [M1-C02](interfaces-protocols-and-streaming/m1-c02-representing-text-as-tokens.md) are complete; M1-C03–C20 remain outlines. Track sequential development in the [execution plan](chapter-execution-plan.md).
 
 ## Learning goal
 
