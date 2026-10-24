@@ -17,11 +17,13 @@ The observable deliverable is the existing InferX documentation site with detail
 ## Progress
 
 
-Last updated: 2026-10-24 18:36 IST. Planning setup is complete. Detailed chapter totals: **3 complete, 0 active, 198 not started, 0 blocked**. Active chapter: **None**. Next chapter: **M1-C04**, authoring position 4. An unchecked chapter below is incomplete; update its stage record when work starts or stops. Check a chapter only after its full acceptance gate passes.
+Last updated: 2026-10-24 18:41 IST. Planning setup is complete. Detailed chapter totals: **3 complete, 0 active, 198 not started, 0 blocked**. Active chapter: **None**. Next chapter: **M1-C04**, authoring position 4. An unchecked chapter below is incomplete; update its stage record when work starts or stops. Check a chapter only after its full acceptance gate passes.
 
 - [x] (2026-10-24 17:21 IST) Read the uploaded PLANS.md, the learning requirements, the chapter inventory, and the dependency schedule; confirm Modules 1–7 plus supporting Module 9 and no Module 8.
 - [x] (2026-10-24 17:21 IST) Preserve the planning reference as repository-root PLANS.md and create this living execution plan with all 201 ordered chapter records and their target concepts and direct prerequisites.
 - [x] (2026-10-24 17:23 IST) Validate all 201 chapter records, 535 direct prerequisites, source paths and target concepts; confirm the strict documentation build succeeds without warnings and inspect the rendered plan, Home navigation, progress summary, and ledger.
+
+- [x] (2026-10-24 18:41 IST) Reproduce the GitHub failure with committed navigation (exit 1, the same two warning groups) and verify the corrected working-tree mkdocs.yml (exit 0, no warnings). The root configuration remains an uncommitted required fix; no remote rerun is claimed. Chapter totals remain 3 complete and 198 not started.
 
 ### Per-chapter progress ledger
 
@@ -1238,6 +1240,8 @@ Each record contains the authoring position, chapter ID, target concepts, source
 ## Surprises & Discoveries
 
 
+Observation (2026-10-24 18:41 IST): the reported GitHub failure exactly matches HEAD:mkdocs.yml, which omits the inventory, authoring order and execution-plan pages and still references the removed multimodal M9-C25 path. The working-tree mkdocs.yml already contains all four navigation corrections but is not committed. Evidence: committed-config reproduction exits 1 with the same two warning groups; the working-tree strict build exits 0 without warnings (4.02 seconds). Earlier local validation used the working tree, so it did not establish that the committed configuration would pass CI.
+
 Observation (2026-10-24 18:36 IST): coordinate labels must be checked against the entire fixture range. In the longer (8, 128, 64) fixture, 10000b + 100s + j would give the same label to (1, 0, 0) and (0, 100, 0). The final 100000b + 100s + j labels were independently checked for all 65,536 coordinates: unique, maximum 712763, and exactly representable in binary32. This validates the teaching fixture, not runtime performance. The local preview required a restart; full SVG asset screenshots completed the diagram review after page scrolling proved unreliable.
 
 Observation (2026-10-24 18:16 IST): the pinned Qwen tokenizer metadata lists 131072 maximum length while model configuration lists 32768 maximum positions. Its template also supplies a default system message when absent. Evidence: snapshot tokenizer_config.json and config.json. M1-C02 therefore checks full prepared length against a declared model/runtime budget rather than trusting tokenizer metadata or content-only counts. Direct template-to-IDs does not by itself prove that internal text rendering or copying is absent.
@@ -1254,6 +1258,8 @@ Observation (2026-10-24 17:23 IST): the documentation preview retains the /Infer
 
 ## Decision Log
 
+
+Decision (2026-10-24 18:41 IST, Codex): retain strict navigation validation and the existing corrected root configuration; no workflow or chapter changes are needed for the reported failure. Rationale: publishing the missing mkdocs.yml changes resolves the observed discrepancy. Future handoffs must identify required uncommitted configuration changes and distinguish local build evidence from committed/remote CI evidence. Do not commit or push automatically.
 
 Decision (2026-10-24 18:36 IST, Codex): teach logical shape/axis/index contracts and basic Rust ownership representations before physical layouts and matrix arithmetic. Rationale: M1-C05 owns strides and views, while M1-C04 owns multiplication. Use a logical enumeration ordinal without claiming a general memory-address formula. Keep Rust names and representation descriptions as prose, with three experiment designs and no implementation. Supplement shape checks with exact coordinate labels and preserve scalar, zero-extent and unknown-shape distinctions.
 
@@ -1274,6 +1280,8 @@ Decision: create and validate the plan now with all chapter stages unstarted. Ra
 
 ## Outcomes & Retrospective
 
+
+Build-maintenance outcome (2026-10-24 18:41 IST): diagnosed and reproduced the reported failure from committed navigation. The complete correction is the existing mkdocs.yml diff: three Home entries plus the renamed text-generation M9-C25 entry. The working-tree strict build passes; the root configuration must be included in the next commit and push before GitHub can use that correction. No GitHub rerun or deployment result is asserted. Chapter progress remains 3/201 complete, with M1-C04 next.
 
 Chapter outcome (2026-10-24 18:36 IST): M1-C03 is Complete. It supplies all nine target concepts, worked scalar/count/index/padding/byte/latency examples, two diagrams, basic Rust representation contracts, three experiments with matched verification, all six dimensions and eight principles, primary references and CPU requirements. Content review, independent numerical checks, strict build and browser/diagram review passed. Current totals are 3/201 complete, 198 not started and no active chapter; M1-C04 is next. Remaining chapters are untouched; all runtime performance studies remain proposed.
 
@@ -1514,3 +1522,6 @@ Primary-source research is required when writing each chapter, not as a claim th
 
 
 2026-10-24 18:36 IST: Completed M1-C03 after primary-source, content, numerical, strict-build and rendered-page/diagram review. Reconciled chapter/banner/ledger/module/category/inventory summaries to 3 complete, 198 unstarted and M1-C04 next. Recorded the larger-fixture label validation and separation of logical indexing from later physical-layout treatment.
+
+
+2026-10-24 18:41 IST: Recorded the GitHub/local navigation mismatch, exact failure reproduction and successful working-tree build. Added an explicit handoff check for uncommitted configuration dependencies; chapter progress and scope are unchanged.
