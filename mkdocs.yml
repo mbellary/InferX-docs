@@ -56,6 +56,9 @@ validation:
 nav:
   - Home:
       - Overview: index.md
+      - Chapter outline inventory: chapter-outline-inventory.md
+      - Detailed chapter authoring order: chapter-authoring-order.md
+      - Chapter execution plan and progress: chapter-execution-plan.md
       - "Module 1: Reading order": module-1.md
       - "Module 2: Reading order": module-2.md
       - "Module 3: Reading order": module-3.md
@@ -108,7 +111,7 @@ nav:
       - "M9-C20: Validating KV reuse and prefix-cache identity": numerics-and-correctness/m9-c20-validating-kv-reuse-and-prefix-cache-identity.md
       - "M9-C23: Testing batch, schedule, and graph invariance": numerics-and-correctness/m9-c23-testing-batch-schedule-and-graph-invariance.md
       - "M9-C24: Validating approximate and constrained optimization paths": numerics-and-correctness/m9-c24-validating-approximate-and-constrained-optimization-paths.md
-      - "M9-C25: Validating one multimodal pipeline end to end": numerics-and-correctness/m9-c25-validating-one-multimodal-pipeline-end-to-end.md
+      - "M9-C25: Validating the text-generation serving pipeline end to end": numerics-and-correctness/m9-c25-validating-the-text-generation-serving-pipeline-end-to-end.md
   - "Hardware architecture and topology":
       - Overview: hardware-architecture-and-topology/index.md
       - "M3-C01: Following a tensor from CPU to GPU": hardware-architecture-and-topology/m3-c01-following-a-tensor-from-cpu-to-gpu.md
