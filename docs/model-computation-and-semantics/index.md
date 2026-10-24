@@ -44,3 +44,12 @@ Follow the complete [Module 1 reading order](../module-1.md) to move between cat
 | M2-C18 | [Architecture-specific state: Multi-head Latent Attention](m2-c18-architecture-specific-state-multi-head-latent-attention.md) | MLA compressed latent state, positional components, architecture-specific cache representations, storage versus reconstruction work, limits of the conventional KV formula |
 
 Follow the complete [Module 2 reading order](../module-2.md) to move between categories.
+
+### Module 6
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M6-C14 | [Draft proposals and parallel target verification](m6-c14-draft-proposals-and-parallel-target-verification.md) | Draft and target models, proposal length, autoregressive draft generation, causal target scoring, conditional distributions, accepted prefixes, bonus or correction tokens, stopping rules |
+| M6-C21 | [LoRA foundations and adapter-specific computation](m6-c21-lora-foundations-and-adapter-specific-computation.md) | Low-rank updates, base weights, adapter matrices, rank and scaling, target layers, merged versus unmerged computation, adapter identity, reference outputs, heterogeneous adapter requests |
+
+Follow the complete [Module 6 reading order](../module-6.md) to move between categories.

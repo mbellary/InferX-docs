@@ -53,3 +53,12 @@ Follow the complete [Module 3 reading order](../module-3.md) to move between cat
 | M5-C19 | [Preemption, resumption, and the cost of lost progress](m5-c19-preemption-resumption-and-the-cost-of-lost-progress.md) | Iteration-boundary preemption, victim selection, retained state versus recomputation, optional swap costs, resume semantics, KV reclamation, anti-thrashing rules, bounded starvation |
 
 Follow the complete [Module 5 reading order](../module-5.md) to move between categories.
+
+### Module 6
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M6-C06 | [Balancing cache locality, fairness, and load](m6-c06-balancing-cache-locality-fairness-and-load.md) | Prefix-aware ordering, shared-prefix workloads, reuse skew, starvation prevention, cache affinity, queueing versus saved work, worker-load tradeoffs, limits of local policies |
+| M6-C23 | [Batching requests across multiple LoRA adapters](m6-c23-batching-requests-across-multiple-lora-adapters.md) | Adapter selection, heterogeneous ranks, low-rank batched operations, grouping versus mixing, dispatch and padding costs, locality versus fairness, rare adapters, memory-aware admission |
+
+Follow the complete [Module 6 reading order](../module-6.md) to move between categories.

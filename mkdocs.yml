@@ -61,6 +61,7 @@ nav:
       - "Module 3: Reading order": module-3.md
       - "Module 4: Reading order": module-4.md
       - "Module 5: Reading order": module-5.md
+      - "Module 6: Reading order": module-6.md
       - Learning approach: learning-approach.md
   - "Model computation and semantics":
       - Overview: model-computation-and-semantics/index.md
@@ -77,6 +78,8 @@ nav:
       - "M2-C02: Attention head sharing: MHA, GQA, and MQA": model-computation-and-semantics/m2-c02-attention-head-sharing-mha-gqa-and-mqa.md
       - "M2-C17: Sliding-window attention and bounded cache state": model-computation-and-semantics/m2-c17-sliding-window-attention-and-bounded-cache-state.md
       - "M2-C18: Architecture-specific state: Multi-head Latent Attention": model-computation-and-semantics/m2-c18-architecture-specific-state-multi-head-latent-attention.md
+      - "M6-C14: Draft proposals and parallel target verification": model-computation-and-semantics/m6-c14-draft-proposals-and-parallel-target-verification.md
+      - "M6-C21: LoRA foundations and adapter-specific computation": model-computation-and-semantics/m6-c21-lora-foundations-and-adapter-specific-computation.md
   - "Numerics and correctness":
       - Overview: numerics-and-correctness/index.md
       - "M1-C06: Reductions, probabilities, and stable softmax": numerics-and-correctness/m1-c06-reductions-probabilities-and-stable-softmax.md
@@ -88,6 +91,13 @@ nav:
       - "M4-C19: Randomness, reproducibility, and sampling equivalence": numerics-and-correctness/m4-c19-randomness-reproducibility-and-sampling-equivalence.md
       - "M4-C20: Validating fused kernels and graph replay": numerics-and-correctness/m4-c20-validating-fused-kernels-and-graph-replay.md
       - "M5-C23: Validating scheduling and memory invariants": numerics-and-correctness/m5-c23-validating-scheduling-and-memory-invariants.md
+      - "M6-C01: Defining an optimization’s correctness and cost contract": numerics-and-correctness/m6-c01-defining-an-optimization-s-correctness-and-cost-contract.md
+      - "M6-C08: Quantization fundamentals: scales, zero points, and rounding": numerics-and-correctness/m6-c08-quantization-fundamentals-scales-zero-points-and-rounding.md
+      - "M6-C09: Weight quantization and grouping granularity": numerics-and-correctness/m6-c09-weight-quantization-and-grouping-granularity.md
+      - "M6-C10: Calibration and representative data selection": numerics-and-correctness/m6-c10-calibration-and-representative-data-selection.md
+      - "M6-C12: KV-cache quantization and attention numerics": numerics-and-correctness/m6-c12-kv-cache-quantization-and-attention-numerics.md
+      - "M6-C13: Validating quantization quality and memory savings": numerics-and-correctness/m6-c13-validating-quantization-quality-and-memory-savings.md
+      - "M6-C15: Distribution-preserving speculative acceptance": numerics-and-correctness/m6-c15-distribution-preserving-speculative-acceptance.md
   - "Hardware architecture and topology":
       - Overview: hardware-architecture-and-topology/index.md
       - "M3-C01: Following a tensor from CPU to GPU": hardware-architecture-and-topology/m3-c01-following-a-tensor-from-cpu-to-gpu.md
@@ -117,6 +127,7 @@ nav:
       - "M4-C15: CUDA Graph capture, instantiation, and replay": kernels-compilers-and-execution/m4-c15-cuda-graph-capture-instantiation-and-replay.md
       - "M4-C17: Designing a fused normalization kernel": kernels-compilers-and-execution/m4-c17-designing-a-fused-normalization-kernel.md
       - "M4-C18: Designing a fused sampling kernel": kernels-compilers-and-execution/m4-c18-designing-a-fused-sampling-kernel.md
+      - "M6-C11: Packing, dequantization, and quantized kernel execution": kernels-compilers-and-execution/m6-c11-packing-dequantization-and-quantized-kernel-execution.md
   - "State, memory, and caching":
       - Overview: state-memory-and-caching/index.md
       - "M1-C05: How tensors occupy memory": state-memory-and-caching/m1-c05-how-tensors-occupy-memory.md
@@ -133,6 +144,11 @@ nav:
       - "M2-C13: Prefix reuse and cache identity": state-memory-and-caching/m2-c13-prefix-reuse-and-cache-identity.md
       - "M2-C14: Eviction, retention, and reconstruction": state-memory-and-caching/m2-c14-eviction-retention-and-reconstruction.md
       - "M3-C10: Host and device buffer placement and lifetime": state-memory-and-caching/m3-c10-host-and-device-buffer-placement-and-lifetime.md
+      - "M6-C02: Defining prefix identity through equivalent computation": state-memory-and-caching/m6-c02-defining-prefix-identity-through-equivalent-computation.md
+      - "M6-C03: Tries, radix trees, and longest-prefix matching": state-memory-and-caching/m6-c03-tries-radix-trees-and-longest-prefix-matching.md
+      - "M6-C04: Connecting a radix index to paged KV blocks": state-memory-and-caching/m6-c04-connecting-a-radix-index-to-paged-kv-blocks.md
+      - "M6-C05: Reference-safe retention, eviction, and cancellation": state-memory-and-caching/m6-c05-reference-safe-retention-eviction-and-cancellation.md
+      - "M6-C22: Adapter residency, lifetime, and cache compatibility": state-memory-and-caching/m6-c22-adapter-residency-lifetime-and-cache-compatibility.md
   - "Runtime and concurrency":
       - Overview: runtime-and-concurrency/index.md
       - "M1-C18: Understanding prefill and decode": runtime-and-concurrency/m1-c18-understanding-prefill-and-decode.md
@@ -150,6 +166,10 @@ nav:
       - "M5-C05: Synchronization, ownership, and resource lifetimes": runtime-and-concurrency/m5-c05-synchronization-ownership-and-resource-lifetimes.md
       - "M5-C06: Asynchronous execution and completion-driven progress": runtime-and-concurrency/m5-c06-asynchronous-execution-and-completion-driven-progress.md
       - "M5-C22: Designing the scheduler state machine and executor contract": runtime-and-concurrency/m5-c22-designing-the-scheduler-state-machine-and-executor-contract.md
+      - "M6-C07: Integrating prefix caching into prefill and decode": runtime-and-concurrency/m6-c07-integrating-prefix-caching-into-prefill-and-decode.md
+      - "M6-C16: Managing draft and target state during speculation": runtime-and-concurrency/m6-c16-managing-draft-and-target-state-during-speculation.md
+      - "M6-C24: Composing optimizations without breaking contracts": runtime-and-concurrency/m6-c24-composing-optimizations-without-breaking-contracts.md
+      - "M6-C27: Building prefix caching and one additional optimization": runtime-and-concurrency/m6-c27-building-prefix-caching-and-one-additional-optimization.md
   - "Scheduling and queueing":
       - Overview: scheduling-and-queueing/index.md
       - "M2-C15: Admission and growth under a finite KV budget": scheduling-and-queueing/m2-c15-admission-and-growth-under-a-finite-kv-budget.md
@@ -167,6 +187,8 @@ nav:
       - "M5-C17: Chunked prefill and resumable prompt processing": scheduling-and-queueing/m5-c17-chunked-prefill-and-resumable-prompt-processing.md
       - "M5-C18: Choosing chunk sizes and balancing prefill with decode": scheduling-and-queueing/m5-c18-choosing-chunk-sizes-and-balancing-prefill-with-decode.md
       - "M5-C19: Preemption, resumption, and the cost of lost progress": scheduling-and-queueing/m5-c19-preemption-resumption-and-the-cost-of-lost-progress.md
+      - "M6-C06: Balancing cache locality, fairness, and load": scheduling-and-queueing/m6-c06-balancing-cache-locality-fairness-and-load.md
+      - "M6-C23: Batching requests across multiple LoRA adapters": scheduling-and-queueing/m6-c23-batching-requests-across-multiple-lora-adapters.md
   - "Parallelism and decomposition":
       - Overview: parallelism-and-decomposition/index.md
   - "Networking and communication":
@@ -181,10 +203,14 @@ nav:
       - "M1-C02: Representing text as tokens": interfaces-protocols-and-streaming/m1-c02-representing-text-as-tokens.md
       - "M1-C16: Building the single-request generation loop": interfaces-protocols-and-streaming/m1-c16-building-the-single-request-generation-loop.md
       - "M5-C21: Streaming results without unbounded buffering": interfaces-protocols-and-streaming/m5-c21-streaming-results-without-unbounded-buffering.md
+      - "M6-C18: Grammar-constrained decoding from tokens to parser state": interfaces-protocols-and-streaming/m6-c18-grammar-constrained-decoding-from-tokens-to-parser-state.md
+      - "M6-C19: Grammar compilation and vocabulary-mask execution": interfaces-protocols-and-streaming/m6-c19-grammar-compilation-and-vocabulary-mask-execution.md
+      - "M6-C20: Structured-output validity, termination, and failure": interfaces-protocols-and-streaming/m6-c20-structured-output-validity-termination-and-failure.md
   - "Reliability and capacity control":
       - Overview: reliability-and-capacity-control/index.md
       - "M2-C16: Completion, cancellation, and allocation failure": reliability-and-capacity-control/m2-c16-completion-cancellation-and-allocation-failure.md
       - "M5-C20: Cancellation, deadlines, and worker failure": reliability-and-capacity-control/m5-c20-cancellation-deadlines-and-worker-failure.md
+      - "M6-C25: Handling unsupported cases and optimization failures": reliability-and-capacity-control/m6-c25-handling-unsupported-cases-and-optimization-failures.md
   - "Measurement, experimentation, and economics":
       - Overview: measurement-experimentation-and-economics/index.md
       - "M1-C08: Operation counts and actual execution cost": measurement-experimentation-and-economics/m1-c08-operation-counts-and-actual-execution-cost.md
@@ -203,3 +229,6 @@ nav:
       - "M5-C07: Describing mixed serving workloads and arrival traces": measurement-experimentation-and-economics/m5-c07-describing-mixed-serving-workloads-and-arrival-traces.md
       - "M5-C24: Comparing scheduling policies on the same arrival trace": measurement-experimentation-and-economics/m5-c24-comparing-scheduling-policies-on-the-same-arrival-trace.md
       - "M5-C25: Measuring sustainable capacity, fairness, and tail behavior": measurement-experimentation-and-economics/m5-c25-measuring-sustainable-capacity-fairness-and-tail-behavior.md
+      - "M6-C17: When speculative decoding helps or hurts": measurement-experimentation-and-economics/m6-c17-when-speculative-decoding-helps-or-hurts.md
+      - "M6-C26: Designing the optimization workload and comparison matrix": measurement-experimentation-and-economics/m6-c26-designing-the-optimization-workload-and-comparison-matrix.md
+      - "M6-C28: Establishing end-to-end benefit and regression boundaries": measurement-experimentation-and-economics/m6-c28-establishing-end-to-end-benefit-and-regression-boundaries.md

@@ -68,3 +68,13 @@ Follow the complete [Module 4 reading order](../module-4.md) to move between cat
 | M5-C25 | [Measuring sustainable capacity, fairness, and tail behavior](m5-c25-measuring-sustainable-capacity-fairness-and-tail-behavior.md) | Time to first token, inter-token and total latency distributions, SLO definitions, goodput, completed tokens per second, queue depth, KV occupancy, CPU and GPU profiling, offered-load sweeps, coordinated omission, uncertainty, per-class fairness |
 
 Follow the complete [Module 5 reading order](../module-5.md) to move between categories.
+
+### Module 6
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M6-C17 | [When speculative decoding helps or hurts](m6-c17-when-speculative-decoding-helps-or-hurts.md) | Draft cost, target verification cost, acceptance rate and accepted length, useful output tokens, proposal length, batch and context effects, shared-resource contention, extra memory, break-even workloads |
+| M6-C26 | [Designing the optimization workload and comparison matrix](m6-c26-designing-the-optimization-workload-and-comparison-matrix.md) | Prefix reuse and skew, context and output lengths, arrivals and concurrency, precision settings, draft agreement, grammar complexity, adapter mix, fixed resource budgets, cold and warm runs, ablations |
+| M6-C28 | [Establishing end-to-end benefit and regression boundaries](m6-c28-establishing-end-to-end-benefit-and-regression-boundaries.md) | Correctness and quality gates, first-token and inter-token latency, tail distributions, goodput, capacity, CPU and GPU overhead, actual memory, compilation and loading amortization, fairness, cost, uncertainty, helps-versus-hurts results |
+
+Follow the complete [Module 6 reading order](../module-6.md) to move between categories.

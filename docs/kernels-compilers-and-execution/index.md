@@ -56,3 +56,11 @@ Follow the complete [Module 3 reading order](../module-3.md) to move between cat
 | M4-C18 | [Designing a fused sampling kernel](m4-c18-designing-a-fused-sampling-kernel.md) | Logit transforms, temperature, greedy selection, top-k and top-p boundaries, normalization, random draws, tie rules, vocabulary padding, exact versus approximate sampling contracts |
 
 Follow the complete [Module 4 reading order](../module-4.md) to move between categories.
+
+### Module 6
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M6-C11 | [Packing, dequantization, and quantized kernel execution](m6-c11-packing-dequantization-and-quantized-kernel-execution.md) | Bit packing, alignment and padding, group metadata, fused versus separate dequantization, compute paths, hardware support, kernel eligibility, conversion overhead, effective memory savings |
+
+Follow the complete [Module 6 reading order](../module-6.md) to move between categories.

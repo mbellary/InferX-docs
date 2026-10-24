@@ -67,3 +67,14 @@ Follow the complete [Module 4 reading order](../module-4.md) to move between cat
 | M5-C22 | [Designing the scheduler state machine and executor contract](m5-c22-designing-the-scheduler-state-machine-and-executor-contract.md) | Queued, admitted, prefill, decode, preempted and terminal states, event ordering, batch descriptors, completion messages, cache allocator integration, Rust ownership boundaries, failure transitions |
 
 Follow the complete [Module 5 reading order](../module-5.md) to move between categories.
+
+### Module 6
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M6-C07 | [Integrating prefix caching into prefill and decode](m6-c07-integrating-prefix-caching-into-prefill-and-decode.md) | Lookup and admission, uncached suffix execution, full-prefix hits and next-token logits, last-token boundary handling, publishing reusable state, concurrent lifetime rules, cancellation, correct uncached fallback |
+| M6-C16 | [Managing draft and target state during speculation](m6-c16-managing-draft-and-target-state-during-speculation.md) | Separate KV states, tentative versus committed tokens, accepted-prefix commits, rejected-tail rollback, token positions, RNG ownership, EOS and stop boundaries, cancellation, memory budgets |
+| M6-C24 | [Composing optimizations without breaking contracts](m6-c24-composing-optimizations-without-breaking-contracts.md) | Prefix caching with adapters and quantized state, constrained speculative distributions, graph and shape compatibility, conversion boundaries, RNG and grammar ownership, interaction tests, incremental feature enablement |
+| M6-C27 | [Building prefix caching and one additional optimization](m6-c27-building-prefix-caching-and-one-additional-optimization.md) | Prefix-cache baseline integration, choosing weight or KV quantization, speculation, structured decoding or multi-LoRA, staged validation gates, runtime contracts, feature controls, reproducible configuration, no-code build specification |
+
+Follow the complete [Module 6 reading order](../module-6.md) to move between categories.

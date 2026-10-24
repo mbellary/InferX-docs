@@ -61,3 +61,17 @@ Follow the complete [Module 4 reading order](../module-4.md) to move between cat
 | M5-C23 | [Validating scheduling and memory invariants](m5-c23-validating-scheduling-and-memory-invariants.md) | No lost or duplicate work, legal state transitions, request-token identity, future-growth budget invariants, live KV references, cancellation safety, fairness checks, per-request RNG state, batch-dependent numerical tolerances |
 
 Follow the complete [Module 5 reading order](../module-5.md) to move between categories.
+
+### Module 6
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M6-C01 | [Defining an optimization’s correctness and cost contract](m6-c01-defining-an-optimization-s-correctness-and-cost-contract.md) | Mechanism, semantic equivalence, numerical approximation, intentional output constraints, reference behavior, resource savings, added overhead, failure cases, workload-dependent benefit |
+| M6-C08 | [Quantization fundamentals: scales, zero points, and rounding](m6-c08-quantization-fundamentals-scales-zero-points-and-rounding.md) | Representable ranges, integer and floating low-bit formats, scale factors, zero points, symmetric and asymmetric schemes, clipping, rounding, dequantization, approximation error |
+| M6-C09 | [Weight quantization and grouping granularity](m6-c09-weight-quantization-and-grouping-granularity.md) | Weight-only versus weight-and-activation quantization, per-tensor and per-channel scales, groups, outliers, group-size tradeoffs, metadata bytes, accumulation precision, model-format compatibility |
+| M6-C10 | [Calibration and representative data selection](m6-c10-calibration-and-representative-data-selection.md) | Calibration objectives, activation statistics, clipping and scale selection, distribution shift, representative prompts, held-out evaluation, calibration leakage, reproducibility |
+| M6-C12 | [KV-cache quantization and attention numerics](m6-c12-kv-cache-quantization-and-attention-numerics.md) | Key versus value distributions, per-token and per-channel scales, cache writes and reads, residual high-precision regions, long-context error, metadata and conversion costs, cache identity |
+| M6-C13 | [Validating quantization quality and memory savings](m6-c13-validating-quantization-quality-and-memory-savings.md) | Floating-reference comparisons, layer and logit errors, perplexity and task quality, long-context evaluation, quality thresholds, held-out workloads, actual allocation accounting, failure cases |
+| M6-C15 | [Distribution-preserving speculative acceptance](m6-c15-distribution-preserving-speculative-acceptance.md) | Target and proposal probabilities, acceptance ratios, sequential acceptance, first rejection, positive-part residual distribution, all-accepted bonus sampling, support edge cases, greedy versus stochastic contracts |
+
+Follow the complete [Module 6 reading order](../module-6.md) to move between categories.

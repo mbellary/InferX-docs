@@ -32,3 +32,13 @@ Follow the complete [Module 1 reading order](../module-1.md) to move between cat
 | M5-C21 | [Streaming results without unbounded buffering](m5-c21-streaming-results-without-unbounded-buffering.md) | Per-request token ordering, result routing, bounded output queues, slow consumers, output backpressure, disconnect handling, completion delivery, generation versus client-visible timing |
 
 Follow the complete [Module 5 reading order](../module-5.md) to move between categories.
+
+### Module 6
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M6-C18 | [Grammar-constrained decoding from tokens to parser state](m6-c18-grammar-constrained-decoding-from-tokens-to-parser-state.md) | Regular versus context-free languages, finite-state machines and parser stacks, token-to-byte transitions, grammar state, valid continuations, accepting states, tokenizer compatibility |
+| M6-C19 | [Grammar compilation and vocabulary-mask execution](m6-c19-grammar-compilation-and-vocabulary-mask-execution.md) | Grammar and schema compilation, mask generation, token filtering, mask caching, state advancement, CPU-GPU coordination, preprocessing versus per-token overhead, constraint and sampling order |
+| M6-C20 | [Structured-output validity, termination, and failure](m6-c20-structured-output-validity-termination-and-failure.md) | Syntactic validity versus semantic correctness, incomplete outputs, empty allowed-token sets, EOS legality, unsupported schema features, compilation failures, length limits, cancellation, explicit failure contracts |
+
+Follow the complete [Module 6 reading order](../module-6.md) to move between categories.
