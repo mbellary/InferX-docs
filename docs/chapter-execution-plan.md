@@ -11,19 +11,19 @@ Turn 201 outlines into a coherent collection of detailed chapters that helps a r
 
 The reader should be able to open any completed chapter, understand every introduced term, follow a worked numerical example and diagram, describe a reproducible experiment, and explain its pass/fail conditions and limits. High-Frequency Trading (HFT), meaning systems that process market events and make trading decisions under tight timing constraints, provides a lens for critical paths, bounded queues, stale information, and tail latency. A tail is the slower end of a latency distribution. Explain what transfers to inference and what does not; do not present trading advice, assert trading results, or equate inference semantics with exchange behavior.
 
-The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01, M1-C02 and M1-C03 are now complete and the next chapter is M1-C04.
+The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01, M1-C02, M1-C03 and M1-C04 are now complete and the next chapter is M1-C05.
 
 
 ## Progress
 
 
-Last updated: 2026-10-24 18:41 IST. Planning setup is complete. Detailed chapter totals: **3 complete, 0 active, 198 not started, 0 blocked**. Active chapter: **None**. Next chapter: **M1-C04**, authoring position 4. An unchecked chapter below is incomplete; update its stage record when work starts or stops. Check a chapter only after its full acceptance gate passes.
+Last updated: 2026-10-24 19:04 IST. Planning setup is complete. Detailed chapter totals: **4 complete, 0 active, 197 not started, 0 blocked**. Next chapter: **M1-C05**, authoring position 5. An unchecked chapter below is incomplete; update its stage record when work starts or stops. Check a chapter only after its full acceptance gate passes.
 
 - [x] (2026-10-24 17:21 IST) Read the uploaded PLANS.md, the learning requirements, the chapter inventory, and the dependency schedule; confirm Modules 1–7 plus supporting Module 9 and no Module 8.
 - [x] (2026-10-24 17:21 IST) Preserve the planning reference as repository-root PLANS.md and create this living execution plan with all 201 ordered chapter records and their target concepts and direct prerequisites.
 - [x] (2026-10-24 17:23 IST) Validate all 201 chapter records, 535 direct prerequisites, source paths and target concepts; confirm the strict documentation build succeeds without warnings and inspect the rendered plan, Home navigation, progress summary, and ledger.
 
-- [x] (2026-10-24 18:41 IST) Reproduce the GitHub failure with committed navigation (exit 1, the same two warning groups) and verify the corrected working-tree mkdocs.yml (exit 0, no warnings). The root configuration remains an uncommitted required fix; no remote rerun is claimed. Chapter totals remain 3 complete and 198 not started.
+- [x] (2026-10-24 18:41 IST) Reproduce the GitHub failure with committed navigation (exit 1, the same two warning groups) and verify the corrected working-tree mkdocs.yml (exit 0, no warnings). At that stopping point the root configuration was still uncommitted. It is now included in user commit 3beea89 (verified during M1-C04 startup); no remote rerun is claimed. Chapter totals remain 3 complete and 198 not started.
 
 ### Per-chapter progress ledger
 
@@ -48,11 +48,11 @@ Each record contains the authoring position, chapter ID, target concepts, source
   Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
   Module 9 application: M9-C01 reference invariants and exact shape/index checks; M9-C02 timing boundaries; M9-C11 controlled comparisons; M9-C15 payload versus allocation accounting. These remain outlines; introduce the required checks locally. Updated: 2026-10-24 18:36 IST. Evidence: All nine target concepts mapped to explanations and checks; E1–E3 required fields, matched verification, HFT limits, six dimensions and eight principles reviewed. Checked NumPy 2.3, ONNX tensor conventions, Rust numeric/array/vector/slice specifications, ndarray 0.16.1 and the primary Array Programming with NumPy article. Independent checks passed for counts, indexing, padding, 65,536 unique larger-fixture labels and their exact binary32 representation. Strict build passed without warnings (3.98 seconds). Browser reviewed the chapter at /InferX-docs/model-computation-and-semantics/m1-c03-numbers-vectors-matrices-and-tensors/, its formulas/tables/navigation, and both SVG assets in full. No tensor runtime or inference benchmark executed. Next action: Start M1-C04; all later chapters remain unstarted.
 
-- [ ] 004 — **M1-C04: Dot products and matrix multiplication** — Not started.
+- [x] 004 — **M1-C04: Dot products and matrix multiplication** — Complete.
   File: [Dot products and matrix multiplication](model-computation-and-semantics/m1-c04-dot-products-and-matrix-multiplication.md). Category: Model computation and semantics. Phase: 1. Model and numerical foundations.
   Direct prerequisites: M1-C03. Target concepts: Weighted sums, dot products, matrix multiplication, dimension compatibility, batched multiplication, model projections.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: M9-C01 mathematical reference and exact small-fixture invariants; M9-C02 completion/timing boundaries; M9-C11 controlled workload comparisons. These remain outlines; required checks are introduced locally, with general floating-point tolerances deferred to M1-C07/M9-C17. Updated: 2026-10-24 19:04 IST. Evidence: All six target concepts mapped to explanations and checks; E1–E4 required fields, matched verification, six dimensions, eight principles, HFT limits and CPU requirements reviewed. Checked primary operation specifications and projection orientation. Independent arithmetic checks passed for dot/matrix/bias/order/shared/distinct-weight results, byte/work counts and bounded exact binary32 benchmark fixtures. Strict build passed without warnings after completion tracking (4.06 seconds). Browser reviewed chapter formulas and verification tables plus all three SVG diagrams in full at /InferX-docs/model-computation-and-semantics/m1-c04-dot-products-and-matrix-multiplication/. No runtime benchmark executed. Next action: M1-C05; all later chapters remain unstarted.
 
 - [ ] 005 — **M1-C05: How tensors occupy memory** — Not started.
   File: [How tensors occupy memory](state-memory-and-caching/m1-c05-how-tensors-occupy-memory.md). Category: State, memory, and caching. Phase: 1. Model and numerical foundations.
@@ -1239,6 +1239,8 @@ Each record contains the authoring position, chapter ID, target concepts, source
 
 ## Surprises & Discoveries
 
+Observation (2026-10-24 19:04 IST): shape compatibility alone does not establish projection equivalence. M1-C04 uses an explicitly transposed stored-weight example and a shape-compatible wrong-orientation negative control. Its E4 fixtures bound every partial sum to 512, allowing exact binary32 checks without prematurely teaching general numerical tolerances.
+
 
 Observation (2026-10-24 18:41 IST): the reported GitHub failure exactly matches HEAD:mkdocs.yml, which omits the inventory, authoring order and execution-plan pages and still references the removed multimodal M9-C25 path. The working-tree mkdocs.yml already contains all four navigation corrections but is not committed. Evidence: committed-config reproduction exits 1 with the same two warning groups; the working-tree strict build exits 0 without warnings (4.02 seconds). Earlier local validation used the working tree, so it did not establish that the committed configuration would pass CI.
 
@@ -1257,6 +1259,8 @@ Observation (2026-10-24 17:23 IST): the documentation preview retains the /Infer
 
 
 ## Decision Log
+
+Decision (2026-10-24 19:04 IST, Codex): distinguish shared projections, distinct per-batch weights and affine bias explicitly. Compare only already-ready rows in E4; treat batch-formation waiting separately. Rationale: algebraic batching equivalence does not establish safe request identity, absence of copies, or caller-latency improvement.
 
 
 Decision (2026-10-24 18:41 IST, Codex): retain strict navigation validation and the existing corrected root configuration; no workflow or chapter changes are needed for the reported failure. Rationale: publishing the missing mkdocs.yml changes resolves the observed discrepancy. Future handoffs must identify required uncommitted configuration changes and distinguish local build evidence from committed/remote CI evidence. Do not commit or push automatically.
@@ -1279,6 +1283,8 @@ Decision: create and validate the plan now with all chapter stages unstarted. Ra
 
 
 ## Outcomes & Retrospective
+
+Chapter outcome (2026-10-24 19:04 IST): M1-C04 is Complete with six target concepts, worked formulas, three diagrams, four experiment designs and matched verification, all six dimensions and eight principles, primary references and hardware requirements. Arithmetic, strict build and rendered-page/diagram review passed. Current totals: 4/201 complete, 197 not started, no active chapter. M1-C05 is next. All runtime performance experiments remain proposed.
 
 
 Build-maintenance outcome (2026-10-24 18:41 IST): diagnosed and reproduced the reported failure from committed navigation. The complete correction is the existing mkdocs.yml diff: three Home entries plus the renamed text-generation M9-C25 entry. The working-tree strict build passes; the root configuration must be included in the next commit and push before GitHub can use that correction. No GitHub rerun or deployment result is asserted. Chapter progress remains 3/201 complete, with M1-C04 next.
@@ -1303,7 +1309,7 @@ The repository-root `PLANS.md` is the uploaded execution-plan guidance. This fil
 
 `docs/learning-approach.md` defines the shared learning contract. `templates/chapter.md` is the authoring scaffold. `docs/module-1.md` through `docs/module-7.md`, plus `docs/module-9.md`, provide module reading orders. The 14 category directories organize subjects; their `index.md` pages list member chapters. A chapter ID such as M2-C04 identifies Module 2, Chapter 4; authoring position is separate and controls creation order. Do not create Module 8 or infer chapters for the empty Storage and persistence category.
 
-The chapter files already exist and contain target-concept paragraphs. M1-C01, M1-C02 and M1-C03 are Complete; the remaining 198 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
+The chapter files already exist and contain target-concept paragraphs. M1-C01, M1-C02, M1-C03 and M1-C04 are Complete; the remaining 197 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
 
 
 ## Plan of Work
@@ -1525,3 +1531,9 @@ Primary-source research is required when writing each chapter, not as a claim th
 
 
 2026-10-24 18:41 IST: Recorded the GitHub/local navigation mismatch, exact failure reproduction and successful working-tree build. Added an explicit handoff check for uncommitted configuration dependencies; chapter progress and scope are unchanged.
+
+
+2026-10-24 18:48 IST: Began M1-C04 as the only active chapter after confirming M1-C03 completion. Verified the navigation fix in commit 3beea89; no configuration fix remains pending locally. Preserved existing README.md, templates/chapter.md and PLANS.md changes.
+
+
+2026-10-24 19:04 IST: Completed M1-C04 after source, content, arithmetic, strict-build and browser review. Reconciled chapter, ledger, module, category, inventory and landing-page summaries to 4 complete and 197 unstarted. No later chapter started.
