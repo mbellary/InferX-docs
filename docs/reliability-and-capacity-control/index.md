@@ -49,3 +49,12 @@ Follow the complete [Module 6 reading order](../module-6.md) to move between cat
 | M7-C23 | [Collective failures, timeouts, and recovery boundaries](m7-c23-collective-failures-timeouts-and-recovery-boundaries.md) | Rank mismatch, divergent collective ordering, hung or failed workers, stragglers, asynchronous errors, timeout scopes, coordinated abort, retry boundaries, lost volatile state, safe cleanup |
 
 Follow the complete [Module 7 reading order](../module-7.md) to move between categories.
+
+### Module 9
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M9-C21 | [Testing cancellation, deadlines, and terminal states](m9-c21-testing-cancellation-deadlines-and-terminal-states.md) | Queued and in-flight cancellation, deadline expiry, disconnects, idempotent cleanup, no post-terminal delivery, bounded cancellation latency, worker errors, reclamation after completion |
+| M9-C26 | [Load-testing overload, backpressure, and failure recovery](m9-c26-load-testing-overload-backpressure-and-failure-recovery.md) | Offered-load sweeps, bounded queues, rejection and retry effects, slow consumers, memory exhaustion, worker loss, draining, recovery time, resource leaks, latency and goodput during failures |
+
+Follow the complete [Module 9 reading order](../module-9.md) to move between categories.

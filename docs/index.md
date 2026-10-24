@@ -6,11 +6,20 @@ Follow a request from input processing and model execution to scheduling, distri
 
 ## Start learning
 
-Begin with [Module 1: Understand exactly what happens when an LLM generates a token](module-1.md). Its reading order connects chapters across categories. Continue with [Module 2: Treat the KV cache as a first-class systems problem](module-2.md). Then explore [Module 3: Learn GPU architecture through data movement](module-3.md). Continue with [Module 4: Understand kernels and execution overhead](module-4.md). Then study [Module 5: Learn scheduling, operating systems, and queueing theory](module-5.md). Continue with [Module 6: Study optimizations as explicit tradeoffs](module-6.md). Then study [Module 7: Learn distributed inference after understanding one GPU](module-7.md). Read the [learning approach](learning-approach.md) for the beginner assumptions and chapter requirements.
+- [Module 1: Understand exactly what happens when an LLM generates a token](module-1.md)
+- [Module 2: Treat the KV cache as a first-class systems problem](module-2.md)
+- [Module 3: Learn GPU architecture through data movement](module-3.md)
+- [Module 4: Understand kernels and execution overhead](module-4.md)
+- [Module 5: Learn scheduling, operating systems, and queueing theory](module-5.md)
+- [Module 6: Study optimizations as explicit tradeoffs](module-6.md)
+- [Module 7: Learn distributed inference after understanding one GPU](module-7.md)
+- [Module 9: Make measurement and correctness part of the foundation](module-9.md)
+
+Module 8 is awaiting its outline. Module 9 provides measurement and correctness foundations to use throughout the earlier modules. Read the [learning approach](learning-approach.md) for the beginner assumptions and chapter requirements.
 
 ## Explore the curriculum
 
-The 14 categories below define the curriculum. Category overviews and 171 chapter outlines across Modules 1–7 are available. We are establishing the module outlines first; full chapters will then be developed one at a time.
+The 14 categories below define the curriculum. Category overviews and 201 chapter outlines across Modules 1–7 and 9 are available. We are establishing the module outlines first; full chapters will then be developed one at a time.
 
 | # | Category | Central question | Includes |
 | --- | --- | --- | --- |

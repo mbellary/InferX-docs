@@ -39,3 +39,11 @@ Follow the complete [Module 3 reading order](../module-3.md) to move between cat
 | M7-C02 | [Mapping GPU and network topology before partitioning](m7-c02-mapping-gpu-and-network-topology-before-partitioning.md) | GPU memory and capability, PCIe and NVLink paths, switches, NUMA placement, NIC affinity, intra-node versus inter-node links, peer access, measured versus advertised bandwidth |
 
 Follow the complete [Module 7 reading order](../module-7.md) to move between categories.
+
+### Module 9
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M9-C16 | [Recording hardware conditions that change measurements](m9-c16-recording-hardware-conditions-that-change-measurements.md) | CPU and GPU models, memory capacity and bandwidth, NUMA and interconnect topology, clocks, power and thermal limits, co-tenancy and partitions, driver and runtime versions, telemetry sampling |
+
+Follow the complete [Module 9 reading order](../module-9.md) to move between categories.

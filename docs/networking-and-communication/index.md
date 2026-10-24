@@ -38,3 +38,11 @@ Follow the complete [Module 3 reading order](../module-3.md) to move between cat
 | M7-C25 | [Transferring KV state with a safe handoff](m7-c25-transferring-kv-state-with-a-safe-handoff.md) | Source and destination identities, cache format and shard compatibility, block mapping, receiver reservations, bulk transfer and metadata, completion versus submission, ownership commit, cancellation and partial failures |
 
 Follow the complete [Module 7 reading order](../module-7.md) to move between categories.
+
+### Module 9
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M9-C14 | [Measuring transfer and collective completion](m9-c14-measuring-transfer-and-collective-completion.md) | Payload and transport bytes, message sizes, link utilization, communication latency, rank waiting, asynchronous completion, compute overlap, exposed communication, cross-worker trace correlation |
+
+Follow the complete [Module 9 reading order](../module-9.md) to move between categories.

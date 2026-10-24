@@ -72,3 +72,11 @@ Follow the complete [Module 6 reading order](../module-6.md) to move between cat
 | M7-C21 | [Distributed weights, KV caches, and memory accounting](m7-c21-distributed-weights-kv-caches-and-memory-accounting.md) | Shard loading, model and adapter identity, rank-local weights, KV partitions, replicated metadata, communication buffers, workspace peaks, transfer staging, headroom, ownership and reclamation |
 
 Follow the complete [Module 7 reading order](../module-7.md) to move between categories.
+
+### Module 9
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M9-C15 | [Accounting for weights, KV state, workspace, and fragmentation](m9-c15-accounting-for-weights-kv-state-workspace-and-fragmentation.md) | Logical versus physical memory, weights, live KV, retained prefixes, unique shared blocks, workspace and communication buffers, allocated versus reserved bytes, peaks, internal and external fragmentation |
+
+Follow the complete [Module 9 reading order](../module-9.md) to move between categories.

@@ -63,6 +63,7 @@ nav:
       - "Module 5: Reading order": module-5.md
       - "Module 6: Reading order": module-6.md
       - "Module 7: Reading order": module-7.md
+      - "Module 9: Reading order": module-9.md
       - Learning approach: learning-approach.md
   - "Model computation and semantics":
       - Overview: model-computation-and-semantics/index.md
@@ -101,6 +102,13 @@ nav:
       - "M6-C13: Validating quantization quality and memory savings": numerics-and-correctness/m6-c13-validating-quantization-quality-and-memory-savings.md
       - "M6-C15: Distribution-preserving speculative acceptance": numerics-and-correctness/m6-c15-distribution-preserving-speculative-acceptance.md
       - "M7-C27: Validating distributed computation and state": numerics-and-correctness/m7-c27-validating-distributed-computation-and-state.md
+      - "M9-C01: Defining reference behavior and evidence before optimizing": numerics-and-correctness/m9-c01-defining-reference-behavior-and-evidence-before-optimizing.md
+      - "M9-C17: Comparing logits with justified numerical tolerances": numerics-and-correctness/m9-c17-comparing-logits-with-justified-numerical-tolerances.md
+      - "M9-C18: Testing sampling distributions and random-state behavior": numerics-and-correctness/m9-c18-testing-sampling-distributions-and-random-state-behavior.md
+      - "M9-C20: Validating KV reuse and prefix-cache identity": numerics-and-correctness/m9-c20-validating-kv-reuse-and-prefix-cache-identity.md
+      - "M9-C23: Testing batch, schedule, and graph invariance": numerics-and-correctness/m9-c23-testing-batch-schedule-and-graph-invariance.md
+      - "M9-C24: Validating approximate and constrained optimization paths": numerics-and-correctness/m9-c24-validating-approximate-and-constrained-optimization-paths.md
+      - "M9-C25: Validating one multimodal pipeline end to end": numerics-and-correctness/m9-c25-validating-one-multimodal-pipeline-end-to-end.md
   - "Hardware architecture and topology":
       - Overview: hardware-architecture-and-topology/index.md
       - "M3-C01: Following a tensor from CPU to GPU": hardware-architecture-and-topology/m3-c01-following-a-tensor-from-cpu-to-gpu.md
@@ -111,6 +119,7 @@ nav:
       - "M3-C06: Registers, shared memory, and local resource pressure": hardware-architecture-and-topology/m3-c06-registers-shared-memory-and-local-resource-pressure.md
       - "M3-C13: PCIe, NVLink, NUMA, and device topology": hardware-architecture-and-topology/m3-c13-pcie-nvlink-numa-and-device-topology.md
       - "M7-C02: Mapping GPU and network topology before partitioning": hardware-architecture-and-topology/m7-c02-mapping-gpu-and-network-topology-before-partitioning.md
+      - "M9-C16: Recording hardware conditions that change measurements": hardware-architecture-and-topology/m9-c16-recording-hardware-conditions-that-change-measurements.md
   - "Kernels, compilers, and execution":
       - Overview: kernels-compilers-and-execution/index.md
       - "M2-C07: How attention reads a paged KV layout": kernels-compilers-and-execution/m2-c07-how-attention-reads-a-paged-kv-layout.md
@@ -154,6 +163,7 @@ nav:
       - "M6-C05: Reference-safe retention, eviction, and cancellation": state-memory-and-caching/m6-c05-reference-safe-retention-eviction-and-cancellation.md
       - "M6-C22: Adapter residency, lifetime, and cache compatibility": state-memory-and-caching/m6-c22-adapter-residency-lifetime-and-cache-compatibility.md
       - "M7-C21: Distributed weights, KV caches, and memory accounting": state-memory-and-caching/m7-c21-distributed-weights-kv-caches-and-memory-accounting.md
+      - "M9-C15: Accounting for weights, KV state, workspace, and fragmentation": state-memory-and-caching/m9-c15-accounting-for-weights-kv-state-workspace-and-fragmentation.md
   - "Runtime and concurrency":
       - Overview: runtime-and-concurrency/index.md
       - "M1-C18: Understanding prefill and decode": runtime-and-concurrency/m1-c18-understanding-prefill-and-decode.md
@@ -178,6 +188,7 @@ nav:
       - "M7-C03: Workers, ranks, process groups, and communicators": runtime-and-concurrency/m7-c03-workers-ranks-process-groups-and-communicators.md
       - "M7-C09: Overlapping compute and communication safely": runtime-and-concurrency/m7-c09-overlapping-compute-and-communication-safely.md
       - "M7-C28: Running a model across two GPUs": runtime-and-concurrency/m7-c28-running-a-model-across-two-gpus.md
+      - "M9-C22: Verifying ownership and memory safety under concurrency": runtime-and-concurrency/m9-c22-verifying-ownership-and-memory-safety-under-concurrency.md
   - "Scheduling and queueing":
       - Overview: scheduling-and-queueing/index.md
       - "M2-C15: Admission and growth under a finite KV budget": scheduling-and-queueing/m2-c15-admission-and-growth-under-a-finite-kv-budget.md
@@ -219,6 +230,7 @@ nav:
       - "M7-C07: AllToAll and variable-size token exchange": networking-and-communication/m7-c07-alltoall-and-variable-size-token-exchange.md
       - "M7-C08: Modeling communication latency and bandwidth costs": networking-and-communication/m7-c08-modeling-communication-latency-and-bandwidth-costs.md
       - "M7-C25: Transferring KV state with a safe handoff": networking-and-communication/m7-c25-transferring-kv-state-with-a-safe-handoff.md
+      - "M9-C14: Measuring transfer and collective completion": networking-and-communication/m9-c14-measuring-transfer-and-collective-completion.md
   - "Distributed coordination and routing":
       - Overview: distributed-coordination-and-routing/index.md
       - "M7-C15: Routing requests with load and cache locality": distributed-coordination-and-routing/m7-c15-routing-requests-with-load-and-cache-locality.md
@@ -234,12 +246,16 @@ nav:
       - "M6-C18: Grammar-constrained decoding from tokens to parser state": interfaces-protocols-and-streaming/m6-c18-grammar-constrained-decoding-from-tokens-to-parser-state.md
       - "M6-C19: Grammar compilation and vocabulary-mask execution": interfaces-protocols-and-streaming/m6-c19-grammar-compilation-and-vocabulary-mask-execution.md
       - "M6-C20: Structured-output validity, termination, and failure": interfaces-protocols-and-streaming/m6-c20-structured-output-validity-termination-and-failure.md
+      - "M9-C04: Measuring inter-token latency in a streamed protocol": interfaces-protocols-and-streaming/m9-c04-measuring-inter-token-latency-in-a-streamed-protocol.md
+      - "M9-C19: Validating tokenization, stopping, and final output": interfaces-protocols-and-streaming/m9-c19-validating-tokenization-stopping-and-final-output.md
   - "Reliability and capacity control":
       - Overview: reliability-and-capacity-control/index.md
       - "M2-C16: Completion, cancellation, and allocation failure": reliability-and-capacity-control/m2-c16-completion-cancellation-and-allocation-failure.md
       - "M5-C20: Cancellation, deadlines, and worker failure": reliability-and-capacity-control/m5-c20-cancellation-deadlines-and-worker-failure.md
       - "M6-C25: Handling unsupported cases and optimization failures": reliability-and-capacity-control/m6-c25-handling-unsupported-cases-and-optimization-failures.md
       - "M7-C23: Collective failures, timeouts, and recovery boundaries": reliability-and-capacity-control/m7-c23-collective-failures-timeouts-and-recovery-boundaries.md
+      - "M9-C21: Testing cancellation, deadlines, and terminal states": reliability-and-capacity-control/m9-c21-testing-cancellation-deadlines-and-terminal-states.md
+      - "M9-C26: Load-testing overload, backpressure, and failure recovery": reliability-and-capacity-control/m9-c26-load-testing-overload-backpressure-and-failure-recovery.md
   - "Measurement, experimentation, and economics":
       - Overview: measurement-experimentation-and-economics/index.md
       - "M1-C08: Operation counts and actual execution cost": measurement-experimentation-and-economics/m1-c08-operation-counts-and-actual-execution-cost.md
@@ -263,3 +279,18 @@ nav:
       - "M6-C28: Establishing end-to-end benefit and regression boundaries": measurement-experimentation-and-economics/m6-c28-establishing-end-to-end-benefit-and-regression-boundaries.md
       - "M7-C29: Profiling compute, communication, and waiting": measurement-experimentation-and-economics/m7-c29-profiling-compute-communication-and-waiting.md
       - "M7-C30: When adding a GPU reduces latency and when it does not": measurement-experimentation-and-economics/m7-c30-when-adding-a-gpu-reduces-latency-and-when-it-does-not.md
+      - "M9-C02: Request events, clocks, and measurement boundaries": measurement-experimentation-and-economics/m9-c02-request-events-clocks-and-measurement-boundaries.md
+      - "M9-C03: Measuring time to first token including queueing": measurement-experimentation-and-economics/m9-c03-measuring-time-to-first-token-including-queueing.md
+      - "M9-C05: Measuring end-to-end latency and throughput": measurement-experimentation-and-economics/m9-c05-measuring-end-to-end-latency-and-throughput.md
+      - "M9-C06: Defining SLOs, goodput, and useful capacity": measurement-experimentation-and-economics/m9-c06-defining-slos-goodput-and-useful-capacity.md
+      - "M9-C07: Latency distributions and statistical uncertainty": measurement-experimentation-and-economics/m9-c07-latency-distributions-and-statistical-uncertainty.md
+      - "M9-C08: Designing representative serving workloads": measurement-experimentation-and-economics/m9-c08-designing-representative-serving-workloads.md
+      - "M9-C09: Open-loop load generation and coordinated omission": measurement-experimentation-and-economics/m9-c09-open-loop-load-generation-and-coordinated-omission.md
+      - "M9-C10: Validating the load generator and request accounting": measurement-experimentation-and-economics/m9-c10-validating-the-load-generator-and-request-accounting.md
+      - "M9-C11: Controlled comparisons, warmup, and reproducibility": measurement-experimentation-and-economics/m9-c11-controlled-comparisons-warmup-and-reproducibility.md
+      - "M9-C12: Reading CPU-GPU timelines and scheduling gaps": measurement-experimentation-and-economics/m9-c12-reading-cpu-gpu-timelines-and-scheduling-gaps.md
+      - "M9-C13: Using kernel profilers to explain hardware bottlenecks": measurement-experimentation-and-economics/m9-c13-using-kernel-profilers-to-explain-hardware-bottlenecks.md
+      - "M9-C27: Designing regression experiments and validation gates": measurement-experimentation-and-economics/m9-c27-designing-regression-experiments-and-validation-gates.md
+      - "M9-C28: Evaluating cost and energy per useful result": measurement-experimentation-and-economics/m9-c28-evaluating-cost-and-energy-per-useful-result.md
+      - "M9-C29: Validating the nine integrated build milestones": measurement-experimentation-and-economics/m9-c29-validating-the-nine-integrated-build-milestones.md
+      - "M9-C30: Publishing a reproducible correctness and performance report": measurement-experimentation-and-economics/m9-c30-publishing-a-reproducible-correctness-and-performance-report.md

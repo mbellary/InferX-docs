@@ -42,3 +42,12 @@ Follow the complete [Module 5 reading order](../module-5.md) to move between cat
 | M6-C20 | [Structured-output validity, termination, and failure](m6-c20-structured-output-validity-termination-and-failure.md) | Syntactic validity versus semantic correctness, incomplete outputs, empty allowed-token sets, EOS legality, unsupported schema features, compilation failures, length limits, cancellation, explicit failure contracts |
 
 Follow the complete [Module 6 reading order](../module-6.md) to move between categories.
+
+### Module 9
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M9-C04 | [Measuring inter-token latency in a streamed protocol](m9-c04-measuring-inter-token-latency-in-a-streamed-protocol.md) | Token generation versus delivery, token timestamps, chunk coalescing, buffering, network and client delays, per-request gaps, first-token exclusion, limits of inferring tokens from chunks |
+| M9-C19 | [Validating tokenization, stopping, and final output](m9-c19-validating-tokenization-stopping-and-final-output.md) | Tokenizer and template identity, control tokens, EOS, length caps, multi-token stop sequences, boundary-spanning text, incremental detokenization, terminal reasons, no-token and truncated outputs |
+
+Follow the complete [Module 9 reading order](../module-9.md) to move between categories.

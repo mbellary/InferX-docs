@@ -88,3 +88,11 @@ Follow the complete [Module 6 reading order](../module-6.md) to move between cat
 | M7-C28 | [Running a model across two GPUs](m7-c28-running-a-model-across-two-gpus.md) | Supported backend selection, device and rank setup, model and shard compatibility, two-way tensor or pipeline partitioning, weight loading, collective readiness, correctness gates, startup and shutdown contracts |
 
 Follow the complete [Module 7 reading order](../module-7.md) to move between categories.
+
+### Module 9
+
+| Chapter ID | Chapter name | Target concepts |
+| --- | --- | --- |
+| M9-C22 | [Verifying ownership and memory safety under concurrency](m9-c22-verifying-ownership-and-memory-safety-under-concurrency.md) | Ownership transfer, shared references, stale handles, use-after-free, double release, races, uninitialized accesses, asynchronous buffer lifetimes, sanitizer scope, allocation conservation, randomized lifecycle traces |
+
+Follow the complete [Module 9 reading order](../module-9.md) to move between categories.
