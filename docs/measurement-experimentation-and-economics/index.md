@@ -16,7 +16,7 @@ Profiling, benchmarks, p50/p99, goodput, workload design, statistical uncertaint
 
 ## Chapters
 
-Full content will be developed one chapter at a time.
+[M1-C08](m1-c08-operation-counts-and-actual-execution-cost.md) is a completed detailed chapter; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
 
 ### Module 1
 

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="500" viewBox="0 0 880 500" role="img" aria-labelledby="title desc">
+<title id="title">Full and numerical timing boundaries</title><desc id="desc">An invented sequential stage takes four microseconds to allocate, three to pack, two for numerical work and one to finish. Its full time is ten microseconds while its numerical time is two.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#4f6b87"/></marker></defs>
+<rect width="880" height="500" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#203247">
+<text x="440" y="35" text-anchor="middle" font-size="25">Full-stage timing includes preparation and completion</text>
+<text x="440" y="80" text-anchor="middle" font-size="19">Invented sequential durations; no overlap or measurements implied</text>
+<rect x="90" y="165" width="280" height="90" rx="8" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="230.0" y="201" text-anchor="middle" font-size="17">Allocate</text>
+<text x="230.0" y="233" text-anchor="middle" font-size="19">4 µs</text>
+<rect x="370" y="165" width="210" height="90" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="475.0" y="201" text-anchor="middle" font-size="17">Pack</text>
+<text x="475.0" y="233" text-anchor="middle" font-size="19">3 µs</text>
+<rect x="580" y="165" width="140" height="90" rx="8" fill="#fff0cc" stroke="#4f6b87" stroke-width="2"/>
+<text x="650.0" y="201" text-anchor="middle" font-size="17">Numerical</text>
+<text x="650.0" y="233" text-anchor="middle" font-size="19">2 µs</text>
+<rect x="720" y="165" width="70" height="90" rx="8" fill="#f4f6f8" stroke="#4f6b87" stroke-width="2"/>
+<text x="755.0" y="201" text-anchor="middle" font-size="14">Finish</text>
+<text x="755.0" y="233" text-anchor="middle" font-size="19">1 µs</text>
+<path d="M90,280 v20 H790 v-20" fill="none" stroke="#4f6b87" stroke-width="2.5"/>
+<text x="440" y="335" text-anchor="middle" font-size="21">Full boundary: input ready to completed result = 10 µs</text>
+<path d="M580,135 v-20 H720 v20" fill="none" stroke="#4f6b87" stroke-width="2.5"/>
+<text x="650" y="103" text-anchor="middle" font-size="18">Numerical only: 2 µs</text>
+<rect x="70" y="375" width="740" height="75" rx="8" fill="#f4f6f8" stroke="#4f6b87" stroke-width="2"/>
+<text x="440" y="407" text-anchor="middle" font-size="18">Submission is not completion; retained buffers still consume capacity.</text>
+<text x="440" y="434" text-anchor="middle" font-size="18">Real overlap requires a timeline, not a sum of profiled durations.</text>
+</g></svg>

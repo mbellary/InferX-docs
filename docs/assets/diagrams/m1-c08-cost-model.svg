@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="555" viewBox="0 0 880 555" role="img" aria-labelledby="title desc">
+<title id="title">A conditional resource model</title><desc id="desc">Work divided by a matching compute ceiling and interface traffic divided by matching bandwidth give two resource times. Their maximum is a conditional floor, excluding overhead and other limits.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#4f6b87"/></marker></defs>
+<rect width="880" height="555" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#203247">
+<text x="440" y="35" text-anchor="middle" font-size="25">Match the work, traffic and rate assumptions</text>
+<text x="440" y="78" text-anchor="middle" font-size="19">Same precision, interface, execution path and workload boundary</text>
+<rect x="40" y="110" width="350" height="100" rx="8" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="215" y="146" text-anchor="middle" font-size="19">Arithmetic work F: FLOPs</text>
+<text x="215" y="181" text-anchor="middle" font-size="19">Compute ceiling P: FLOP/s</text>
+<path d="M405,160 L465,160" stroke="#4f6b87" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="480" y="110" width="360" height="100" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="660" y="150" text-anchor="middle" font-size="19">Compute resource time</text>
+<text x="660" y="185" text-anchor="middle" font-size="22">F / P, in seconds</text>
+<rect x="40" y="255" width="350" height="100" rx="8" fill="#e9f2ff" stroke="#4f6b87" stroke-width="2"/>
+<text x="215" y="291" text-anchor="middle" font-size="19">Interface traffic B: bytes</text>
+<text x="215" y="326" text-anchor="middle" font-size="19">Bandwidth ceiling BW: bytes/s</text>
+<path d="M405,305 L465,305" stroke="#4f6b87" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="480" y="255" width="360" height="100" rx="8" fill="#edf7f1" stroke="#4f6b87" stroke-width="2"/>
+<text x="660" y="295" text-anchor="middle" font-size="19">Transfer resource time</text>
+<text x="660" y="330" text-anchor="middle" font-size="22">B / BW, in seconds</text>
+<rect x="90" y="400" width="700" height="90" rx="8" fill="#fff0cc" stroke="#4f6b87" stroke-width="2"/>
+<text x="440" y="436" text-anchor="middle" font-size="23">Conditional resource floor = max(F/P, B/BW)</text>
+<text x="440" y="470" text-anchor="middle" font-size="20">It is not the complete stage latency.</text>
+<text x="440" y="532" text-anchor="middle" font-size="18">Setup, allocation, dependencies and completion need separate evidence.</text>
+</g></svg>

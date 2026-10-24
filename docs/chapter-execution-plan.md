@@ -11,13 +11,13 @@ Turn 201 outlines into a coherent collection of detailed chapters that helps a r
 
 The reader should be able to open any completed chapter, understand every introduced term, follow a worked numerical example and diagram, describe a reproducible experiment, and explain its pass/fail conditions and limits. High-Frequency Trading (HFT), meaning systems that process market events and make trading decisions under tight timing constraints, provides a lens for critical paths, bounded queues, stale information, and tail latency. A tail is the slower end of a latency distribution. Explain what transfers to inference and what does not; do not present trading advice, assert trading results, or equate inference semantics with exchange behavior.
 
-The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01–M1-C07 are now complete and the next chapter is M1-C08.
+The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01–M1-C08 are now complete and the next chapter is M1-C09.
 
 
 ## Progress
 
 
-Last updated: 2026-10-24 21:50 IST. Detailed chapter totals: **7 complete, 0 active, 194 not started, 0 blocked**. Next chapter: **M1-C08**, authoring position 8. Check a chapter only after its full acceptance gate passes.
+Last updated: 2026-10-24 22:03 IST. Detailed chapter totals: **8 complete, 0 active, 193 not started, 0 blocked**. Next chapter: **M1-C09**, authoring position 9. Check a chapter only after its full acceptance gate passes.
 
 - [x] (2026-10-24 17:21 IST) Read the uploaded PLANS.md, the learning requirements, the chapter inventory, and the dependency schedule; confirm Modules 1–7 plus supporting Module 9 and no Module 8.
 - [x] (2026-10-24 17:21 IST) Preserve the planning reference as repository-root PLANS.md and create this living execution plan with all 201 ordered chapter records and their target concepts and direct prerequisites.
@@ -72,11 +72,11 @@ Each record contains the authoring position, chapter ID, target concepts, source
   Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
   Module 9 application: M9-C01 original versus stored-input references; M9-C02 completed timing boundaries; M9-C11 controlled pairing; M9-C17 near-zero budgets, decision margins and first divergence. Supporting chapters remain outlines; necessary introductory checks are supplied locally. Updated: 2026-10-24 21:50 IST. Evidence: All nine target concepts, E1–E4 required fields and matched verification, six dimensions/eight principles, HFT limits, hardware requirements and no-code scope reviewed. Checked primary IEEE public overview, Rust std 1.99.1 f32, NVIDIA format/rounding documentation 13.4, Goldberg article, NumPy 2.3, PyTorch 2.14 and TPU guidance. Independent exact rational checks passed for range/conversion/ties/subnormals, sequential accumulation, cancellation, FMA and tolerance decisions; host FP16/FP32 conversions cross-checked the model. The 80/120-digit probability references and every E4 conversion/sum/budget passed. Final strict build passed without warnings after completion tracking (2.53 seconds). Browser reviewed /InferX-docs/numerics-and-correctness/m1-c07-floating-point-arithmetic-and-numerical-correctness/, its format/range/rounding tables, matched verification, navigation and both full SVG diagrams. No runtime performance study executed. Next action: M1-C08; all later chapters remain unstarted.
 
-- [ ] 008 — **M1-C08: Operation counts and actual execution cost** — Not started.
+- [x] 008 — **M1-C08: Operation counts and actual execution cost** — Complete.
   File: [Operation counts and actual execution cost](measurement-experimentation-and-economics/m1-c08-operation-counts-and-actual-execution-cost.md). Category: Measurement, experimentation, and economics. Phase: 1. Model and numerical foundations.
   Direct prerequisites: M1-C04, M1-C05, M1-C07. Target concepts: Computational complexity, matrix multiplication costs, memory capacity, data movement, bandwidth, throughput, latency, allocation overhead, bottleneck predictions.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: M9-C01 exact reference gates; M9-C02 full/numerical completion boundaries; M9-C11 controlled pairing; M9-C15 unique/live/peak storage; M9-C16 hardware/precision/path/interface conditions. Supporting chapters remain outlines; required checks are introduced locally. Updated: 2026-10-24 22:03 IST. Evidence: All nine target concepts, E1–E4 required fields and matched verification, six dimensions/eight principles, HFT limits, no-code scope and hardware requirements reviewed. Checked the original Roofline report, primary NVIDIA GEMM guide, Netlib LAPACK 3.12.1/NumPy 2.3 operation contracts, PyTorch 2.14 benchmarking and Nsight profiling documentation. Independent checks passed for direct/conventional counts, storage, intensity, conditional resource times, setup-inclusive estimates, rates, budgets and copies; every output/partial-sum reference in all six fixture shapes was checked. Final strict build passed without warnings after completion tracking (2.57 seconds). Browser reviewed /InferX-docs/measurement-experimentation-and-economics/m1-c08-operation-counts-and-actual-execution-cost/, resource formulas, matched verification, navigation and both SVG diagrams in full; revised crossover notation rechecked. No runtime performance study executed. Next action: M1-C09; all later chapters remain unstarted.
 
 - [ ] 009 — **M1-C09: Token embeddings and learned projections** — Not started.
   File: [Token embeddings and learned projections](model-computation-and-semantics/m1-c09-token-embeddings-and-learned-projections.md). Category: Model computation and semantics. Phase: 1. Model and numerical foundations.
@@ -1239,6 +1239,8 @@ Each record contains the authoring position, chapter ID, target concepts, source
 
 ## Surprises & Discoveries
 
+Observation (2026-10-24 22:03 IST): identical formulas can describe different quantities: q(MK + KN + MN) is both three-tensor element storage and a stipulated one-read/one-write transfer model, but neither establishes actual DRAM traffic. Warm cached weights can invalidate a DRAM floor based on that proxy. Review also distinguished exact direct-operation scaling from the conventional eightfold 2MKN scaling and reconciled the largest fixture to 800 KiB before copies/workspace.
+
 Observation (2026-10-24 21:50 IST): the constructed E4 inputs permit exact FP32 summation of each stored-format row: all values are multiples of 2⁻¹⁰ and every positive partial sum is below 8192. This supplies a strict arithmetic check separate from the permitted original-input approximation. E3 also demonstrates that BF16 conversion can satisfy a probability-error allowance and still change the fixed greedy decision after creating a tie.
 
 Observation (2026-10-24 21:35 IST): primary specifications have different default normalization groups: SciPy 1.16.2 softmax uses the whole array by default, while ONNX Softmax-13 defaults to the last axis. M1-C06 therefore declares every axis. The [0, −1000] fixture also demonstrates that a zero output tail can pass absolute-probability gates while losing all of its relative value; the chapter records both rather than claiming maximum shifting removes all underflow.
@@ -1265,6 +1267,8 @@ Observation (2026-10-24 17:23 IST): the documentation preview retains the /Infer
 
 
 ## Decision Log
+
+Decision (2026-10-24 22:03 IST, Codex): teach introductory resource ceilings with explicitly invented machine rates and named traffic assumptions, then require actual hardware/path/interface evidence for bottleneck attribution. Use BW for bandwidth, distinct from weight matrix W, and I_ridge for the crossover to keep Markdown readable. Rationale: tensor bytes, theoretical peaks and narrow operation times cannot establish physical traffic or full-stage benefit. E3/E4 hold numerical work fixed while probing allocation and movement.
 
 Decision (2026-10-24 21:50 IST, Codex): separate intended-input, decoded stored-input and operation-specific rounded references in M1-C07. Use strict nearest-even traces for cancellation/FMA and accumulation examples, but do not attribute a generic library sum to an unobserved order. Rationale: a storage dtype, a wide output dtype and a passing tolerance alone cannot locate error or establish preserved application behavior. Benchmark both resident and conversion-inclusive routes and label native/emulated support.
 
@@ -1295,6 +1299,8 @@ Decision: create and validate the plan now with all chapter stages unstarted. Ra
 
 
 ## Outcomes & Retrospective
+
+Chapter outcome (2026-10-24 22:03 IST): M1-C08 is Complete with nine target concepts, worked complexity/FLOP/byte/intensity/ceiling/latency/throughput examples, two diagrams, four experiment designs and matched verification, six dimensions/eight principles, primary references and hardware requirements. Independent numerical checks, strict build and rendered-page review passed. Totals: 8/201 complete, 193 not started, no active chapter. M1-C09 is next. All runtime benchmark and production-capacity claims remain proposed.
 
 Chapter outcome (2026-10-24 21:50 IST): M1-C07 is Complete with all nine target concepts, worked format/range/rounding/accumulation/tolerance/decision examples, two diagrams, four experiment designs and matched verification, six dimensions/eight principles and primary references/hardware requirements. Exact numerical checks, strict build and rendered-page review passed. Totals: 7/201 complete, 194 not started, no active chapter. M1-C08 is next. All performance experiments remain proposed.
 
@@ -1327,7 +1333,7 @@ The repository-root `PLANS.md` is the uploaded execution-plan guidance. This fil
 
 `docs/learning-approach.md` defines the shared learning contract. `templates/chapter.md` is the authoring scaffold. `docs/module-1.md` through `docs/module-7.md`, plus `docs/module-9.md`, provide module reading orders. The 14 category directories organize subjects; their `index.md` pages list member chapters. A chapter ID such as M2-C04 identifies Module 2, Chapter 4; authoring position is separate and controls creation order. Do not create Module 8 or infer chapters for the empty Storage and persistence category.
 
-The chapter files already exist and contain target-concept paragraphs. M1-C01–M1-C07 are Complete; the remaining 194 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
+The chapter files already exist and contain target-concept paragraphs. M1-C01–M1-C08 are Complete; the remaining 193 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
 
 
 ## Plan of Work
@@ -1499,6 +1505,8 @@ The working tree already contains curriculum and inventory changes from prior re
 
 ## Artifacts and Notes
 
+Observed M1-C08 evidence (2026-10-24 22:03 IST): docs/measurement-experimentation-and-economics/m1-c08-operation-counts-and-actual-execution-cost.md replaces its outline. Assets are docs/assets/diagrams/m1-c08-cost-model.svg and m1-c08-timing-boundaries.svg. Independent documentation checks validated experiment fields, local links, SVG structure, count/storage/intensity/resource-time/rate/budget/copy calculations and all six complete integer matrix references with bounded exact FP32 partial sums. Setup-inclusive hypothetical estimates were checked separately. Browser screenshots confirmed formulas, revised notation, matched verification and both full diagrams. No hardware calibration, runtime experiment, CI rerun or model result is asserted.
+
 Observed M1-C07 evidence (2026-10-24 21:50 IST): source docs/numerics-and-correctness/m1-c07-floating-point-arithmetic-and-numerical-correctness.md and assets docs/assets/diagrams/m1-c07-format-fields.svg and m1-c07-error-boundaries.svg. Independent checks validated required experiment fields, local links, SVG structure, exact conversion/range/tie/subnormal values, strict accumulation/order/FMA traces, mixed-tolerance decisions, high-precision probability differences, every E4 input conversion/sum and budget, and byte/time arithmetic. Host FP16/FP32 serialization independently cross-checked conversion examples. Browser screenshots confirmed format proportions, range/rounding tables, dual-reference illustration and matched verification. These are documentation checks, not native low-precision benchmarks.
 
 Observed M1-C06 evidence (2026-10-24 21:35 IST): docs/numerics-and-correctness/m1-c06-reductions-probabilities-and-stable-softmax.md replaces its outline. Assets under docs/assets/diagrams/ are m1-c06-reduction-axes.svg and m1-c06-shifted-softmax.svg. Independent checks validated required fields, local links, SVG structure, reduction/shape references, shift and reversal cases, tiny-tail magnitude, every E4 coordinate/reference, exact fixture input representation, and byte/time arithmetic. Browser screenshots verified formulas, tables and both full diagrams. Calculator/reference checks are documentation evidence, not measured runtime performance.
@@ -1579,3 +1587,9 @@ Primary-source research is required when writing each chapter, not as a claim th
 
 
 2026-10-24 21:50 IST: Completed M1-C07 after primary-source, content, exact numerical and browser review. Reconciled chapter banner, ledger, module/category/inventory and landing-page summaries to 7 complete and 194 unstarted, with M1-C08 next. Preserved unrelated worktree changes; no later chapter started.
+
+
+2026-10-24 21:53 IST: Began M1-C08 as the sole active chapter after confirming all three prerequisites. Preserved existing README.md, templates/chapter.md and PLANS.md changes.
+
+
+2026-10-24 22:03 IST: Completed M1-C08 after source/content, numerical and browser review. Reconciled chapter banner, ledger, module/category/inventory and landing-page summaries to 8 complete and 193 unstarted, with M1-C09 next. Preserved unrelated worktree changes; no later chapter started.
