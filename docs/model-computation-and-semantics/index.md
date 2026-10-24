@@ -16,7 +16,7 @@ Transformers, attention, MoE, positional encoding, sampling.
 
 ## Chapters
 
-[M1-C01](m1-c01-from-a-prompt-to-the-next-token.md), [M1-C03](m1-c03-numbers-vectors-matrices-and-tensors.md) and [M1-C04](m1-c04-dot-products-and-matrix-multiplication.md) are completed detailed chapters; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
+[M1-C01](m1-c01-from-a-prompt-to-the-next-token.md), [M1-C03](m1-c03-numbers-vectors-matrices-and-tensors.md), [M1-C04](m1-c04-dot-products-and-matrix-multiplication.md) and [M1-C09](m1-c09-token-embeddings-and-learned-projections.md) are completed detailed chapters; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
 
 ### Module 1
 
