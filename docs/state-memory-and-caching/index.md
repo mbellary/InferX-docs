@@ -16,7 +16,7 @@ KV allocation, paging, prefix reuse, window state, snapshots, eviction, replay.
 
 ## Chapters
 
-[M1-C05](m1-c05-how-tensors-occupy-memory.md) is a completed detailed chapter; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
+[M1-C05](m1-c05-how-tensors-occupy-memory.md) and [M1-C17](m1-c17-reusing-attention-state-with-a-kv-cache.md) are completed detailed chapters; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
 
 ### Module 1
 

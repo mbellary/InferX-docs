@@ -11,13 +11,13 @@ Turn 201 outlines into a coherent collection of detailed chapters that helps a r
 
 The reader should be able to open any completed chapter, understand every introduced term, follow a worked numerical example and diagram, describe a reproducible experiment, and explain its pass/fail conditions and limits. High-Frequency Trading (HFT), meaning systems that process market events and make trading decisions under tight timing constraints, provides a lens for critical paths, bounded queues, stale information, and tail latency. A tail is the slower end of a latency distribution. Explain what transfers to inference and what does not; do not present trading advice, assert trading results, or equate inference semantics with exchange behavior.
 
-The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01–M1-C16, M9-C01, M9-C07, M9-C17 and M9-C19 are now complete; the next authoring chapter is M1-C17.
+The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01–M1-C17, M9-C01, M9-C07, M9-C17 and M9-C19 are now complete; the next authoring chapter is M1-C18.
 
 
 ## Progress
 
 
-Last updated: 2026-10-25 19:17 IST. Detailed chapter totals: **20 complete, 0 active, 181 not started, 0 blocked**. Next chapter: **M1-C17**, authoring position 21. Check a chapter only after its full acceptance gate passes.
+Last updated: 2026-10-25 19:34 IST. Detailed chapter totals: **21 complete, 0 active, 180 not started, 0 blocked**. Next chapter: **M1-C18**, authoring position 22. Check a chapter only after its full acceptance gate passes.
 
 - [x] (2026-10-24 17:21 IST) Read the uploaded PLANS.md, the learning requirements, the chapter inventory, and the dependency schedule; confirm Modules 1–7 plus supporting Module 9 and no Module 8.
 - [x] (2026-10-24 17:21 IST) Preserve the planning reference as repository-root PLANS.md and create this living execution plan with all 201 ordered chapter records and their target concepts and direct prerequisites.
@@ -150,11 +150,11 @@ Each record contains the authoring position, chapter ID, target concepts, source
   Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
   Module 9 application: Completed M9-C01 reference/evidence contracts, M9-C17 numerical boundaries and M9-C07 outcome populations support token/output validation. This chapter supplies identity, terminal and streaming evidence to Modules 1–7; advanced load/lifecycle checks remain later extensions. Updated: 2026-10-25 19:17 IST. Evidence: All target concepts explained with exact identity/Unicode/terminal fixtures, two diagrams and four matched experiment/verification pairs; all dimensions/principles, HFT limits, hardware and no-code scope reviewed. Checked primary Transformers v4.57.1 templates/tokenizer source/generation, RFC 3629, UAX #15 revision 58 and SentencePiece article. Reference QA passed 12-case outcome ledger, preparation lengths/reservations, Unicode byte distinctions, 1,046 partitions with empty updates, work/trial counts, fields, local links, SVG XML and four rendered tables. Browser reviewed chapter navigation, boundary table, population formulas and both full SVGs. Initial strict build passed without warnings (2.84 seconds); final build recorded under Artifacts. No real tokenizer, model, service or performance benchmark executed. Next action: M1-C17 only; Module 9 reading successor remains M9-C20.
 
-- [ ] 021 — **M1-C17: Reusing attention state with a KV cache** — Not started.
+- [x] 021 — **M1-C17: Reusing attention state with a KV cache** — Complete.
   File: [Reusing attention state with a KV cache](state-memory-and-caching/m1-c17-reusing-attention-state-with-a-kv-cache.md). Category: State, memory, and caching. Phase: 2. Single-request generation and timing.
   Direct prerequisites: M1-C16, M1-C12, M1-C05. Target concepts: Repeated computation without caching, per-layer keys and values, cache shapes, appending state, cache growth, position offsets, cached causal masking.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 reference contracts, M9-C17 logit tolerances, M9-C19 token/terminal identity and M9-C07 measurement populations. M9-C15 storage accounting and M9-C20 reuse identity remain outlines; elementary contracts supplied locally. Updated: 2026-10-25 19:34 IST. Evidence: All seven target concepts, four matched experiment/verification pairs, two diagrams, six dimensions/eight principles, HFT limits and hardware/no-code requirements reviewed. Primary Transformer/GQA papers, Transformers v4.57.1 cache and PyTorch 2.14 mask specifications checked. Independent full-prefix/cached mathematical QA passed ten splits, 20 suffix rows, 80 logits and 240 K/V coordinates at 80/120 digits; 65 mask entries, two scalar references, four deliberate fault probes, greedy/cache-length trace and storage/copy/work/trial counts passed. Fields, local links, SVG XML and five rendered tables passed. Browser reviewed chapter navigation, generation trace, verification formulas and both full diagrams. Initial strict build passed without warnings (2.89 seconds); final build recorded below. No cache runtime, allocator fault trial or performance benchmark executed. Next action: M1-C18 only.
 
 - [ ] 022 — **M1-C18: Understanding prefill and decode** — Not started.
   File: [Understanding prefill and decode](runtime-and-concurrency/m1-c18-understanding-prefill-and-decode.md). Category: Runtime and concurrency. Phase: 2. Single-request generation and timing.
@@ -1239,6 +1239,8 @@ Each record contains the authoring position, chapter ID, target concepts, source
 
 ## Surprises & Discoveries
 
+Chapter record (2026-10-25 19:34 IST): The three-selection trace retains three processed positions while selected history has four IDs. A terminal selected ID need not be processed just to fill the cache. A one-row top-left mask can also hide valid cached context; the scalar fixture distinguishes 32.404513 correct output from 10 or 17.310586 under mask faults.
+
 Chapter record (2026-10-25 19:17 IST): The constructed 12-record boundary corpus has six admitted empty-text results but only one no-selected-ID result. Two normal stop/EOS cases hide selected IDs, while strict UTF-8 finalization creates errors distinct from valid cap truncation. Aggregate text-only success checks lose these distinctions.
 
 Chapter record (2026-10-25 19:00 IST): The frozen-prompt fault selects the same three IDs as the correct evolving-prefix trace, but produces different later logits. Final text alone therefore misses this loop error. Byte fixtures also distinguish committed IDs, visible text and terminal reasons.
@@ -1296,6 +1298,8 @@ Observation (2026-10-24 17:23 IST): the documentation preview retains the /Infer
 
 
 ## Decision Log
+
+Chapter record (2026-10-25 19:34 IST): Keep M1-C14 model weights, absolute positions and arithmetic unchanged, comparing per-layer mathematical KV reuse with full recomputation. Specify coherent valid-length publication and whole-cache invalidation on partial extension failure; do not claim a rollback allocator or runtime implementation. Separate valid payload, reserved capacity and copy traffic.
 
 Chapter record (2026-10-25 19:17 IST): Use separate identity fixture I and inherited scripted byte fixture B, with explicit vocabulary separation. Bind exact artifact/settings identity and independent stage references. Preserve strict no-normalization matching and M1-C16 precedence; real-artifact checks and timing remain proposed rather than inferred from reference QA.
 
@@ -1357,6 +1361,8 @@ Decision: create and validate the plan now with all chapter stages unstarted. Ra
 
 
 ## Outcomes & Retrospective
+
+Chapter record (2026-10-25 19:34 IST): M1-C17 is Complete. Totals: 21/201 complete, 180 unstarted, no active/blocked chapter. Module 1 has 17/20 complete; Module 9 remains 4/30. Causal reuse, positions/masks and growth are explained with four proposed experiment/verification pairs and two diagrams. Source, mathematical, strict-build and rendered review passed. M1-C18 is next; no second chapter started.
 
 Chapter record (2026-10-25 19:17 IST): M9-C19 is Complete. Totals: 20/201 complete, 181 unstarted, no active/blocked chapter. Module 9 has 4/30 complete and Module 1 remains 16/20. Identity/output validation now supports Modules 1–7 with four proposed experiments, verification and two diagrams. M1-C17 is next; no second chapter started.
 
@@ -1420,7 +1426,7 @@ The repository-root `PLANS.md` is the uploaded execution-plan guidance. This fil
 
 `docs/learning-approach.md` defines the shared learning contract. `templates/chapter.md` is the authoring scaffold. `docs/module-1.md` through `docs/module-7.md`, plus `docs/module-9.md`, provide module reading orders. The 14 category directories organize subjects; their `index.md` pages list member chapters. A chapter ID such as M2-C04 identifies Module 2, Chapter 4; authoring position is separate and controls creation order. Do not create Module 8 or infer chapters for the empty Storage and persistence category.
 
-The chapter files already exist and contain target-concept paragraphs. M1-C01–M1-C16, M9-C01, M9-C07, M9-C17 and M9-C19 are Complete; the remaining 181 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
+The chapter files already exist and contain target-concept paragraphs. M1-C01–M1-C17, M9-C01, M9-C07, M9-C17 and M9-C19 are Complete; the remaining 180 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
 
 
 ## Plan of Work
@@ -1592,6 +1598,8 @@ The working tree already contains curriculum and inventory changes from prior re
 
 ## Artifacts and Notes
 
+Chapter record (2026-10-25 19:34 IST): M1-C17 source and two SVGs passed review. QA verified ten prefix/suffix splits, 80 suffix logits, 240 K/V coordinates at 80/120 digits, 65 mask entries, scalar cases, four fault probes and storage/copy/work/trial counts; fields/links/XML/five tables passed. Browser reviewed generation table, verification formulas, navigation and both full diagrams. Initial strict build: 2.89 seconds, zero warnings. Final reconciled strict build: 4.17 seconds, zero warnings. No cache runtime or performance benchmark executed.
+
 Chapter record (2026-10-25 19:17 IST): M9-C19 source and two SVGs passed source, reference and rendered review. QA checked the 12-case ledger, exact identity/Unicode references, 1,046 byte partitions with empty updates, rescan/trial counts, required fields, local links, SVG XML and four tables. Initial strict build passed in 2.84 seconds with zero warnings. Final reconciled strict build passed in 3.08 seconds with zero warnings. Browser reviewed boundary table, population formulas and both full diagrams. No tokenizer/model/service runtime or latency benchmark executed.
 
 Chapter record (2026-10-25 19:00 IST): M1-C16 source and two SVG diagrams reviewed. Reference/documentation QA passed 80/120-digit model checks, terminal cases, 1,046 byte partitions, formulas, fields, links, SVG XML and seven tables. Initial strict build: 2.82 seconds, zero warnings. Final reconciled strict build: 2.79 seconds, zero warnings. Rendered model trace, terminal table and both full diagrams reviewed. No runtime benchmark executed.
@@ -1760,3 +1768,7 @@ Primary-source research is required when writing each chapter, not as a claim th
 2026-10-25 19:06 IST: Began M9-C19 as sole active chapter after checking prerequisites. Preserved all existing worktree changes. M1-C17 is next in authoring order.
 
 2026-10-25 19:17 IST: Completed M9-C19 after reference, source, strict-build and rendered review. Reconciled ledger, source, inventory, Module 9, category and landing summaries to 20 complete/181 outlines; next M1-C17. Preserved all previous worktree changes; earlier chapters receive only necessary M9-C19 status corrections.
+
+2026-10-25 19:23 IST: Began M1-C17 as sole active chapter with a clean working tree and completed prerequisites. Next authoring chapter M1-C18.
+
+2026-10-25 19:34 IST: Completed M1-C17 after source, mathematical, strict-build and rendered review. Reconciled source, ledger, inventory, Module 1, category and landing summaries to 21 complete/180 outlines; M1-C18 next. No other chapter started.
