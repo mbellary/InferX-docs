@@ -1,6 +1,6 @@
 # Module 2: Treat the KV cache as a first-class systems problem
 
-> **Status: Chapter outlines available.** Full chapters will be developed one at a time after the module outlines are in place.
+> **Status: 2 of 21 detailed chapters complete.** [M2-C01](state-memory-and-caching/m2-c01-what-the-kv-cache-retains-and-why.md) and [M2-C02](model-computation-and-semantics/m2-c02-attention-head-sharing-mha-gqa-and-mqa.md) are complete; M2-C03–C21 remain outlines. Track sequential development in the [execution plan](chapter-execution-plan.md).
 
 ## Learning goal
 
