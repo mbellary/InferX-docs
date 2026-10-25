@@ -231,7 +231,7 @@ Use FP64 inputs, intermediates and outputs for the main experiments. The integer
 
 ### Module 9 support applied locally
 
-[M9-C01](m9-c01-defining-reference-behavior-and-evidence-before-optimizing.md) supports reference and invariant checks; [M9-C02](../measurement-experimentation-and-economics/m9-c02-request-events-clocks-and-measurement-boundaries.md) supplies timing/completion boundaries; [M9-C11](../measurement-experimentation-and-economics/m9-c11-controlled-comparisons-warmup-and-reproducibility.md) supplies paired comparisons. [M9-C17](m9-c17-comparing-logits-with-justified-numerical-tolerances.md) motivates independent reference precision, coordinate errors and near-zero treatment. These are supporting outlines; their required introductory checks are specified here. General error analysis and other precisions are deferred to M1-C07 and the later detailed Module 9 treatments.
+[M9-C01](m9-c01-defining-reference-behavior-and-evidence-before-optimizing.md) supports reference and invariant checks; [M9-C02](../measurement-experimentation-and-economics/m9-c02-request-events-clocks-and-measurement-boundaries.md) supplies timing/completion boundaries; [M9-C11](../measurement-experimentation-and-economics/m9-c11-controlled-comparisons-warmup-and-reproducibility.md) supplies paired comparisons. [M9-C17](m9-c17-comparing-logits-with-justified-numerical-tolerances.md) motivates independent reference precision, coordinate errors and near-zero treatment. M9-C01 and M9-C17 are complete; the other linked support chapters remain outlines; their required introductory checks are specified here. General error analysis and other precisions are deferred to M1-C07 and the later detailed Module 9 treatments.
 
 ### Concept coverage and exact checks
 

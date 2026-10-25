@@ -242,7 +242,7 @@ No checkpoint, tokenizer, model weights, GPU or live market feed is needed for t
 
 ### Correctness references and coverage
 
-The local application of [M9-C01](../numerics-and-correctness/m9-c01-defining-reference-behavior-and-evidence-before-optimizing.md), still an outline, is an explicit mathematical and interface reference. Preserve operand values, feature order, shape, transpose interpretation, bias/scaling settings, batch identity and complete outputs. E1–E3 use the hand-derived references above. E4 uses its exact integer-valued formula and complete output comparison, independent of the candidate backend.
+The local application of [M9-C01](../numerics-and-correctness/m9-c01-defining-reference-behavior-and-evidence-before-optimizing.md), now complete, is an explicit mathematical and interface reference. Preserve operand values, feature order, shape, transpose interpretation, bias/scaling settings, batch identity and complete outputs. E1–E3 use the hand-derived references above. E4 uses its exact integer-valued formula and complete output comparison, independent of the candidate backend.
 
 All integer metadata and IDs require exact equality. Exact numerical equality is also justified for these deliberately bounded binary32 fixtures: input integers, products and all partial sums fit exactly in the declared arithmetic. That does not establish bitwise equivalence for arbitrary learned weights or a different precision mode. Do not invent a universal logit tolerance here. General rounding/reduction behavior belongs to M1-C07 and numerical-reference methods to M9-C17. A mismatch in this controlled exercise must be investigated rather than excused with a relaxed threshold.
 

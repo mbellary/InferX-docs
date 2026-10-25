@@ -16,7 +16,7 @@ Precision, quantization, numerical stability, determinism, batch invariance, qua
 
 ## Chapters
 
-[M1-C06](m1-c06-reductions-probabilities-and-stable-softmax.md) and [M1-C07](m1-c07-floating-point-arithmetic-and-numerical-correctness.md) are completed detailed chapters; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
+[M1-C06](m1-c06-reductions-probabilities-and-stable-softmax.md) [M1-C07](m1-c07-floating-point-arithmetic-and-numerical-correctness.md), [M9-C01](m9-c01-defining-reference-behavior-and-evidence-before-optimizing.md) and [M9-C17](m9-c17-comparing-logits-with-justified-numerical-tolerances.md) are completed detailed chapters; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
 
 ### Module 1
 

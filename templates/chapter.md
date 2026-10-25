@@ -8,6 +8,8 @@
 
 Add relative links to the module reading order and previous/next chapters. Follow the published learning approach. Assume basic programming knowledge only; use Rust first and include no code implementation.
 
+Track this chapter in docs/chapter-execution-plan.md. Keep at most one chapter active and record progress and evidence for Concepts, Experiments, Verification, and Review. Change Outline to Draft when authoring starts; mark Complete only after the execution plan's acceptance gate passes.
+
 ## Target concepts
 
 List the concepts assigned to this chapter.
@@ -28,6 +30,8 @@ Explain foundations before advanced ideas. Define terms, symbols, units, and pre
 State hardware requirements, prerequisites, workload, baseline, controlled variables, prediction, and procedure. Explain the inference and HFT engineering connections. Provide no implementation code. Repeat this structure for each experiment.
 
 ## Verification
+
+Identify and link the applicable Module 9 guidance supporting this chapter in Modules 1–7. Introduce basic checks locally when the advanced validation treatment depends on later capabilities. Module 8 is excluded from the curriculum.
 
 For each experiment, define correctness checks, reference behavior, invariants, tolerances, measurement boundaries, benchmark procedure, profiling approach, and acceptance criteria. Include representative workloads, variability, relevant fault cases, end-to-end effects, repetition counts, and uncertainty. Distinguish expected outcomes from measured results.
 

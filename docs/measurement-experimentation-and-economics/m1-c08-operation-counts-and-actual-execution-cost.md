@@ -226,7 +226,7 @@ Inputs are ready, immutable and local before the stated boundary. There is one a
 
 ### Module 9 support and target coverage
 
-[M9-C01](../numerics-and-correctness/m9-c01-defining-reference-behavior-and-evidence-before-optimizing.md) supplies the reference discipline; [M9-C02](m9-c02-request-events-clocks-and-measurement-boundaries.md) supplies clocks/completion; [M9-C11](m9-c11-controlled-comparisons-warmup-and-reproducibility.md) supplies controlled pairing. [M9-C15](../state-memory-and-caching/m9-c15-accounting-for-weights-kv-state-workspace-and-fragmentation.md) guides unique/peak storage, and [M9-C16](../hardware-architecture-and-topology/m9-c16-recording-hardware-conditions-that-change-measurements.md) guides hardware conditions. These remain supporting outlines; the necessary introductory checks are stated here rather than assumed completed.
+[M9-C01](../numerics-and-correctness/m9-c01-defining-reference-behavior-and-evidence-before-optimizing.md) supplies the reference discipline; [M9-C02](m9-c02-request-events-clocks-and-measurement-boundaries.md) supplies clocks/completion; [M9-C11](m9-c11-controlled-comparisons-warmup-and-reproducibility.md) supplies controlled pairing. [M9-C15](../state-memory-and-caching/m9-c15-accounting-for-weights-kv-state-workspace-and-fragmentation.md) guides unique/peak storage, and [M9-C16](../hardware-architecture-and-topology/m9-c16-recording-hardware-conditions-that-change-measurements.md) guides hardware conditions. M9-C01 is complete; the other linked support chapters remain outlines; the necessary introductory checks are stated here rather than assumed completed.
 
 | Target concept | Explanation | Experiment/check |
 | --- | --- | --- |

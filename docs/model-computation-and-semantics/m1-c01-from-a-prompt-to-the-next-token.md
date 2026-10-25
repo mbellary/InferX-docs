@@ -189,7 +189,7 @@ For all experiments, write a prediction first. Keep raw event records and explai
 
 ### Reference behavior before performance
 
-The local application of [M9-C01](../numerics-and-correctness/m9-c01-defining-reference-behavior-and-evidence-before-optimizing.md) is a declared reference: E1 uses exact constructed probabilities; E2/E3 use a frozen, inspectable tool and manifest. The tool is an operational reference, not proof that every internal mathematical operation is correct. The Module 9 chapter is currently an outline; the required introductory contract is stated here.
+The local application of [M9-C01](../numerics-and-correctness/m9-c01-defining-reference-behavior-and-evidence-before-optimizing.md) is a declared reference: E1 uses exact constructed probabilities; E2/E3 use a frozen, inspectable tool and manifest. The tool is an operational reference, not proof that every internal mathematical operation is correct. M9-C01 is now complete; the required introductory contract is stated here.
 
 In E1 require exact ID counts, the complete context for each decision, and the stated arithmetic. For E2/E3 require matching prepared IDs, valid vocabulary IDs, a fixed loaded weight identity, cap compliance, configured EOS handling, no output cross-contamination, and one terminal outcome. Exact IDs and counts have zero tolerance. An internal weight checksum before/after a run, if available, can strengthen the fixed-weight check; matching rendered text alone cannot prove it.
 

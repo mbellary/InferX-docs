@@ -11,13 +11,13 @@ Turn 201 outlines into a coherent collection of detailed chapters that helps a r
 
 The reader should be able to open any completed chapter, understand every introduced term, follow a worked numerical example and diagram, describe a reproducible experiment, and explain its pass/fail conditions and limits. High-Frequency Trading (HFT), meaning systems that process market events and make trading decisions under tight timing constraints, provides a lens for critical paths, bounded queues, stale information, and tail latency. A tail is the slower end of a latency distribution. Explain what transfers to inference and what does not; do not present trading advice, assert trading results, or equate inference semantics with exchange behavior.
 
-The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01–M1-C14 are now complete and the next authoring chapter is M9-C01.
+The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01–M1-C16, M9-C01, M9-C07, M9-C17 and M9-C19 are now complete; the next authoring chapter is M1-C17.
 
 
 ## Progress
 
 
-Last updated: 2026-10-25 09:59 IST. Detailed chapter totals: **14 complete, 0 active, 187 not started, 0 blocked**. Next chapter: **M9-C01**, authoring position 15. Check a chapter only after its full acceptance gate passes.
+Last updated: 2026-10-25 19:17 IST. Detailed chapter totals: **20 complete, 0 active, 181 not started, 0 blocked**. Next chapter: **M1-C17**, authoring position 21. Check a chapter only after its full acceptance gate passes.
 
 - [x] (2026-10-24 17:21 IST) Read the uploaded PLANS.md, the learning requirements, the chapter inventory, and the dependency schedule; confirm Modules 1–7 plus supporting Module 9 and no Module 8.
 - [x] (2026-10-24 17:21 IST) Preserve the planning reference as repository-root PLANS.md and create this living execution plan with all 201 ordered chapter records and their target concepts and direct prerequisites.
@@ -114,41 +114,41 @@ Each record contains the authoring position, chapter ID, target concepts, source
   Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
   Module 9 application: M9-C01 model/stage reference; M9-C02 load/first/warm completion boundaries; M9-C11 controlled comparisons; M9-C15 distinct parameter/live activation accounting; M9-C17 logit budgets; M9-C19 tokenizer/config identity. Supporting outlines are applied locally. Updated: 2026-10-25 09:59 IST. Evidence: All eight target concepts, complete two-block mathematical fixture, two SVGs, four experiments and matched verification, six dimensions/eight principles, HFT limits and primary sources/hardware requirements reviewed. Independent 80/120-digit checks passed for 150 stage coordinates, 60 full and 24 last-logit coordinates, independently derived MLP/softmax, future/request isolation, four deliberate wrong models, tensor/work/byte counts and fields/links/SVG structure. Browser reviewed formulas, complete trace, both diagrams in full and verification notation/tables. Strict build passed without warnings; final reconciliation build recorded below. No model-runtime, loader, training or hardware benchmark performed. Next action: Start M9-C01, authoring position 15; M1-C15 remains next in module reading order.
 
-- [ ] 015 — **M9-C01: Defining reference behavior and evidence before optimizing** — Not started.
+- [x] 015 — **M9-C01: Defining reference behavior and evidence before optimizing** — Complete.
   File: [Defining reference behavior and evidence before optimizing](numerics-and-correctness/m9-c01-defining-reference-behavior-and-evidence-before-optimizing.md). Category: Numerics and correctness. Phase: 1. Model and numerical foundations.
   Direct prerequisites: M1-C14, M1-C07. Target concepts: Correctness contracts, mathematical and numerical references, invariants, approximations, intentional constraints, falsifiable hypotheses, acceptance criteria, limits of generated-text matching.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: This chapter establishes the local reference/evidence contract for Modules 1–7, using completed M1-C14 and M1-C07. Later M9-C17 numerical budgets, M9-C02 boundaries and M9-C11 comparisons remain outlines; elementary checks are defined here. Updated: 2026-10-25 10:12 IST. Evidence: All eight target concepts explained with fixed contract, reference layers, score/probability/near-tie examples, two diagrams, four complete experiments and matched verification, six dimensions/eight principles, HFT limits and hardware requirements. Verified primary metamorphic-testing article, Rust f64 and PyTorch 2.14 numerical/testing specifications. Arithmetic QA passed: 50 reference values stable at 80/120 digits, independent softmax/fraction/model-probe paths, score/TV/greedy classifications, causal/request/prefix relations, 108 relational comparisons plus 32 absolute baseline coordinates, zero/reversed-block defect cases, fields/links/SVG structure. Browser reviewed counterexample table, revised reference/error notation and both diagrams in full. Initial strict build passed without warnings (2.67 seconds); final build recorded below. No Rust inference runtime, stochastic sampler, service or performance benchmark executed. Next action: Start M9-C17 only; reading order remains M9-C02.
 
-- [ ] 016 — **M9-C17: Comparing logits with justified numerical tolerances** — Not started.
+- [x] 016 — **M9-C17: Comparing logits with justified numerical tolerances** — Complete.
   File: [Comparing logits with justified numerical tolerances](numerics-and-correctness/m9-c17-comparing-logits-with-justified-numerical-tolerances.md). Category: Numerics and correctness. Phase: 1. Model and numerical foundations.
   Direct prerequisites: M9-C01, M1-C14. Target concepts: Reference precision, absolute and relative error, near-zero behavior, per-position and aggregate errors, dtype and reduction effects, extreme values, tolerance justification, locating first divergence.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Deepens completed M9-C01 using the fixed M1-C14 model; defines precision, error aggregation, budgets and first-divergence checks locally for Modules 1–7. Later timing/workload/hardware support remains outlined. Updated: 2026-10-25 10:23 IST. Evidence: All eight target-concept groups covered with reference uncertainty, represented-input versus arithmetic error, mixed/aggregate/per-position metrics, cancellation/extreme cases, analytical stage propagation and first-divergence replay. Two SVGs, four complete experiments and matched verification, six dimensions/eight principles, HFT limits and hardware requirements reviewed. Primary Rust/PyTorch specifications and softmax analysis checked. Arithmetic QA: 172 reference values stable at 80/120 digits; 60 full/24 last-logit and 30 coordinates per hidden boundary; independent matrix/closed-form paths, mixed-gate/outlier, FP32 grouping/range, tiny-tail, conditional replay, propagation/payload checks passed. Browser reviewed corrected comparator table, reference formulas and both diagrams in full. Initial strict build passed without warnings (2.71 seconds); final reconciliation build recorded below. No inference runtime, hardware benchmark or production result asserted. Next action: Start M1-C15 only; Module 9 reading navigation remains M9-C18.
 
-- [ ] 017 — **M1-C15: Turning logits into the next token** — Not started.
+- [x] 017 — **M1-C15: Turning logits into the next token** — Complete.
   File: [Turning logits into the next token](model-computation-and-semantics/m1-c15-turning-logits-into-the-next-token.md). Category: Model computation and semantics. Phase: 2. Single-request generation and timing.
   Direct prerequisites: M1-C14, M9-C01, M9-C17. Target concepts: Greedy decoding, temperature, top-k and top-p filtering, probability renormalization, random sampling, seeds, tie handling.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 defines interface/reference evidence and M9-C17 numerical gates; apply local distribution, draw-boundary and request-owned random-state checks, with advanced M9-C18 sampling validation still outlined. M9-C02/M9-C11 measurement details are defined locally. Updated: 2026-10-25 10:34 IST. Evidence: All seven target-concept groups explained with explicit greedy/sampling contract, temperature weights, top-k/top-p tie/boundary/order cases, renormalization, CDF and request-owned random-state examples. Two diagrams, four complete experiment/verification pairs, all dimensions/principles, HFT limits and hardware requirements reviewed. Verified primary nucleus paper, Transformers v4.57.1 controls/processor source and Rust Rand guidance. Arithmetic QA passed exact fraction support/order/tie/CDF and grid/schedule cases, frequency-screen bound, large-row greedy ID 996, 80 reference values at 80/120 digits including 60 model logits and independent temperature-weight reference. Fields/links/SVG XML passed. Browser reviewed formulas, probability table, uncertainty screen and both diagrams in full. Initial strict build passed without warnings (2.78 seconds); final build recorded below. No PRNG, inference runtime, generated-text quality or performance benchmark executed. Next action: Start M9-C07 only; Module 1 reading order remains M1-C16.
 
-- [ ] 018 — **M9-C07: Latency distributions and statistical uncertainty** — Not started.
+- [x] 018 — **M9-C07: Latency distributions and statistical uncertainty** — Complete.
   File: [Latency distributions and statistical uncertainty](measurement-experimentation-and-economics/m9-c07-latency-distributions-and-statistical-uncertainty.md). Category: Measurement, experimentation, and economics. Phase: 2. Single-request generation and timing.
   Direct prerequisites: M1-C06. Target concepts: Means, medians and tail percentiles, empirical distributions, histogram precision, sample counts, correlated token observations, repeated runs, confidence intervals, censoring, aggregation without averaging percentiles.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: This chapter supplies distribution/uncertainty guidance for Modules 1–7, using completed M1-C06 probability foundations. Completed M9-C01/M9-C17 reference contracts apply; later timing/load/censoring support is introduced locally without claiming a running service. Updated: 2026-10-25 10:53 IST. Evidence: All nine target-concept groups explained with nearest-rank/ECDF examples, tail-count limits, histogram precision/merge rules, token/request weighting, covariance, repeated-run/interval targets, censoring and outcome bounds. Two diagrams, four matched experiment/verification pairs, all dimensions/principles, HFT limits and hardware requirements reviewed. Primary NIST distributions/binomial/censoring, HdrHistogram 2.2.2, Prometheus, Rust Instant and Tail at Scale sources checked. Exact count/fraction QA passed ranks/ECDF, histogram boundaries/overflow, worker merge, clusters, censor lower bounds, 63/64 coverage and run/timing counts; four reference values stable at 80/120 digits. Fields/local links/SVG XML/six rendered tables passed. Browser reviewed formulas, table, confidence-interval explanation and both diagrams in full. Initial strict build passed without warnings (2.73 seconds); final build recorded below. No runtime latency/service benchmark executed. Next action: Start M1-C16 only; Module 9 reading order remains M9-C08.
 
-- [ ] 019 — **M1-C16: Building the single-request generation loop** — Not started.
+- [x] 019 — **M1-C16: Building the single-request generation loop** — Complete.
   File: [Building the single-request generation loop](interfaces-protocols-and-streaming/m1-c16-building-the-single-request-generation-loop.md). Category: Interfaces, protocols, and streaming. Phase: 2. Single-request generation and timing.
   Direct prerequisites: M1-C15, M1-C02. Target concepts: Prompt preparation, repeated forward passes, appending tokens, end-of-sequence tokens, output limits, stop sequences, incremental detokenization, partial text handling.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01/M9-C17 establish reference/logit gates and M9-C07 population/uncertainty rules. Apply local tokenizer, stop/UTF-8, terminal-outcome and prepared-request timing contracts; M9-C19 and M9-C02 remain outlines. Updated: 2026-10-25 19:00 IST. Evidence: All target concepts, four complete experiment/verification pairs, six dimensions/eight principles, HFT limits and hardware requirements reviewed; two SVG diagrams supplied. Primary generation/template/stop, UTF-8 and tokenizer sources checked. Independent reference QA passed 24 model-logit coordinates at 80/120 digits, 12 last logits, greedy/prefix/frozen-prompt checks, exact EOS/cap/error outcomes, 1,046 byte partitions and work/storage/rescan counts. Fields, local links, SVG XML and seven rendered tables passed. Browser reviewed model trace, terminal outcome table and both diagrams in full. Initial strict build passed without warnings (2.82 seconds); final build recorded below. No generation runtime or latency benchmark executed. Next action: M9-C19 only; Module 1 reading successor is M1-C17.
 
-- [ ] 020 — **M9-C19: Validating tokenization, stopping, and final output** — Not started.
+- [x] 020 — **M9-C19: Validating tokenization, stopping, and final output** — Complete.
   File: [Validating tokenization, stopping, and final output](interfaces-protocols-and-streaming/m9-c19-validating-tokenization-stopping-and-final-output.md). Category: Interfaces, protocols, and streaming. Phase: 2. Single-request generation and timing.
   Direct prerequisites: M1-C16, M9-C01. Target concepts: Tokenizer and template identity, control tokens, EOS, length caps, multi-token stop sequences, boundary-spanning text, incremental detokenization, terminal reasons, no-token and truncated outputs.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 reference/evidence contracts, M9-C17 numerical boundaries and M9-C07 outcome populations support token/output validation. This chapter supplies identity, terminal and streaming evidence to Modules 1–7; advanced load/lifecycle checks remain later extensions. Updated: 2026-10-25 19:17 IST. Evidence: All target concepts explained with exact identity/Unicode/terminal fixtures, two diagrams and four matched experiment/verification pairs; all dimensions/principles, HFT limits, hardware and no-code scope reviewed. Checked primary Transformers v4.57.1 templates/tokenizer source/generation, RFC 3629, UAX #15 revision 58 and SentencePiece article. Reference QA passed 12-case outcome ledger, preparation lengths/reservations, Unicode byte distinctions, 1,046 partitions with empty updates, work/trial counts, fields, local links, SVG XML and four rendered tables. Browser reviewed chapter navigation, boundary table, population formulas and both full SVGs. Initial strict build passed without warnings (2.84 seconds); final build recorded under Artifacts. No real tokenizer, model, service or performance benchmark executed. Next action: M1-C17 only; Module 9 reading successor remains M9-C20.
 
 - [ ] 021 — **M1-C17: Reusing attention state with a KV cache** — Not started.
   File: [Reusing attention state with a KV cache](state-memory-and-caching/m1-c17-reusing-attention-state-with-a-kv-cache.md). Category: State, memory, and caching. Phase: 2. Single-request generation and timing.
@@ -1239,6 +1239,22 @@ Each record contains the authoring position, chapter ID, target concepts, source
 
 ## Surprises & Discoveries
 
+Chapter record (2026-10-25 19:17 IST): The constructed 12-record boundary corpus has six admitted empty-text results but only one no-selected-ID result. Two normal stop/EOS cases hide selected IDs, while strict UTF-8 finalization creates errors distinct from valid cap truncation. Aggregate text-only success checks lose these distinctions.
+
+Chapter record (2026-10-25 19:00 IST): The frozen-prompt fault selects the same three IDs as the correct evolving-prefix trace, but produces different later logits. Final text alone therefore misses this loop error. Byte fixtures also distinguish committed IDs, visible text and terminal reasons.
+
+Observation (2026-10-25 10:53 IST): Constructed worker p99 values 1/100 ms average to 50.5 ms, while the pooled nearest-rank p99 is 100 ms; weighting those percentiles by count also fails. The gap fixture has token-weighted median 10 ms but median of per-request medians 1 ms. Two unfinished requests also leave cohort p99 above 20 ms despite completed-only p99 8 ms. Exact count/rank checks reproduced these population distinctions.
+
+
+Observation (2026-10-25 10:34 IST): Top-k then top-p can produce singleton support where reversing their order retains two IDs; a shared supplied uniform stream also assigns different per-request results under AABB versus ABAB scheduling. Exact fraction and schedule checks reproduced both counterexamples. A positive-temperature limit with tied maxima is not the lowest-ID greedy rule. These distinctions prevent accidental policy or replay changes from being labelled equivalent optimization.
+
+
+Observation (2026-10-25 10:23 IST): A constructed 1,024-coordinate array can satisfy a mean-error threshold while one coordinate violates its per-coordinate limit by 10,000 times, affecting one of two requests. Exact represented FP32 inputs also produce different grouped sums (0 versus 1). Evidence: arithmetic QA and independent model/reference paths passed. Rendered review detected unescaped absolute-value bars in a table header and an ambiguous reference symbol; both were corrected and visually rechecked.
+
+
+Observation (2026-10-25 10:12 IST): A shared selected ID hides a TV distance of approximately 0.308845 in the constructed score example, while a maximum score error of only 2 × 10⁻⁸ flips a near-tie decision. Zero-output models can satisfy request/future isolation without computing the reference. Evidence: independent arithmetic and deliberate wrong-model checks passed. These examples motivate separate numerical, decision and relational evidence gates.
+
+
 Observation (2026-10-25 09:59 IST): A full-model assembly can preserve every shape while computing the wrong model. The specified distinct second block exposes reversal and accidental layer reuse. Evaluation and gradient controls also need direct auditing because this dropout-free fixture can produce the same values in either mode. Evidence: four deliberate wrong-model cases failed the mathematical reference; 150 reference-stage coordinates were stable at 80/120 digits. No runtime claim follows.
 
 
@@ -1280,6 +1296,22 @@ Observation (2026-10-24 17:23 IST): the documentation preview retains the /Infer
 
 
 ## Decision Log
+
+Chapter record (2026-10-25 19:17 IST): Use separate identity fixture I and inherited scripted byte fixture B, with explicit vocabulary separation. Bind exact artifact/settings identity and independent stage references. Preserve strict no-normalization matching and M1-C16 precedence; real-artifact checks and timing remain proposed rather than inferred from reference QA.
+
+Chapter record (2026-10-25 19:00 IST): Complete M1-C16 using the uncached M1-C14 model trace and a separately labelled scripted byte fixture. Specify strict UTF-8 finalization, earliest completed stop and EOS/stop/cap precedence explicitly. Keep model and codec-only performance cases separate; no implementation or measured speedup is supplied.
+
+Decision (2026-10-25 10:53 IST): Fix nearest-rank quantiles, keep raw versus bucket precision explicit, and use seven independent-run min/max coverage for a named median-of-run-p99-differences target. Keep unfinished/cancelled outcomes separate and use constructed data for inference-method checks. Rationale: avoid averaging percentiles, treating correlated tokens as independent, censor clipping and unsupported tail precision without introducing an implementation. Author: Codex.
+
+
+Decision (2026-10-25 10:34 IST): Specify an exact-count, ID-tied ranking, temperature/top-k/renormalization/top-p/renormalization order, strict inverse-CDF boundary, and request-owned logical draws. Treat greedy as a separate no-draw mode; use fraction fixtures and supplied uniforms independently of a PRNG. Rationale: make policy correctness and state ownership independently verifiable before stochastic or performance evidence. Retain a deliberately coarse frequency screen with an explicit variance/union bound and no generated-text quality claim. Author: Codex.
+
+
+Decision (2026-10-25 10:23 IST): Preserve M1-C14’s predeclared FP64 stage budgets while explaining reference uncertainty, input representation, local amplification and first observable divergence. Use standalone comparator/range fixtures with separate contracts; separate trace and verifier work from E4 timing. Rationale: avoid retroactive tolerances, average-only acceptance and instrumentation-biased optimization claims. Author: Codex.
+
+
+Decision (2026-10-25 10:12 IST): Author M9-C01 as the first detailed cross-cutting support chapter, using the completed M1-C14 model and standalone exact probability fixtures. Distinguish equivalent interfaces, approximation budgets, distributional claims and intentional constraints; pair absolute references with justified input relations and fault-sensitivity checks. Rationale: make correctness falsifiable before any optimization claim without code, a new model artifact or runtime benchmark. Author: Codex.
+
 
 Decision (2026-10-25 09:59 IST): Specify a complete synthetic two-block decoder-only model, separate final norm and untied head, with 20 tensors/90 FP64 values. Use a last-logit comparison that preserves all prefix dependencies and a proposed complete-version admission boundary. Rationale: make assembly, loading identity and useful-output equivalence independently reviewable without implementation or a supplied pretrained checkpoint. Next authoring dependency is M9-C01, distinct from Module 1 reading-order M1-C15. Author: Codex.
 
@@ -1325,6 +1357,22 @@ Decision: create and validate the plan now with all chapter stages unstarted. Ra
 
 
 ## Outcomes & Retrospective
+
+Chapter record (2026-10-25 19:17 IST): M9-C19 is Complete. Totals: 20/201 complete, 181 unstarted, no active/blocked chapter. Module 9 has 4/30 complete and Module 1 remains 16/20. Identity/output validation now supports Modules 1–7 with four proposed experiments, verification and two diagrams. M1-C17 is next; no second chapter started.
+
+Chapter record (2026-10-25 19:00 IST): M1-C16 is Complete. Totals: 19/201 complete, 182 unstarted, no active/blocked chapter. Module 1 has 16/20 complete; Module 9 remains 3/30. Four proposed experiment/verification pairs and two diagrams passed reference, documentation and visual review. M9-C19 is next; no second chapter started.
+
+Chapter outcome (2026-10-25 10:53 IST): M9-C07 is Complete. Totals: 18/201 complete, 183 unstarted, no active/blocked chapter; Module 9 has 3/30 complete. Its distribution/precision/uncertainty/censoring framework, worked fixtures, four proposed experiments with verification and two diagrams are reviewed. Arithmetic, strict-build and rendered checks passed. No measured latency, inference, load-generation, HFT or production-tail result is asserted. M1-C16 is next; no second chapter started.
+
+
+Chapter outcome (2026-10-25 10:34 IST): M1-C15 is Complete. Totals: 17/201 complete, 184 unstarted, no active or blocked chapter; Module 1 has 15/20 complete. The chapter includes policy/temperature/filter/CDF/seed explanations, worked examples, two reviewed diagrams and four proposed experiment/verification pairs. Arithmetic, primary-source, strict-build and visual checks passed. No runtime sampling, quality, trading or latency result is asserted. M9-C07 is next in authoring order; no second chapter started.
+
+
+Chapter outcome (2026-10-25 10:23 IST): M9-C17 is Complete, bringing totals to 16/201 complete and 185 unstarted, no active/blocked chapter. Its numerical-reference framework, worked examples, four proposed experiments/verification pairs and two reviewed diagrams support Modules 1–7. Arithmetic, strict build and rendered review passed. Runtime performance, large-model quality and production tails remain unmeasured. M1-C15 is next; no second chapter started.
+
+
+Chapter outcome (2026-10-25 10:12 IST): M9-C01 is Complete. Totals: 15/201 complete, 186 unstarted, no active or blocked chapter. The chapter supplies a reusable contract/reference/evidence method for Modules 1–7, four proposed experiments, matched verification and two reviewed diagrams. Arithmetic, primary-source and rendered review passed. No runtime, stochastic-sampling, quality or production-tail result is asserted. M9-C17 is next in authoring order.
+
 
 Chapter outcome (2026-10-25 09:59 IST): M1-C14 is Complete, bringing totals to 14/201 complete and 187 unstarted, with no active or blocked chapter. Its fixed model trace, loading/inference contracts, four proposed experiments, verification, sources and diagrams are reviewed. Arithmetic and documentation validation passed. Loading, runtime performance, model quality and production-tail results remain unmeasured. M9-C01 is next; no second chapter was started.
 
@@ -1372,7 +1420,7 @@ The repository-root `PLANS.md` is the uploaded execution-plan guidance. This fil
 
 `docs/learning-approach.md` defines the shared learning contract. `templates/chapter.md` is the authoring scaffold. `docs/module-1.md` through `docs/module-7.md`, plus `docs/module-9.md`, provide module reading orders. The 14 category directories organize subjects; their `index.md` pages list member chapters. A chapter ID such as M2-C04 identifies Module 2, Chapter 4; authoring position is separate and controls creation order. Do not create Module 8 or infer chapters for the empty Storage and persistence category.
 
-The chapter files already exist and contain target-concept paragraphs. M1-C01–M1-C14 are Complete; the remaining 187 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
+The chapter files already exist and contain target-concept paragraphs. M1-C01–M1-C16, M9-C01, M9-C07, M9-C17 and M9-C19 are Complete; the remaining 181 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
 
 
 ## Plan of Work
@@ -1544,6 +1592,22 @@ The working tree already contains curriculum and inventory changes from prior re
 
 ## Artifacts and Notes
 
+Chapter record (2026-10-25 19:17 IST): M9-C19 source and two SVGs passed source, reference and rendered review. QA checked the 12-case ledger, exact identity/Unicode references, 1,046 byte partitions with empty updates, rescan/trial counts, required fields, local links, SVG XML and four tables. Initial strict build passed in 2.84 seconds with zero warnings. Final reconciled strict build passed in 3.08 seconds with zero warnings. Browser reviewed boundary table, population formulas and both full diagrams. No tokenizer/model/service runtime or latency benchmark executed.
+
+Chapter record (2026-10-25 19:00 IST): M1-C16 source and two SVG diagrams reviewed. Reference/documentation QA passed 80/120-digit model checks, terminal cases, 1,046 byte partitions, formulas, fields, links, SVG XML and seven tables. Initial strict build: 2.82 seconds, zero warnings. Final reconciled strict build: 2.79 seconds, zero warnings. Rendered model trace, terminal table and both full diagrams reviewed. No runtime benchmark executed.
+
+Observed M9-C07 evidence (2026-10-25 10:53 IST): docs/measurement-experimentation-and-economics/m9-c07-latency-distributions-and-statistical-uncertainty.md replaces its outline. Assets: docs/assets/diagrams/m9-c07-ecdf-and-merge.svg and m9-c07-censoring-and-runs.svg. Exact rational/count QA checked means/ranks/ECDF, tail detection threshold, histogram probes/overflow and coarse bounds, worker aggregation, gap weighting, censored-cohort bounds, 63/64 interval coverage and 7,000-pair/14,000-forward/70-warmup counts. Four transcendental/reference values were stable at 80/120 digits. Required fields, local links, SVG XML, six rendered tables and formula delimiters passed. Browser reviewed nearest-rank formulas/table, confidence-interval wording and both SVGs in full. Initial strict build passed without warnings (2.73 seconds). Final reconciliation strict build passed without warnings (3.04 seconds); whitespace and ledger/status checks passed. Runtime measurements remain proposed.
+
+
+Observed M1-C15 evidence (2026-10-25 10:34 IST): docs/model-computation-and-semantics/m1-c15-turning-logits-into-the-next-token.md replaces its outline. Assets: docs/assets/diagrams/m1-c15-decoding-policy.svg and m1-c15-random-state.svg. QA checked exact fraction filter/tie/threshold/order/CDF cases, ten midpoint counts, shared/owned A/B schedules, the conservative frequency-screen bound/expected counts, unique maximum ID 996 in the 4,096-entry row, and 80 reference values stable at 80/120 digits including 60 fixed-model logits. Independent temperature-weight derivation, required fields, no-code scope, local links and SVG XML passed. Browser reviewed temperature formulas/probability table, frequency-screen notation and both SVGs in full. Initial strict build passed without warnings (2.78 seconds). Final reconciliation strict build passed without warnings (2.73 seconds); whitespace and ledger/status checks passed. No PRNG or model runtime sampling/benchmark executed.
+
+
+Observed M9-C17 evidence (2026-10-25 10:23 IST): docs/numerics-and-correctness/m9-c17-comparing-logits-with-justified-numerical-tolerances.md replaces its outline. Assets: docs/assets/diagrams/m9-c17-error-budget.svg and m9-c17-first-divergence.svg. Arithmetic QA validated 172 reference values at 80/120 digits, independent matrix/closed-form model paths, 60 full/24 last-logit coordinates and 30 per hidden boundary, mixed-gate/outlier arithmetic, designated FP32 grouping/range and tiny-tail cases, conditional replay, propagation and payloads. Fields, no-code scope, local links and SVG XML passed. Browser reviewed all comparator rows, reference/uncertainty formulas and both diagrams in full after formatting fixes. Initial strict build passed without warnings in 2.71 seconds. Final reconciliation strict build passed without warnings (2.80 seconds); whitespace and ledger/status checks passed. This is documentation/arithmetic evidence, not a model-runtime benchmark.
+
+
+Observed M9-C01 evidence (2026-10-25 10:12 IST): docs/numerics-and-correctness/m9-c01-defining-reference-behavior-and-evidence-before-optimizing.md replaces its outline. Assets: docs/assets/diagrams/m9-c01-evidence-gate.svg and m9-c01-output-evidence.svg. Independent arithmetic QA checked 50 reference values at 80/120 digits, known score/TV/decision and conditional-fraction examples, the M1-C14 one-token probe, causal/request/prefix relations, zero/reversed-block defects and comparison counts. Chapter fields, no-code scope, local links and SVG XML passed. Browser reviewed counterexample table, formulas and revised independent reference route, and both diagrams in full. Initial strict build passed without warnings in 2.67 seconds. Final reconciliation strict builds passed without warnings (2.80 seconds, then 2.74 seconds after support-status corrections); whitespace and ledger/status checks passed. Runtime/performance experiments remain proposed.
+
+
 Observed M1-C14 evidence (2026-10-25 09:59 IST): docs/model-computation-and-semantics/m1-c14-assembling-a-small-decoder-only-transformer.md replaces its outline. Assets: docs/assets/diagrams/m1-c14-model-path.svg and m1-c14-weight-lifecycle.svg. Independent arithmetic checked the one-token/reversed-block traces, 60 full/24 last-logit coordinates and 150 stage coordinates at 80/120 digits, an independent closed MLP path and unshifted softmax, future/request isolation, four wrong-model cases, 20/90/720 tensor/value/byte counts, operation counts, experiment fields, links and SVG structure. Initial strict build passed without warnings (3.00 seconds). Browser reviewed the full trace, formulas, both SVGs in full and verification section. Final reconciliation strict build passed without warnings (2.73 seconds); whitespace checks passed. No runtime or GitHub CI result asserted.
 
 
@@ -1670,3 +1734,29 @@ Primary-source research is required when writing each chapter, not as a claim th
 2026-10-24 23:13 IST: Began M1-C14 as sole active chapter after confirming M1-C13. Next authoring position is M9-C01, not reading-order M1-C15. Preserved README.md, templates/chapter.md and PLANS.md changes.
 
 2026-10-25 09:59 IST: Completed M1-C14 after arithmetic, primary-source, strict-build and rendered review. Updated current summaries to 14 complete and 187 unstarted. M9-C01 is next by dependency order, while reading navigation remains M1-C15. Preserved existing README.md, templates/chapter.md and PLANS.md work; no later chapter started.
+
+2026-10-25 10:05 IST: Began M9-C01 as the sole active chapter after confirming M1-C14 and M1-C07. Preserve unrelated user changes; M9-C17 is the next authoring dependency.
+
+2026-10-25 10:12 IST: Completed M9-C01 after primary-source, numerical, strict-build and rendered review. Reconciled current ledger, chapter banner, Module 9, category, inventory and landing summaries to 15 complete/186 outlines, with M9-C17 next. Preserved pre-existing README.md, templates/chapter.md and PLANS.md work; no later chapter started.
+
+2026-10-25: Reconciled the 14 completed Module 1 chapters’ support-status sentences now that M9-C01 is complete; other linked support chapters retain Outline status. This is a status correction only, not authorship of another chapter. Clarified M1-C14’s fixed authoring successor versus current progress.
+
+2026-10-25 10:15 IST: Began M9-C17 as sole active chapter after confirming M9-C01 and M1-C14. Preserved all existing worktree changes. M1-C15 follows in authoring order.
+
+2026-10-25 10:23 IST: Completed M9-C17 after primary-source, arithmetic, strict-build and rendered review. Reconciled current chapter/ledger/Module 9/category/inventory/landing summaries to 16 complete and 185 outlines; M1-C15 is next. Preserve all pre-existing worktree changes. Support-status sentences in earlier completed chapters are updated only where they cite M9-C17; no other chapter authored.
+
+2026-10-25 10:25 IST: Began M1-C15 as sole active chapter after confirming prerequisites. All pre-existing worktree changes preserved. Next authoring dependency is M9-C07, not reading-order M1-C16.
+
+2026-10-25 10:34 IST: Completed M1-C15 after source, arithmetic, strict-build and rendered review. Reconciled source banner, ledger, Module 1, category, inventory and landing summaries to 17 complete/184 outlines; next authoring chapter is M9-C07, reading successor M1-C16. Preserved every pre-existing worktree change. Earlier completed chapters receive only necessary current-status corrections for M1-C15.
+
+2026-10-25 10:44 IST: Began M9-C07 as sole active chapter after confirming M1-C06. All earlier worktree changes preserved. M1-C16 is next in authoring order.
+
+2026-10-25 10:53 IST: Completed M9-C07 after source, arithmetic, strict-build and rendered review. Reconciled source/ledger/Module 9/category/inventory/landing statuses to 18 complete/183 outlines and M1-C16 next. Preserved all existing changes; earlier completed chapters receive only necessary M9-C07 support-status corrections.
+
+2026-10-25 18:46 IST: Began M1-C16 as sole active chapter after confirming M1-C15/M1-C02. Preserved every existing worktree change. Next authoring dependency is M9-C19, not reading-order M1-C17.
+
+2026-10-25 19:00 IST: Completed M1-C16 after source, reference, strict-build and rendered review. Reconciled chapter, ledger, inventory, Module 1, category and landing summaries to 19 complete/182 outlines; next authoring chapter M9-C19. Preserved all pre-existing worktree changes. No other chapter started.
+
+2026-10-25 19:06 IST: Began M9-C19 as sole active chapter after checking prerequisites. Preserved all existing worktree changes. M1-C17 is next in authoring order.
+
+2026-10-25 19:17 IST: Completed M9-C19 after reference, source, strict-build and rendered review. Reconciled ledger, source, inventory, Module 9, category and landing summaries to 20 complete/181 outlines; next M1-C17. Preserved all previous worktree changes; earlier chapters receive only necessary M9-C19 status corrections.

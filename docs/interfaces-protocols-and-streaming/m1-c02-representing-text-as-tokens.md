@@ -216,7 +216,7 @@ Use a trusted frozen preparation route as an **operational reference** and save 
 
 ### Correctness gates and target-concept coverage
 
-The local use of [M9-C01](../numerics-and-correctness/m9-c01-defining-reference-behavior-and-evidence-before-optimizing.md) is exact reference behavior, and [M9-C19](m9-c19-validating-tokenization-stopping-and-final-output.md) supplies the output-identity perspective. Both remain outlines; the checks needed here are stated in full. Equality of integers, counts, masks and required byte sequences has **zero tolerance**. Floating-point numerical tolerance cannot excuse a tokenization mismatch.
+The local use of [M9-C01](../numerics-and-correctness/m9-c01-defining-reference-behavior-and-evidence-before-optimizing.md) is exact reference behavior, and [M9-C19](m9-c19-validating-tokenization-stopping-and-final-output.md) supplies the output-identity perspective. M9-C01 and M9-C19 are complete; the checks needed here are stated in full. Equality of integers, counts, masks and required byte sequences has **zero tolerance**. Floating-point numerical tolerance cannot excuse a tokenization mismatch.
 
 | Target concept | Where taught | Exercise and verification |
 | --- | --- | --- |

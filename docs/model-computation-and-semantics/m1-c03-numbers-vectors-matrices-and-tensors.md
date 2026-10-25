@@ -217,7 +217,7 @@ Use exact small integer labels as the mathematical reference. For optional four-
 
 ### Exact references before speed
 
-The introductory application of [M9-C01](../numerics-and-correctness/m9-c01-defining-reference-behavior-and-evidence-before-optimizing.md) is a declared tensor contract: type, rank, ordered extents, axis meanings, values, mask/length interpretation and owner lifetime. That supporting chapter remains an outline, so the needed checks are defined here.
+The introductory application of [M9-C01](../numerics-and-correctness/m9-c01-defining-reference-behavior-and-evidence-before-optimizing.md) is a declared tensor contract: type, rank, ordered extents, axis meanings, values, mask/length interpretation and owner lifetime. M9-C01 is now complete; the needed introductory checks are also defined here.
 
 Integer shapes, indices, lengths, masks and test labels require **exact equality**. No floating-point tolerance excuses a swapped axis. The labels in E2 and E3 are small enough to be exactly represented in the chosen four-byte binary32 storage; there is no lossy conversion or reduction in the correctness test. If a tool changes dtype or performs real model arithmetic, that becomes a separate numerical contract requiring M1-C07/M9-C17 rather than an unexplained relaxed threshold.
 

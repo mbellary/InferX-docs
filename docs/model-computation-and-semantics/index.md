@@ -16,7 +16,7 @@ Transformers, attention, MoE, positional encoding, sampling.
 
 ## Chapters
 
-[M1-C01](m1-c01-from-a-prompt-to-the-next-token.md), [M1-C03](m1-c03-numbers-vectors-matrices-and-tensors.md), [M1-C04](m1-c04-dot-products-and-matrix-multiplication.md), [M1-C09](m1-c09-token-embeddings-and-learned-projections.md), [M1-C10](m1-c10-attention-one-dimension-at-a-time.md), [M1-C11](m1-c11-causal-masking-and-positional-information.md), [M1-C12](m1-c12-multi-head-attention-and-its-variants.md) [M1-C13](m1-c13-building-a-complete-transformer-block.md) and [M1-C14](m1-c14-assembling-a-small-decoder-only-transformer.md) are completed detailed chapters; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
+[M1-C01](m1-c01-from-a-prompt-to-the-next-token.md), [M1-C03](m1-c03-numbers-vectors-matrices-and-tensors.md), [M1-C04](m1-c04-dot-products-and-matrix-multiplication.md), [M1-C09](m1-c09-token-embeddings-and-learned-projections.md), [M1-C10](m1-c10-attention-one-dimension-at-a-time.md), [M1-C11](m1-c11-causal-masking-and-positional-information.md), [M1-C12](m1-c12-multi-head-attention-and-its-variants.md) [M1-C13](m1-c13-building-a-complete-transformer-block.md), [M1-C14](m1-c14-assembling-a-small-decoder-only-transformer.md) and [M1-C15](m1-c15-turning-logits-into-the-next-token.md) are completed detailed chapters; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
 
 ### Module 1
 
