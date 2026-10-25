@@ -11,13 +11,13 @@ Turn 201 outlines into a coherent collection of detailed chapters that helps a r
 
 The reader should be able to open any completed chapter, understand every introduced term, follow a worked numerical example and diagram, describe a reproducible experiment, and explain its pass/fail conditions and limits. High-Frequency Trading (HFT), meaning systems that process market events and make trading decisions under tight timing constraints, provides a lens for critical paths, bounded queues, stale information, and tail latency. A tail is the slower end of a latency distribution. Explain what transfers to inference and what does not; do not present trading advice, assert trading results, or equate inference semantics with exchange behavior.
 
-The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01–M1-C19, M9-C01–M9-C05, M9-C07, M9-C17 and M9-C19 are now complete; the next authoring chapter is M1-C20.
+The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01–M1-C20, M9-C01–M9-C05, M9-C07, M9-C17 and M9-C19 are now complete; the next authoring chapter is M2-C01.
 
 
 ## Progress
 
 
-Last updated: 2026-10-25 20:43 IST. Detailed chapter totals: **27 complete, 0 active, 174 not started, 0 blocked**. Active chapter: None. Next authoring chapter: **M1-C20**, authoring position 28.
+Last updated: 2026-10-25 20:54 IST. Detailed chapter totals: **28 complete, 0 active, 173 not started, 0 blocked**. Active chapter: None. Next authoring chapter: **M2-C01**, authoring position 29.
 
 - [x] (2026-10-24 17:21 IST) Read the uploaded PLANS.md, the learning requirements, the chapter inventory, and the dependency schedule; confirm Modules 1–7 plus supporting Module 9 and no Module 8.
 - [x] (2026-10-24 17:21 IST) Preserve the planning reference as repository-root PLANS.md and create this living execution plan with all 201 ordered chapter records and their target concepts and direct prerequisites.
@@ -192,11 +192,11 @@ Each record contains the authoring position, chapter ID, target concepts, source
   Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
   Module 9 application: Completed M9-C01 correctness, M9-C02 clocks/events, M9-C03 TTFT, M9-C04 gap boundaries, M9-C07 populations and M9-C19 output identity. Updated: 2026-10-25 20:43 IST. Evidence: All target concepts, four matched experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits, hardware and no-code scope reviewed. Checked primary NVIDIA benchmarking article, vLLM v0.25.0 benchmark controls, WHATWG event framing and MIT Spring 2026 queueing lecture. Exact reference QA passed completion/decomposition, fixed-window/cohort counts and rates, in-flight conservation, outcome/partial/draft accounting and trial arithmetic; required fields, links, SVG XML and three tables passed. Browser reviewed chapter navigation, rate formulas, ledger/verification tables and both full diagrams; corrected collapsed-space diagram labels and rechecked. Initial strict build passed without warnings (3.01 seconds); final validation recorded below. No model service, speculative runtime or performance benchmark executed. Next action: M1-C20 only; Module 9 reading successor remains M9-C06.
 
-- [ ] 028 — **M1-C20: Measuring and explaining generation latency** — Not started.
+- [x] 028 — **M1-C20: Measuring and explaining generation latency** — Complete.
   File: [Measuring and explaining generation latency](measurement-experimentation-and-economics/m1-c20-measuring-and-explaining-generation-latency.md). Category: Measurement, experimentation, and economics. Phase: 2. Single-request generation and timing.
   Direct prerequisites: M1-C19, M1-C08, M9-C03, M9-C04, M9-C05, M9-C07. Target concepts: Input-length and output-length sweeps, prefill time, time to first token, per-token decode latency, total latency, warmup, repeated measurements, correctness checks, predicted versus observed bottlenecks.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 references, M9-C02 clocks/completion, M9-C03 TTFT, M9-C04 gap identity, M9-C05 completion/rate populations, M9-C07 uncertainty, M9-C17 tolerances and M9-C19 stopping. Advanced profiling and controlled-comparison chapters remain outlines; required introductory protocol supplied locally. Updated: 2026-10-25 20:54 IST. Evidence: All target concepts, four matched experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code scope reviewed. Checked primary Transformers v4.57.1 cache specification, NVIDIA benchmarking article, PyTorch 2.14 benchmark guidance and CUDA Runtime 13.4 event contracts. Exact reference QA passed six work-count cells/context bounds, phase/gap/residual arithmetic, speedup limits, KV sizing and trial/output/forward counts; required fields, links, SVG XML and three tables passed. Browser reviewed navigation, formulas, full sweep and verification tables and both diagrams; simplified summation notation after visual inspection. Initial strict build passed without warnings (3.02 seconds); final validation recorded below. No inference runtime, GPU measurement or performance benchmark executed. Next action: M2-C01 only.
 
 - [ ] 029 — **M2-C01: What the KV cache retains and why** — Not started.
   File: [What the KV cache retains and why](state-memory-and-caching/m2-c01-what-the-kv-cache-retains-and-why.md). Category: State, memory, and caching. Phase: 3. KV ownership, paging, and capacity.
@@ -1239,6 +1239,8 @@ Each record contains the authoring position, chapter ID, target concepts, source
 
 ## Surprises & Discoveries
 
+2026-10-25 20:54 IST: M1-C20’s valid tiny-model grid shows counted work 480 cached versus 944 uncached for P = 1/g = 3, but no elapsed speed follows from that ratio. The inherited trace separates 8.5 μs mean decode-forward time from 14 μs mean selected-ID gap. These are constructed arithmetic references.
+
 2026-10-25 20:43 IST: M9-C05’s constructed fixed window counts nine accepted output events but seven success-committed IDs; the drained arrival cohort has seven successful IDs over a twelve-second span. Identical labels without membership/denominator contracts would conceal these differences.
 
 2026-10-25 20:33 IST: M9-C04’s constructed coalescing example reduces mean observed ID availability gap from 20 to 15 ms while increasing the maximum visible stall from 26 to 45 ms. Chunk counts and normalized endpoint means cannot recover generation distributions.
@@ -1310,6 +1312,8 @@ Observation (2026-10-24 17:23 IST): the documentation preview retains the /Infer
 
 
 ## Decision Log
+
+2026-10-25 20:54 IST: M1-C20 uses six cells satisfying the fixed model’s P + G ≤ 4 contract and a separately labelled conditional nine-cell larger-model grid. This avoids silently extending the position table or transferring the tiny-model numerical budget. Whole-request timing is primary; profiler runs and device intervals remain separate.
 
 2026-10-25 20:43 IST: M9-C05 keeps final-content and terminal endpoints separate, treats fixed-window events and drained cohorts as distinct reports, and defines useful output narrowly as reference-valid successful output without claiming quality or SLO acceptance. The benchmark compares per-ID flushing with a bounded two-ID/5 ms grouping policy.
 
@@ -1385,6 +1389,8 @@ Decision: create and validate the plan now with all chapter stages unstarted. Ra
 
 
 ## Outcomes & Retrospective
+
+2026-10-25 20:54 IST: M1-C20 completes Module 1 documentation at 20/20. The curriculum is 28/201 complete with 173 outlines, Module 9 remains 8/30, and M2-C01 is next. The chapter integrates correctness, phase timing, length sweeps, warmup and bottleneck evidence without implementing or claiming a measured generator.
 
 2026-10-25 20:43 IST: Completed only M9-C05. Totals are 27 complete and 174 outlines; Module 9 has 8/30 complete, Module 1 remains 19/20. Next authoring chapter M1-C20 differs from reading successor M9-C06. Runtime experiments remain proposed.
 
@@ -1462,7 +1468,7 @@ The repository-root `PLANS.md` is the uploaded execution-plan guidance. This fil
 
 `docs/learning-approach.md` defines the shared learning contract. `templates/chapter.md` is the authoring scaffold. `docs/module-1.md` through `docs/module-7.md`, plus `docs/module-9.md`, provide module reading orders. The 14 category directories organize subjects; their `index.md` pages list member chapters. A chapter ID such as M2-C04 identifies Module 2, Chapter 4; authoring position is separate and controls creation order. Do not create Module 8 or infer chapters for the empty Storage and persistence category.
 
-The chapter files already exist and contain target-concept paragraphs. M1-C01–M1-C19, M9-C01–M9-C05, M9-C07, M9-C17 and M9-C19 are Complete; the remaining 174 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
+The chapter files already exist and contain target-concept paragraphs. M1-C01–M1-C20, M9-C01–M9-C05, M9-C07, M9-C17 and M9-C19 are Complete; the remaining 173 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
 
 
 ## Plan of Work
@@ -1633,6 +1639,8 @@ The working tree already contains curriculum and inventory changes from prior re
 
 
 ## Artifacts and Notes
+
+2026-10-25 20:54 IST: Added M1-C20, m1-c20-timing-boundaries.svg and m1-c20-evidence-loop.svg. Exact-reference and authoring helpers remain temporary outside the repository. Startup worktree was clean; no later chapter was started.
 
 2026-10-25 20:43 IST: Added M9-C05 and diagrams m9-c05-completion-boundaries.svg / m9-c05-window-and-cohort.svg. Temporary authoring/reference helpers remain outside the repository. Existing worktree changes were preserved.
 
@@ -1848,3 +1856,9 @@ Primary-source research is required when writing each chapter, not as a claim th
 2026-10-25 20:43 IST: Completed M9-C05 after source, exact-reference, strict-build and rendered review. Reconciled chapter, ledger, inventory, Module 9, category and landing summaries to 27 complete/174 outlines; M1-C20 next. Preserved pre-existing changes; no later chapter started.
 
 2026-10-25 20:43 IST: Final M9-C05 acceptance checks passed: strict build with zero warnings (3.00 seconds), whitespace validation, 201 ordered unique ledger records, 27 Complete/174 Not started and matching source banners, Module 1 19/20 and Module 9 8/30. Exact-reference QA passed again after final edits. M1-C20 remains the first incomplete chapter.
+
+2026-10-25 20:46 IST: Began M1-C20 as the sole active chapter from a clean worktree after confirming all six prerequisites. Next authoring chapter M2-C01. No engine implementation or runtime benchmark authorized by this documentation step.
+
+2026-10-25 20:54 IST: Completed M1-C20 after primary-source, exact-reference, strict-build and rendered review. Reconciled ledger, chapter, Module 1, inventory, category and landing summaries to 28 complete/173 outlines. Module 1 is 20/20; Module 9 remains 8/30. M2-C01 next; no further chapter started.
+
+2026-10-25 20:54 IST: Final M1-C20 acceptance checks passed: strict build with zero warnings (3.13 seconds), whitespace validation, 201 ordered unique ledger records, 28 Complete/173 Not started with matching source banners, Module 1 20/20 and Module 9 8/30. Reference arithmetic passed after final edits. M2-C01 is first incomplete.
