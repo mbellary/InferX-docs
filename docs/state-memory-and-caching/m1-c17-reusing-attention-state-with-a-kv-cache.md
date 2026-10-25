@@ -208,7 +208,7 @@ HFT means High-Frequency Trading, whose systems process market events under tigh
 
 Proposed reference exercises require a CPU supporting FP64, one worker thread and at least 1 GiB free RAM for the tiny model/reference evidence, not for allocating the illustrative larger KV example. Record CPU model, core/socket/cache/RAM, NUMA placement (memory proximity), affinity, OS, power/frequency/thermal conditions, compiler/runtime/allocator, precision/backend, clock granularity, model/position/mask identity and cache capacity policy. No GPU or network adapter is required. Actual larger-model studies require enough memory for weights, KV, temporary work and headroom; no machine or serialized model artifact was supplied. GPU extensions need device model/memory/bandwidth, driver/runtime and synchronization details recorded separately.
 
-Completed M9-C01/M9-C17 supply reference/numerical evidence, M9-C19 supplies identity/terminal checks and M9-C07 supplies measurement populations. M9-C15/M9-C20 remain outlines; elementary memory/reuse contracts are specified here. This chapter supports Module 1's mechanism foundation; later Modules 2–7 develop capacity, execution, serving and sharing. The next authoring and Module 1 reading chapter is M1-C18.
+Completed M9-C01/M9-C17 supply reference/numerical evidence, M9-C19 supplies identity/terminal checks and M9-C07 supplies measurement populations. M9-C15/M9-C20 remain outlines; elementary memory/reuse contracts are specified here. This chapter supports Module 1's mechanism foundation; later Modules 2–7 develop capacity, execution, serving and sharing. Its authoring and Module 1 reading successor M1-C18 is now complete; consult the execution plan for current progress.
 
 ## Key takeaways
 
