@@ -11,13 +11,13 @@ Turn 201 outlines into a coherent collection of detailed chapters that helps a r
 
 The reader should be able to open any completed chapter, understand every introduced term, follow a worked numerical example and diagram, describe a reproducible experiment, and explain its pass/fail conditions and limits. High-Frequency Trading (HFT), meaning systems that process market events and make trading decisions under tight timing constraints, provides a lens for critical paths, bounded queues, stale information, and tail latency. A tail is the slower end of a latency distribution. Explain what transfers to inference and what does not; do not present trading advice, assert trading results, or equate inference semantics with exchange behavior.
 
-The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01–M1-C13 are now complete and the next chapter is M1-C14.
+The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01–M1-C14 are now complete and the next authoring chapter is M9-C01.
 
 
 ## Progress
 
 
-Last updated: 2026-10-24 23:10 IST. Detailed chapter totals: **13 complete, 0 active, 188 not started, 0 blocked**. Active chapter: **None**. Next chapter: **M1-C14**, authoring position 14. Check a chapter only after its full acceptance gate passes.
+Last updated: 2026-10-25 09:59 IST. Detailed chapter totals: **14 complete, 0 active, 187 not started, 0 blocked**. Next chapter: **M9-C01**, authoring position 15. Check a chapter only after its full acceptance gate passes.
 
 - [x] (2026-10-24 17:21 IST) Read the uploaded PLANS.md, the learning requirements, the chapter inventory, and the dependency schedule; confirm Modules 1–7 plus supporting Module 9 and no Module 8.
 - [x] (2026-10-24 17:21 IST) Preserve the planning reference as repository-root PLANS.md and create this living execution plan with all 201 ordered chapter records and their target concepts and direct prerequisites.
@@ -108,11 +108,11 @@ Each record contains the authoring position, chapter ID, target concepts, source
   Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
   Module 9 application: M9-C01 complete-block/stage references; M9-C02 completed boundaries; M9-C11 paired sessions; M9-C15 parameter/activation last-reader and byte accounting; M9-C17 stage budgets and error propagation. Supporting chapters remain outlines; elementary checks are local. Updated: 2026-10-24 23:10 IST. Evidence: All assigned target concepts, E1–E4 required fields and matched verification, six dimensions/eight principles, HFT limits, hardware assumptions and no-code scope reviewed. Checked primary Transformer, pre/post-normalization, RMSNorm and GLU papers plus PyTorch 2.14 normalization/activation/timing contracts. Independent exact and 80/120-digit references passed for norms/affine/activations/gates, complete one-position block and all 30 E4 final coordinates (364 collected stage/reference values), independent MLP algebra, causal/request isolation and deliberate norm/epsilon/axis/source/order/activation errors. Byte/work/propagation checks passed. Strict build passed without warnings (2.89 seconds before completion tracking); final build recorded under Artifacts. Browser reviewed chapter navigation, normalization formulas, complete stage trace, verification ledger and both full SVGs including final labels. No runtime performance study executed. Next action: M1-C14; all later chapters remain unstarted.
 
-- [ ] 014 — **M1-C14: Assembling a small decoder-only Transformer** — Not started.
+- [x] 014 — **M1-C14: Assembling a small decoder-only Transformer** — Complete.
   File: [Assembling a small decoder-only Transformer](model-computation-and-semantics/m1-c14-assembling-a-small-decoder-only-transformer.md). Category: Model computation and semantics. Phase: 1. Model and numerical foundations.
   Direct prerequisites: M1-C13. Target concepts: Model configuration, stacked blocks, final normalization, vocabulary projection, logits, fixed weights, loading weights, inference versus training.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: M9-C01 model/stage reference; M9-C02 load/first/warm completion boundaries; M9-C11 controlled comparisons; M9-C15 distinct parameter/live activation accounting; M9-C17 logit budgets; M9-C19 tokenizer/config identity. Supporting outlines are applied locally. Updated: 2026-10-25 09:59 IST. Evidence: All eight target concepts, complete two-block mathematical fixture, two SVGs, four experiments and matched verification, six dimensions/eight principles, HFT limits and primary sources/hardware requirements reviewed. Independent 80/120-digit checks passed for 150 stage coordinates, 60 full and 24 last-logit coordinates, independently derived MLP/softmax, future/request isolation, four deliberate wrong models, tensor/work/byte counts and fields/links/SVG structure. Browser reviewed formulas, complete trace, both diagrams in full and verification notation/tables. Strict build passed without warnings; final reconciliation build recorded below. No model-runtime, loader, training or hardware benchmark performed. Next action: Start M9-C01, authoring position 15; M1-C15 remains next in module reading order.
 
 - [ ] 015 — **M9-C01: Defining reference behavior and evidence before optimizing** — Not started.
   File: [Defining reference behavior and evidence before optimizing](numerics-and-correctness/m9-c01-defining-reference-behavior-and-evidence-before-optimizing.md). Category: Numerics and correctness. Phase: 1. Model and numerical foundations.
@@ -1239,6 +1239,9 @@ Each record contains the authoring position, chapter ID, target concepts, source
 
 ## Surprises & Discoveries
 
+Observation (2026-10-25 09:59 IST): A full-model assembly can preserve every shape while computing the wrong model. The specified distinct second block exposes reversal and accidental layer reuse. Evaluation and gradient controls also need direct auditing because this dropout-free fixture can produce the same values in either mode. Evidence: four deliberate wrong-model cases failed the mathematical reference; 150 reference-stage coordinates were stable at 80/120 digits. No runtime claim follows.
+
+
 Observation (2026-10-24 23:10 IST): with epsilon 1 and unit affine parameters, LayerNorm([1, 3]) has variance 1/2 and RMSNorm([1, 3]) has mean square 5/6; neither is unconditionally unit-normalized. The complete toy block distinguishes a wrong second skip source by exactly the first attention contribution. Strict-build review also caught Markdown interpreting adjacent gamma-index/parentheses as a relative link; an explicit multiplication symbol fixed the notation before acceptance.
 
 Observation (2026-10-24 22:54 IST): head-major flattening produces shape-compatible but wrong projected rows [0, 13] and [0, 130] instead of [−9, 52] and [−7, 114]. With four query heads and two KV heads, remainder mapping [0, 1, 0, 1] differs from the specified contiguous [0, 0, 1, 1]. A separate key-group perturbation was added because equal baseline key contents could hide an incorrect K-group association. Smaller unique KV payload leaves direct query-head attention work unchanged in this fixture.
@@ -1277,6 +1280,9 @@ Observation (2026-10-24 17:23 IST): the documentation preview retains the /Infer
 
 
 ## Decision Log
+
+Decision (2026-10-25 09:59 IST): Specify a complete synthetic two-block decoder-only model, separate final norm and untied head, with 20 tensors/90 FP64 values. Use a last-logit comparison that preserves all prefix dependencies and a proposed complete-version admission boundary. Rationale: make assembly, loading identity and useful-output equivalence independently reviewable without implementation or a supplied pretrained checkpoint. Next authoring dependency is M9-C01, distinct from Module 1 reading-order M1-C15. Author: Codex.
+
 
 Decision (2026-10-24 23:10 IST, Codex): specify one complete pre-RMSNorm, single-head causal, ungated ReLU block, with epsilon 1 explicitly labelled a teaching choice. Teach LayerNorm/post-norm/gated alternatives separately rather than silently mixing architectures. Benchmark per-position versus batched execution only for the same pointwise MLP inside the unchanged full block. Rationale: make every intermediate, residual lifetime and equivalence boundary checkable before stacked-model assembly.
 
@@ -1319,6 +1325,9 @@ Decision: create and validate the plan now with all chapter stages unstarted. Ra
 
 
 ## Outcomes & Retrospective
+
+Chapter outcome (2026-10-25 09:59 IST): M1-C14 is Complete, bringing totals to 14/201 complete and 187 unstarted, with no active or blocked chapter. Its fixed model trace, loading/inference contracts, four proposed experiments, verification, sources and diagrams are reviewed. Arithmetic and documentation validation passed. Loading, runtime performance, model quality and production-tail results remain unmeasured. M9-C01 is next; no second chapter was started.
+
 
 Chapter outcome (2026-10-24 23:10 IST): M1-C13 is Complete with all assigned residual/normalization/MLP/activation/gating/order concepts, a complete numerical block trace, two diagrams, four experiments with matched verification, six dimensions/eight principles and primary sources/hardware requirements. Exact/high-precision arithmetic, strict build and rendered review passed. Totals: 13/201 complete, 188 not started, no active chapter. M1-C14 is next. Runtime, model-quality and production-tail outcomes remain unmeasured.
 
@@ -1363,7 +1372,7 @@ The repository-root `PLANS.md` is the uploaded execution-plan guidance. This fil
 
 `docs/learning-approach.md` defines the shared learning contract. `templates/chapter.md` is the authoring scaffold. `docs/module-1.md` through `docs/module-7.md`, plus `docs/module-9.md`, provide module reading orders. The 14 category directories organize subjects; their `index.md` pages list member chapters. A chapter ID such as M2-C04 identifies Module 2, Chapter 4; authoring position is separate and controls creation order. Do not create Module 8 or infer chapters for the empty Storage and persistence category.
 
-The chapter files already exist and contain target-concept paragraphs. M1-C01–M1-C13 are Complete; the remaining 188 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
+The chapter files already exist and contain target-concept paragraphs. M1-C01–M1-C14 are Complete; the remaining 187 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
 
 
 ## Plan of Work
@@ -1535,6 +1544,9 @@ The working tree already contains curriculum and inventory changes from prior re
 
 ## Artifacts and Notes
 
+Observed M1-C14 evidence (2026-10-25 09:59 IST): docs/model-computation-and-semantics/m1-c14-assembling-a-small-decoder-only-transformer.md replaces its outline. Assets: docs/assets/diagrams/m1-c14-model-path.svg and m1-c14-weight-lifecycle.svg. Independent arithmetic checked the one-token/reversed-block traces, 60 full/24 last-logit coordinates and 150 stage coordinates at 80/120 digits, an independent closed MLP path and unshifted softmax, future/request isolation, four wrong-model cases, 20/90/720 tensor/value/byte counts, operation counts, experiment fields, links and SVG structure. Initial strict build passed without warnings (3.00 seconds). Browser reviewed the full trace, formulas, both SVGs in full and verification section. Final reconciliation strict build passed without warnings (2.73 seconds); whitespace checks passed. No runtime or GitHub CI result asserted.
+
+
 Observed M1-C13 evidence (2026-10-24 23:10 IST): docs/model-computation-and-semantics/m1-c13-building-a-complete-transformer-block.md replaces its outline. Assets are docs/assets/diagrams/m1-c13-block-order.svg and m1-c13-normalization-mlp.svg. Independent documentation checks validated experiment fields, local links, SVG structure, standalone normalization/affine/activation/gate references, complete block intermediates, all 30 benchmark-fixture final coordinates and 364 collected stage/reference values at 80/120 digits. Independent MLP algebra, future/request isolation, deliberate epsilon/divisor/axis/norm/skip/activation/order cases and storage/work/propagation bounds passed. Browser reviewed /InferX-docs/model-computation-and-semantics/m1-c13-building-a-complete-transformer-block/, normalization notation, complete stage table, full-block verification ledger and both diagrams in full; revised diagram separator rechecked. Final strict build after completion tracking passed without warnings in 2.81 seconds; whitespace checks passed. No runtime, model-quality, training, trading, deployment or CI-run result is asserted.
 
 Observed M1-C12 evidence (2026-10-24 22:54 IST): docs/model-computation-and-semantics/m1-c12-multi-head-attention-and-its-variants.md replaces its outline. Assets are docs/assets/diagrams/m1-c12-head-layout.svg and m1-c12-head-sharing.svg. Independent documentation checks validated experiment fields, local links, SVG structure, exact layout/projection references, GQA/MQA grouping and key-perturbation cases, all 36 benchmark head/final coordinates via per-key/closed and compact/expanded references with 80/120-digit agreement, bytes/work and propagated budgets. Browser reviewed /InferX-docs/model-computation-and-semantics/m1-c12-multi-head-attention-and-its-variants/, sharing formulas/tables, benchmark reference/boundary and both diagrams in full. Final strict build after completion tracking passed without warnings in 2.98 seconds; whitespace checks passed. No runtime, model-quality, training/conversion, trading, deployment or CI-run result is asserted.
@@ -1654,3 +1666,7 @@ Primary-source research is required when writing each chapter, not as a claim th
 2026-10-24 22:57 IST: Began M1-C13 as sole active chapter after confirming both prerequisites. Preserved README.md, templates/chapter.md and PLANS.md changes.
 
 2026-10-24 23:10 IST: Completed M1-C13 after primary-source, content, exact/high-precision arithmetic and browser review. Reconciled chapter banner, ledger, module/category/inventory and landing-page summaries to 13 complete and 188 unstarted, with M1-C14 next. Preserved unrelated worktree changes; no later chapter started.
+
+2026-10-24 23:13 IST: Began M1-C14 as sole active chapter after confirming M1-C13. Next authoring position is M9-C01, not reading-order M1-C15. Preserved README.md, templates/chapter.md and PLANS.md changes.
+
+2026-10-25 09:59 IST: Completed M1-C14 after arithmetic, primary-source, strict-build and rendered review. Updated current summaries to 14 complete and 187 unstarted. M9-C01 is next by dependency order, while reading navigation remains M1-C15. Preserved existing README.md, templates/chapter.md and PLANS.md work; no later chapter started.
