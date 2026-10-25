@@ -246,7 +246,7 @@ For exact fixtures, retain both intended rational inputs and exact decoded store
 
 ### Module 9 support and concept coverage
 
-[M9-C01](m9-c01-defining-reference-behavior-and-evidence-before-optimizing.md) supplies the distinction between references and approximations; [M9-C02](../measurement-experimentation-and-economics/m9-c02-request-events-clocks-and-measurement-boundaries.md) supplies completion boundaries; [M9-C11](../measurement-experimentation-and-economics/m9-c11-controlled-comparisons-warmup-and-reproducibility.md) supplies controlled pairing. [M9-C17](m9-c17-comparing-logits-with-justified-numerical-tolerances.md) guides reference precision, near-zero errors and first divergence. M9-C01 and M9-C17 are complete; the other linked support chapters remain outlines; the needed checks are defined here, without claiming advanced runtime validation has been completed.
+[M9-C01](m9-c01-defining-reference-behavior-and-evidence-before-optimizing.md) supplies the distinction between references and approximations; [M9-C02](../measurement-experimentation-and-economics/m9-c02-request-events-clocks-and-measurement-boundaries.md) supplies completion boundaries; [M9-C11](../measurement-experimentation-and-economics/m9-c11-controlled-comparisons-warmup-and-reproducibility.md) supplies controlled pairing. [M9-C17](m9-c17-comparing-logits-with-justified-numerical-tolerances.md) guides reference precision, near-zero errors and first divergence. M9-C01, M9-C02 and M9-C17 are complete; the other linked support chapters remain outlines; the needed checks are defined here, without claiming advanced runtime validation has been completed.
 
 | Target concept | Explanation | Experiment and evidence |
 | --- | --- | --- |

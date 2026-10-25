@@ -16,7 +16,7 @@ API contracts, templates, tokenization, control-token identity, incremental pars
 
 ## Chapters
 
-[M1-C02](m1-c02-representing-text-as-tokens.md), [M1-C16](m1-c16-building-the-single-request-generation-loop.md) and [M9-C19](m9-c19-validating-tokenization-stopping-and-final-output.md) are completed detailed chapters; the other chapters in this category remain outlines. Module 1 chapters below are listed in learning order. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
+[M1-C02](m1-c02-representing-text-as-tokens.md), [M1-C16](m1-c16-building-the-single-request-generation-loop.md), [M9-C04](m9-c04-measuring-inter-token-latency-in-a-streamed-protocol.md) and [M9-C19](m9-c19-validating-tokenization-stopping-and-final-output.md) are completed detailed chapters; the other chapters in this category remain outlines. Module 1 chapters below are listed in learning order. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
 
 | Chapter ID | Chapter name | Target concepts |
 | --- | --- | --- |

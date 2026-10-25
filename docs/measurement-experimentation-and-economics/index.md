@@ -16,7 +16,7 @@ Profiling, benchmarks, p50/p99, goodput, workload design, statistical uncertaint
 
 ## Chapters
 
-[M1-C08](m1-c08-operation-counts-and-actual-execution-cost.md) and [M9-C07](m9-c07-latency-distributions-and-statistical-uncertainty.md) are completed detailed chapters; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
+[M1-C08](m1-c08-operation-counts-and-actual-execution-cost.md), [M9-C02](m9-c02-request-events-clocks-and-measurement-boundaries.md), [M9-C03](m9-c03-measuring-time-to-first-token-including-queueing.md), [M9-C05](m9-c05-measuring-end-to-end-latency-and-throughput.md) and [M9-C07](m9-c07-latency-distributions-and-statistical-uncertainty.md) are completed detailed chapters; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
 
 ### Module 1
 
