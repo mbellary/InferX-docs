@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="740" viewBox="0 0 1060 740" role="img" aria-labelledby="title desc"><title id="title">A GPU specification is the start of an evidence chain</title><desc id="desc">Preserve device variant, visible partition, numerical mode, units and source version</desc><rect width="1060" height="740" fill="#f8fafc"/>
+<text x="30" y="45" font-family="Arial, sans-serif" font-size="27" font-weight="bold" fill="#142033">A GPU specification is the start of an evidence chain</text>
+<text x="30" y="86" font-family="Arial, sans-serif" font-size="22" font-weight="normal" fill="#142033">Preserve device variant, visible partition, numerical mode, units and source version</text>
+<rect x="30" y="115" width="1000" height="112" rx="12" fill="#dbeafe" stroke="#8492a6"/>
+<text x="50" y="148" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#142033">Published product → model, board and qualified peaks</text>
+<text x="50" y="183" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#142033">A product family can contain multiple memory, bandwidth and power configurations.</text>
+<text x="50" y="212" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">A100 80 GB PCIe/SXM: same capacity; different published bandwidth and standard TDP.</text>
+<rect x="30" y="250" width="1000" height="112" rx="12" fill="#fef3c7" stroke="#8492a6"/>
+<text x="50" y="283" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#142033">Visible context → queried features and resource limits</text>
+<text x="50" y="318" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#142033">Record stable device/instance identity, CC, visible SMs, cache and launch limits.</text>
+<text x="50" y="347" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">Do not populate a partition record with full-board resources or call unknown fields zero.</text>
+<rect x="30" y="385" width="1000" height="112" rx="12" fill="#dcfce7" stroke="#8492a6"/>
+<text x="50" y="418" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#142033">Operating point → sampled clocks, power and temperature</text>
+<text x="50" y="453" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#142033">Keep telemetry time, units, sampling gaps, current policy and other users.</text>
+<text x="50" y="482" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">Driver-supported CUDA version is not the installed toolkit or loaded runtime version.</text>
+<rect x="30" y="520" width="1000" height="112" rx="12" fill="#ede9fe" stroke="#8492a6"/>
+<text x="50" y="553" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#142033">Completed workload → correct outputs and measured rates</text>
+<text x="50" y="588" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#142033">Match arithmetic, sparsity, memory boundary, completion scope and software path.</text>
+<text x="50" y="617" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">Peak throughput and legal launch geometry do not establish useful request latency.</text>
+<text x="30" y="700" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">Label each value: published, queried, observed or assumed. This chapter claims no device measurement.</text>
+</svg>

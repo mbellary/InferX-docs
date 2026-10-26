@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="740" viewBox="0 0 1060 740" role="img" aria-labelledby="title desc"><title id="title">Qualify capacity and throughput before interpreting speed</title><desc id="desc">Synthetic arithmetic examples are separate from published GPU specifications</desc><rect width="1060" height="740" fill="#f8fafc"/>
+<text x="30" y="45" font-family="Arial, sans-serif" font-size="27" font-weight="bold" fill="#142033">Qualify capacity and throughput before interpreting speed</text>
+<text x="30" y="86" font-family="Arial, sans-serif" font-size="22" font-weight="normal" fill="#142033">Synthetic arithmetic examples are separate from published GPU specifications</text>
+<rect x="30" y="115" width="1000" height="112" rx="12" fill="#dbeafe" stroke="#8492a6"/>
+<text x="50" y="148" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#142033">Capacity: count simultaneous unique storage</text>
+<text x="50" y="183" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#142033">70 GiB visible budget − 32 weights − 8 non-KV − 4 margin = 26 GiB KV.</text>
+<text x="50" y="212" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">At 256 MiB/request: payload-only bound 104; the 105th needs another 256 MiB.</text>
+<rect x="30" y="250" width="1000" height="112" rx="12" fill="#fef3c7" stroke="#8492a6"/>
+<text x="50" y="283" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#142033">Bandwidth: name the memory boundary</text>
+<text x="50" y="318" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#142033">64 MiB / 1,935 GB/s ≈ 34.682 µs for an ideal device-memory read.</text>
+<text x="50" y="347" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">Cache-served reads and H2D/D2H links have different boundaries and denominators.</text>
+<rect x="30" y="385" width="1000" height="112" rx="12" fill="#dcfce7" stroke="#8492a6"/>
+<text x="50" y="418" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#142033">Arithmetic: dense, sparse and precision labels matter</text>
+<text x="50" y="453" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#142033">312 dense / 624 structured-sparse FP16 Tensor TFLOP/s are qualified peaks.</text>
+<text x="50" y="482" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">Valid 2:4 data and backend support are required; silent pruning changes the matrix.</text>
+<rect x="30" y="520" width="1000" height="112" rx="12" fill="#ede9fe" stroke="#8492a6"/>
+<text x="50" y="553" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#142033">Validation: check values, completion and operating state</text>
+<text x="50" y="588" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#142033">Include packing, metadata and workspace in their declared boundaries.</text>
+<text x="50" y="617" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">Ordered windows show association; they cannot prove a power-policy effect.</text>
+<text x="30" y="700" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">An inventory is not a benchmark. A benchmark is not production capacity or a stable tail guarantee.</text>
+</svg>

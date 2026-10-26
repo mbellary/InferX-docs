@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="740" viewBox="0 0 1060 740" role="img" aria-labelledby="title desc"><title id="title">A scheduling model must preserve both values and progress</title><desc id="desc">No kernel, observed SM assignment or hardware timing is claimed by these reference sketches</desc><rect width="1060" height="740" fill="#f8fafc"/>
+<text x="30" y="45" font-family="Arial, sans-serif" font-size="27" font-weight="bold" fill="#142033">A scheduling model must preserve both values and progress</text>
+<text x="30" y="86" font-family="Arial, sans-serif" font-size="22" font-weight="normal" fill="#142033">No kernel, observed SM assignment or hardware timing is claimed by these reference sketches</text>
+<rect x="30" y="115" width="1000" height="112" rx="12" fill="#dbeafe" stroke="#8492a6"/>
+<text x="50" y="148" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#142033">Resident → eligible → selected for instruction issue</text>
+<text x="50" y="183" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#142033">A resident warp may wait for data or synchronization while other work progresses.</text>
+<text x="50" y="212" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">Resident warps, active lanes and useful output are different measurement populations.</text>
+<rect x="30" y="250" width="1000" height="112" rx="12" fill="#fef3c7" stroke="#8492a6"/>
+<text x="50" y="283" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#142033">Divergence: same item tags, different descriptor order</text>
+<text x="50" y="318" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#142033">64 items, two warps, L = 8 abstract path positions: interleaved 32; grouped 16.</text>
+<text x="50" y="347" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">Both have 512 useful lane-instruction positions; grouping/scattering costs are additional.</text>
+<rect x="30" y="385" width="1000" height="112" rx="12" fill="#dcfce7" stroke="#8492a6"/>
+<text x="50" y="418" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#142033">Ordinary blocks own independent output regions</text>
+<text x="50" y="453" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#142033">Seven ten-thread blocks cover 70 elements under all 7! = 5,040 serial orders.</text>
+<text x="50" y="482" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">Block IDs do not prescribe start order or SM placement; replay is not a concurrency proof.</text>
+<rect x="30" y="520" width="1000" height="112" rx="12" fill="#ede9fe" stroke="#8492a6"/>
+<text x="50" y="553" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#142033">Reject unsupported cross-block handoffs</text>
+<text x="50" y="588" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#142033">Resident blocks waiting on an unstarted predecessor can prevent progress.</text>
+<text x="50" y="617" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">A block barrier or fence is not a grid rendezvous; use a supported dependency contract.</text>
+<text x="30" y="700" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">Next authoring: M3-C05 memory hierarchy. Reading successor M3-C04 awaits memory/resource prerequisites.</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="740" viewBox="0 0 1060 740" role="img" aria-labelledby="title desc"><title id="title">Keep weights and KV distinct from per-step input/output</title><desc id="desc">Inherited tiny FP64 model: 720 weight bytes; prompt [1]; three selected IDs [2,2,2]</desc><rect width="1060" height="740" fill="#f8fafc"/>
+<text x="30" y="45" font-family="Arial, sans-serif" font-size="27" font-weight="bold" fill="#142033">Keep weights and KV distinct from per-step input/output</text>
+<text x="30" y="86" font-family="Arial, sans-serif" font-size="22" font-weight="normal" fill="#142033">Inherited tiny FP64 model: 720 weight bytes; prompt [1]; three selected IDs [2,2,2]</text>
+<rect x="30" y="115" width="1000" height="112" rx="12" fill="#dbeafe" stroke="#8492a6"/>
+<text x="50" y="148" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#142033">Upload admitted weights once, then reuse on device</text>
+<text x="50" y="183" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#142033">Two blocks read the same versioned parameter collection for every forward.</text>
+<text x="50" y="212" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">Resident weights still incur device-side reads; payload storage is not DRAM traffic.</text>
+<rect x="30" y="250" width="1000" height="112" rx="12" fill="#fef3c7" stroke="#8492a6"/>
+<text x="50" y="283" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#142033">Prefill → decode 1 → decode 2; no terminal extra forward</text>
+<text x="50" y="318" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#142033">Process positions 0,1,2; completed valid KV grows 64 → 128 → 192 bytes.</text>
+<text x="50" y="347" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">Activations and scratch have their own last uses; do not add aliases as new storage.</text>
+<rect x="30" y="385" width="1000" height="112" rx="12" fill="#dcfce7" stroke="#8492a6"/>
+<text x="50" y="418" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#142033">CPU selection: send inputs, read full last-position logits</text>
+<text x="50" y="453" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#142033">Three four-byte input IDs H2D; three 32-byte vocabulary rows D2H.</text>
+<text x="50" y="482" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">Resident-request payload: 12 + 96 = 108 bytes; initial weights are separate.</text>
+<rect x="30" y="520" width="1000" height="112" rx="12" fill="#ede9fe" stroke="#8492a6"/>
+<text x="50" y="553" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#142033">GPU selection: keep the next input local, return selected IDs</text>
+<text x="50" y="588" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#142033">Prompt H2D: 4 bytes. Three selected IDs D2H: 12 bytes.</text>
+<text x="50" y="617" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">Resident-request payload: 16 bytes; preserve tie, EOS, stopping and control dependencies.</text>
+<text x="30" y="700" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">108/16 = 6.75 is a payload ratio. Correct output and completed timing are separate gates.</text>
+</svg>

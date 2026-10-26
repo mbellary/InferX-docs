@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="740" viewBox="0 0 1060 740" role="img" aria-labelledby="title desc"><title id="title">Logical elements, configured threads and lanes are different</title><desc id="desc">Reference: N = 70 elements; B = 48 threads/block; W = 32 lanes/warp</desc><rect width="1060" height="740" fill="#f8fafc"/>
+<text x="30" y="45" font-family="Arial, sans-serif" font-size="27" font-weight="bold" fill="#142033">Logical elements, configured threads and lanes are different</text>
+<text x="30" y="86" font-family="Arial, sans-serif" font-size="22" font-weight="normal" fill="#142033">Reference: N = 70 elements; B = 48 threads/block; W = 32 lanes/warp</text>
+<rect x="30" y="115" width="1000" height="112" rx="12" fill="#dbeafe" stroke="#8492a6"/>
+<text x="50" y="148" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#142033">Grid: ceil(70/48) = 2 blocks; 96 configured threads</text>
+<text x="50" y="183" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#142033">Logical index i = block × 48 + local thread; authorize only i below 70.</text>
+<text x="50" y="212" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">Every valid index needs one writer; an in-bounds address can still be the wrong coordinate.</text>
+<rect x="30" y="250" width="1000" height="112" rx="12" fill="#fef3c7" stroke="#8492a6"/>
+<text x="50" y="283" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#142033">Block 0: two warps; logical indices 0–47</text>
+<text x="50" y="318" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#142033">Warp 0: 32 valid lanes. Warp 1: 16 valid threads and 16 absent lanes.</text>
+<text x="50" y="347" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">Warp membership never joins the end of block 0 to the start of block 1.</text>
+<rect x="30" y="385" width="1000" height="112" rx="12" fill="#dcfce7" stroke="#8492a6"/>
+<text x="50" y="418" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#142033">Block 1: two warps; candidate indices 48–95</text>
+<text x="50" y="453" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#142033">Warp 0: 22 valid + 10 guarded-out threads. Warp 1: 16 guarded + 16 absent.</text>
+<text x="50" y="482" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">Four warps supply 128 lane positions: 70 valid + 26 guarded-out + 32 absent.</text>
+<rect x="30" y="520" width="1000" height="112" rx="12" fill="#ede9fe" stroke="#8492a6"/>
+<text x="50" y="553" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#142033">Static fractions are not measured utilization</text>
+<text x="50" y="588" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#142033">70/96 configured threads ≈ 72.917%; 70/128 warp-lane positions = 54.6875%.</text>
+<text x="50" y="617" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">For a 2D tensor, check each axis before flattening; an address-only bound can alias a row.</text>
+<text x="30" y="700" font-family="Arial, sans-serif" font-size="21" font-weight="normal" fill="#142033">Coverage, boundary predicates and allocation identity are correctness gates; timing requires a real device.</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="480" viewBox="0 0 1100 480" role="img">
+<title>One device allocation; several possible service levels</title>
+<rect width="1100" height="480" fill="#f4f7fb"/>
+<text x="35" y="48" font-family="sans-serif" font-size="25" fill="#152c49">One device allocation; several possible service levels</text>
+<rect x="35" y="78" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="108" font-family="sans-serif" font-size="21" fill="#16496d">SM load → L1 cache</text>
+<text x="55" y="137" font-family="sans-serif" font-size="18" fill="#263d53">L1 hit: service nearby. L1 miss: request continues toward L2.</text>
+<rect x="35" y="178" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="208" font-family="sans-serif" font-size="21" fill="#16496d">Shared L2 cache → device-memory interface</text>
+<text x="55" y="237" font-family="sans-serif" font-size="18" fill="#263d53">L2 hit avoids backing-memory read on this path; miss may require DRAM service.</text>
+<rect x="35" y="278" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="308" font-family="sans-serif" font-size="21" fill="#16496d">HBM or GDDR backing storage</text>
+<text x="55" y="337" font-family="sans-serif" font-size="18" fill="#263d53">Capacity holds the allocation. Traffic depends on access history and transaction granularity.</text>
+<text x="35" y="420" font-family="sans-serif" font-size="18" fill="#263d53">Cache copies do not transfer allocation ownership or establish producer completion.</text>
+<text x="35" y="450" font-family="sans-serif" font-size="18" fill="#263d53">Logical payload bytes, L2 traffic and DRAM traffic require separate accounting.</text>
+</svg>

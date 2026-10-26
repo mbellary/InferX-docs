@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="480" viewBox="0 0 1100 480" role="img">
+<title>Same 128 useful read bytes; different sector demand</title>
+<rect width="1100" height="480" fill="#f4f7fb"/>
+<text x="35" y="48" font-family="sans-serif" font-size="25" fill="#152c49">Same 128 useful read bytes; different sector demand</text>
+<rect x="35" y="78" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="108" font-family="sans-serif" font-size="21" fill="#16496d">32 lanes × 4 bytes; aligned contiguous addresses</text>
+<text x="55" y="137" font-family="sans-serif" font-size="18" fill="#263d53">4 requested 32-byte sectors = 128 bytes coverage; useful fraction 100%.</text>
+<rect x="35" y="178" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="208" font-family="sans-serif" font-size="21" fill="#16496d">Contiguous addresses shifted by 4 bytes</text>
+<text x="55" y="237" font-family="sans-serif" font-size="18" fill="#263d53">5 requested sectors = 160 bytes coverage; useful fraction 80%.</text>
+<rect x="35" y="278" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="308" font-family="sans-serif" font-size="21" fill="#16496d">Stride of 8 elements (32 bytes) between lanes</text>
+<text x="55" y="337" font-family="sans-serif" font-size="18" fill="#263d53">32 requested sectors = 1,024 bytes coverage; useful fraction 12.5%.</text>
+<text x="35" y="420" font-family="sans-serif" font-size="18" fill="#263d53">Isolated warp address model: these counts are not measured DRAM traffic or speedups.</text>
+<text x="35" y="450" font-family="sans-serif" font-size="18" fill="#263d53">Prior accesses and neighboring warps can change cache reuse at each memory level.</text>
+</svg>
