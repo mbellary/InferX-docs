@@ -16,7 +16,7 @@ Timeouts, retries, draining, migration, failure domains, autoscaling, headroom.
 
 ## Chapters
 
-Chapter outlines are grouped by module. Full content will be developed one chapter at a time.
+[M2-C16](m2-c16-completion-cancellation-and-allocation-failure.md) is a completed detailed chapter; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
 
 ### Module 2
 

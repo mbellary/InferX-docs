@@ -11,13 +11,13 @@ Turn 201 outlines into a coherent collection of detailed chapters that helps a r
 
 The reader should be able to open any completed chapter, understand every introduced term, follow a worked numerical example and diagram, describe a reproducible experiment, and explain its pass/fail conditions and limits. High-Frequency Trading (HFT), meaning systems that process market events and make trading decisions under tight timing constraints, provides a lens for critical paths, bounded queues, stale information, and tail latency. A tail is the slower end of a latency distribution. Explain what transfers to inference and what does not; do not present trading advice, assert trading results, or equate inference semantics with exchange behavior.
 
-The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01–M1-C20, M2-C01–M2-C15, M9-C01–M9-C05, M9-C07, M9-C17 and M9-C19 are now complete; the next authoring chapter is M2-C16.
+The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01–M1-C20, M2-C01–M2-C18, M9-C01–M9-C05, M9-C07, M9-C17 and M9-C19 are now complete; the next authoring chapter is M2-C19.
 
 
 ## Progress
 
 
-Last updated: 2026-10-26 11:33 IST. Detailed chapter totals: **43 complete, 0 active, 158 not started, 0 blocked**. Next authoring chapter: **M2-C16**, authoring position 44.
+Last updated: 2026-10-26 12:17 IST. Detailed chapter totals: **46 complete, 0 active, 155 not started, 0 blocked**. Next authoring chapter: **M2-C19**, authoring position 47.
 
 - [x] (2026-10-24 17:21 IST) Read the uploaded PLANS.md, the learning requirements, the chapter inventory, and the dependency schedule; confirm Modules 1–7 plus supporting Module 9 and no Module 8.
 - [x] (2026-10-24 17:21 IST) Preserve the planning reference as repository-root PLANS.md and create this living execution plan with all 201 ordered chapter records and their target concepts and direct prerequisites.
@@ -288,23 +288,23 @@ Each record contains the authoring position, chapter ID, target concepts, source
   Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
   Module 9 application: Completed M9-C01 reference invariants, M9-C02 event boundaries, M9-C03/C04 latency endpoints and M9-C07 distributions; advanced accounting/safety gates introduced locally. Updated: 2026-10-26 11:33 IST. Evidence: All target concepts, four matched experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code scope reviewed. Checked PagedAttention v1 section 4.5 and primary Tokio bounded-channel documentation. Exact QA passed 455 legal budget partitions with reservation/conversion conservation, four cap/append cases, both six-row FIFO/bypass ledgers, byte/trial/outcome totals, 36 experiment fields, links, SVG XML and five tables. Browser reviewed budget notation/table, cap/growth table, fairness event table, verification and both full diagrams. Initial strict build passed without warnings (3.34 seconds); final validation below. No admission service, queue runtime, allocator safety test, device experiment or CPU/GPU benchmark executed. Next action: M2-C16 only.
 
-- [ ] 044 — **M2-C16: Completion, cancellation, and allocation failure** — Not started.
+- [x] 044 — **M2-C16: Completion, cancellation, and allocation failure** — Complete.
   File: [Completion, cancellation, and allocation failure](reliability-and-capacity-control/m2-c16-completion-cancellation-and-allocation-failure.md). Category: Reliability and capacity control. Phase: 3. KV ownership, paging, and capacity.
   Direct prerequisites: M2-C15, M2-C10. Target concepts: Terminal request states, idempotent cleanup, cancellation during growth or sharing, partial-allocation rollback, draining in-flight work, worker loss and volatile-state recovery.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 identity/reference, M9-C02 completion boundaries, M9-C07 unresolved populations and M9-C19 output identity; advanced safety/recovery gates introduced locally. Updated: 2026-10-26 11:46 IST. Evidence: All target concepts, four matched experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code scope reviewed. Checked primary Tokio JoinHandle cancellation/detachment, CUDA Runtime 13.4 event scope and PagedAttention v1 recovery discussion. Exact QA passed six-row named-claim duplicate/drain ledger with surviving owners, two terminal orders, F0–F3 rollback, epoch/cap/byte/time/trial arithmetic, 36 experiment fields, local links, SVG XML and six tables. Browser reviewed cancellation, rollback and verification tables, both full diagrams and navigation; clicked Execution plan and progress and confirmed its rendered destination. Initial strict build passed without warnings (3.26 seconds); final validation below. No request/device/recovery runtime, allocator safety test or CPU/GPU benchmark executed. Next action: M2-C17 only.
 
-- [ ] 045 — **M2-C17: Sliding-window attention and bounded cache state** — Not started.
+- [x] 045 — **M2-C17: Sliding-window attention and bounded cache state** — Complete.
   File: [Sliding-window attention and bounded cache state](model-computation-and-semantics/m2-c17-sliding-window-attention-and-bounded-cache-state.md). Category: Model computation and semantics. Phase: 3. KV ownership, paging, and capacity.
   Direct prerequisites: M2-C07, M1-C11. Target concepts: Model-defined attention windows, retained token ranges, logical versus physical positions, ring-buffer mapping, per-layer windows, hybrid attention, limits of dropping old state.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 reference/identity, M9-C02 completion, M9-C07 populations and M9-C17 numerical gates; advanced accounting/safety introduced locally. Updated: 2026-10-26 11:57 IST. Evidence: All target concepts, four matched experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code scope reviewed. Checked original Mistral v1 rolling/chunk attention, Gemma 2 v3 hybrid layers and Transformers v4.57.1 cache guidance. Exact QA passed 36 mask/rational/ring cases with bounded host scalar arithmetic cross-check, wrap order, chunk hazard/union, per-layer/assigned/peak bytes, candidate/trial totals, 36 experiment fields, clickable links, SVG XML and five tables. Browser reviewed scalar reference, hybrid memory and verification tables, both full diagrams and navigation; clicked Execution plan and progress and confirmed its destination. Initial strict build passed without warnings (3.26 seconds); final validation below. No attention/backend/model runtime, CUDA test, quality evaluation or CPU/GPU benchmark executed. Next action: M2-C18 only.
 
-- [ ] 046 — **M2-C18: Architecture-specific state: Multi-head Latent Attention** — Not started.
+- [x] 046 — **M2-C18: Architecture-specific state: Multi-head Latent Attention** — Complete.
   File: [Architecture-specific state: Multi-head Latent Attention](model-computation-and-semantics/m2-c18-architecture-specific-state-multi-head-latent-attention.md). Category: Model computation and semantics. Phase: 3. KV ownership, paging, and capacity.
   Direct prerequisites: M2-C02, M1-C04, M1-C11. Target concepts: MLA compressed latent state, positional components, architecture-specific cache representations, storage versus reconstruction work, limits of the conventional KV formula.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 reference/identity, M9-C02 completion, M9-C07 distributions and M9-C17 numerical comparison; elementary architecture-specific accounting gates local. Updated: 2026-10-26 12:17 IST. Evidence: All target concepts, four matched experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code scope reviewed. Checked DeepSeek-V2 v5 section 2.1/Appendix C, DeepSeek-V3 v2 and Transformers v4.57.1 configuration dimensions. Reference QA passed 16 outputs across original/nonuniform/N=8/32 cases at 80/120 digits, materialized/absorbed stages and two positional negative controls; field/block/slack/temporary/MAC/trial arithmetic, 36 experiment fields, clickable links, SVG XML and six tables passed. Browser reviewed worked projection tables, representation accounting and verification, both full diagrams and navigation; clicked Execution plan and progress and confirmed its destination. Initial strict build passed without warnings (3.27 seconds); final validation below. No MLA backend/model runtime, checkpoint conversion, quality evaluation or CPU/GPU benchmark executed. Next action: M2-C19 only.
 
 - [ ] 047 — **M2-C19: Connecting block allocation to the request generator** — Not started.
   File: [Connecting block allocation to the request generator](runtime-and-concurrency/m2-c19-connecting-block-allocation-to-the-request-generator.md). Category: Runtime and concurrency. Phase: 3. KV ownership, paging, and capacity.
@@ -1239,6 +1239,12 @@ Each record contains the authoring position, chapter ID, target concepts, source
 
 ## Surprises & Discoveries
 
+2026-10-26 12:17 IST: M2-C18 stores 32 payload bytes per toy token/layer as latent plus positional state, versus 80 with shared-position expanded K/V or 96 with per-head positional copies. A materialized consumer can still add a 64N-byte history temporary. Omitting positional state changes even the tiny reference output.
+
+2026-10-26 11:57 IST: M2-C17 needs six logical key rows across a three-query chunk despite a four-row final window; its chosen ring-plus-stage layout allocates seven rows. Hybrid global rows can keep packed all-layer blocks allocated after local expiry. Failure during in-place wrap copying cannot promise intact old contents.
+
+2026-10-26 11:46 IST: M2-C16 shows terminal acknowledgement at constructed time zero can coexist with 7 ms of drain and 4,608 byte·ms of private retained state. A completed attempt may leave a shared block occupied. CUDA event success is insufficient without the correct recording/scope, and an old epoch is not a memory-isolation guarantee.
+
 2026-10-26 11:33 IST: M2-C15 distinguishes eight physically free slots from only three uncommitted slots in its initial pool. The constructed FIFO/bypass replay changes rejection counts while ending at the same budget; injected completions cannot establish throughput or latency.
 
 2026-10-26 11:24 IST: M2-C14 shows equal aggregate hits can hide different reconstruction scores and opposite per-trace policy winners. Cache removal and completion are distinct: a pinned retained block is unavailable for immediate return, while finishing its pin does not remove its cache edge.
@@ -1342,6 +1348,12 @@ Observation (2026-10-24 17:23 IST): the documentation preview retains the /Infer
 
 
 ## Decision Log
+
+2026-10-26 12:17 IST: M2-C18 compares evaluation paths of one MLA contract, not arbitrary MHA conversion. It places retained c at its declared post-normalization boundary, keeps the decoupled positional term and derives linear reassociation without moving nonlinear operations. Cache-field, weight, temporary and whole-service boundaries remain distinct; numerical gates apply only to the bounded synthetic corpus.
+
+2026-10-26 11:57 IST: M2-C17 defines W as including the current key, preserves logical positions across modulo mapping and separates semantic expiry from reader completion. Chunk commit closes reads, drains readers, completes wrap copies and publishes the range; failed copies invalidate the ring until recovery. Separate layer storage is distinguished from packed allocation, and a scalar FP64 gate is explicitly limited to the bounded fixture.
+
+2026-10-26 11:46 IST: M2-C16 separates terminal outcomes from Clean versus Retired cleanup. Named edge, credit, pin and return effects reject duplicates; partial allocation restores provisional credits only once. Unknown submission/completion retains capacity, while worker loss retires an uncertain domain rather than returning its slots. Added and browser-tested a clickable execution-plan link as requested.
 
 2026-10-26 11:33 IST: M2-C15 uses request-owned full-cap credits against compatible free slots, disjoint from occupied payload and headroom. It chooses strict FIFO versus at most one bypass per blocked head, with a two-record waiting limit. Current-only growth deadlock is conditional on no preemption/progress alternative; full-cap budgeting does not promise general liveness.
 
@@ -1449,6 +1461,12 @@ Decision: create and validate the plan now with all chapter stages unstarted. Ra
 
 
 ## Outcomes & Retrospective
+
+2026-10-26 12:17 IST: Completed only M2-C18. Totals are 46/201 complete and 155 outlines; Module 2 18/21, Module 1 20/20 and Module 9 8/30. M2-C19 next. High-precision reference checks and projected bytes/MACs do not certify a real MLA kernel, checkpoint quality or speedup.
+
+2026-10-26 11:57 IST: Completed only M2-C17. Totals are 45/201 complete and 156 outlines; Module 2 17/21, Module 1 20/20 and Module 9 8/30. M2-C18 next. Exact references do not certify a real ring, model quality, unlimited context or measured performance.
+
+2026-10-26 11:46 IST: Completed only M2-C16. Totals are 44/201 complete and 157 outlines; Module 2 16/21, Module 1 20/20 and Module 9 8/30. M2-C17 next. Reference ledgers do not certify actual cancellation, device reclamation, worker recovery or external exactly-once delivery.
 
 2026-10-26 11:33 IST: Completed only M2-C15. Totals are 43/201 complete and 158 outlines; Module 2 15/21, Module 1 20/20 and Module 9 8/30. M2-C16 next. Exact conservation and queue references do not certify implemented admission, latency or production fairness.
 
@@ -1558,7 +1576,7 @@ The repository-root `PLANS.md` is the uploaded execution-plan guidance. This fil
 
 `docs/learning-approach.md` defines the shared learning contract. `templates/chapter.md` is the authoring scaffold. `docs/module-1.md` through `docs/module-7.md`, plus `docs/module-9.md`, provide module reading orders. The 14 category directories organize subjects; their `index.md` pages list member chapters. A chapter ID such as M2-C04 identifies Module 2, Chapter 4; authoring position is separate and controls creation order. Do not create Module 8 or infer chapters for the empty Storage and persistence category.
 
-The chapter files already exist and contain target-concept paragraphs. M1-C01–M1-C20, M2-C01–M2-C15, M9-C01–M9-C05, M9-C07, M9-C17 and M9-C19 are Complete; the remaining 158 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
+The chapter files already exist and contain target-concept paragraphs. M1-C01–M1-C20, M2-C01–M2-C18, M9-C01–M9-C05, M9-C07, M9-C17 and M9-C19 are Complete; the remaining 155 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
 
 
 ## Plan of Work
@@ -1729,6 +1747,12 @@ The working tree already contains curriculum and inventory changes from prior re
 
 
 ## Artifacts and Notes
+
+2026-10-26 12:17 IST: Added detailed M2-C18, m2-c18-latent-paths.svg and m2-c18-storage-boundaries.svg, with clickable execution-plan links at opening and conclusion. Temporary authoring/QA helpers remain outside the repository. Preserved all existing M2-C16/M2-C17 worktree changes.
+
+2026-10-26 11:57 IST: Added detailed M2-C17, m2-c17-ring-positions.svg and m2-c17-chunk-window.svg, with clickable execution-plan links at opening and conclusion. Temporary authoring/QA helpers remain outside the repository. Preserved all existing M2-C16 worktree changes.
+
+2026-10-26 11:46 IST: Added detailed M2-C16, m2-c16-cancel-and-drain.svg and m2-c16-worker-epochs.svg. The chapter links directly to the execution plan at its opening and conclusion. Temporary authoring/QA helpers remain outside the repository. Started from a clean user-committed worktree.
 
 2026-10-26 11:33 IST: Added detailed M2-C15, m2-c15-budget-credits.svg and m2-c15-fairness.svg. Temporary authoring/QA helpers remain outside the repository. Preserved all pre-existing changes.
 
@@ -2072,3 +2096,21 @@ Primary-source research is required when writing each chapter, not as a claim th
 2026-10-26 11:33 IST: Completed M2-C15 after primary-source, exact-reference, strict-build and rendered review. Reconciled chapter, ledger, module/category, inventory and landing summaries to 43 complete/158 outlines. M2-C16 remains first incomplete; no later chapter started.
 
 2026-10-26 11:33 IST: Final M2-C15 acceptance checks passed: strict build without warnings (3.25 seconds), whitespace validation, 201 ordered unique ledger records and matching source banners at 43 Complete/158 Not started; Module 2 15/21, Module 1 20/20, Module 9 8/30. Exact reference QA passed after final edits. M2-C16 remains first incomplete.
+
+2026-10-26 11:36 IST: Began M2-C16 as sole active chapter from a clean worktree after prerequisite and ledger checks. M2-C17 next. User requested clickable execution-plan links in the chapter/completion report.
+
+2026-10-26 11:46 IST: Completed M2-C16 after primary-source, exact-reference, strict-build and rendered review. Reconciled chapter, ledger, module/category, inventory and landing summaries to 44 complete/157 outlines. Clickable execution-plan navigation verified. M2-C17 remains first incomplete; no later chapter started.
+
+2026-10-26 11:46 IST: Final M2-C16 acceptance checks passed: strict build without warnings (3.33 seconds), whitespace validation, 201 ordered unique ledger records and matching source banners at 44 Complete/157 Not started; Module 2 16/21, Module 1 20/20, Module 9 8/30. Exact reference QA passed after final edits. M2-C17 remains first incomplete.
+
+2026-10-26 11:49 IST: Began M2-C17 as sole active chapter after prerequisite and ledger checks; preserved existing M2-C16 changes. M2-C18 next. Maintain clickable execution-plan links in chapter and completion report.
+
+2026-10-26 11:57 IST: Completed M2-C17 after primary-source, exact-reference, strict-build and rendered review. Reconciled chapter, ledger, module/category, inventory and landing summaries to 45 complete/156 outlines. Clickable execution-plan navigation verified. M2-C18 remains first incomplete; no later chapter started.
+
+2026-10-26 11:58 IST: Final M2-C17 acceptance checks passed: strict build without warnings (3.28 seconds), whitespace validation, 201 ordered unique ledger records and matching source banners at 45 Complete/156 Not started; Module 2 17/21, Module 1 20/20, Module 9 8/30. Exact reference QA passed after final edits. M2-C18 remains first incomplete.
+
+2026-10-26 12:09 IST: Began M2-C18 as sole active chapter after prerequisite and ledger checks; existing M2-C16/M2-C17 worktree changes preserved. M2-C19 next. Maintain clickable execution-plan links.
+
+2026-10-26 12:17 IST: Completed M2-C18 after primary-source, high-precision-reference, strict-build and rendered review. Reconciled chapter, ledger, module/category, inventory and landing summaries to 46 complete/155 outlines. Clickable execution-plan navigation verified. M2-C19 remains first incomplete; no later chapter started.
+
+2026-10-26 12:17 IST: Final M2-C18 acceptance checks passed: strict build without warnings (3.48 seconds), whitespace validation, 201 ordered unique ledger records and matching source banners at 46 Complete/155 Not started; Module 2 18/21, Module 1 20/20, Module 9 8/30. Exact reference QA passed after final edits. M2-C19 remains first incomplete.

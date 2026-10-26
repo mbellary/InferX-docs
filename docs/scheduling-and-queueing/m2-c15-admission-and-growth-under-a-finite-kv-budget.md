@@ -208,4 +208,4 @@ Paper ledgers need no device. A proposed CPU replay harness uses one worker and 
 
 ## Key takeaways
 
-Reserve future growth before promising it; physically free slots may already belong to existing promises. Admit, wait and reject are explicit outcomes, and bounded bypass trades queue utilization against a stated fairness rule. Pool capacity safety does not establish low latency. [M2-C16: Completion, cancellation, and allocation failure](../reliability-and-capacity-control/m2-c16-completion-cancellation-and-allocation-failure.md) is next for authoring and remains an outline.
+Reserve future growth before promising it; physically free slots may already belong to existing promises. Admit, wait and reject are explicit outcomes, and bounded bypass trades queue utilization against a stated fairness rule. Pool capacity safety does not establish low latency. [M2-C16: Completion, cancellation, and allocation failure](../reliability-and-capacity-control/m2-c16-completion-cancellation-and-allocation-failure.md) is now a completed detailed chapter. M2-C17 is next for authoring.
