@@ -80,7 +80,7 @@ Reserved slots are capacity, not context. An eight-slot cache with valid length 
 
 ### 4. Reuse trades recomputation for retained state and access
 
-A uniform full-attention cache’s logical payload for one request is **Mkv = 2L Hkv N d w bytes**: L layers, w bytes per stored element and factor two for K/V. This introduces the state boundary; [M2-C03](m2-c03-calculating-kv-memory-and-request-capacity.md) remains an outline for detailed capacity work. In the scalar fixture L = Hkv = d = 1 and FP64 has w = 8, so two positions retain 32 bytes; appending one row adds 16 bytes for a total of 48. A second request needs its own valid state here. These are payload counts, not actual allocator sizes or measured memory traffic.
+A uniform full-attention cache’s logical payload for one request is **Mkv = 2L Hkv N d w bytes**: L layers, w bytes per stored element and factor two for K/V. This introduces the state boundary; [M2-C03](m2-c03-calculating-kv-memory-and-request-capacity.md) is now complete for detailed capacity work. In the scalar fixture L = Hkv = d = 1 and FP64 has w = 8, so two positions retain 32 bytes; appending one row adds 16 bytes for a total of 48. A second request needs its own valid state here. These are payload counts, not actual allocator sizes or measured memory traffic.
 
 The full two-layer M1-C14 model has d = 2, Hkv = 1 and FP64, hence 64 bytes per retained position and 192 bytes at N = 3. This is a different configuration from the scalar fixture. Metadata, weight storage, workspace, alignment and reserved capacity are additional. Even when old KV is reused, attention still needs eligible old context; registers, processor caches, layouts and kernels determine actual traffic.
 

@@ -11,13 +11,13 @@ Turn 201 outlines into a coherent collection of detailed chapters that helps a r
 
 The reader should be able to open any completed chapter, understand every introduced term, follow a worked numerical example and diagram, describe a reproducible experiment, and explain its pass/fail conditions and limits. High-Frequency Trading (HFT), meaning systems that process market events and make trading decisions under tight timing constraints, provides a lens for critical paths, bounded queues, stale information, and tail latency. A tail is the slower end of a latency distribution. Explain what transfers to inference and what does not; do not present trading advice, assert trading results, or equate inference semantics with exchange behavior.
 
-The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01–M1-C20, M2-C01–M2-C02, M9-C01–M9-C05, M9-C07, M9-C17 and M9-C19 are now complete; the next authoring chapter is M2-C03.
+The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01–M1-C20, M2-C01–M2-C15, M9-C01–M9-C05, M9-C07, M9-C17 and M9-C19 are now complete; the next authoring chapter is M2-C16.
 
 
 ## Progress
 
 
-Last updated: 2026-10-25 21:15 IST. Detailed chapter totals: **30 complete, 0 active, 171 not started, 0 blocked**. Active chapter: None. Next authoring chapter: **M2-C03**, authoring position 31.
+Last updated: 2026-10-26 11:33 IST. Detailed chapter totals: **43 complete, 0 active, 158 not started, 0 blocked**. Next authoring chapter: **M2-C16**, authoring position 44.
 
 - [x] (2026-10-24 17:21 IST) Read the uploaded PLANS.md, the learning requirements, the chapter inventory, and the dependency schedule; confirm Modules 1–7 plus supporting Module 9 and no Module 8.
 - [x] (2026-10-24 17:21 IST) Preserve the planning reference as repository-root PLANS.md and create this living execution plan with all 201 ordered chapter records and their target concepts and direct prerequisites.
@@ -210,83 +210,83 @@ Each record contains the authoring position, chapter ID, target concepts, source
   Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
   Module 9 application: Completed M9-C01 reference/equivalence contracts, M9-C02 completion boundaries, M9-C07 populations, M9-C17 numerical budgets and M9-C19 identity. Advanced cache-memory/profiler support remains outlined; elementary checks local. Updated: 2026-10-25 21:15 IST. Evidence: All target concepts, four matched experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code scope reviewed. Checked primary GQA v3, MQA v1 and PyTorch 2.14 attention contracts. Independent 80/120-digit reference QA passed grouped outputs and wrong-mapping/model-change references, mappings, shapes/payload/work/trial counts; required fields, links, SVG XML and five tables passed. Browser reviewed navigation, formulas/worked table, verification table and both full diagrams with query-to-KV arrows and compact/expanded counts. Initial strict build passed without warnings (5.04 seconds); final validation recorded below. No attention kernel, checkpoint conversion, allocator measurement or performance benchmark executed. Next action: M2-C03 only.
 
-- [ ] 031 — **M2-C03: Calculating KV memory and request capacity** — Not started.
+- [x] 031 — **M2-C03: Calculating KV memory and request capacity** — Complete.
   File: [Calculating KV memory and request capacity](state-memory-and-caching/m2-c03-calculating-kv-memory-and-request-capacity.md). Category: State, memory, and caching. Phase: 3. KV ownership, paging, and capacity.
   Direct prerequisites: M2-C02, M1-C05, M1-C07. Target concepts: Uniform full-attention KV formula, bytes per element, KiB and GiB, cached token counts, 128 KiB per token example, concurrency and context budgets, payload versus overhead.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 exact reference/accounting, M9-C02 measurement/completion, M9-C07 populations and M9-C17 precision-contract guidance. M9-C15 advanced allocation/fragmentation accounting remains outlined; required elementary boundaries local. Updated: 2026-10-26 07:12 IST. Evidence: All target concepts, four matched experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code scope reviewed. Checked primary Transformers v4.57.1 cache strategies, PyTorch 2.14 allocator-counter contracts and PagedAttention v1. Exact reference QA passed unit/width/payload, processed/reserved/unequal rows, last-fit/first-fail budget, transient-peak and trial arithmetic; required fields, local links, SVG XML and five tables passed. Browser reviewed chapter navigation, formulas, verification table and both full diagrams, completing the interrupted admission-diagram review on resume. Resumed strict build passed without warnings (5.18 seconds); final validation recorded below. No allocator, device capacity or performance benchmark executed. Next action: M2-C04 only.
 
-- [ ] 032 — **M2-C04: Memory ownership, handles, and lifetimes from first principles** — Not started.
+- [x] 032 — **M2-C04: Memory ownership, handles, and lifetimes from first principles** — Complete.
   File: [Memory ownership, handles, and lifetimes from first principles](state-memory-and-caching/m2-c04-memory-ownership-handles-and-lifetimes-from-first-principles.md). Category: State, memory, and caching. Phase: 3. KV ownership, paging, and capacity.
   Direct prerequisites: M2-C01, M1-C05. Target concepts: Allocation and reclamation, addresses versus handles, Rust ownership and borrowing concepts, request identity, stale handles, use-after-free, double-free.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 invariants/reference, M9-C02 completion/timestamps and M9-C07 populations. Advanced M9-C22 lifetime/alias validation remains outlined; elementary ownership and reclamation contracts local. Updated: 2026-10-26 07:26 IST. Evidence: All target concepts, four matched experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code scope reviewed. Checked primary Rust ownership/borrowing, std 1.99.1 Vec, slotmap 1.1.1 and CUDA Runtime 13.4 completion contracts. Exact reference QA passed pool conservation/retention, generation/owner/lifecycle screens, wrap arithmetic and corpus counts; required fields, links, SVG XML and five tables passed. Browser reviewed navigation, cancellation timeline table, verification table and both full diagrams; restarted local preview after it stopped and completed remaining checks. Initial strict build passed without warnings (5.05 seconds); final validation recorded below. No compiler example, unsafe access, concurrent allocator, GPU or performance benchmark executed. Next action: M2-C05 only.
 
-- [ ] 033 — **M2-C05: Contiguous KV storage and its limits** — Not started.
+- [x] 033 — **M2-C05: Contiguous KV storage and its limits** — Complete.
   File: [Contiguous KV storage and its limits](state-memory-and-caching/m2-c05-contiguous-kv-storage-and-its-limits.md). Category: State, memory, and caching. Phase: 3. KV ownership, paging, and capacity.
   Direct prerequisites: M2-C03, M2-C04. Target concepts: Contiguous allocation, reserved versus used capacity, growth and copying, external fragmentation, allocation failure despite free space, contiguous baseline.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 references/invariants, M9-C02 completion, M9-C07 populations and M9-C17 numerical-contract guidance. M9-C15 advanced fragmentation/accounting remains outlined; elementary capacity/peak boundaries local. Updated: 2026-10-26 07:41 IST. Evidence: Four matched experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code scope reviewed. Primary Rust std 1.99.1 Vec, Transformers 4.57.1 cache strategies and PagedAttention v1 checked. Exact QA passed coordinate uniqueness/offsets, policy copy/peak arithmetic, arena conservation, trial counts, 36 experiment fields, local links and SVG XML. Browser reviewed navigation, growth and verification tables and both full diagrams. Strict build passed without warnings (5.07 seconds) after correcting an internal link; final validation below. No allocator, GPU or performance benchmark executed. Next action: M2-C06 only.
 
-- [ ] 034 — **M2-C06: Paged KV storage and logical-to-physical mapping** — Not started.
+- [x] 034 — **M2-C06: Paged KV storage and logical-to-physical mapping** — Complete.
   File: [Paged KV storage and logical-to-physical mapping](state-memory-and-caching/m2-c06-paged-kv-storage-and-logical-to-physical-mapping.md). Category: State, memory, and caching. Phase: 3. KV ownership, paging, and capacity.
   Direct prerequisites: M2-C05. Target concepts: Operating-system paging analogy and limits, fixed-size token blocks, block tables, block offsets, noncontiguous physical storage, PagedAttention, mapping metadata.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 reference/invariants, M9-C02 completion and M9-C07 outcome populations; advanced M9-C15/M9-C22 remain outlined, with elementary mapping/accounting/lifetime contracts local. Updated: 2026-10-26 07:52 IST. Evidence: All target concepts, four matched experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code scope reviewed. Checked primary PagedAttention v1, Linux page tables and vLLM historical design warning. Exact QA passed 160 unique coordinate offsets, 2,280-byte example, seven length/conservation snapshots, metadata/free-slot and trial arithmetic; 36 experiment fields, links, SVG XML and three tables passed. Browser reviewed navigation, formula/mapping section, verification table and both full diagrams. Initial strict build passed without warnings (5.15 seconds); final validation below. No allocator, GPU, attention or runtime benchmark executed. Next action: M2-C07 only.
 
-- [ ] 035 — **M2-C07: How attention reads a paged KV layout** — Not started.
+- [x] 035 — **M2-C07: How attention reads a paged KV layout** — Complete.
   File: [How attention reads a paged KV layout](kernels-compilers-and-execution/m2-c07-how-attention-reads-a-paged-kv-layout.md). Category: Kernels, compilers, and execution. Phase: 3. KV ownership, paging, and capacity.
   Direct prerequisites: M2-C06, M1-C10. Target concepts: Block-table lookup, KV tensor strides and layouts, valid token counts, partial tail blocks, gather access, kernel-layout compatibility, metadata and data movement.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 reference/state invariants, M9-C02 completion, M9-C07 populations and M9-C17 numerical budgets; advanced M9-C22 kernel/cache safety remains outlined, with elementary contracts local. Updated: 2026-10-26 08:06 IST. Evidence: All target concepts, four matched experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code scope reviewed. Checked primary PagedAttention v1, historical vLLM layout warning and PyTorch 2.14 attention scale/mask/dropout/backend contracts. Exact QA passed stride uniqueness and 72/96-byte offsets, rational attention/tail counterexamples, unequal-score summary identity, payload/trial arithmetic, 36 experiment fields, links, SVG XML and three tables. Browser reviewed navigation, stride formulas/table, verification table and both full diagrams. Initial strict build passed without warnings (5.10 seconds); final validation below. No attention kernel, allocator, GPU or runtime benchmark executed; 80/120-digit candidate-reference procedure remains proposed. Next action: M2-C08 only.
 
-- [ ] 036 — **M2-C08: Designing a fixed-size KV block allocator** — Not started.
+- [x] 036 — **M2-C08: Designing a fixed-size KV block allocator** — Complete.
   File: [Designing a fixed-size KV block allocator](state-memory-and-caching/m2-c08-designing-a-fixed-size-kv-block-allocator.md). Category: State, memory, and caching. Phase: 3. KV ownership, paging, and capacity.
   Direct prerequisites: M2-C06, M2-C04. Target concepts: Preallocated block pools, block IDs, free lists, allocation and release contracts, capacity accounting, all-or-nothing multi-block allocation, rollback.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 state/reference invariants, M9-C02 completion and M9-C07 populations; advanced M9-C15/M9-C22 remain outlined, with elementary conservation/rollback/lifetime contracts local. Updated: 2026-10-26 08:39 IST. Evidence: All target concepts, four matched experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code scope reviewed. Checked primary PagedAttention v1, Rust std 1.99.1 Allocator contract/nightly status and CUDA Runtime 13.4 event completion/capture scope. Exact QA passed ID/free-stack/generation trace, nine conservation snapshots, five rollback boundaries, payload/trial/cycle arithmetic, 36 experiment fields, links, SVG XML and four tables. Browser reviewed navigation, capacity ledger, verification table and both full diagrams. Initial strict build passed without warnings (5.15 seconds); final validation below. No allocator implementation, GPU lifetime test or runtime benchmark executed. Next action: M2-C09 only.
 
-- [ ] 037 — **M2-C09: Choosing block size and measuring fragmentation** — Not started.
+- [x] 037 — **M2-C09: Choosing block size and measuring fragmentation** — Complete.
   File: [Choosing block size and measuring fragmentation](state-memory-and-caching/m2-c09-choosing-block-size-and-measuring-fragmentation.md). Category: State, memory, and caching. Phase: 3. KV ownership, paging, and capacity.
   Direct prerequisites: M2-C08, M2-C03. Target concepts: Tokens per block, ceiling-based block counts, internal versus external fragmentation, tail waste, metadata overhead, allocation granularity, block-size tradeoffs.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 state/reference invariants, M9-C02 completion and M9-C07 populations; advanced M9-C15/M9-C22 remain outlined, with elementary rounding/fragmentation/admission accounting local. Updated: 2026-10-26 09:00 IST. Evidence: All target concepts, four matched experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code scope reviewed. Checked PagedAttention v1 section 7.2 and PyTorch 2.14 allocated/reserved/backend counter scopes. Exact QA passed per-length rounding/tail bounds, three size/metadata totals, fixed-budget admission, remainder/time-area and trial/outcome arithmetic, 36 experiment fields, links, SVG XML and five tables. Restricted the extra-request check to its declared full-workload B=2/4 snapshots after the QA helper initially applied it to B=8 as well. Browser reviewed navigation, block-size table, verification table and both full diagrams. Initial strict build passed without warnings (5.15 seconds); final validation below. No allocator, GPU, attention or serving benchmark executed. Next action: M2-C10 only.
 
-- [ ] 038 — **M2-C10: Request state transitions and safe block reuse** — Not started.
+- [x] 038 — **M2-C10: Request state transitions and safe block reuse** — Complete.
   File: [Request state transitions and safe block reuse](runtime-and-concurrency/m2-c10-request-state-transitions-and-safe-block-reuse.md). Category: Runtime and concurrency. Phase: 3. KV ownership, paging, and capacity.
   Direct prerequisites: M2-C08, M2-C04. Target concepts: Allocate-write-read-release lifecycle, exclusive mutation, host and device readers, in-flight work, completion versus submission, pinning, deferred reclamation.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 state/reference invariants, M9-C02 completion/timestamps and M9-C07 populations; advanced M9-C22 lifetime safety remains outlined, with elementary exclusion/pinning/reclamation contracts local. Updated: 2026-10-26 09:13 IST. Evidence: All target concepts, four matched experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code scope reviewed. Checked Rust borrowing and std 1.99.1 Pin, CUDA Runtime 13.4 captured/empty/versioned events and PyTorch 2.14 record_stream lifetime scope. Exact QA passed 12 lifecycle snapshots/exclusion gates, last-use maximum, two scope cases, retained-capacity areas, payload/trial arithmetic, 36 experiment fields, links, SVG XML and four tables. Browser reviewed navigation, lifecycle timeline, verification table and both full diagrams. Initial strict build passed without warnings (5.26 seconds); final validation below. No host/device race test, GPU benchmark, allocator or replay runtime executed. Next action: M2-C11 only.
 
-- [ ] 039 — **M2-C11: Reference counting and shared block ownership** — Not started.
+- [x] 039 — **M2-C11: Reference counting and shared block ownership** — Complete.
   File: [Reference counting and shared block ownership](state-memory-and-caching/m2-c11-reference-counting-and-shared-block-ownership.md). Category: State, memory, and caching. Phase: 3. KV ownership, paging, and capacity.
   Direct prerequisites: M2-C10. Target concepts: Multiple owners, request references versus cache references, retain and release rules, reference-count invariants, zero-reference eligibility, in-flight pins.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 exact owner/reference invariants, M9-C02 completion events and M9-C07 populations; advanced M9-C15/M9-C22 remain outlined, with elementary shared-state accounting and lifetime gates local. Updated: 2026-10-26 10:58 IST. Evidence: All target concepts, four matched experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code scope reviewed. Checked Rust std 1.99.1 Arc shared ownership/thread-safety/cycles and PagedAttention v1 section 4.4 references. Exact QA passed ten request/cache/pin snapshots, strong-edge versus unique-block accounting, label/payload/savings/retention and fan-out/trial arithmetic, 36 experiment fields, links, SVG XML and four tables. Browser reviewed navigation, return predicate, owner/pin ledger, verification table and both full diagrams. Initial strict build passed without warnings (3.21 seconds); final validation below. No reference-count runtime, CPU/GPU sharing benchmark or concurrency-safety test executed. Next action: M2-C12 only.
 
-- [ ] 040 — **M2-C12: Copy-on-write for branching requests** — Not started.
+- [x] 040 — **M2-C12: Copy-on-write for branching requests** — Complete.
   File: [Copy-on-write for branching requests](state-memory-and-caching/m2-c12-copy-on-write-for-branching-requests.md). Category: State, memory, and caching. Phase: 3. KV ownership, paging, and capacity.
   Direct prerequisites: M2-C11, M2-C07. Target concepts: Immutable shared blocks, divergent continuations, partially filled blocks, private writable tails, copying costs, ownership transfer, failure-safe copy-on-write.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 exact prefix/state invariants, M9-C02 completion and M9-C07 populations; advanced M9-C22 remains outlined, with elementary transactional ownership/copy lifetime gates local. Updated: 2026-10-26 11:07 IST. Evidence: All target concepts, four matched experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code scope reviewed. Checked PagedAttention v1 section 4.4 COW, Rust std 1.99.1 Arc make_mut and CUDA Runtime 13.4 captured-event scope. Exact QA passed A/B table-prefix isolation, partial/boundary copy counts, unique/assigned/slack and transient peaks, 112 elements per branch, traffic/trial arithmetic, 36 experiment fields, links, SVG XML and four tables. Browser reviewed navigation, partial-tail formulas/branch table, verification table and both full diagrams. Initial strict build passed without warnings (3.34 seconds); final validation below. No COW runtime, allocator, CPU/GPU copy benchmark or concurrency-safety test executed. Next action: M2-C13 only.
 
-- [ ] 041 — **M2-C13: Prefix reuse and cache identity** — Not started.
+- [x] 041 — **M2-C13: Prefix reuse and cache identity** — Complete.
   File: [Prefix reuse and cache identity](state-memory-and-caching/m2-c13-prefix-reuse-and-cache-identity.md). Category: State, memory, and caching. Phase: 3. KV ownership, paging, and capacity.
   Direct prerequisites: M2-C12, M1-C02, M1-C11. Target concepts: Exact token-prefix matching, block-granular reuse, prefix indexes, model and adapter identity, position and mask compatibility, dtype and layout compatibility, collision checks, isolation boundaries.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 reference/identity invariants, M9-C02 completion, M9-C07 populations and M9-C17 numerical-comparison methodology; advanced M9-C20/M9-C22 remain outlined, with elementary exact-prefix/isolation/retain gates local. Updated: 2026-10-26 11:17 IST. Evidence: All target concepts, four matched experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code scope reviewed. Checked primary vLLM prefix-caching design/feature documentation and PagedAttention v1 shared-prefix discussion. Exact QA passed six prefix/cap/rounding cases, collision-rejection premise, row/payload/unique-block/edge and trial/outcome counts, 36 experiment fields, links, SVG XML and four tables. Browser reviewed navigation, identity table, rounding formulas/query table, verification table and both full diagrams. Initial strict build passed without warnings (3.33 seconds); final validation below. No prefix-index runtime, generator comparison, CPU/GPU benchmark or concurrency-safety test executed. Next action: M2-C14 only.
 
-- [ ] 042 — **M2-C14: Eviction, retention, and reconstruction** — Not started.
+- [x] 042 — **M2-C14: Eviction, retention, and reconstruction** — Complete.
   File: [Eviction, retention, and reconstruction](state-memory-and-caching/m2-c14-eviction-retention-and-reconstruction.md). Category: State, memory, and caching. Phase: 3. KV ownership, paging, and capacity.
   Direct prerequisites: M2-C13, M2-C11. Target concepts: Active versus retained blocks, eviction eligibility, recency and reuse, policy metadata, reference-safe eviction, recomputation cost, exact reconstruction versus lossy state removal.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 reference/identity, M9-C02 completion, M9-C07 distributions and M9-C17 numerical budgets; advanced accounting/safety remain local introductory gates. Updated: 2026-10-26 11:24 IST. Evidence: All target concepts, four matched experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code scope reviewed. Checked primary vLLM LRU recycling documentation and PagedAttention v1 section 4.5 recovery discussion. Exact QA passed 24 policy events, score/hit totals, slot/byte partitions, reconstruction and trial accounting, 36 experiment fields, local links, SVG XML and five tables. Browser reviewed navigation, eligibility formula/slot ledger, policy comparison, verification table and both full diagrams. Initial strict build passed without warnings (3.42 seconds); final validation below. No policy runtime, model reconstruction, device lifetime test or CPU/GPU benchmark executed. Next action: M2-C15 only.
 
-- [ ] 043 — **M2-C15: Admission and growth under a finite KV budget** — Not started.
+- [x] 043 — **M2-C15: Admission and growth under a finite KV budget** — Complete.
   File: [Admission and growth under a finite KV budget](scheduling-and-queueing/m2-c15-admission-and-growth-under-a-finite-kv-budget.md). Category: Scheduling and queueing. Phase: 3. KV ownership, paging, and capacity.
   Direct prerequisites: M2-C14, M2-C09. Target concepts: Free-block budgets, growth reservations, headroom, admit-wait-reject decisions, backpressure, mixed request lengths, fairness, capacity versus latency.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 reference invariants, M9-C02 event boundaries, M9-C03/C04 latency endpoints and M9-C07 distributions; advanced accounting/safety gates introduced locally. Updated: 2026-10-26 11:33 IST. Evidence: All target concepts, four matched experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code scope reviewed. Checked PagedAttention v1 section 4.5 and primary Tokio bounded-channel documentation. Exact QA passed 455 legal budget partitions with reservation/conversion conservation, four cap/append cases, both six-row FIFO/bypass ledgers, byte/trial/outcome totals, 36 experiment fields, links, SVG XML and five tables. Browser reviewed budget notation/table, cap/growth table, fairness event table, verification and both full diagrams. Initial strict build passed without warnings (3.34 seconds); final validation below. No admission service, queue runtime, allocator safety test, device experiment or CPU/GPU benchmark executed. Next action: M2-C16 only.
 
 - [ ] 044 — **M2-C16: Completion, cancellation, and allocation failure** — Not started.
   File: [Completion, cancellation, and allocation failure](reliability-and-capacity-control/m2-c16-completion-cancellation-and-allocation-failure.md). Category: Reliability and capacity control. Phase: 3. KV ownership, paging, and capacity.
@@ -1239,6 +1239,32 @@ Each record contains the authoring position, chapter ID, target concepts, source
 
 ## Surprises & Discoveries
 
+2026-10-26 11:33 IST: M2-C15 distinguishes eight physically free slots from only three uncommitted slots in its initial pool. The constructed FIFO/bypass replay changes rejection counts while ending at the same budget; injected completions cannot establish throughput or latency.
+
+2026-10-26 11:24 IST: M2-C14 shows equal aggregate hits can hide different reconstruction scores and opposite per-trace policy winners. Cache removal and completion are distinct: a pinned retained block is unavailable for immediate return, while finishing its pin does not remove its cache edge.
+
+2026-10-26 11:17 IST: M2-C13 distinguishes 75% request hits from 41.67% reused positions. Matching later block tokens or parent digests cannot establish the preceding causal context. Its declared KV-only final-logit policy caps full-prompt reuse before block rounding.
+
+2026-10-26 11:07 IST: M2-C12 needs four unavailable blocks during the second branch preparation even though only three remain after source cleanup. Valid-tail copies move 256 old bytes per branch at N=6/B=4; full-block endings require no old-tail copy. Logical branch rows must not double-count their physically shared full prefix.
+
+2026-10-26 10:58 IST: M2-C11 distinguishes cache-only retention (r=0,c=1,n=1) from zero-owner retirement (n=0,p>0). Its shared-prefix example has eleven strong edges but only five physical blocks. The constructed reader trace retains a zero-owner 512-byte block for seven milliseconds (3,584 byte·ms).
+
+2026-10-26 09:13 IST: A newly created never-recorded CUDA event represents no work and can query complete, so a success status alone does not establish the intended reader finished. M2-C10 requires event identity/version and operation coverage. Its constructed timeline retains 512 bytes for six milliseconds after cancellation despite host and S0 finishing earlier.
+
+2026-10-26 09:00 IST: The same 19 valid positions require 2,816/3,584/5,120 assigned bytes for B=2/4/8, while active table entries shrink. Under a 4,096-byte payload-only budget, B=8 rejects the last request; elapsed time alone would compare different useful work. Uniform-remainder assumptions also underestimate this skewed fixture's tail.
+
+2026-10-26 08:39 IST: M2-C08 rollback restores eligible capacity without rewinding generation history. In the constructed trace, B retries IDs 3/4 at generation 2, while untouched IDs 5/6 use generation 1. Cancellation leaves three slots retiring and C rejected until safe return despite A being terminal.
+
+2026-10-26 08:06 IST: M2-C07 distinguishes three plausible results: the correct five-row output [2,4], zero-tail inclusion [1.25,2.5] and equal block averaging [2.75,5.5]. Exact fraction checks demonstrate both errors. In-bounds coordinate offsets also differ (72 versus 96 bytes) under the two declared stride contracts.
+
+2026-10-26 07:52 IST: The vLLM Paged Attention design page explicitly says it is historical and no longer describes current code. The chapter therefore uses a declared teaching layout and does not infer a current backend interface. Application pool slots are also distinct from OS physical page frames.
+
+2026-10-26 07:41 IST: The constructed arena has 8 MiB free but no eligible 6 MiB span; growth peak also differs from final payload. Neither free-byte sums nor final capacity alone establishes admission.
+
+2026-10-26 07:26 IST: M2-C04 distinguishes stale pooled-state access from literal allocation use-after-free. In the constructed cancellation trace, 64 KiB remains unavailable for seven milliseconds (448 KiB·ms) despite terminal cancellation; repeated addresses do not restore old request identity.
+
+2026-10-26 07:12 IST: M2-C03 distinguishes the 16-request payload-only bound from the 15-request bound after declared overhead. Current short-request occupancy can suggest 30 requests without funding full growth. All are hypothetical exact accounting examples, not measured serving capacity.
+
 2026-10-25 21:15 IST: M2-C02’s constructed grouped fixture has distinct query outputs 15 and 17.5 despite shared K/V. A wrong interleaved mapping sends head 1 to 190, while changing all heads to one KV group deliberately changes outputs. Compact/expanded payloads are 64/128 bytes, with 192 bytes if both copies coexist.
 
 2026-10-25 21:06 IST: M2-C01’s constructed equal-shape caches produce different outputs under shared weights: A ≈ 17.3106 and B ≈ 173.1059. An unchanged shape cannot establish correct request ownership. Its causal append fixture also distinguishes new-query output from the unchanged old-query output.
@@ -1316,6 +1342,32 @@ Observation (2026-10-24 17:23 IST): the documentation preview retains the /Infer
 
 
 ## Decision Log
+
+2026-10-26 11:33 IST: M2-C15 uses request-owned full-cap credits against compatible free slots, disjoint from occupied payload and headroom. It chooses strict FIFO versus at most one bypass per blocked head, with a two-record waiting limit. Current-only growth deadlock is conditional on no preemption/progress alternative; full-cap budgeting does not promise general liveness.
+
+2026-10-26 11:24 IST: M2-C14 chooses immediate-recovery eligibility before ranking and skips pinned candidates; broader logical eviction is explained separately. A conservative recovery path rebuilds the suffix beyond a causal gap using recorded IDs into private destinations. Cost scores remain accounting units, never measured time.
+
+2026-10-26 11:17 IST: M2-C13 uses a conservative exact descriptor and full-record/ancestor verification baseline. Hashes propose candidates; trusted namespace authorization and protected current ownership gate attachment. Metadata-only index benchmarks are explicitly conditional and separate from generation benefit.
+
+2026-10-26 11:07 IST: M2-C12 preserves the sealed-source contract from M2-C11, explicitly choosing private destinations rather than assuming count-one permits mutation. Candidate publication and owner reconciliation form one protected commit decision after required completion. Active precommit failure, cancellation during submitted work and postcommit failure have distinct cleanup contracts. The timed comparison varies valid-row versus legal initialized whole-block copy scope.
+
+2026-10-26 10:58 IST: M2-C11 counts request/cache ownership edges separately from in-flight pins, seals shared payload immutable and requires protected lookup/retain relative to eviction. Named tokens reject duplicate release and failed publication rolls back a tentative retain. No retain-from-zero resurrection or count-one mutation shortcut is allowed; copy-on-write stays for M2-C12.
+
+2026-10-26 09:13 IST: M2-C10 separates request state from block readiness/lifetime and adopts a conservative whole-block exclusion contract. Host and device-reader claims are distinct; an in-flight device writer retains its writer claim. Lifecycle pins are explicitly distinct from Rust Pin and page-locked host memory. Policy replay input times and retention areas are separated from hypothetical host replay timings.
+
+2026-10-26 09:00 IST: M2-C09 separates unconstrained whole-workload requirements from fixed-budget admission and separates tail slack, allocator holes, retiring state and reserved/allocated counter scopes. Metadata and reconstruction workspace are budgeted separately. The additional N=5 admission comparison applies only to the two snapshots where the full workload fits (B=2/4).
+
+2026-10-26 08:39 IST: M2-C08 specifies one serial pool owner, a deterministic free stack, exact ID partition and all-or-nothing reservation/return contracts. Five prepublication fault points exercise rollback before payload submission; submitted work requires deferred return instead. The general Rust Allocator trait is cited only for conceptual contracts and is explicitly identified as nightly-only experimental.
+
+2026-10-26 08:06 IST: M2-C07 uses one layer/head with separate K/V allocations, explicitly changing the prior all-layer fixture from 128 to 32 KV bytes/position. A bounded FP64 corpus has a stated mixed error gate and reference-stabilization threshold; identity/stride checks remain exact. Direct mapped and gather-plus-flat timing boundaries include required completion, and unsupported backends remain visible.
+
+2026-10-26 07:52 IST: M2-C06 keeps the prior 128-byte/position fixture, adds four-position blocks and an eight-slot pool, and separates table payload/header/descriptor bytes. This isolates mapping and occupancy from attention-kernel layout and numerical behavior, which remain for M2-C07. Completed M9-C01/C02/C07 support the local contracts; later safety/accounting material remains outlined.
+
+2026-10-26 07:41 IST: M2-C05 uses an explicit token-major FP64 storage fixture, chosen exact/doubling/static policies and a bounded arena. These are independent of the small model position limit and do not imply Rust Vec growth or physical DRAM contiguity.
+
+2026-10-26 07:26 IST: M2-C04 requires both validated identity and protected access lifetime. Ordinary Rust borrowing, request/attempt metadata and external completion are separate obligations. A nonwrapping main generation fixture and a separately labelled three-bit exhaustion counterexample avoid conflating numeric identity with perpetual safety. Lookup trials use an immutable three-entry snapshot separate from the evolving two-slot retirement trace.
+
+2026-10-26 07:12 IST: M2-C03 uses a disjoint whole-service budget and integer-byte admission tests. Model context Cmodel is separate from cache reservation C; valid rows, reserved slots and allocator counters remain distinct. Resumed the existing draft and finished its pending visual gate without starting another chapter.
 
 2026-10-25 21:15 IST: M2-C02 distinguishes equivalent compact-versus-expanded representation from changing independently learned KV heads. The benchmark holds the GQA computation fixed and includes per-invocation expansion in its primary boundary; checkpoint conversion requires a new quality/reference contract.
 
@@ -1397,6 +1449,32 @@ Decision: create and validate the plan now with all chapter stages unstarted. Ra
 
 
 ## Outcomes & Retrospective
+
+2026-10-26 11:33 IST: Completed only M2-C15. Totals are 43/201 complete and 158 outlines; Module 2 15/21, Module 1 20/20 and Module 9 8/30. M2-C16 next. Exact conservation and queue references do not certify implemented admission, latency or production fairness.
+
+2026-10-26 11:24 IST: Completed only M2-C14. Totals are 42/201 complete and 159 outlines; Module 2 14/21, Module 1 20/20 and Module 9 8/30. M2-C15 next. Arithmetic and metadata replay references do not certify an implemented cache, numerical recovery or performance.
+
+2026-10-26 11:17 IST: Completed only M2-C13. Totals are 41/201 complete and 160 outlines; Module 2 13/21, Module 1 20/20 and Module 9 8/30. M2-C14 next. Exact identity/arithmetic checks do not certify an implemented cache or performance.
+
+2026-10-26 11:07 IST: Completed only M2-C12. Totals are 40/201 complete and 161 outlines; Module 2 12/21, Module 1 20/20 and Module 9 8/30. M2-C13 next. Exact branch/copy arithmetic is not a device copy measurement or concurrent implementation proof.
+
+2026-10-26 10:58 IST: Completed only M2-C11. Totals are 39/201 complete and 162 outlines; Module 2 11/21, Module 1 20/20 and Module 9 8/30. M2-C12 next. Exact ownership/payload arithmetic does not prove implemented reference-count safety, device completion or performance.
+
+2026-10-26 09:13 IST: Completed only M2-C10. Totals are 38/201 complete and 163 outlines; Module 2 10/21, Module 1 20/20 and Module 9 8/30. M2-C11 next. Exact event-ledger arithmetic is not a concurrent implementation proof or device-safety test.
+
+2026-10-26 09:00 IST: Completed only M2-C09. Totals are 37/201 complete and 164 outlines; Module 2 9/21, Module 1 20/20 and Module 9 8/30. M2-C10 next. Arithmetic predicts capacity outcomes, not a universally optimal block size, runtime fragmentation or service performance.
+
+2026-10-26 08:39 IST: Completed only M2-C08. Totals are 36/201 complete and 165 outlines; Module 2 8/21, Module 1 20/20 and Module 9 8/30. M2-C09 next. Exact ledger checks do not establish implemented allocator correctness, concurrent safety or performance.
+
+2026-10-26 08:06 IST: Completed only M2-C07. Totals are 35/201 complete and 166 outlines; Module 2 7/21, Module 1 20/20 and Module 9 8/30. M2-C08 next. Formula/reference QA is distinct from an executed attention implementation or production-safety evidence.
+
+2026-10-26 07:52 IST: Completed only M2-C06. Totals are 34/201 complete and 167 outlines; Module 2 is 6/21, Module 1 20/20 and Module 9 8/30. M2-C07 next. Calculated placement/conservation fixtures do not establish concurrent mapping safety or runtime performance.
+
+2026-10-26 07:41 IST: Completed only M2-C05. Totals: 33/201 Complete, 168 outlines; Module 2 5/21, Module 1 20/20, Module 9 8/30. M2-C06 next. Runtime experiments remain proposed; exact ledger checks are not allocator measurements.
+
+2026-10-26 07:26 IST: Completed only M2-C04. Totals are 32/201 complete and 169 outlines; Module 2 is 4/21, Module 1 remains 20/20 and Module 9 8/30. M2-C05 next. State-ledger/reference checks do not prove an implemented allocator or concurrent lifetime safety.
+
+2026-10-26 07:12 IST: Completed only M2-C03 after resuming interrupted review. Totals are 31/201 complete and 170 outlines; Module 2 is 3/21, Module 1 20/20 and Module 9 8/30. M2-C04 is next. Runtime measurements remain proposed.
 
 2026-10-25 21:15 IST: Completed only M2-C02. Totals are 30/201 complete and 171 outlines; Module 2 is 2/21, Module 1 remains 20/20 and Module 9 8/30. M2-C03 is next. All hardware/runtime procedures remain proposed.
 
@@ -1480,7 +1558,7 @@ The repository-root `PLANS.md` is the uploaded execution-plan guidance. This fil
 
 `docs/learning-approach.md` defines the shared learning contract. `templates/chapter.md` is the authoring scaffold. `docs/module-1.md` through `docs/module-7.md`, plus `docs/module-9.md`, provide module reading orders. The 14 category directories organize subjects; their `index.md` pages list member chapters. A chapter ID such as M2-C04 identifies Module 2, Chapter 4; authoring position is separate and controls creation order. Do not create Module 8 or infer chapters for the empty Storage and persistence category.
 
-The chapter files already exist and contain target-concept paragraphs. M1-C01–M1-C20, M2-C01–M2-C02, M9-C01–M9-C05, M9-C07, M9-C17 and M9-C19 are Complete; the remaining 171 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
+The chapter files already exist and contain target-concept paragraphs. M1-C01–M1-C20, M2-C01–M2-C15, M9-C01–M9-C05, M9-C07, M9-C17 and M9-C19 are Complete; the remaining 158 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
 
 
 ## Plan of Work
@@ -1651,6 +1729,32 @@ The working tree already contains curriculum and inventory changes from prior re
 
 
 ## Artifacts and Notes
+
+2026-10-26 11:33 IST: Added detailed M2-C15, m2-c15-budget-credits.svg and m2-c15-fairness.svg. Temporary authoring/QA helpers remain outside the repository. Preserved all pre-existing changes.
+
+2026-10-26 11:24 IST: Added detailed M2-C14, m2-c14-eligibility.svg and m2-c14-reconstruction.svg. Temporary authoring/QA helpers remain outside the repository. Preserved all pre-existing changes.
+
+2026-10-26 11:17 IST: Added detailed M2-C13, m2-c13-hit-contract.svg and m2-c13-prefix-rounding.svg. Temporary authoring/QA helpers remain outside the repository. Preserved all pre-existing changes.
+
+2026-10-26 11:07 IST: Added detailed M2-C12, m2-c12-private-tails.svg and m2-c12-publication-and-failure.svg. Temporary authoring/QA helpers remain outside the repository. Preserved all pre-existing changes.
+
+2026-10-26 10:58 IST: Added detailed M2-C11, m2-c11-shared-owners.svg and m2-c11-zero-owner-retirement.svg. Temporary authoring/QA helpers remain outside the repository. Preserved all pre-existing changes.
+
+2026-10-26 09:13 IST: Added detailed M2-C10, m2-c10-lifecycle-gates.svg and m2-c10-reader-completions.svg. Temporary authoring/QA helpers remain outside the repository. Preserved all pre-existing changes.
+
+2026-10-26 09:00 IST: Added detailed M2-C09, m2-c09-block-size-sweep.svg and m2-c09-budget-admission.svg. Temporary authoring/QA helpers remain outside the repository. Preserved all pre-existing changes.
+
+2026-10-26 08:39 IST: Added detailed M2-C08, m2-c08-reservation-rollback.svg and m2-c08-safe-return.svg. Temporary authoring/QA helpers remain outside the repository. Preserved all pre-existing changes.
+
+2026-10-26 08:06 IST: Added detailed M2-C07, m2-c07-strides-and-tail.svg and m2-c07-global-normalization.svg. Temporary authoring and QA helpers remain outside the repository. Preserved all pre-existing changes.
+
+2026-10-26 07:52 IST: Added detailed M2-C06, m2-c06-position-mapping.svg and m2-c06-tail-and-growth.svg. Temporary authoring and exact-reference QA helpers remain outside the repository. Preserved all pre-existing changes.
+
+2026-10-26 07:41 IST: Added detailed M2-C05, m2-c05-growth-policies.svg and m2-c05-fragmented-arena.svg. Preserved all pre-existing changes; temporary authoring/QA helpers remain outside the repository.
+
+2026-10-26 07:26 IST: Added M2-C04, m2-c04-address-and-handle.svg and m2-c04-retirement-timeline.svg. Temporary QA/authoring helpers remain outside the repository. Preserved all pre-existing M2-C03 and tracking changes.
+
+2026-10-26 07:12 IST: M2-C03 and diagrams m2-c03-payload-scaling.svg / m2-c03-admission-budget.svg are validated. Preserved the existing draft and assets on resume; temporary QA/authoring helpers are outside the repository.
 
 2026-10-25 21:15 IST: Added M2-C02, m2-c02-head-mapping.svg and m2-c02-compact-and-expanded.svg. Reference/authoring helpers remain outside the repository. Preserved all pre-existing M2-C01 assets and progress changes.
 
@@ -1890,3 +1994,81 @@ Primary-source research is required when writing each chapter, not as a claim th
 2026-10-25 21:15 IST: Completed M2-C02 after primary-source, high-precision-reference, strict-build and rendered review. Reconciled chapter, ledger, Module 2, inventory, category and landing summaries to 30 complete/171 outlines; M2-C03 next. Preserved existing changes; no later chapter started.
 
 2026-10-25 21:15 IST: Final M2-C02 acceptance checks passed: strict build with no warnings (5.06 seconds), whitespace validation, 201 ordered unique ledger records, 30 Complete/171 Not started with matching source banners; Module 1 20/20, Module 2 2/21, Module 9 8/30. Reference QA passed after final edits. M2-C03 remains first incomplete.
+
+2026-10-25 21:19 IST: Began M2-C03 as sole active chapter from a clean worktree after confirming all three prerequisites. M2-C04 next.
+
+2026-10-26 07:12 IST: Resumed and completed M2-C03 after exact-reference, strict-build and remaining rendered review. Reconciled chapter, ledger, Module 2, category, inventory and landing summaries to 31 complete/170 outlines; M2-C04 next. No later chapter started.
+
+2026-10-26 07:12 IST: Final M2-C03 acceptance checks passed: strict build without warnings (5.07 seconds), whitespace validation, 201 ordered unique ledger records and matching chapter banners at 31 Complete/170 Not started; Module 2 3/21. M2-C04 remains first incomplete.
+
+2026-10-26 07:18 IST: Began M2-C04 as sole active chapter after checking prerequisites; preserved existing M2-C03 work. M2-C05 next.
+
+2026-10-26 07:26 IST: Completed M2-C04 after primary-source, exact-reference, strict-build and rendered review. Reconciled chapter, ledger, Module 2, category, inventory and landing summaries to 32 complete/169 outlines; M2-C05 next. Existing changes preserved; no later chapter started.
+
+2026-10-26 07:26 IST: Final M2-C04 acceptance checks passed: strict build without warnings (5.03 seconds), whitespace validation, 201 ordered unique ledger records and matching source banners at 32 Complete/169 Not started; Module 2 4/21, Module 1 20/20, Module 9 8/30. Reference QA passed after final edits. M2-C05 remains first incomplete.
+
+2026-10-26 07:32 IST: Began M2-C05 as sole active chapter after checking prerequisites; existing changes preserved. M2-C06 next.
+
+2026-10-26 07:41 IST: Completed M2-C05 after primary-source, exact-reference, strict-build and rendered review. Reconciled chapter, ledger, module/category, inventory and landing summaries to 33 complete/168 outlines. M2-C06 remains first incomplete; no later chapter started.
+
+2026-10-26 07:41 IST: Final M2-C05 acceptance checks passed: strict build without warnings (5.03 seconds), whitespace validation, 201 ordered unique ledger records and matching source banners at 33 Complete/168 Not started; Module 2 5/21, Module 1 20/20, Module 9 8/30. Exact reference QA passed after final edits. M2-C06 remains first incomplete.
+
+2026-10-26 07:46 IST: Began M2-C06 as sole active chapter after prerequisite and ledger checks; preserved existing changes. M2-C07 next.
+
+2026-10-26 07:52 IST: Completed M2-C06 after primary-source, exact-reference, strict-build and rendered review. Reconciled chapter, ledger, module/category, inventory and landing summaries to 34 complete/167 outlines. M2-C07 remains first incomplete; no later chapter started.
+
+2026-10-26 07:52 IST: Final M2-C06 acceptance checks passed: strict build without warnings (5.25 seconds), whitespace validation, 201 ordered unique ledger records and matching source banners at 34 Complete/167 Not started; Module 2 6/21, Module 1 20/20, Module 9 8/30. Exact reference QA passed after final edits. M2-C07 remains first incomplete.
+
+2026-10-26 07:57 IST: Began M2-C07 as sole active chapter after prerequisite and ledger checks; existing changes preserved. M2-C08 next.
+
+2026-10-26 08:06 IST: Completed M2-C07 after primary-source, exact-reference, strict-build and rendered review. Reconciled chapter, ledger, module/category, inventory and landing summaries to 35 complete/166 outlines. M2-C08 remains first incomplete; no later chapter started.
+
+2026-10-26 08:06 IST: Final M2-C07 acceptance checks passed: strict build without warnings (5.13 seconds), whitespace validation, 201 ordered unique ledger records and matching source banners at 35 Complete/166 Not started; Module 2 7/21, Module 1 20/20, Module 9 8/30. Exact reference QA passed after final edits. M2-C08 remains first incomplete.
+
+2026-10-26 08:26 IST: Began M2-C08 as sole active chapter after prerequisite and ledger checks; existing changes preserved. M2-C09 next.
+
+2026-10-26 08:39 IST: Completed M2-C08 after primary-source, exact-reference, strict-build and rendered review. Reconciled chapter, ledger, module/category, inventory and landing summaries to 36 complete/165 outlines. M2-C09 remains first incomplete; no later chapter started.
+
+2026-10-26 08:40 IST: Final M2-C08 acceptance checks passed: strict build without warnings (5.21 seconds), whitespace validation, 201 ordered unique ledger records and matching source banners at 36 Complete/165 Not started; Module 2 8/21, Module 1 20/20, Module 9 8/30. Exact reference QA passed after final edits. M2-C09 remains first incomplete.
+
+2026-10-26 08:48 IST: Began M2-C09 as sole active chapter after prerequisite and ledger checks; existing changes preserved. M2-C10 next.
+
+2026-10-26 09:00 IST: Completed M2-C09 after primary-source, exact-reference, strict-build and rendered review. Reconciled chapter, ledger, module/category, inventory and landing summaries to 37 complete/164 outlines. M2-C10 remains first incomplete; no later chapter started.
+
+2026-10-26 09:01 IST: Final M2-C09 acceptance checks passed: strict build without warnings (5.25 seconds), whitespace validation, 201 ordered unique ledger records and matching source banners at 37 Complete/164 Not started; Module 2 9/21, Module 1 20/20, Module 9 8/30. Exact reference QA passed after final edits. M2-C10 remains first incomplete.
+
+2026-10-26 09:03 IST: Began M2-C10 as sole active chapter after prerequisite and ledger checks; existing changes preserved. M2-C11 next.
+
+2026-10-26 09:13 IST: Completed M2-C10 after primary-source, exact-reference, strict-build and rendered review. Reconciled chapter, ledger, module/category, inventory and landing summaries to 38 complete/163 outlines. M2-C11 remains first incomplete; no later chapter started.
+
+2026-10-26 09:14 IST: Final M2-C10 acceptance checks passed: strict build without warnings (5.29 seconds), whitespace validation, 201 ordered unique ledger records and matching source banners at 38 Complete/163 Not started; Module 2 10/21, Module 1 20/20, Module 9 8/30. Exact reference QA passed after final edits. M2-C11 remains first incomplete.
+
+2026-10-26 10:41 IST: Began M2-C11 as sole active chapter after prerequisite and ledger checks; existing changes preserved. M2-C12 next.
+
+2026-10-26 10:58 IST: Completed M2-C11 after primary-source, exact-reference, strict-build and rendered review. Reconciled chapter, ledger, module/category, inventory and landing summaries to 39 complete/162 outlines. M2-C12 remains first incomplete; no later chapter started.
+
+2026-10-26 10:58 IST: Final M2-C11 acceptance checks passed: strict build without warnings (3.38 seconds), whitespace validation, 201 ordered unique ledger records and matching source banners at 39 Complete/162 Not started; Module 2 11/21, Module 1 20/20, Module 9 8/30. Exact reference QA passed after final edits. M2-C12 remains first incomplete.
+
+2026-10-26 11:01 IST: Began M2-C12 as sole active chapter after prerequisite and ledger checks; existing changes preserved. M2-C13 next.
+
+2026-10-26 11:07 IST: Completed M2-C12 after primary-source, exact-reference, strict-build and rendered review. Reconciled chapter, ledger, module/category, inventory and landing summaries to 40 complete/161 outlines. M2-C13 remains first incomplete; no later chapter started.
+
+2026-10-26 11:07 IST: Final M2-C12 acceptance checks passed: strict build without warnings (3.34 seconds), whitespace validation, 201 ordered unique ledger records and matching source banners at 40 Complete/161 Not started; Module 2 12/21, Module 1 20/20, Module 9 8/30. Exact reference QA passed after final edits. M2-C13 remains first incomplete.
+
+2026-10-26 11:10 IST: Began M2-C13 as sole active chapter after prerequisite and ledger checks; existing changes preserved. M2-C14 next.
+
+2026-10-26 11:17 IST: Completed M2-C13 after primary-source, exact-reference, strict-build and rendered review. Reconciled chapter, ledger, module/category, inventory and landing summaries to 41 complete/160 outlines. M2-C14 remains first incomplete; no later chapter started.
+
+2026-10-26 11:17 IST: Final M2-C13 acceptance checks passed: strict build without warnings (3.44 seconds), whitespace validation, 201 ordered unique ledger records and matching source banners at 41 Complete/160 Not started; Module 2 13/21, Module 1 20/20, Module 9 8/30. Exact reference QA passed after final edits. M2-C14 remains first incomplete.
+
+2026-10-26 11:18 IST: Began M2-C14 as sole active chapter after prerequisite and ledger checks; existing changes preserved. M2-C15 next.
+
+2026-10-26 11:24 IST: Completed M2-C14 after primary-source, exact-reference, strict-build and rendered review. Reconciled chapter, ledger, module/category, inventory and landing summaries to 42 complete/159 outlines. M2-C15 remains first incomplete; no later chapter started.
+
+2026-10-26 11:24 IST: Final M2-C14 acceptance checks passed: strict build without warnings (3.49 seconds), whitespace validation, 201 ordered unique ledger records and matching source banners at 42 Complete/159 Not started; Module 2 14/21, Module 1 20/20, Module 9 8/30. Exact reference QA passed after final edits. M2-C15 remains first incomplete.
+
+2026-10-26 11:26 IST: Began M2-C15 as sole active chapter after prerequisite and ledger checks; existing changes preserved. M2-C16 next.
+
+2026-10-26 11:33 IST: Completed M2-C15 after primary-source, exact-reference, strict-build and rendered review. Reconciled chapter, ledger, module/category, inventory and landing summaries to 43 complete/158 outlines. M2-C16 remains first incomplete; no later chapter started.
+
+2026-10-26 11:33 IST: Final M2-C15 acceptance checks passed: strict build without warnings (3.25 seconds), whitespace validation, 201 ordered unique ledger records and matching source banners at 43 Complete/158 Not started; Module 2 15/21, Module 1 20/20, Module 9 8/30. Exact reference QA passed after final edits. M2-C16 remains first incomplete.

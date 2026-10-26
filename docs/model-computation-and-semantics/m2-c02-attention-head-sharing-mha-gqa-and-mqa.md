@@ -89,7 +89,7 @@ The factor two counts K and V. Holding L/B/N/d/w fixed, payload scales with **Hk
 
 These are three hypothetical configurations, not three equivalent checkpoints. They differ from the preceding one-layer scalar fixture. With hidden width D, Q projection width is Hq d, while K and V widths are each Hkv d. The corresponding no-bias projection weights have shapes (D,Hq d), (D,Hkv d) and (D,Hkv d); output concatenation still has Hq d features. D = Hq d is common but must come from the actual configuration.
 
-The current query still forms scores and aggregates values for Hq heads. Under a conventional two-operations-per-multiply-add count, QK and weighted-V work is approximately **4B Hq T N d** operations, excluding softmax, masks and projections. For the scalar fixture this is 32 counted operations in both compact and expanded GQA representations. Fewer distinct stored heads can improve reuse, but a backend may reread the same values or materialize duplicates. Logical payload is not measured DRAM traffic. [M2-C03](../state-memory-and-caching/m2-c03-calculating-kv-memory-and-request-capacity.md) remains an outline for detailed capacity accounting.
+The current query still forms scores and aggregates values for Hq heads. Under a conventional two-operations-per-multiply-add count, QK and weighted-V work is approximately **4B Hq T N d** operations, excluding softmax, masks and projections. For the scalar fixture this is 32 counted operations in both compact and expanded GQA representations. Fewer distinct stored heads can improve reuse, but a backend may reread the same values or materialize duplicates. Logical payload is not measured DRAM traffic. [M2-C03](../state-memory-and-caching/m2-c03-calculating-kv-memory-and-request-capacity.md) is now complete for detailed capacity accounting.
 
 ### 5. Changing the checkpoint is a different correctness question
 
@@ -230,4 +230,4 @@ Hardware requirements/manifests are in E1/E4. No actual allocation, bandwidth or
 
 Hq determines how many query-head outputs exist; Hkv determines how many distinct K/V heads are retained. Map the two axes explicitly. Sharing K/V preserves independent query probabilities, while compact storage and physical duplication have different memory costs. Treat representation changes and architecture changes with different references, and measure complete useful work before claiming a performance benefit.
 
-The next reading and authoring chapter is [M2-C03: Calculating KV memory and request capacity](../state-memory-and-caching/m2-c03-calculating-kv-memory-and-request-capacity.md). Consult the [execution plan](../chapter-execution-plan.md) for current progress.
+Its reading and authoring successor is now complete: [M2-C03: Calculating KV memory and request capacity](../state-memory-and-caching/m2-c03-calculating-kv-memory-and-request-capacity.md). Consult the [execution plan](../chapter-execution-plan.md) for current progress.

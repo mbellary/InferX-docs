@@ -16,7 +16,7 @@ GEMMs, attention kernels, tiling, fusion, layouts, compilation, graph replay.
 
 ## Chapters
 
-Chapter outlines are grouped by module. Full content will be developed one chapter at a time.
+[M2-C07](m2-c07-how-attention-reads-a-paged-kv-layout.md) is a completed detailed chapter; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
 
 ### Module 2
 

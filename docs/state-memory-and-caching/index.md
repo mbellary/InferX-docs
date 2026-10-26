@@ -16,7 +16,7 @@ KV allocation, paging, prefix reuse, window state, snapshots, eviction, replay.
 
 ## Chapters
 
-[M1-C05](m1-c05-how-tensors-occupy-memory.md), [M1-C17](m1-c17-reusing-attention-state-with-a-kv-cache.md) and [M2-C01](m2-c01-what-the-kv-cache-retains-and-why.md) are completed detailed chapters; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
+[M1-C05](m1-c05-how-tensors-occupy-memory.md), [M1-C17](m1-c17-reusing-attention-state-with-a-kv-cache.md), [M2-C01](m2-c01-what-the-kv-cache-retains-and-why.md), [M2-C03](m2-c03-calculating-kv-memory-and-request-capacity.md), [M2-C04](m2-c04-memory-ownership-handles-and-lifetimes-from-first-principles.md), [M2-C05](m2-c05-contiguous-kv-storage-and-its-limits.md), [M2-C06](m2-c06-paged-kv-storage-and-logical-to-physical-mapping.md), [M2-C08](m2-c08-designing-a-fixed-size-kv-block-allocator.md), [M2-C09](m2-c09-choosing-block-size-and-measuring-fragmentation.md), [M2-C11](m2-c11-reference-counting-and-shared-block-ownership.md), [M2-C12](m2-c12-copy-on-write-for-branching-requests.md), [M2-C13](m2-c13-prefix-reuse-and-cache-identity.md) and [M2-C14](m2-c14-eviction-retention-and-reconstruction.md) are completed detailed chapters; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
 
 ### Module 1
 

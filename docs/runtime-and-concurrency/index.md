@@ -16,7 +16,7 @@ Processes, threads, async execution, synchronization, ownership, buffer lifetime
 
 ## Chapters
 
-[M1-C18](m1-c18-understanding-prefill-and-decode.md) is a completed detailed chapter; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
+[M1-C18](m1-c18-understanding-prefill-and-decode.md) and [M2-C10](m2-c10-request-state-transitions-and-safe-block-reuse.md) are completed detailed chapters; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
 
 ### Module 1
 
