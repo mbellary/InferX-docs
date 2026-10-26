@@ -11,13 +11,13 @@ Turn 201 outlines into a coherent collection of detailed chapters that helps a r
 
 The reader should be able to open any completed chapter, understand every introduced term, follow a worked numerical example and diagram, describe a reproducible experiment, and explain its pass/fail conditions and limits. High-Frequency Trading (HFT), meaning systems that process market events and make trading decisions under tight timing constraints, provides a lens for critical paths, bounded queues, stale information, and tail latency. A tail is the slower end of a latency distribution. Explain what transfers to inference and what does not; do not present trading advice, assert trading results, or equate inference semantics with exchange behavior.
 
-The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01–M1-C20, M2-C01–M2-C20, M9-C01–M9-C05, M9-C07, M9-C15, M9-C17 and M9-C19 are now complete; the next authoring chapter is M2-C21.
+The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01–M1-C20, M2-C01–M2-C21, M9-C01–M9-C05, M9-C07, M9-C15, M9-C17 and M9-C19 are now complete; the next authoring chapter is M3-C01.
 
 
 ## Progress
 
 
-Last updated: 2026-10-26 13:06 IST. Detailed chapter totals: **49 complete, 0 active, 152 not started, 0 blocked**. Next authoring chapter: **M2-C21**, authoring position 50.
+Last updated: 2026-10-26 13:31 IST. Detailed chapter totals: **50 complete, 0 active, 151 not started, 0 blocked**. Next authoring chapter: **M3-C01**, authoring position 51.
 
 - [x] (2026-10-24 17:21 IST) Read the uploaded PLANS.md, the learning requirements, the chapter inventory, and the dependency schedule; confirm Modules 1–7 plus supporting Module 9 and no Module 8.
 - [x] (2026-10-24 17:21 IST) Preserve the planning reference as repository-root PLANS.md and create this living execution plan with all 201 ordered chapter records and their target concepts and direct prerequisites.
@@ -324,11 +324,11 @@ Each record contains the authoring position, chapter ID, target concepts, source
   Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
   Module 9 application: Memory accounting foundation for Modules 1–7; applies completed M9-C01 identity/reference, M9-C02 completion boundaries and M9-C07 distribution evidence alongside M2-C20 safety. Updated: 2026-10-26 13:06 IST. Evidence: All target concepts, four experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT boundaries and hardware/no-code scope reviewed. Primary PyTorch 2.14 allocation/reservation, CUDA Runtime 13.4 pool/high-water and NVML counter scopes checked. Exact QA passed 128-KiB position/2-MiB block geometry, shared/retained/retiring byte partitions, seven phase totals, 712 versus 776 MiB simultaneous/component peaks, fragmentation sweep/hole ratio, trial accounting, 36 experiment fields, local links, tables and SVG XML. Initial strict build passed without warnings (3.51 seconds). Browser reviewed peak/fragmentation tables, both full diagrams, formulas and clicked execution-plan navigation. No device counter, allocator, model-serving, cancellation, trim-policy or performance run executed. Next action: M2-C21 only.
 
-- [ ] 050 — **M2-C21: Benchmarking KV management end to end** — Not started.
+- [x] 050 — **M2-C21: Benchmarking KV management end to end** — Complete.
   File: [Benchmarking KV management end to end](measurement-experimentation-and-economics/m2-c21-benchmarking-kv-management-end-to-end.md). Category: Measurement, experimentation, and economics. Phase: 3. KV ownership, paging, and capacity.
   Direct prerequisites: M2-C20, M9-C15, M1-C20, M9-C07. Target concepts: Contiguous versus paged baselines, context and concurrency sweeps, reuse skew, cancellation churn, allocation and reclamation latency, tail distributions, fragmentation, useful throughput, full-request latency, reproducible profiling.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 reference gates, M9-C02 completion clocks, M9-C03/C05 service boundaries, M9-C07 distributions, M9-C15 memory accounting, M9-C17 numerical gates and M9-C19 output identity; advanced load/overload verification defined locally. Updated: 2026-10-26 13:31 IST. Evidence: All target concepts, four matched experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code scope reviewed. Primary PagedAttention v1 evaluation/baselines, wrk2 intended-arrival methodology and Nsight Systems profiling/overhead guidance checked. Exact QA passed eight sizing rows, 4-versus-5 payload capacity, independent two-entry LRU traces, 56 hits/136 assignments/1280 computed positions, 112 MiB projected new-KV write reduction, cohort/request/intent totals, useful rates, critical-path arithmetic, 36 experiment fields, local links, table shapes and SVG XML. Browser reviewed policy/sizing/reuse tables, both full diagrams and clicked execution-plan navigation. Initial strict build passed without warnings (5.53 seconds); final validation below. No allocator/reader, serving model, load generator, cancellation/profiler or performance run executed. Next action: M3-C01 only.
 
 - [ ] 051 — **M3-C01: Following a tensor from CPU to GPU** — Not started.
   File: [Following a tensor from CPU to GPU](hardware-architecture-and-topology/m3-c01-following-a-tensor-from-cpu-to-gpu.md). Category: Hardware architecture and topology. Phase: 4. GPU execution, movement, and profiling.
@@ -1239,6 +1239,8 @@ Each record contains the authoring position, chapter ID, target concepts, source
 
 ## Surprises & Discoveries
 
+2026-10-26 13:31 IST: M2-C21 demonstrates that the clustered-hot serial trace saves 896 computed positions yet raises peak occupied KV from three to four blocks under retention. A 4-versus-5 payload capacity bound is not a throughput ratio. Caller outcomes, cancellation intent and safe reclamation need separate records.
+
 2026-10-26 13:06 IST: M9-C15 shows why Free KV slots can remain allocated at an outer allocator: a 16 MiB backed pool contains 10 MiB assigned and 6 MiB Free. Inclusive outer allocated/reserved counters cannot be added. Separate component maxima sum to 776 MiB while the stipulated simultaneous allocation peak is 712 MiB.
 
 2026-10-26 12:54 IST: M2-C20 makes retention a Live subset and pinning an overlapping access property, avoiding double-counted physical capacity. An in-bounds descriptor can be stale after slot reuse. State agreement, memory-tool findings and numerical equivalence establish different claims.
@@ -1354,6 +1356,8 @@ Observation (2026-10-24 17:23 IST): the documentation preview retains the /Infer
 
 
 ## Decision Log
+
+2026-10-26 13:31 IST: Compare explicit contiguous reservation and demand-paged storage/reader paths with matched semantics and budgets; disclose optional growth/gather studies separately. Separate cohort concurrency from independent offered arrivals, fixed-length diagnostics from EOS service, and minimal timing from focused profiles. Measure deadline-qualified ordinary demand while retaining all cancellation intents/outcomes.
 
 2026-10-26 13:06 IST: Use explicit per-location and per-layer manifests with unique allocation identities. Keep request-view payload, unique valid payload, assigned slack, free pool capacity and outer cached backing distinct. Separate synthetic accounting from device observations; pair retention/trim policy tests with output/lifetime gates and full-cycle/client timing.
 
@@ -1473,6 +1477,8 @@ Decision: create and validate the plan now with all chapter stages unstarted. Ra
 
 
 ## Outcomes & Retrospective
+
+2026-10-26 13:31 IST: Completed M2-C21 and the Module 2 documentation sequence: 21/21 chapters. Authoring phase 3, KV ownership/paging/capacity, is complete through position 50 with supporting M9-C15. Overall totals are 50/201 complete and 151 outlines; Module 1 20/20 and Module 9 9/30. M3-C01 begins the GPU execution/movement/profiling phase next. No runtime or performance certification is implied.
 
 2026-10-26 13:06 IST: Completed only M9-C15, supporting Modules 1–7 before M2-C21. Totals are 49/201 complete and 152 outlines; Module 9 9/30, Module 2 20/21 and Module 1 20/20. M2-C21 next. Byte/arithmetic references and documentation validation do not establish residency, real peaks, serving capacity or policy speedups.
 
@@ -1594,7 +1600,7 @@ The repository-root `PLANS.md` is the uploaded execution-plan guidance. This fil
 
 `docs/learning-approach.md` defines the shared learning contract. `templates/chapter.md` is the authoring scaffold. `docs/module-1.md` through `docs/module-7.md`, plus `docs/module-9.md`, provide module reading orders. The 14 category directories organize subjects; their `index.md` pages list member chapters. A chapter ID such as M2-C04 identifies Module 2, Chapter 4; authoring position is separate and controls creation order. Do not create Module 8 or infer chapters for the empty Storage and persistence category.
 
-The chapter files already exist and contain target-concept paragraphs. M1-C01–M1-C20, M2-C01–M2-C20, M9-C01–M9-C05, M9-C07, M9-C15, M9-C17 and M9-C19 are Complete; the remaining 152 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
+The chapter files already exist and contain target-concept paragraphs. M1-C01–M1-C20, M2-C01–M2-C21, M9-C01–M9-C05, M9-C07, M9-C15, M9-C17 and M9-C19 are Complete; the remaining 151 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
 
 
 ## Plan of Work
@@ -1765,6 +1771,8 @@ The working tree already contains curriculum and inventory changes from prior re
 
 
 ## Artifacts and Notes
+
+2026-10-26 13:31 IST: Added detailed M2-C21, m2-c21-comparison-contract.svg and m2-c21-lifecycle-and-evidence.svg. Opening/concluding execution-plan links are clickable and browser-verified. Started from a clean user-committed worktree; temporary exact QA helpers remain outside the repository.
 
 2026-10-26 13:06 IST: Added detailed M9-C15, m9-c15-memory-layers.svg and m9-c15-peaks-and-fragmentation.svg. Opening/concluding execution-plan links are clickable and browser-verified. Existing M2-C19/M2-C20 worktree changes preserved; temporary QA helpers remain outside the repository.
 
@@ -2156,3 +2164,9 @@ Primary-source research is required when writing each chapter, not as a claim th
 2026-10-26 13:06 IST: Completed M9-C15 after primary-source, arithmetic, strict-build and rendered review. Reconciled ledger, module/category, inventory and landing summaries to 49 complete/152 outlines. M2-C21 remains first incomplete; no later chapter started.
 
 2026-10-26 13:07 IST: Final M9-C15 acceptance checks passed: strict build without warnings (3.59 seconds), whitespace validation, 201 unique ordered records and matching source banners at 49 Complete/152 Not started; Module 9 9/30, Module 2 20/21, Module 1 20/20. Exact byte/peak/fragmentation and document QA passed; browser verified diagrams, tables, formulas and clickable execution-plan navigation. M2-C21 remains first incomplete. Runtime experiments remain proposed.
+
+2026-10-26 13:20 IST: Began M2-C21 as sole active chapter from a clean worktree after prerequisite checks. M3-C01 next in authoring order. Maintain clickable execution-plan links.
+
+2026-10-26 13:31 IST: Completed M2-C21 and Module 2 after source, arithmetic, strict-build and rendered review. Reconciled ledger, module/category, inventory and landing summaries to 50 complete/151 outlines. M3-C01 remains first incomplete; no later chapter started.
+
+2026-10-26 13:32 IST: Final M2-C21 acceptance checks passed: strict build without warnings (5.60 seconds), whitespace validation, 201 unique ordered records and matching source banners at 50 Complete/151 Not started; Module 2 21/21, Module 1 20/20, Module 9 9/30. Exact sizing/LRU/workload/rate/critical-path and document QA passed; browser verified tables, both diagrams and clickable execution-plan navigation. M3-C01 remains first incomplete. Runtime experiments remain proposed.
