@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="480" viewBox="0 0 1100 480" role="img">
+<title>Two models explain distinct sources of unused capacity</title>
+<rect width="1100" height="480" fill="#f4f7fb"/>
+<text x="35" y="48" font-family="sans-serif" font-size="25" fill="#152c49">Two models explain distinct sources of unused capacity</text>
+<rect x="35" y="78" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="108" font-family="sans-serif" font-size="21" fill="#16496d">Grid supply: hypothetical 16 block slots, each block takes 10 μs</text>
+<text x="55" y="137" font-family="sans-serif" font-size="18" fill="#263d53">16 blocks fill one wave; 17 blocks need a partial second wave in this idealized model.</text>
+<rect x="35" y="178" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="208" font-family="sans-serif" font-size="21" fill="#16496d">Readiness: one issue/cycle, four-cycle dependent instruction spacing</text>
+<text x="55" y="237" font-family="sans-serif" font-size="18" fill="#263d53">One warp issues at 0, 4, 8, 12. Four independent ready warps fill cycles 0 through 15.</text>
+<rect x="35" y="278" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="308" font-family="sans-serif" font-size="21" fill="#16496d">A common dependency can block every resident warp</text>
+<text x="55" y="337" font-family="sans-serif" font-size="18" fill="#263d53">More resident state does not resolve the producer dependency or shorten the pending result delay.</text>
+<text x="35" y="420" font-family="sans-serif" font-size="18" fill="#263d53">These are arithmetic models, not observed GPU schedules or clock specifications.</text>
+<text x="35" y="450" font-family="sans-serif" font-size="18" fill="#263d53">Whole-window occupancy ratios and profiler active-cycle metrics may use different denominators.</text>
+</svg>

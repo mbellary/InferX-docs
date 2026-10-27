@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="540" viewBox="0 0 1100 540" role="img">
+<title>Stored-input loss and structured sparse identity need separate references</title>
+<rect width="1100" height="540" fill="#f4f7fb"/>
+<text x="30" y="38" font-family="sans-serif" font-size="24" fill="#152c49">Representation changes and execution errors require different checks</text>
+<text x="30" y="79" font-family="sans-serif" font-size="20" fill="#263d53">Original dot: [1 + 2⁻¹², 1] · [1, −1] = 2⁻¹².</text>
+<text x="30" y="111" font-family="sans-serif" font-size="19" fill="#263d53">FP16 rounded inputs: [1, 1] · [1, −1] = 0. FP32 accumulation cannot recover the lost bits.</text>
+<text x="30" y="157" font-family="sans-serif" font-size="20" fill="#16496d">Exact sparse A: each outlined quartet retains two nonzero values</text>
+<rect x="30" y="180" width="55" height="45" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="50" y="209" font-family="sans-serif" font-size="19" fill="#263d53">1</text>
+<rect x="86" y="180" width="55" height="45" fill="#e5e9ef" stroke="#a3b3c4"/>
+<text x="106" y="209" font-family="sans-serif" font-size="19" fill="#263d53">0</text>
+<rect x="142" y="180" width="55" height="45" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="162" y="209" font-family="sans-serif" font-size="19" fill="#263d53">2</text>
+<rect x="198" y="180" width="55" height="45" fill="#e5e9ef" stroke="#a3b3c4"/>
+<text x="218" y="209" font-family="sans-serif" font-size="19" fill="#263d53">0</text>
+<rect x="254" y="180" width="55" height="45" fill="#e5e9ef" stroke="#a3b3c4"/>
+<text x="274" y="209" font-family="sans-serif" font-size="19" fill="#263d53">0</text>
+<rect x="310" y="180" width="55" height="45" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="330" y="209" font-family="sans-serif" font-size="19" fill="#263d53">3</text>
+<rect x="366" y="180" width="55" height="45" fill="#e5e9ef" stroke="#a3b3c4"/>
+<text x="386" y="209" font-family="sans-serif" font-size="19" fill="#263d53">0</text>
+<rect x="422" y="180" width="55" height="45" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="442" y="209" font-family="sans-serif" font-size="19" fill="#263d53">4</text>
+<rect x="30" y="226" width="55" height="45" fill="#e5e9ef" stroke="#a3b3c4"/>
+<text x="50" y="255" font-family="sans-serif" font-size="19" fill="#263d53">0</text>
+<rect x="86" y="226" width="55" height="45" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="106" y="255" font-family="sans-serif" font-size="19" fill="#263d53">5</text>
+<rect x="142" y="226" width="55" height="45" fill="#e5e9ef" stroke="#a3b3c4"/>
+<text x="162" y="255" font-family="sans-serif" font-size="19" fill="#263d53">0</text>
+<rect x="198" y="226" width="55" height="45" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="218" y="255" font-family="sans-serif" font-size="19" fill="#263d53">6</text>
+<rect x="254" y="226" width="55" height="45" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="274" y="255" font-family="sans-serif" font-size="19" fill="#263d53">7</text>
+<rect x="310" y="226" width="55" height="45" fill="#e5e9ef" stroke="#a3b3c4"/>
+<text x="330" y="255" font-family="sans-serif" font-size="19" fill="#263d53">0</text>
+<rect x="366" y="226" width="55" height="45" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="386" y="255" font-family="sans-serif" font-size="19" fill="#263d53">8</text>
+<rect x="422" y="226" width="55" height="45" fill="#e5e9ef" stroke="#a3b3c4"/>
+<text x="442" y="255" font-family="sans-serif" font-size="19" fill="#263d53">0</text>
+<rect x="30" y="180" width="224" height="92" fill="none" stroke="#16496d" stroke-width="2"/>
+<rect x="254" y="180" width="224" height="92" fill="none" stroke="#16496d" stroke-width="2"/>
+<text x="520" y="201" font-family="sans-serif" font-size="19" fill="#263d53">B[k,0] = k + 1; B[k,1] = 1</text>
+<text x="520" y="235" font-family="sans-serif" font-size="21" fill="#16496d">D rows: [57, 10] and [125, 26]</text>
+<text x="30" y="316" font-family="sans-serif" font-size="19" fill="#263d53">Store retained values AND their positions; metadata is part of the representation.</text>
+<text x="30" y="353" font-family="sans-serif" font-size="19" fill="#263d53">[1, 2, 3, 4 | 0, 0, 0, 0] has 50% zeros but fails this per-quartet pattern.</text>
+<text x="30" y="397" font-family="sans-serif" font-size="19" fill="#263d53">Pruning [1, 2, 3, 4] to [0, 0, 3, 4] changes its dot with ones from 10 to 7.</text>
+<text x="30" y="451" font-family="sans-serif" font-size="20" fill="#152c49">Exact reconstruction preserves A. Pruning nonzero values changes the operation.</text>
+<text x="30" y="500" font-family="sans-serif" font-size="18" fill="#263d53">Teaching references only: tiny sparse dimensions do not establish GPU library eligibility.</text>
+</svg>

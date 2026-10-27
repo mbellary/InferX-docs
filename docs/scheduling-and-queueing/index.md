@@ -16,7 +16,7 @@ Continuous batching, chunked prefill, priorities, fairness, admission, backpress
 
 ## Chapters
 
-[M2-C15](m2-c15-admission-and-growth-under-a-finite-kv-budget.md) is a completed detailed chapter; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
+[M2-C15](m2-c15-admission-and-growth-under-a-finite-kv-budget.md) and [M3-C17](m3-c17-batching-weight-reuse-and-shifting-bottlenecks.md) are completed detailed chapters; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
 
 ### Module 2
 

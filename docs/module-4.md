@@ -1,6 +1,6 @@
 # Module 4: Understand kernels and execution overhead
 
-> **Status: Chapter outlines available.** Full chapters will be developed one at a time after the module outlines are in place.
+> **Status: 5 of 24 detailed chapters complete.** [M4-C01](kernels-compilers-and-execution/m4-c01-defining-a-gpu-kernel-and-its-contract.md), [M4-C02](kernels-compilers-and-execution/m4-c02-mapping-an-operation-onto-cuda-threads-and-blocks.md), [M4-C03](kernels-compilers-and-execution/m4-c03-understanding-the-triton-programming-model.md), [M4-C04](kernels-compilers-and-execution/m4-c04-compilation-specialization-and-the-warm-execution-path.md) and [M4-C05](kernels-compilers-and-execution/m4-c05-tiling-an-operation-for-data-reuse.md) are complete; M4-C06–M4-C24 remain outlines. Track one-chapter-at-a-time development in the [execution plan](chapter-execution-plan.md).
 
 ## Learning goal
 

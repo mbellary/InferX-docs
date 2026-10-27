@@ -16,7 +16,7 @@ GEMMs, attention kernels, tiling, fusion, layouts, compilation, graph replay.
 
 ## Chapters
 
-[M2-C07](m2-c07-how-attention-reads-a-paged-kv-layout.md) is a completed detailed chapter; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
+[M2-C07](m2-c07-how-attention-reads-a-paged-kv-layout.md), [M3-C07](m3-c07-memory-coalescing-alignment-and-tensor-layouts.md), [M3-C08](m3-c08-tiling-and-reuse-through-the-memory-hierarchy.md), [M3-C09](m3-c09-tensor-cores-and-supported-matrix-operations.md), [M4-C01](m4-c01-defining-a-gpu-kernel-and-its-contract.md), [M4-C02](m4-c02-mapping-an-operation-onto-cuda-threads-and-blocks.md), [M4-C03](m4-c03-understanding-the-triton-programming-model.md), [M4-C04](m4-c04-compilation-specialization-and-the-warm-execution-path.md) and [M4-C05](m4-c05-tiling-an-operation-for-data-reuse.md) are completed detailed chapters; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
 
 ### Module 2
 

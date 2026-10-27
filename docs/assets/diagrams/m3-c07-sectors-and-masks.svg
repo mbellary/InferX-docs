@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="480" viewBox="0 0 1100 480" role="img">
+<title>Count warp addresses at a declared service boundary</title>
+<rect width="1100" height="480" fill="#f4f7fb"/>
+<text x="35" y="48" font-family="sans-serif" font-size="25" fill="#152c49">Count warp addresses at a declared service boundary</text>
+<rect x="35" y="78" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="108" font-family="sans-serif" font-size="21" fill="#16496d">32 scalar reads × 4 bytes; contiguous aligned start</text>
+<text x="55" y="137" font-family="sans-serif" font-size="18" fill="#263d53">128 distinct useful bytes → 4 requested sectors. Shift by 4 bytes → 5 sectors.</text>
+<rect x="35" y="178" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="208" font-family="sans-serif" font-size="21" fill="#16496d">32 scalar reads; stride 8 elements between lanes</text>
+<text x="55" y="237" font-family="sans-serif" font-size="18" fill="#263d53">128 distinct useful bytes → 32 requested sectors, covering 1,024 bytes.</text>
+<rect x="35" y="278" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="308" font-family="sans-serif" font-size="21" fill="#16496d">Six valid scalar reads; mask the tail before access</text>
+<text x="55" y="337" font-family="sans-serif" font-size="18" fill="#263d53">24 distinct useful bytes → 1 sector at offset 0, but 2 sectors at offset 28 bytes.</text>
+<text x="35" y="420" font-family="sans-serif" font-size="18" fill="#263d53">Assumptions: aligned base, 32-byte sectors, scalar words, valid addresses and explicit active masks.</text>
+<text x="35" y="450" font-family="sans-serif" font-size="18" fill="#263d53">These are instruction-level coverage counts, not measured DRAM bytes or runtime speedups.</text>
+</svg>

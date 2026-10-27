@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="480" viewBox="0 0 1100 480" role="img">
+<title>Address mapping and correct publication need separate evidence</title>
+<rect width="1100" height="480" fill="#f4f7fb"/>
+<text x="35" y="48" font-family="sans-serif" font-size="25" fill="#152c49">Address mapping and correct publication need separate evidence</text>
+<rect x="35" y="78" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="108" font-family="sans-serif" font-size="21" fill="#16496d">Bank map: word index modulo 32</text>
+<text x="55" y="137" font-family="sans-serif" font-size="18" fill="#263d53">Pitch 32 column: 32 distinct words in one bank. Pitch 33: one distinct word per bank.</text>
+<rect x="35" y="178" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="208" font-family="sans-serif" font-size="21" fill="#16496d">Epoch q: initialize → publication barrier → consumer reads</text>
+<text x="55" y="237" font-family="sans-serif" font-size="18" fill="#263d53">Every configured block thread participates; tail slots are initialized to zero.</text>
+<rect x="35" y="278" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="308" font-family="sans-serif" font-size="21" fill="#16496d">Consumer reads → reuse barrier → epoch q + 1 writes</text>
+<text x="55" y="337" font-family="sans-serif" font-size="18" fill="#263d53">Publication alone cannot stop a fast producer from overwriting a slower reader’s input.</text>
+<text x="35" y="420" font-family="sans-serif" font-size="18" fill="#263d53">Same-word reads can broadcast; simultaneous same-address writes need a correctness contract.</text>
+<text x="35" y="450" font-family="sans-serif" font-size="18" fill="#263d53">Bank conflicts concern service; missing ordering concerns correctness. Neither check replaces the other.</text>
+</svg>

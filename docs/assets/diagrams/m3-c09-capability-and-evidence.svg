@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="480" viewBox="0 0 1100 480" role="img">
+<title>Eligibility, numerical agreement and observed execution are separate gates</title>
+<rect width="1100" height="480" fill="#f4f7fb"/>
+<text x="30" y="40" font-family="sans-serif" font-size="25" fill="#152c49">Three evidence gates before a useful performance claim</text>
+<rect x="30" y="80" width="1040" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="50" y="110" font-family="sans-serif" font-size="21" fill="#16496d">Capability and descriptor</text>
+<text x="50" y="140" font-family="sans-serif" font-size="18" fill="#263d53">Device + target + interface + formats + shape + layout + alignment + collective rules.</text>
+<rect x="30" y="180" width="1040" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="50" y="210" font-family="sans-serif" font-size="21" fill="#16496d">Numerical contract</text>
+<text x="50" y="240" font-family="sans-serif" font-size="18" fill="#263d53">Compare original-input and stored-input references; preserve C₀ and output identity.</text>
+<rect x="30" y="280" width="1040" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="50" y="310" font-family="sans-serif" font-size="21" fill="#16496d">Observed path and completed cost</text>
+<text x="50" y="340" font-family="sans-serif" font-size="18" fill="#263d53">Inspect actual matrix/scalar execution evidence; include required preparation and useful completion.</text>
+<text x="30" y="420" font-family="sans-serif" font-size="18" fill="#263d53">A requested library mode does not prove execution. A correct fallback can remain unclassified.</text>
+<text x="30" y="450" font-family="sans-serif" font-size="18" fill="#263d53">An instruction-level alignment rule is not a universal library dispatch rule.</text>
+</svg>

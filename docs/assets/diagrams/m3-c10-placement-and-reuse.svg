@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="540" viewBox="0 0 1100 540" role="img">
+<title>Placement evidence and generation-safe buffer reuse</title>
+<rect width="1100" height="540" fill="#f4f7fb"/>
+<text x="30" y="38" font-family="sans-serif" font-size="24" fill="#152c49">Address naming, placement and reclamation need separate evidence</text>
+<rect x="30" y="90" width="230" height="90" rx="8" fill="white" stroke="#7c9ab9"/>
+<text x="42" y="122" font-family="sans-serif" font-size="20" fill="#16496d">Available</text>
+<text x="42" y="155" font-family="sans-serif" font-size="16" fill="#263d53">Assign generation / epoch</text>
+<rect x="300" y="90" width="230" height="90" rx="8" fill="white" stroke="#7c9ab9"/>
+<text x="312" y="122" font-family="sans-serif" font-size="20" fill="#16496d">Pending uses</text>
+<text x="312" y="155" font-family="sans-serif" font-size="16" fill="#263d53">Track every last user</text>
+<rect x="570" y="90" width="230" height="90" rx="8" fill="white" stroke="#7c9ab9"/>
+<text x="582" y="122" font-family="sans-serif" font-size="20" fill="#16496d">Consumers finished</text>
+<text x="582" y="155" font-family="sans-serif" font-size="16" fill="#263d53">Observe valid completion</text>
+<rect x="840" y="90" width="230" height="90" rx="8" fill="white" stroke="#7c9ab9"/>
+<text x="852" y="122" font-family="sans-serif" font-size="20" fill="#16496d">Reusable</text>
+<text x="852" y="155" font-family="sans-serif" font-size="16" fill="#263d53">New generation allowed</text>
+<text x="266" y="142" font-family="sans-serif" font-size="24" fill="#16496d">→</text>
+<text x="536" y="142" font-family="sans-serif" font-size="24" fill="#16496d">→</text>
+<text x="806" y="142" font-family="sans-serif" font-size="24" fill="#16496d">→</text>
+<line x1="415" y1="180" x2="415" y2="230" stroke="#a85b32" stroke-width="2"/>
+<text x="435" y="212" font-family="sans-serif" font-size="18" fill="#263d53">Unknown completion</text>
+<rect x="300" y="230" width="500" height="78" rx="8" fill="#ffe8d5" stroke="#a85b32"/>
+<text x="320" y="260" font-family="sans-serif" font-size="20" fill="#7b4429">Quarantine until recovery establishes safe reuse</text>
+<text x="320" y="289" font-family="sans-serif" font-size="16" fill="#263d53">Cancellation or watchdog expiry does not clear pending access.</text>
+<text x="30" y="356" font-family="sans-serif" font-size="19" fill="#263d53">UVA names addresses. Managed placement depends on platform and access history.</text>
+<text x="30" y="395" font-family="sans-serif" font-size="19" fill="#263d53">A prefetch request is not completion proof or a permanent residency reservation.</text>
+<text x="30" y="440" font-family="sans-serif" font-size="18" fill="#263d53">Teaching budgets: two retained slots use 16 MiB host + 16 MiB device (+ 4 MiB device reserve).</text>
+<text x="30" y="483" font-family="sans-serif" font-size="18" fill="#263d53">A third slot fails the stated 20 MiB host/device budgets. Real backing overhead is additional.</text>
+</svg>

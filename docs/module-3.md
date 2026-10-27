@@ -1,6 +1,6 @@
 # Module 3: Learn GPU architecture through data movement
 
-> **Status: 4 of 23 detailed chapters complete.** [M3-C01](hardware-architecture-and-topology/m3-c01-following-a-tensor-from-cpu-to-gpu.md), [M3-C02](hardware-architecture-and-topology/m3-c02-reading-gpu-specifications-and-capability-limits.md), [M3-C03](hardware-architecture-and-topology/m3-c03-threads-warps-blocks-grids-and-streaming-multiprocessors.md) and [M3-C05](hardware-architecture-and-topology/m3-c05-device-memory-hbm-and-the-cache-hierarchy.md) are complete; M3-C04 and M3-C06–C23 remain outlines. Track one-chapter-at-a-time development in the [execution plan](chapter-execution-plan.md).
+> **Status: 23 of 23 detailed chapters complete.** M3-C01–M3-C23 are complete. Module 3 detailed documentation is complete; hardware experiments remain proposed. Next in authoring order is [M4-C01](kernels-compilers-and-execution/m4-c01-defining-a-gpu-kernel-and-its-contract.md). Track one-chapter-at-a-time development in the [execution plan](chapter-execution-plan.md).
 
 ## Learning goal
 

@@ -16,7 +16,7 @@ CPUs, GPUs/NPUs, memory hierarchy, NUMA, PCIe, NVLink, NIC placement.
 
 ## Chapters
 
-[M3-C01](m3-c01-following-a-tensor-from-cpu-to-gpu.md), [M3-C02](m3-c02-reading-gpu-specifications-and-capability-limits.md), [M3-C03](m3-c03-threads-warps-blocks-grids-and-streaming-multiprocessors.md) and [M3-C05](m3-c05-device-memory-hbm-and-the-cache-hierarchy.md) are completed detailed chapters; the other chapters in this category remain outlines. Chapter entries are grouped by module. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
+M3-C01–M3-C06, [M3-C13](m3-c13-pcie-nvlink-numa-and-device-topology.md) and [M9-C16](m9-c16-recording-hardware-conditions-that-change-measurements.md) are completed detailed chapters; the other chapters in this category remain outlines. Chapter entries are grouped by module. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
 
 ### Module 3
 

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="480" viewBox="0 0 1100 480" role="img">
+<title>Scope, lifetime and physical storage are separate questions</title>
+<rect width="1100" height="480" fill="#f4f7fb"/>
+<text x="35" y="48" font-family="sans-serif" font-size="25" fill="#152c49">Scope, lifetime and physical storage are separate questions</text>
+<rect x="35" y="78" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="108" font-family="sans-serif" font-size="21" fill="#16496d">Thread-private registers</text>
+<text x="55" y="137" font-family="sans-serif" font-size="18" fill="#263d53">Live values consume register units; compiler allocation and rounding govern the resource cost.</text>
+<rect x="35" y="178" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="208" font-family="sans-serif" font-size="21" fill="#16496d">Thread-private local memory → device backing and caches</text>
+<text x="55" y="237" font-family="sans-serif" font-size="18" fill="#263d53">Local means private scope. Local accesses alone do not identify register spills.</text>
+<rect x="35" y="278" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="308" font-family="sans-serif" font-size="21" fill="#16496d">Block-owned shared memory</text>
+<text x="55" y="337" font-family="sans-serif" font-size="18" fill="#263d53">All required producers and consumers coordinate; contents do not persist across block invocations.</text>
+<text x="35" y="420" font-family="sans-serif" font-size="18" fill="#263d53">More registers can reduce residency; a tighter register ceiling can add spill or recomputation work.</text>
+<text x="35" y="450" font-family="sans-serif" font-size="18" fill="#263d53">Global input/output allocations remain protected until device last use is known to have completed.</text>
+</svg>

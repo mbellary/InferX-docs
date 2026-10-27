@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="480" viewBox="0 0 1100 480" role="img">
+<title>A better consumer layout must repay its conversion cost</title>
+<rect width="1100" height="480" fill="#f4f7fb"/>
+<text x="35" y="48" font-family="sans-serif" font-size="25" fill="#152c49">A better consumer layout must repay its conversion cost</text>
+<rect x="35" y="78" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="108" font-family="sans-serif" font-size="21" fill="#16496d">View: shape and strides change; existing bytes remain</text>
+<text x="55" y="137" font-family="sans-serif" font-size="18" fill="#263d53">A transpose view does not automatically create a packed physical transpose.</text>
+<rect x="35" y="178" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="208" font-family="sans-serif" font-size="21" fill="#16496d">Materialize → completed publication → K valid consumers</text>
+<text x="55" y="237" font-family="sans-serif" font-size="18" fill="#263d53">Converted storage adds bytes and dependencies; a changed source version invalidates old copies.</text>
+<rect x="35" y="278" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="308" font-family="sans-serif" font-size="21" fill="#16496d">Compare complete routes at the same required output boundary</text>
+<text x="55" y="337" font-family="sans-serif" font-size="18" fill="#263d53">Direct: Kd. Converted: C + Kp (+ required return-layout cost R).</text>
+<text x="35" y="420" font-family="sans-serif" font-size="18" fill="#263d53">Constructed costs C = 12 μs, d = 8 μs, p = 3 μs: strict improvement starts at K = 3.</text>
+<text x="35" y="450" font-family="sans-serif" font-size="18" fill="#263d53">Adding R = 4 μs shifts improvement to K = 4. These are unmeasured arithmetic examples.</text>
+</svg>

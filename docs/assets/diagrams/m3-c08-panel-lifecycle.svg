@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="480" viewBox="0 0 1100 480" role="img">
+<title>One output tile, several reduction stages, two ordering edges</title>
+<rect width="1100" height="480" fill="#f4f7fb"/>
+<text x="35" y="48" font-family="sans-serif" font-size="25" fill="#152c49">One output tile, several reduction stages, two ordering edges</text>
+<rect x="35" y="78" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="108" font-family="sans-serif" font-size="21" fill="#16496d">Global A/B panels → shared slots → publication barrier</text>
+<text x="55" y="137" font-family="sans-serif" font-size="18" fill="#263d53">Load valid coordinates; initialize invalid panel positions to zero before readers proceed.</text>
+<rect x="35" y="178" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="208" font-family="sans-serif" font-size="21" fill="#16496d">Published panels → thread operands → register accumulators</text>
+<text x="55" y="237" font-family="sans-serif" font-size="18" fill="#263d53">Reuse A across output columns and B across rows; retain each output sum across stages.</text>
+<rect x="35" y="278" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="308" font-family="sans-serif" font-size="21" fill="#16496d">Last panel readers → reuse barrier → next stage overwrite</text>
+<text x="55" y="337" font-family="sans-serif" font-size="18" fill="#263d53">All configured block threads participate. Store only valid C coordinates after all stages.</text>
+<text x="35" y="420" font-family="sans-serif" font-size="18" fill="#263d53">Ordinary staging can use intermediate registers; asynchronous paths have separate contracts.</text>
+<text x="35" y="450" font-family="sans-serif" font-size="18" fill="#263d53">Shared publication does not establish global completion or permit early output-buffer reclamation.</text>
+</svg>

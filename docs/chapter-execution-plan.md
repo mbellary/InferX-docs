@@ -11,19 +11,21 @@ Turn 201 outlines into a coherent collection of detailed chapters that helps a r
 
 The reader should be able to open any completed chapter, understand every introduced term, follow a worked numerical example and diagram, describe a reproducible experiment, and explain its pass/fail conditions and limits. High-Frequency Trading (HFT), meaning systems that process market events and make trading decisions under tight timing constraints, provides a lens for critical paths, bounded queues, stale information, and tail latency. A tail is the slower end of a latency distribution. Explain what transfers to inference and what does not; do not present trading advice, assert trading results, or equate inference semantics with exchange behavior.
 
-The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01–M1-C20, M2-C01–M2-C21, M3-C01–M3-C03, M3-C05, M9-C01–M9-C05, M9-C07, M9-C15, M9-C17 and M9-C19 are now complete; the next authoring chapter is M3-C06.
+The observable deliverable is the existing InferX documentation site with detailed chapters replacing outlines, an accurate per-chapter progress record here, valid navigation, readable mathematics and diagrams, and reproducible descriptions rather than invented measurements. The execution plan is established. The user authorized sequential detailed chapter authorship on 2026-10-24; M1-C01–M1-C20, M2-C01–M2-C21, M3-C01–M3-C23, M4-C01–M4-C05, M9-C01–M9-C05, M9-C07, M9-C12–M9-C13, M9-C15–M9-C17 and M9-C19 are now complete; the next authoring chapter is M4-C06.
 
 
 ## Progress
 
 
-Last updated: 2026-10-26 14:32 IST. Detailed chapter totals: **54 complete, 0 active, 147 not started, 0 blocked**. Next authoring chapter: **M3-C06**, authoring position 55.
+Last updated: 2026-10-27 15:03 IST. Detailed chapter totals: **81 complete, 0 active, 120 not started, 0 blocked**. Next authoring chapter: **M4-C06**, authoring position 82.
 
 - [x] (2026-10-24 17:21 IST) Read the uploaded PLANS.md, the learning requirements, the chapter inventory, and the dependency schedule; confirm Modules 1–7 plus supporting Module 9 and no Module 8.
 - [x] (2026-10-24 17:21 IST) Preserve the planning reference as repository-root PLANS.md and create this living execution plan with all 201 ordered chapter records and their target concepts and direct prerequisites.
 - [x] (2026-10-24 17:23 IST) Validate all 201 chapter records, 535 direct prerequisites, source paths and target concepts; confirm the strict documentation build succeeds without warnings and inspect the rendered plan, Home navigation, progress summary, and ledger.
 
 - [x] (2026-10-24 18:41 IST) Reproduce the GitHub failure with committed navigation (exit 1, the same two warning groups) and verify the corrected working-tree mkdocs.yml (exit 0, no warnings). At that stopping point the root configuration was still uncommitted. It is now included in user commit 3beea89 (verified during M1-C04 startup); no remote rerun is claimed. Chapter totals remain 3 complete and 198 not started.
+
+- [x] (2026-10-27 14:02 IST) Complete Milestone 4, positions 51–76: 26 individually reviewed chapter records now Complete. Module 3 has all 23 chapters complete; supporting Module 9 remains 12/30. Procedures distinguish constructed predictions and references from unexecuted hardware studies. Final build/audit evidence is recorded below.
 
 ### Per-chapter progress ledger
 
@@ -354,167 +356,167 @@ Each record contains the authoring position, chapter ID, target concepts, source
   Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
   Module 9 application: Completed M9-C01 reference contracts, M9-C02 completion timing, M9-C07 distributions, M9-C15 byte scopes and M9-C17 exact numerical gates; introductory profiling/cache-history controls supplied locally. Updated: 2026-10-26 14:32 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code requirements reviewed. Primary CUDA memory/coalescing, Nsight Compute metrics/replay, Micron HBM and NVIDIA H100 SXM/RTX 4090 specifications checked. Exact reference QA passed sector/address/output/byte/trial/cycle checks, all 36 experiment fields, local links, table shapes and SVG XML. Initial strict build passed without warnings (5.79 seconds). Browser reviewed sector table/formulas and both complete diagrams; clicked execution-plan link reached the plan. No GPU runtime, cache measurement or benchmark executed. Next action: M3-C06 only.
 
-- [ ] 055 — **M3-C06: Registers, shared memory, and local resource pressure** — Not started.
+- [x] 055 — **M3-C06: Registers, shared memory, and local resource pressure** — Complete.
   File: [Registers, shared memory, and local resource pressure](hardware-architecture-and-topology/m3-c06-registers-shared-memory-and-local-resource-pressure.md). Category: Hardware architecture and topology. Phase: 4. GPU execution, movement, and profiling.
   Direct prerequisites: M3-C03, M3-C05. Target concepts: Per-thread registers, per-block shared memory, storage scope and lifetime, register spills and local memory, bank conflicts, synchronization, architecture-specific resource limits.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 references, M9-C02 completed timing, M9-C07 distributions, M9-C15 byte scopes and M9-C17 exact numerical gates; local resource and synchronization checks defined here. Updated: 2026-10-26 17:03 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code requirements reviewed. Primary CUDA local/register/shared/collective/limit, Nsight Compute and Compute Sanitizer sources checked. Reference QA passed all six modeled resource bounds, padding bytes, 32-column bank maps, both exact transpose layouts, all 140 two-epoch outputs, negative ordering witnesses, output/count/byte/trial arithmetic, all 36 experiment fields, local links, table shapes and SVG XML. Browser reviewed resource formulas/table, both full diagrams and clicked execution-plan navigation. Initial strict build passed without warnings (3.56 seconds); final validation below. No GPU compiler/kernel, sanitizer, profiler or timing run executed. Next action: M3-C04 only; reading successor remains M3-C07.
 
-- [ ] 056 — **M3-C04: Occupancy, latency hiding, and hardware utilization** — Not started.
+- [x] 056 — **M3-C04: Occupancy, latency hiding, and hardware utilization** — Complete.
   File: [Occupancy, latency hiding, and hardware utilization](hardware-architecture-and-topology/m3-c04-occupancy-latency-hiding-and-hardware-utilization.md). Category: Hardware architecture and topology. Phase: 4. GPU execution, movement, and profiling.
   Direct prerequisites: M3-C03, M3-C06. Target concepts: Resident versus active and eligible warps, occupancy limits, registers and shared-memory budgets, available parallel work, latency hiding, utilization versus occupancy.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 references, M9-C02 completed timing, M9-C07 distributions, M9-C15 byte scopes and M9-C17 exact numerical gates; scheduler/resource evidence interpreted locally. Updated: 2026-10-26 17:12 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code requirements reviewed. Primary CUDA occupancy guidance, Nsight Compute scheduler/metric/calculator, NVIDIA occupancy article and monitoring utilization definitions checked. Exact QA passed seven occupancy references, five wave schedules and imbalance, four independently enumerated readiness histories, completion timestamps, output/count/byte/trial arithmetic, 36 experiment fields, local links, table shapes and SVG XML. Browser reviewed compact resource table, scheduler table/completion explanation, both full diagrams and clicked execution-plan navigation. Initial strict build passed without warnings (3.60 seconds); final validation below. No GPU kernel, runtime scheduler, profiler or timing experiment executed. Next action: M3-C07 only; reading successor is completed M3-C05.
 
-- [ ] 057 — **M3-C07: Memory coalescing, alignment, and tensor layouts** — Not started.
+- [x] 057 — **M3-C07: Memory coalescing, alignment, and tensor layouts** — Complete.
   File: [Memory coalescing, alignment, and tensor layouts](kernels-compilers-and-execution/m3-c07-memory-coalescing-alignment-and-tensor-layouts.md). Category: Kernels, compilers, and execution. Phase: 4. GPU execution, movement, and profiling.
   Direct prerequisites: M3-C03, M3-C05, M1-C05. Target concepts: Warp memory accesses, contiguous versus strided access, alignment, memory transactions, useful versus transferred bytes, tensor strides, layout conversion costs.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 references, M9-C02 completed timing, M9-C07 distributions, M9-C15 storage/traffic boundaries and M9-C17 exact numerical gates; layout/counter controls defined locally. Updated: 2026-10-26 17:21 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code requirements reviewed. Primary CUDA coalescing/alignment, Nsight Compute request/sector/replay, NumPy 2.5 byte-stride and PyTorch 2.14 view/materialization sources checked. Exact reference QA passed eight sector/mask cases, reversal/repeated-word probes, 105 transform coordinates/35 view coordinates, descriptor faults, ten conversion-cost comparisons, all 1,048,576 field conversion coordinates, field outputs and trial/byte totals, 36 experiment fields, local links, table shapes and SVG XML. Browser reviewed complete sector and layout tables/formulas, both diagrams and clicked execution-plan navigation. Initial strict build passed without warnings (3.64 seconds); final validation below. No GPU conversion, kernel, profiler or timing benchmark executed. Next action: M3-C08 only.
 
-- [ ] 058 — **M3-C08: Tiling and reuse through the memory hierarchy** — Not started.
+- [x] 058 — **M3-C08: Tiling and reuse through the memory hierarchy** — Complete.
   File: [Tiling and reuse through the memory hierarchy](kernels-compilers-and-execution/m3-c08-tiling-and-reuse-through-the-memory-hierarchy.md). Category: Kernels, compilers, and execution. Phase: 4. GPU execution, movement, and profiling.
   Direct prerequisites: M3-C07, M3-C06, M1-C04. Target concepts: Matrix tiles, global-to-shared-to-register movement, reuse, synchronization, tile-size tradeoffs, edge tiles, shared-memory capacity, data movement versus redundant work.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 references, M9-C02 completed timing, M9-C07 distributions, M9-C15 storage/traffic scopes and M9-C17 exact numerical gates; tile-specific ordering/profile controls supplied locally. Updated: 2026-10-26 17:46 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVG diagrams including an output-tile grid, six dimensions/eight principles, HFT limits and hardware/no-code requirements reviewed. Primary CUDA shared-reuse/staging/block-collective/capability, Nsight Compute and Compute Sanitizer sources checked. Exact reference QA passed direct/tiled products, 105 independent-formula edge coordinates, three input/zero/padded-work ledgers, divisible staging counts, seven empty/edge shape contracts, deliberate offset/zero faults, four benchmark shape products at both tiled sizes, output/trial/storage arithmetic, 36 fields, local links, table shapes and SVG XML. Browser reviewed edge formula/table and both full diagrams, and clicked execution-plan navigation. Initial strict build passed without warnings (3.62 seconds); final validation below. No GPU kernel, sanitizer, profile or timing benchmark executed. Next action: M3-C09 only.
 
-- [ ] 059 — **M3-C09: Tensor cores and supported matrix operations** — Not started.
+- [x] 059 — **M3-C09: Tensor cores and supported matrix operations** — Complete.
   File: [Tensor cores and supported matrix operations](kernels-compilers-and-execution/m3-c09-tensor-cores-and-supported-matrix-operations.md). Category: Kernels, compilers, and execution. Phase: 4. GPU execution, movement, and profiling.
   Direct prerequisites: M3-C08, M3-C02, M1-C07. Target concepts: Matrix multiply-accumulate, tensor-core versus scalar execution paths, operand and accumulator formats, shape and alignment requirements, dense versus sparse paths, architecture-dependent capabilities.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 references, M9-C02 completed timing, M9-C07 distributions, M9-C15 byte scope and M9-C17 original/stored-input numerical gates; capability, observed-path and sparse-contract checks defined locally. Updated: 2026-10-26 17:59 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVG diagrams, six dimensions/eight principles, HFT limits and hardware/no-code requirements reviewed. Primary versioned CUDA 12.8.1 WMMA, cuBLAS 13.4 dispatch/numerics, cuSPARSELt support and sparse article, and Nsight Compute sources checked. Exact QA passed independent integer/period-4 MMA products for three benchmark shapes, seed-drop rejection, alignment/leading-dimension and padded-shape checks, FP16/BF16 rational rounding and overflow gate, sparse reconstruction/output/faults, work/output/storage/trial counts, 36 fields, local links, table shapes and SVG XML. Browser reviewed format table/numerical example, both full diagrams and clicked execution-plan navigation. Initial strict build passed without warnings (3.60 seconds); final validation below. No GPU tensor/scalar path, sparse-library, profiler or timing run executed. Next action: M3-C10 only.
 
-- [ ] 060 — **M3-C10: Host and device buffer placement and lifetime** — Not started.
+- [x] 060 — **M3-C10: Host and device buffer placement and lifetime** — Complete.
   File: [Host and device buffer placement and lifetime](state-memory-and-caching/m3-c10-host-and-device-buffer-placement-and-lifetime.md). Category: State, memory, and caching. Phase: 4. GPU execution, movement, and profiling.
   Direct prerequisites: M3-C05, M2-C04. Target concepts: Pageable versus pinned host memory, device allocations, unified addressing versus unified memory, migration and residency, buffer reuse, ownership across transfers, allocation outside timed regions.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 references, M9-C02 completed timing, M9-C07 distributions, M9-C15 allocation/residency byte scope and M9-C17 exact output gates; placement and transfer-lifetime controls defined locally. Updated: 2026-10-26 18:32 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVG diagrams, six dimensions/eight principles and hardware/no-code requirements reviewed. Primary CUDA memory, synchronization, pinned allocation and Unified Memory sources checked. Reference QA passed pool/page-union and zero cases, epoch sums, managed-pass references, amortization threshold, lifetime/cancellation/generation witnesses and work/byte/trial totals; all 36 experiment fields, links, tables and SVG XML passed. Browser reviewed both full diagrams, rendered timing specification and clicked execution-plan destination. Initial strict build passed without warnings (3.60 seconds); final validation below. No GPU transfer, migration, profiler or timing experiment executed. Next action: M3-C11 only.
 
-- [ ] 061 — **M3-C11: Streams, events, and dependency ordering** — Not started.
+- [x] 061 — **M3-C11: Streams, events, and dependency ordering** — Complete.
   File: [Streams, events, and dependency ordering](runtime-and-concurrency/m3-c11-streams-events-and-dependency-ordering.md). Category: Runtime and concurrency. Phase: 4. GPU execution, movement, and profiling.
   Direct prerequisites: M3-C03, M3-C10, M2-C10. Target concepts: Asynchronous submission versus completion, stream ordering, cross-stream events, default-stream semantics, synchronization scope, producer-consumer dependencies, safe buffer reuse.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 exact references, M9-C02 completion boundaries, M9-C07 distributions, M9-C15 retained bytes and M9-C17 numerical gates; dependency and event-generation checks supplied locally. Updated: 2026-10-26 18:46 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVG diagrams, six dimensions/eight principles and hardware/no-code requirements reviewed. Primary CUDA stream, event, default-mode, host-synchronization and Nsight Systems specifications plus historical transfer article checked. Reference QA passed graph finishes, exact FP32 residues/60 epochs, checksums, useful work/transfer/storage/trial ledgers, event snapshots and generation/last-user gates; 36 experiment fields, links, tables and SVG XML passed. Browser reviewed both full diagrams and default-mode table, and clicked execution-plan destination. Initial strict build passed without warnings (3.64 seconds); final validation below. No GPU stream/event, transfer, profile or timing experiment executed. Next action: M3-C12 only.
 
-- [ ] 062 — **M3-C12: Asynchronous copies and useful overlap** — Not started.
+- [x] 062 — **M3-C12: Asynchronous copies and useful overlap** — Complete.
   File: [Asynchronous copies and useful overlap](runtime-and-concurrency/m3-c12-asynchronous-copies-and-useful-overlap.md). Category: Runtime and concurrency. Phase: 4. GPU execution, movement, and profiling.
   Direct prerequisites: M3-C11. Target concepts: Copy engines, pinned-memory requirements, double buffering, copy-compute overlap, independence and resource constraints, backpressure, cancellation with in-flight work, asynchronous error observation.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 references, M9-C02 completion timing, M9-C07 distributions, M9-C15 slot bytes and M9-C17 exact numerical gates; backpressure/cancellation/error controls supplied locally. Updated: 2026-10-26 18:55 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVG diagrams, six dimensions/eight principles and hardware/no-code requirements reviewed. Primary CUDA transfer/capability, synchronization, stream/event/error and Nsight Systems sources plus historical transfer article checked. Reference QA passed finite-slot and retained-reader schedules, FP32 references and wide sums, byte/storage/work/trial ledgers, bounded admission/expiry conservation and cancellation last-user times; all 36 experiment fields, local links, table shapes and SVG XML passed. Browser reviewed both full diagrams and rendered timing table, and clicked execution-plan destination. Initial strict build passed without warnings (3.64 seconds); final validation below. No GPU copy/overlap, cancellation, profile or timing experiment executed. Next action: M3-C13 only.
 
-- [ ] 063 — **M3-C13: PCIe, NVLink, NUMA, and device topology** — Not started.
+- [x] 063 — **M3-C13: PCIe, NVLink, NUMA, and device topology** — Complete.
   File: [PCIe, NVLink, NUMA, and device topology](hardware-architecture-and-topology/m3-c13-pcie-nvlink-numa-and-device-topology.md). Category: Hardware architecture and topology. Phase: 4. GPU execution, movement, and profiling.
   Direct prerequisites: M3-C02, M3-C10. Target concepts: Link bandwidth and latency, PCIe generation and width, NVLink availability, peer-access support, CPU socket and NUMA placement, switch paths, NIC placement, topology inspection.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 references, M9-C02 completion timing, M9-C07 distributions, M9-C15 scoped bytes and M9-C17 exact transfer gates; topology/placement evidence introduced locally while M9-C16 remains an outline. Updated: 2026-10-26 19:06 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVG diagrams, six dimensions/eight principles and hardware/no-code requirements reviewed. Primary PCI-SIG/Intel rate and encoding, Linux NUMA policy, NVIDIA topology/peer/memory/product, coherent-platform article and profiling sources checked. Reference QA passed PCIe ceilings, latency/size and shared-edge bounds, 60-epoch byte/checksum/sentinel references, unique block labels, directed-capability distinction and trial/byte/storage counts; 36 fields, local links, tables and SVG XML passed. Browser reviewed both full diagrams (including revised topology labels), rendered formula/rate table and clicked execution-plan destination. Initial strict build passed without warnings (3.77 seconds); final validation below. No actual inventory, GPU transfer, peer, NUMA, network, profile or timing experiment executed. Next action: M3-C14 only.
 
-- [ ] 064 — **M3-C14: Moving tensors between devices and hosts** — Not started.
+- [x] 064 — **M3-C14: Moving tensors between devices and hosts** — Complete.
   File: [Moving tensors between devices and hosts](networking-and-communication/m3-c14-moving-tensors-between-devices-and-hosts.md). Category: Networking and communication. Phase: 4. GPU execution, movement, and profiling.
   Direct prerequisites: M3-C13, M3-C12. Target concepts: Host-device, device-device, peer-to-peer and staged transfers, network fabrics, RDMA and GPUDirect concepts, transfer completion, shared-link contention, communication scope and limits.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 references, M9-C02 completed timing, M9-C07 distributions, M9-C15 boundary-specific bytes and M9-C17 exact data checks; network completion/visibility and identity controls introduced locally. Updated: 2026-10-26 19:19 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVG diagrams, six dimensions/eight principles and hardware/no-code requirements reviewed. Primary CUDA copy/peer/synchronization, GPUDirect ordering, DOCA 3.5.0 RDMA, rdma-core posting/completion, profiling sources and historical GPUDirect article checked. Reference QA passed padded/packed representation and byte ledgers, 60-epoch unique-message labels/wide sums/sentinels, byte/storage/trial bounds, common-clock milestone scopes and six handoff gates; all 36 fields, links, tables and SVG XML passed. Browser reviewed both full diagrams, rendered milestone table and clicked execution-plan destination. Initial strict build passed without warnings (3.87 seconds); final validation below. No GPU transfer, peer/staged, RDMA/network, profile or timing experiment executed. Next action: M9-C16 only; next Module 3 reading chapter is M3-C15.
 
-- [ ] 065 — **M9-C16: Recording hardware conditions that change measurements** — Not started.
+- [x] 065 — **M9-C16: Recording hardware conditions that change measurements** — Complete.
   File: [Recording hardware conditions that change measurements](hardware-architecture-and-topology/m9-c16-recording-hardware-conditions-that-change-measurements.md). Category: Hardware architecture and topology. Phase: 4. GPU execution, movement, and profiling.
   Direct prerequisites: M3-C14, M9-C02. Target concepts: CPU and GPU models, memory capacity and bandwidth, NUMA and interconnect topology, clocks, power and thermal limits, co-tenancy and partitions, driver and runtime versions, telemetry sampling.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Supports Modules 1–7 with environment/state manifests and telemetry evidence; uses completed M9-C01 references, M9-C02 timing, M9-C07 uncertainty and M9-C15 memory scopes, with confounding and sampling controls introduced locally. Updated: 2026-10-26 19:30 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVG diagrams, six dimensions/eight principles and hardware/no-code requirements reviewed. Primary NVIDIA management/NVML/MIG/compatibility, Linux CPU-frequency, DCGM profiling sources and historical 2019 telemetry article checked. Reference QA passed capacity, sampling/energy/overhead/confounding arithmetic, all 60 exact label sums and encoding, permutation/epoch/endian faults and trial/byte/storage counts; 36 fields, links, tables and SVG XML passed. Browser reviewed both full diagrams, comparison table and clicked execution-plan destination. Initial strict build passed without warnings (3.93 seconds); final validation below. No actual hardware inventory, sensor/telemetry collection, GPU copy, profile or timing experiment executed. Next action: M3-C15 only; Module 9 reading successor M9-C17 already Complete.
 
-- [ ] 066 — **M3-C15: Counting FLOPs and bytes at a defined boundary** — Not started.
+- [x] 066 — **M3-C15: Counting FLOPs and bytes at a defined boundary** — Complete.
   File: [Counting FLOPs and bytes at a defined boundary](measurement-experimentation-and-economics/m3-c15-counting-flops-and-bytes-at-a-defined-boundary.md). Category: Measurement, experimentation, and economics. Phase: 4. GPU execution, movement, and profiling.
   Direct prerequisites: M3-C09, M3-C07, M1-C08. Target concepts: GEMV and GEMM dimensions, multiply-add counting, theoretical versus observed traffic, memory-level boundaries, cache reuse, reads and writes, units, achieved throughput and bandwidth.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 exact references, M9-C02 completion timing, M9-C07 distributions, M9-C15 storage/traffic boundaries, M9-C16 hardware state and M9-C17 numerical gates; operation/counter/reuse ledgers supplied locally. Updated: 2026-10-26 19:42 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVG diagrams, six dimensions/eight principles and hardware/no-code requirements reviewed. Primary cuBLAS 13.4 operation/layout/beta, CUDA effective-bandwidth, Nsight Compute replay/cache/metric and historical hierarchical-analysis article sources checked. Reference QA passed small GEMV/GEMM/seed outputs, conventional/exact counts, byte/request/tile/storage/rate ledgers and every E3 output through 60 epochs with FP32 primitive rounding, plus wide sums and work/output/trial totals; 36 fields, links, tables and SVG XML passed. Browser reviewed both full diagrams, exact formula/count table and clicked execution-plan destination. Initial strict build passed without warnings (3.77 seconds); final validation below. No GPU GEMV/GEMM, dispatch/counter/profile or hardware timing experiment executed. Next action: M3-C16 only.
 
-- [ ] 067 — **M3-C16: Using the roofline model to predict bottlenecks** — Not started.
+- [x] 067 — **M3-C16: Using the roofline model to predict bottlenecks** — Complete.
   File: [Using the roofline model to predict bottlenecks](measurement-experimentation-and-economics/m3-c16-using-the-roofline-model-to-predict-bottlenecks.md). Category: Measurement, experimentation, and economics. Phase: 4. GPU execution, movement, and profiling.
   Direct prerequisites: M3-C15, M3-C02, M3-C04. Target concepts: Arithmetic intensity, compute and bandwidth roofs, ridge point, idealized kernel-time estimates, effective versus peak rates, hierarchical rooflines, launch and dependency limits.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 references, M9-C02 completion intervals, M9-C07 uncertainty, M9-C15 byte scopes, M9-C16 hardware state and M9-C17 exact numerical gates; compatible roofs and falsification checks supplied locally. Updated: 2026-10-27 07:08 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVG diagrams, six dimensions/eight principles and hardware/no-code requirements reviewed. Primary NERSC, Nsight Compute, NVIDIA hierarchical-analysis and CUDA bandwidth sources checked. Reference QA passed ridge/resource/hierarchy/intervention/path arithmetic; all 1,536,000 E3 reference coordinates through independent 64-term FP32 residue checks; work/storage/trial/rank totals, 36 experiment fields, links, tables and SVG XML. Browser reviewed full roofline and dependency diagrams, formulas/table and clicked the execution-plan destination. Initial strict build passed without warnings (3.92 seconds); final validation below. No GPU GEMM, profiler/counter, hardware timing or serving experiment executed. Next action: M3-C17 only.
 
-- [ ] 068 — **M3-C17: Batching, weight reuse, and shifting bottlenecks** — Not started.
+- [x] 068 — **M3-C17: Batching, weight reuse, and shifting bottlenecks** — Complete.
   File: [Batching, weight reuse, and shifting bottlenecks](scheduling-and-queueing/m3-c17-batching-weight-reuse-and-shifting-bottlenecks.md). Category: Scheduling and queueing. Phase: 4. GPU execution, movement, and profiling.
   Direct prerequisites: M3-C16, M1-C18. Target concepts: Batch size and matrix shapes, weight reuse, arithmetic intensity changes, prefill versus decode tendencies, working-set limits, saturation, batching delay versus service time.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 correctness, M9-C02 event boundaries, M9-C03 first response, M9-C05 useful throughput, M9-C07 distributions, M9-C15 capacity, M9-C16 hardware and M9-C17 numerical gates; batch identity and arrival checks supplied locally. Updated: 2026-10-27 07:17 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVGs, six dimensions/eight principles and hardware/no-code requirements reviewed. Primary NVIDIA GEMM, cuBLAS 13.4, ORCA, vLLM optimization and Nsight sources checked. Independent QA passed intensity/ridge/asymptote and KV growth/budget arithmetic; all 1,966,080 E2 reference coordinates and row mappings through independent 64-term FP32 residue checks; bundle/work/storage/trial totals and both arrival replays, plus 36 fields, links, tables and SVG XML. Browser reviewed full reuse and batching-delay diagrams, rendered formulas and clickable plan destination; corrected timeline units rechecked. Initial strict build passed without warnings (5.91 seconds); final validation below. No GPU projections, hardware timing, counter/profile or model-serving study executed. Next action: M3-C18 only.
 
-- [ ] 069 — **M3-C18: Validating GPU computation and memory movement** — Not started.
+- [x] 069 — **M3-C18: Validating GPU computation and memory movement** — Complete.
   File: [Validating GPU computation and memory movement](numerics-and-correctness/m3-c18-validating-gpu-computation-and-memory-movement.md). Category: Numerics and correctness. Phase: 4. GPU execution, movement, and profiling.
   Direct prerequisites: M3-C14, M3-C09, M9-C17. Target concepts: Reference GEMV and GEMM outputs, accumulation precision, absolute and relative tolerances, reduction-order differences, transfer integrity, shape and stride checks, race and lifetime faults.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 independent references, M9-C02 completion windows, M9-C07 uncertainty, M9-C15 storage, M9-C16 hardware identity and M9-C17 numerical budgets; transfer/ownership gates supplied locally. Updated: 2026-10-27 07:26 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVGs, six dimensions/eight principles and hardware/no-code scope reviewed. Primary cuBLAS 13.4, NVIDIA floating-point, CUDA synchronization and Compute Sanitizer sources checked. Independent QA passed GEMV/GEMM/seed/transpose references, layout/storage, binary32 cancellation/tolerance decisions and truncated-copy reference; all 53,040 E3 coordinates via rounded FP32 primitives and independent period/remainder references, plus work/backing/guard/budget/trial/tool counts, 36 fields, links, tables and SVG XML. Browser reviewed both full diagrams, numerical formulas and clicked execution-plan destination. Initial strict build passed without warnings (6.34 seconds); final validation below. No GPU operation/transfer, sanitizer, hardware timing or serving experiment executed. Next action: M9-C12 only; M3-C19 remains next Module 3 reading chapter.
 
-- [ ] 070 — **M9-C12: Reading CPU-GPU timelines and scheduling gaps** — Not started.
+- [x] 070 — **M9-C12: Reading CPU-GPU timelines and scheduling gaps** — Complete.
   File: [Reading CPU-GPU timelines and scheduling gaps](measurement-experimentation-and-economics/m9-c12-reading-cpu-gpu-timelines-and-scheduling-gaps.md). Category: Measurement, experimentation, and economics. Phase: 4. GPU execution, movement, and profiling.
   Direct prerequisites: M3-C18, M9-C02. Target concepts: Host threads and queues, executor iterations, launch submission, GPU idle periods, synchronization, device completion, critical-path attribution, NVTX-style ranges, tracing overhead.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Builds on completed M9-C02 clocks and M3-C18 correctness; applies M9-C01 reference gates, M9-C07 distributions and M9-C16 hardware identity, with correlation/coverage and tracing perturbation checks supplied locally. Updated: 2026-10-27 07:40 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVGs, six dimensions/eight principles and hardware/no-code scope reviewed. Primary Nsight Systems, NVTX and CUDA synchronization sources checked. Independent QA passed host/device partition, interval unions/fractions, overlap/separation arithmetic, readiness interventions and perturbation threshold; all 55,080 E3 coordinates through rounded FP32 primitives and independent period references; work/storage/cohort totals, 36 fields, links, tables and SVG XML. Browser reviewed both full diagrams, rendered event ledger and clicked execution-plan destination. Initial strict build passed without warnings (6.35 seconds); final validation below. No GPU pipeline, system trace, instrumentation timing or serving study executed. Next action: M9-C13 only.
 
-- [ ] 071 — **M9-C13: Using kernel profilers to explain hardware bottlenecks** — Not started.
+- [x] 071 — **M9-C13: Using kernel profilers to explain hardware bottlenecks** — Complete.
   File: [Using kernel profilers to explain hardware bottlenecks](measurement-experimentation-and-economics/m9-c13-using-kernel-profilers-to-explain-hardware-bottlenecks.md). Category: Measurement, experimentation, and economics. Phase: 4. GPU execution, movement, and profiling.
   Direct prerequisites: M9-C12, M3-C16, M3-C06. Target concepts: Memory traffic, bandwidth, compute throughput, occupancy, stalls, spills, cache behavior, roofline reasoning, profiler replay and perturbation, isolated versus serving measurements.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Builds on completed M9-C12 timelines, M3-C16 roofline and M3-C06 resource pressure; applies M9-C01 correctness, M9-C02 completed intervals, M9-C07 uncertainty, M9-C16 hardware state and M9-C17 budgets, with metric/replay/cache compatibility checks supplied locally. Updated: 2026-10-27 07:49 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVGs, six dimensions/eight principles and hardware/no-code scope reviewed. Primary Nsight Compute profiling/CLI and CUDA guide sources checked. Independent QA passed traffic/rate/roof/inner-cache, register/warp/shared-cap, miss-count and local/request-speedup arithmetic; 254,940 unprofiled plus 76,482 profiled reference coordinates through independent period and FP32 residue checks; work/storage/cohort counts, 36 fields, links, tables and SVG XML. Browser reviewed both full diagrams, rendered formulas/profile ledger and clicked execution-plan destination. Initial strict build passed without warnings (6.35 seconds); final validation below. No GPU counter capture, dispatch/spill experiment, hardware timing or serving study executed. Next action: M3-C19 only.
 
-- [ ] 072 — **M3-C19: Designing trustworthy asynchronous GPU benchmarks** — Not started.
+- [x] 072 — **M3-C19: Designing trustworthy asynchronous GPU benchmarks** — Complete.
   File: [Designing trustworthy asynchronous GPU benchmarks](measurement-experimentation-and-economics/m3-c19-designing-trustworthy-asynchronous-gpu-benchmarks.md). Category: Measurement, experimentation, and economics. Phase: 4. GPU execution, movement, and profiling.
   Direct prerequisites: M3-C18, M3-C11, M9-C02, M9-C07, M9-C16. Target concepts: Device-event versus host-wall timing, timing boundaries, completion waits, launch overhead, warmup, repeated trials, cache state, clocks and thermals, interference, distributions, profiler overhead.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C02 clocks, M9-C07 distributions and M9-C16 hardware conditions; applies M9-C01/M9-C17 correctness and M9-C12/M9-C13 instrumentation limits, with completion-boundary/repetition checks supplied locally. Updated: 2026-10-27 08:07 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVGs, six dimensions/eight principles and hardware/no-code scope reviewed. Primary CUDA event/synchronization/Best Practices and NVIDIA SMI sources checked. Independent QA passed host/event boundaries, repetition/conditional endpoint bounds, warmup statistics and observation shift; all 587,520 E2 reference coordinates via independent period and rounded FP32 residue checks; bundle/priming/tracing/work/backing totals, 36 fields, links, tables and SVG XML. Browser reviewed both full diagrams, rendered timing ledger and clicked execution-plan destination. Initial strict build passed without warnings (6.38 seconds); final validation below. No hardware timing, GPU benchmark, trace capture or serving measurement executed. Next action: M3-C20 only.
 
-- [ ] 073 — **M3-C20: Benchmarking memory copies across sizes and paths** — Not started.
+- [x] 073 — **M3-C20: Benchmarking memory copies across sizes and paths** — Complete.
   File: [Benchmarking memory copies across sizes and paths](measurement-experimentation-and-economics/m3-c20-benchmarking-memory-copies-across-sizes-and-paths.md). Category: Measurement, experimentation, and economics. Phase: 4. GPU execution, movement, and profiling.
   Direct prerequisites: M3-C19, M3-C14. Target concepts: Host-to-device, device-to-host and device-to-device copies, pageable versus pinned buffers, size sweeps, setup versus transfer costs, payload versus read-plus-write bandwidth, overlap and contention.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 byte/reference gates, M9-C02 clocks, M9-C07 distributions, M9-C15 capacity, M9-C16 hardware state and M9-C12/M9-C13 instrumentation limits; path/count/setup/overlap contracts supplied locally. Updated: 2026-10-27 08:55 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVGs, six dimensions/eight principles and hardware/no-code scope reviewed. Primary CUDA synchronization, memory API and Best Practices sources checked. Independent reference QA passed startup/rate/units, setup crossover, overlap/intersection/savings, byte-pattern period/complement/boundary/truncation references, size/payload/storage/trial/scenario totals, 36 fields, links, tables and SVG XML. Browser reviewed both full diagrams, rendered model table/formulas and clicked execution-plan destination. Initial strict build passed without warnings (6.44 seconds); final validation below. No hardware copy, GPU timing, timeline capture or serving measurement executed. Next action: M3-C21 only.
 
-- [ ] 074 — **M3-C21: Benchmarking matrix-vector multiplication across shapes** — Not started.
+- [x] 074 — **M3-C21: Benchmarking matrix-vector multiplication across shapes** — Complete.
   File: [Benchmarking matrix-vector multiplication across shapes](measurement-experimentation-and-economics/m3-c21-benchmarking-matrix-vector-multiplication-across-shapes.md). Category: Measurement, experimentation, and economics. Phase: 4. GPU execution, movement, and profiling.
   Direct prerequisites: M3-C20, M3-C16. Target concepts: GEMV shape sweeps, weight and vector traffic, output writes, cache-resident versus device-memory working sets, bandwidth utilization, small-workload overhead, correctness checks.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 references, M9-C02 clocks, M9-C07 distributions, M9-C12/M9-C13 profile scope, M9-C15 capacity, M9-C16 hardware identity and M9-C17 numerical contracts; GEMV traffic/cache/shape reference gates supplied locally. Updated: 2026-10-27 13:01 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVGs, six dimensions/eight principles and hardware/no-code scope reviewed. Primary cuBLAS 13.4, NETLIB SGEMV, CUDA Best Practices, NERSC roofline and Nsight Compute sources checked. Independent QA passed exact/seed/transpose/padded/cancellation references; all 819,900 E2 output coordinates via direct rounded FP32 residue checks and independent period/algebra; traffic/rate/roof/capacity/cohort/priming counts, 36 fields, links, tables and SVG XML. Browser reviewed both full diagrams, rendered shape table/formulas and clicked execution-plan destination. Initial strict build passed without warnings (5.79 seconds); final validation below. No GPU GEMV, hardware timing, counter capture or serving experiment executed. Next action: M3-C22 only.
 
-- [ ] 075 — **M3-C22: Benchmarking matrix-matrix multiplication across shapes** — Not started.
+- [x] 075 — **M3-C22: Benchmarking matrix-matrix multiplication across shapes** — Complete.
   File: [Benchmarking matrix-matrix multiplication across shapes](measurement-experimentation-and-economics/m3-c22-benchmarking-matrix-matrix-multiplication-across-shapes.md). Category: Measurement, experimentation, and economics. Phase: 4. GPU execution, movement, and profiling.
   Direct prerequisites: M3-C21, M3-C17. Target concepts: GEMM shape and batch sweeps, operand reuse, tensor-core eligibility, tile utilization, alignment and edge effects, precision controls, achieved compute throughput, GEMV comparison.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 references, M9-C02 completion boundaries, M9-C07 sample limits, M9-C12/M9-C13 profiling, M9-C15 capacity, M9-C16 manifests and M9-C17 numerical budgets; GEMM tiling/precision/GEMV equivalence contracts supplied locally. Updated: 2026-10-27 13:27 IST. Evidence: All target concepts, five proposed experiment/verification pairs, two SVGs, six dimensions/eight principles and hardware/no-code scope reviewed. Primary cuBLAS 13.4, NETLIB SGEMM, NVIDIA matrix-multiplication and Nsight Compute sources checked. Independent QA passed small/seed/layout/FP16 references; all 26,480,820 E2 output coordinates via direct rounded FP32 residue checks and independent period/separable references; padded layouts, traffic/intensity/rates/geometry/storage/cohort and arrival ledgers, 45 fields, links, tables and SVG XML. Browser reviewed both full diagrams, rendered reuse table/precision formulas and clicked execution-plan destination. Initial strict build passed without warnings (4.36 seconds); final validation below. No GPU GEMM/GEMV, hardware timing, tensor-instruction/counter capture or serving experiment executed. Next action: M3-C23 only.
 
-- [ ] 076 — **M3-C23: Explaining GPU profiles and end-to-end serving effects** — Not started.
+- [x] 076 — **M3-C23: Explaining GPU profiles and end-to-end serving effects** — Complete.
   File: [Explaining GPU profiles and end-to-end serving effects](measurement-experimentation-and-economics/m3-c23-explaining-gpu-profiles-and-end-to-end-serving-effects.md). Category: Measurement, experimentation, and economics. Phase: 4. GPU execution, movement, and profiling.
   Direct prerequisites: M3-C22, M9-C12, M9-C13, M1-C20. Target concepts: Nsight Systems timelines, Nsight Compute counters, kernel versus request critical paths, memory traffic, occupancy and stalls, roofline reconciliation, controlled comparisons, tail latency, reproducible evidence.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 references, M9-C02 clocks, M9-C07 distributions, M9-C12 timelines, M9-C13 counter/replay scope, M9-C15 capacity, M9-C16 manifests and M9-C17 numerical contracts; local dependency-join and complete-outcome/tail gates supplied here. Updated: 2026-10-27 14:02 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVGs, six dimensions/eight principles and hardware/no-code scope reviewed. Primary Nsight Systems, NVTX, Nsight Compute profiling/CLI and NERSC roofline sources checked. Independent QA passed dependency/union/join/intervention, profile/rate/roof/residency, tail/outcome/quantile and faulty-record references; all 1,013,760 E2 output coordinates via direct rounded FP32 residue and independent period/separable checks; metadata/storage/cohort counts, 36 fields, links, tables and SVG XML. Browser reviewed both full diagrams, rendered profile/tail tables and formulas, and clicked execution-plan destination. Initial strict build passed without warnings (3.95 seconds); final validation below. No GPU computation, hardware timing, trace/counter capture or serving experiment executed. Next action: M4-C01 only; Module 3 documentation complete.
 
-- [ ] 077 — **M4-C01: Defining a GPU kernel and its contract** — Not started.
+- [x] 077 — **M4-C01: Defining a GPU kernel and its contract** — Complete.
   File: [Defining a GPU kernel and its contract](kernels-compilers-and-execution/m4-c01-defining-a-gpu-kernel-and-its-contract.md). Category: Kernels, compilers, and execution. Phase: 5. Kernels, graph execution, and controlled optimization.
   Direct prerequisites: M3-C23, M9-C01. Target concepts: Kernel inputs and outputs, shapes, strides, dtypes, devices, aliasing, valid memory ranges, mathematical reference behavior, launch configuration.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 reference/admissibility contracts, M9-C02 completion clocks, M9-C07 sample limits, M9-C12/M9-C13 diagnostic scope, M9-C15 capacity, M9-C16 hardware identity and M9-C17 numerical boundaries. M9-C18/M9-C22 remain outlines; elementary descriptor/range/alias/lifetime checks specified locally. Updated: 2026-10-27 14:17 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVGs, six dimensions/eight principles and hardware/no-code scope reviewed. Primary CUDA programming/asynchronous model and 13.4 function attributes, PyTorch 2.14 views, Triton JIT and Compute Sanitizer sources checked. Independent QA passed exact/layout/range references; all eighteen admission verdicts (four accept/fourteen reject); all 7,599,960 E3 reference coordinates via retained integer images, pitched gathers, independent FP32 expression and legal coverage checks; byte/storage/cold/steady/cohort/lifetime counts, 36 fields, links, tables and SVG XML. Browser reviewed both full diagrams, rendered range formulas/admission table and clicked execution-plan destination. Initial strict build passed without warnings (4.01 seconds); final validation below. No GPU kernel, hardware timing, sanitizer or generator experiment executed; no candidate implementation supplied. Next action: M4-C02 only.
 
-- [ ] 078 — **M4-C02: Mapping an operation onto CUDA threads and blocks** — Not started.
+- [x] 078 — **M4-C02: Mapping an operation onto CUDA threads and blocks** — Complete.
   File: [Mapping an operation onto CUDA threads and blocks](kernels-compilers-and-execution/m4-c02-mapping-an-operation-onto-cuda-threads-and-blocks.md). Category: Kernels, compilers, and execution. Phase: 5. Kernels, graph execution, and controlled optimization.
   Direct prerequisites: M4-C01, M3-C03. Target concepts: CUDA execution model, thread and block indexing, SIMT execution, memory access, masked boundaries, warp and block cooperation, synchronization scope.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 references, M9-C02 clocks/completion, M9-C07 sample limits, M9-C12/M9-C13 trace/counter scope, M9-C15 capacity, M9-C16 manifests and M9-C17 exactness. M9-C22 remains an outline; indexing, collective membership and synchronization-scope gates supplied locally. Updated: 2026-10-27 14:32 IST. Evidence: All target concepts, four proposed experiment/verification pairs, two SVGs, six dimensions/eight principles and hardware/no-code scope reviewed. Primary CUDA SIMT guide, synchronization/execution model, Best Practices and Compute Sanitizer sources checked. Independent QA passed forward/inverse ownership and wrong-mask/floor/duplicate references, warp/sector geometry; all 16,600,800 E2 reference coordinates through retained integer images, pitched gathers, independent FP32 evaluation and ownership maps; all 57,600 E3 direct/staged/rotated-peer references; scope membership/twelve-case ledger, storage/cohort counts, 36 fields, links, tables and SVG XML. Browser reviewed both full diagrams, rendered indexing formulas/scope table and clicked execution-plan destination. Initial strict build passed without warnings (4.11 seconds); final validation below. No GPU kernel, hardware timing, sanitizer/counter capture or generator experiment executed; no implementation supplied. Next action: M4-C03 only.
 
-- [ ] 079 — **M4-C03: Understanding the Triton programming model** — Not started.
+- [x] 079 — **M4-C03: Understanding the Triton programming model** — Complete.
   File: [Understanding the Triton programming model](kernels-compilers-and-execution/m4-c03-understanding-the-triton-programming-model.md). Category: Kernels, compilers, and execution. Phase: 5. Kernels, graph execution, and controlled optimization.
   Direct prerequisites: M4-C02, M3-C08. Target concepts: Triton programs and launch grids, block-oriented operations, masks, loads and stores, reductions, compile-time parameters, comparison with CUDA, Rust host integration boundaries.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 references, M9-C02 completion clocks, M9-C07 uncertainty, M9-C12/M9-C13 diagnostic scope, M9-C15 capacity, M9-C16 manifests and M9-C17 numerics. M9-C22 remains an outline; elementary bridge ownership gates supplied locally. Updated: 2026-10-27 14:41 IST. Evidence: All target concepts, five proposed experiment/verification pairs with 45 required fields, six dimensions/eight principles, two SVG diagrams and no-code scope reviewed. Official Triton introduction/tutorial and load/store/sum/Config/JIT contracts checked. Independent QA passed ownership maps, 17,052,480 FP32 pointwise references, exact padded reductions, coverage arithmetic, local links and SVG XML. Browser reviewed readable formulas and both complete diagrams; clicked execution-plan link and verified destination. Initial strict build passed without warnings (4.02 seconds); final build below follows formula and tracking updates. No GPU timing, profiling, sanitizer, bridge or generator experiment executed; no implementation supplied. Next action: M4-C04 only.
 
-- [ ] 080 — **M4-C04: Compilation, specialization, and the warm execution path** — Not started.
+- [x] 080 — **M4-C04: Compilation, specialization, and the warm execution path** — Complete.
   File: [Compilation, specialization, and the warm execution path](kernels-compilers-and-execution/m4-c04-compilation-specialization-and-the-warm-execution-path.md). Category: Kernels, compilers, and execution. Phase: 5. Kernels, graph execution, and controlled optimization.
   Direct prerequisites: M4-C03, M3-C02. Target concepts: Ahead-of-time and just-in-time compilation, device targets, generated artifacts, specialization keys, compilation caches, first-use overhead, cold versus warm execution, version compatibility.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 artifact/reference gates, M9-C02 completion clocks, M9-C07 populations/uncertainty, M9-C12 timelines, M9-C15 retained capacity and M9-C16 compatibility manifests. M9-C11/C22/C27 remain outlines; paired controls, elementary lifetime and regression gates supplied locally. Updated: 2026-10-27 14:52 IST. Evidence: All target concepts, four proposed experiment/verification pairs with 36 required fields, six dimensions/eight principles, two SVG diagrams, hardware requirements and no-code scope reviewed. Official CUDA NVCC/platform/lazy-loading/minor-compatibility and Triton JIT/runtime/cache/compiler sources checked. Independent QA passed variant/LRU/byte/break-even/quantile/queue references, 4,015,260 exact FP32 coordinates, admitted ownership maps, links/tables/SVG XML. Browser reviewed readable formulas/cache-policy table and both complete diagrams; clicked execution-plan link and verified destination. Initial strict build passed without warnings (4.20 seconds); final build after completion tracking below. No compiler/cache-service execution, GPU timing/profile, bridge or generator experiment performed; no implementation supplied. Next action: M4-C05 only.
 
-- [ ] 081 — **M4-C05: Tiling an operation for data reuse** — Not started.
+- [x] 081 — **M4-C05: Tiling an operation for data reuse** — Complete.
   File: [Tiling an operation for data reuse](kernels-compilers-and-execution/m4-c05-tiling-an-operation-for-data-reuse.md). Category: Kernels, compilers, and execution. Phase: 5. Kernels, graph execution, and controlled optimization.
   Direct prerequisites: M4-C04, M3-C08. Target concepts: Tile selection, register and shared-memory reuse, coalesced accesses, edge tiles, redundant work, data-movement accounting, synchronization costs.
-  Stages: Concepts — Not started; Experiments — Not started; Verification — Not started; Review and documentation build — Not started.
-  Module 9 application: Not selected; choose the chapter-relevant guidance from the support policy below before drafting. Updated: Not started. Evidence: None. Next action: Confirm prerequisites and research sources when this becomes the first incomplete chapter.
+  Stages: Concepts — Done; Experiments — Done; Verification — Done; Review and documentation build — Done.
+  Module 9 application: Completed M9-C01 references, M9-C02 completion clocks, M9-C07 uncertainty, M9-C12/C13 timeline/counter scope, M9-C15 capacity, M9-C16 manifests and M9-C17 numerical boundaries. M9-C22 remains an outline; local panel/host ownership gates supplied explicitly. Updated: 2026-10-27 15:03 IST. Evidence: All target concepts, five proposed experiment/verification pairs with 45 required fields, six dimensions/eight principles, two SVG diagrams, hardware requirements and no-code scope reviewed. Primary CUDA Best Practices 13.4/synchronization, Triton matmul and Nsight Compute/Compute Sanitizer sources checked. Independent QA passed rectangular reads/zero-fill/padded-work/barrier/ownership counts, edge counterexamples, intensity/register/sector arithmetic; all 776,520 corpus output references and 52,347,600 bounded products, plus e=0 tiled references; links/tables/SVG XML. Browser reviewed formulas and edge table, both full diagrams (including revised panel flow/units) and clicked the execution-plan destination. Initial strict build passed without warnings (4.27 seconds); final validation below. No GPU timing, profiling, sanitizer, bridge or generator experiment executed; no implementation supplied. Next action: M4-C06 only.
 
 - [ ] 082 — **M4-C06: Parallel reductions and synchronization** — Not started.
   File: [Parallel reductions and synchronization](kernels-compilers-and-execution/m4-c06-parallel-reductions-and-synchronization.md). Category: Kernels, compilers, and execution. Phase: 5. Kernels, graph execution, and controlled optimization.
@@ -1239,6 +1241,60 @@ Each record contains the authoring position, chapter ID, target concepts, source
 
 ## Surprises & Discoveries
 
+2026-10-27 15:03 IST: M4-C05 rectangular edge example reduces input reads from 231 to 196 while increasing padded multiply-accumulates from 768 to 1024. Increasing Tk doubles panels without changing full-stage input-only intensity; at K=65 it can increase padded K extent. Register value counts do not establish actual allocation or spills.
+
+2026-10-27 14:52 IST: M4-C04 distinguishes disk artifacts, process/context readiness and exercised variants. Two-entry retention turns the constructed bucket trace from three into six misses; these are not automatically compiler invocations. Nearest-rank p99 jumps between the supplied 1% and 2% cold populations even though warm cost is unchanged.
+
+2026-10-27 14:41 IST: M4-C03 separates program value width from warp configuration and access masking from reduction membership. Zero padding protects sum semantics but changes an all-negative maximum. Existing site conventions require readable plain formulas rather than unsupported TeX delimiters.
+
+2026-10-27 14:32 IST: M4-C02 separates a coordinate validity predicate from collective membership. A flattened-only bound can admit invalid two-dimensional coordinates that collide with valid outputs; a partial logical block can still require every live thread in its declared barrier protocol. Equal 128-thread block sizes can produce different warp addresses.
+
+2026-10-27 14:17 IST: M4-C01 distinguishes logical tensor shape, touched elements and enclosing storage spans. A read-only shared source can be valid while output aliasing is rejected by policy; a positive stride on a singleton axis can change metadata without changing any accessed address. Empty success requires no launch.
+
+2026-10-27 14:02 IST: M3-C23 shows that improving an off-critical-path GPU branch can leave publication unchanged, while a better average can worsen p99 and deadline outcomes. Normal timing, timeline diagnosis and replayed counters need separate populations and compatible attribution.
+
+2026-10-27 13:27 IST: M3-C22 distinguishes independent input columns from separate batched-GEMM products, geometry fractions from observed utilization, and input conversion error from accumulation error. A mixed-precision result can be exact for converted inputs yet fail the original-input budget.
+
+2026-10-27 13:01 IST: M3-C21 distinguishes logical-minimum effective bandwidth from measured DRAM utilization. Equal-weight shapes have different reduction/output structures; repeated allocations and oversized banks specify reuse history without proving cache residency or eviction.
+
+2026-10-27 08:55 IST: M3-C20 separates payload rate from a read-plus-write traffic model and actual concurrent interval overlap from savings against isolated durations. Pageable staging and direction-dependent host return behavior require explicit timing contracts.
+
+2026-10-27 08:07 IST: M3-C19 distinguishes event resolution from experimental accuracy and bundle averages from individual latency distributions. Device intervals can contain host gaps; priming is additional work whose history and counts must be retained, not silently mixed into measured populations.
+
+2026-10-27 07:49 IST: M9-C13 shows lower achieved byte/s with faster completion in a fixed-useful-work teaching ledger. Occupancy, stall percentages and cache hit ratios require their own denominators and progress evidence; replay/cache policy pairs do not isolate a single cause.
+
+2026-10-27 07:40 IST: M9-C12 uses interval unions to avoid counting GPU progress again inside a host wait. Blank lanes need collection/resource coverage, return-to-start separation can be signed, and NVTX scope semantics must survive task/thread migration.
+
+2026-10-27 07:26 IST: M3-C18 separates exact copy bits, independent arithmetic, layout and ownership gates. An unchanged canary or clean shared-memory racecheck run does not establish full cross-stream/host-device lifetime correctness; diagnostic echoes deliberately change timing/traffic.
+
+2026-10-27 07:17 IST: M3-C17 separates token rows from request count and shows intensity saturating at D/s as activation traffic grows. Constructed spaced/burst traces reverse the latency conclusion despite identical service times; logical repeated weight reads are not measured DRAM traffic.
+
+2026-10-27 07:08 IST: M3-C16 shows that a DRAM-only plot can hide an inner-cache constraint. A calibrated empirical line is a workload-specific comparison, not a universal physical upper bound; region placement alone does not prove resource saturation.
+
+2026-10-26 19:42 IST: M3-C15 distinguishes useful core 2MKN from exact dot arithmetic and beta additions; read-once logical bytes are not a universal minimum measured DRAM count. Cache residency, buffered writes and replay windows can change counter traffic without changing useful work.
+
+2026-10-26 19:30 IST: M9-C16 separates requested poll cadence, sensor refresh, averaging windows and uncertain query intervals. A sparse clean trace can miss a short state change; a balanced constructed A/B comparison reverses a naive ranking across mismatched states. Actual partitions and loaded libraries need independent identity evidence.
+
+2026-10-26 19:19 IST: M3-C14 distinguishes tensor logical payload from padded storage, staged-leg traffic and network bytes. Local transport completion, receiver placement observation, GPU visibility and consumer completion are separate milestones; neither a peer capability nor a network completion supplies all those contracts.
+
+2026-10-26 19:06 IST: M3-C13 separates CPU affinity from actual host-page placement, and physical NVLink connectivity from directional peer support and observed copy route. A periodic byte checksum cannot establish epoch/order; a separate unique-block preflight covers block permutation checks.
+
+2026-10-26 18:55 IST: M3-C12 shows that two-slot overlap improves four-chunk makespan while a later chunk can have longer residence. CPU readers extend slot retention; cancelled chains can retain capacity even when no answer is published. Engine capabilities do not establish a workload speedup.
+
+2026-10-26 18:46 IST: M3-C11 distinguishes an event recording from a future promise: an unrecorded event covers no work, and later re-recording does not extend an already issued wait. Independent streams can still serialize on shared resources.
+
+2026-10-26 18:32 IST: M3-C10 distinguishes address naming, requested placement, observed completion and last-use ownership. Transfer return and cancellation cannot independently prove safe reuse; overlapping registrations require a page-union ledger.
+
+Chapter observation (2026-10-26 17:59 IST): M3-C09 separates versioned WMMA alignment/shape legality from cuBLAS dispatch eligibility; an accepted ragged library call cannot establish fallback or tensor use without path evidence. Exact stored-input execution can still violate an original-input error budget. Sparse zeros require structural identity, not just a global zero percentage.
+
+Chapter observation (2026-10-26 17:46 IST): M3-C08 demonstrates that the 5 × 7 × 6 fixture reduces valid global input demand from 246 to 72 scalar reads as T grows from 2 to 8, while padded arithmetic grows from 288 to 512 updates. Periodic benchmark values could hide some stale-stage faults, so paper ordering witnesses use distinct linear stage values.
+
+Chapter observation (2026-10-26 17:21 IST): M3-C07 separates distinct useful bytes from repeated per-lane demand, so a repeated-read ratio above 100% is not mistaken for unique-byte utilization. A metadata transpose changes the descriptor, while conversion adds a materialized copy and validity horizon.
+
+Chapter observation (2026-10-26 17:12 IST): M3-C04 distinguishes theoretical resource occupancy, a constructed whole-elapsed-window warp ratio, scheduler issue activity and sampled kernel-busy monitoring. Their denominators differ. Browser review motivated combining paired table columns to fit the normal content width.
+
+Chapter observation (2026-10-26 17:03 IST): M3-C06 distinguishes local-memory use from proven register spills and bank serialization from a race. The 64-to-65 register threshold changes one modeled bound but not the 32 KiB shared-memory cases. Reference arithmetic and rendering passed; no runtime inference is claimed.
+
 Chapter observation (2026-10-26 14:32 IST): M3-C05 distinguishes sector-model counts from DRAM observations and treats a 256 MiB sweep as a cache perturbation, not guaranteed eviction. Exact arithmetic and document checks passed; no GPU evidence is claimed.
 
 2026-10-26 14:20 IST: M3-C03 distinguishes absent lanes from configured but out-of-range threads: N=70/B=48 gives 96 threads but 128 warp-lane positions. A flattened 2D address may be in bounds for an invalid coordinate. Reordered tags must preserve original logical IDs; static mask fractions do not establish occupancy or speed.
@@ -1364,6 +1420,60 @@ Observation (2026-10-24 17:23 IST): the documentation preview retains the /Infer
 
 
 ## Decision Log
+
+2026-10-27 15:03 IST: Complete only M4-C05. Keep rectangular block reuse, register microtiles and cooperative loading as separate comparisons; record coupled thread-mapping changes. Use bounded exact scalar fixtures, a declared two-barrier-per-stage model and separate actual compiler/counter evidence. General model activations need an additional numerical/output gate.
+
+2026-10-27 14:52 IST: Complete only M4-C04. Treat specialization policies and cache ledgers as declared models; measure actual backend keys separately. Require explicit compatibility/publication gates, isolated test namespaces and retained executable generations. First-use/startup and warm execution remain separate evidence populations.
+
+2026-10-27 14:41 IST: Complete only M4-C03. Use exact bounded integer reduction fixtures before general floating-point tolerances; require an explicitly reviewed Rust bridge rather than assume native interoperability. Keep proposed hardware studies separate from observed reference/document checks.
+
+2026-10-27 14:32 IST: Complete only M4-C02. Keep equivalent pointwise mapping studies separate from the P=128 cyclic-neighbor contract, whose group boundaries are semantic. Use independent inverse/coverage/address proofs and explicit participant/dependency cases; no unsafe barrier or global spin experiment is executed.
+
+2026-10-27 14:17 IST: Complete only M4-C01. Use a deliberately restricted exact FP32-integer affine contract with positive input strides, contiguous disjoint output, checked ranges and explicit lifetime/launch gates. Keep eighteen invalid/valid admission cases host-only and require an existing reviewed candidate for proposed GPU studies; no implementation is added.
+
+2026-10-27 14:02 IST: Complete only M3-C23 and close Module 3 documentation. Use a bounded exact projection plus independent host metadata to test a removable ordering edge, separate normal/timeline/counter cohorts, and a fully accounted paper tail fixture. Keep full text serving as a qualified later extension; do not infer capacity from the projection or finite cohort.
+
+2026-10-27 13:27 IST: Complete only M3-C22. Use twelve strict-FP32 shape cells, separate legal leading-dimension/address/zero-padding comparisons, an optional FP16-input/FP32-accumulation study and matched GEMV bundles. Retain useful versus padded work and actual instruction evidence; do not infer tensor execution or service capacity from a mode or operation rate.
+
+2026-10-27 13:01 IST: Complete only M3-C21. Keep exact FP32 integer fixtures and independent references, eight shape cells, explicit prepared-input history, and separate repeat/rotation priming and diagnostic cohorts. Use bounded host diagnostic scratch; include host-visible validation and placement effects in a separate projection-path study.
+
+2026-10-27 08:55 IST: Complete only M3-C20. Compare five host/local-device paths with one copy in flight, exact byte/guard validation, separate setup and diagnostic intervals, and distinct concurrent buffers. Retain unsupported measurements rather than substitute zero or silently change timing scope.
+
+2026-10-27 08:07 IST: Complete only M3-C19. Use explicit host/event completion boundaries and distinct result slots for sixteen β=0 operations; retain synchronization/cache-history cells, warmups, priming and separate traced bundles. No automatic overhead subtraction or post-hoc trimming.
+
+2026-10-27 07:49 IST: Complete only M9-C13. Keep normal timing, kernel/range counters and useful service as separate evidence scopes. Use exact tiny GEMM references and explicit replay/cache policies, retaining unsupported observations and mixed-policy limits. M3-C19 follows dependency order.
+
+2026-10-27 07:40 IST: Complete only M9-C12. Keep actual completion/identity distinct from annotation/projected ranges; compare two valid wait policies under three observation modes and withhold fine-grained claims when collection is incomplete or materially perturbed. M9-C13 follows.
+
+2026-10-27 07:26 IST: Complete only M3-C18. Keep exact bounded fixtures separate from general tolerance design; use byte echoes before arithmetic, per-generation retirement, six explicit paper fault diagnoses and a separate proposed 48-run/96-trial sanitizer cohort. Follow dependency order to M9-C12 next.
+
+2026-10-27 07:17 IST: Complete only M3-C17. Use equal-total-row grouped/separate projection comparisons, an explicit KV-only growth budget and finite arrival replays; separate amortized row cost, individual response latency and sustainable capacity.
+
+2026-10-27 07:08 IST: Complete only M3-C16. Keep each memory boundary intensity and roof convention explicit, separate useful/executed work and profiling/unprofiled windows, and treat launch/dependency bounds independently from resource envelopes.
+
+2026-10-26 19:42 IST: Complete only M3-C15. Keep useful/model/counter ledgers and host/device/request intervals explicit. Use exact small binary32 references across width/beta cells, record seed-reset/cache effects, and leave measured bottleneck predictions to M3-C16.
+
+2026-10-26 19:30 IST: Complete only M9-C16. Use three-part manifests with explicit unknown/source/scope fields, a proposed telemetry-off/coarse/fine exact-copy comparison, and paper energy/confounding references. Record existing hardware settings rather than changing clocks, power or partitions. M3-C15 is next in authoring order.
+
+2026-10-26 19:19 IST: Complete only M3-C14. Use exact unique unsigned labels for local/optional two-GPU designs, keep RDMA visibility and fault variants on paper, and separate sender-clock acknowledged timing from one-way latency. Next authoring is M9-C16, while the Module 3 reading successor remains M3-C15.
+
+2026-10-26 19:06 IST: Complete only M3-C13. Keep a single-GPU baseline, optional verified NUMA and peer comparisons, and paper NIC/shared-uplink contention. Use one-way encoding-adjusted PCIe ceilings only for the stated encoding case; preserve unknown route and unsupported cells rather than infer performance from topology labels.
+
+2026-10-26 18:55 IST: Complete only M3-C12. Use fixed total vector work across chunk/slot cells, include host filling and output archival in useful completion, and keep overload/cancellation/error exercises on paper. Separate independent-stage model bounds from shared-copy and finite-slot constraints.
+
+2026-10-26 18:46 IST: Complete only M3-C11. Teach explicit producer joins, identity-bound event recordings and narrow result scopes. Keep default-mode tests on independent buffers and faulty event/reuse cases on paper; distinguish documented dependencies from observed overlap.
+
+2026-10-26 18:32 IST: Complete only M3-C10. Keep explicit-copy and managed-materialization timing scopes distinct; treat page coverage as illustrative rather than CUDA registration granularity, and quarantine unknown completion.
+
+Chapter decision (2026-10-26 17:59 IST): Complete only M3-C09. Pin archived WMMA examples explicitly, avoid a universal current instruction catalog, separate original/stored references and exact sparse encoding from pruning, and classify correct fallbacks independently of correctness/timing.
+
+Chapter decision (2026-10-26 17:46 IST): Complete only M3-C08 before M3-C09. Use a single-buffer padded-work teaching protocol with publication and last-reader barriers, independent exact integer references and explicit empty-output/K = 0 semantics. Compare useful work rather than reward padded operations; do not assume double-buffer overlap.
+
+Chapter decision (2026-10-26 17:21 IST): Complete only M3-C07 before tiling. Use scalar 32-byte-sector assumptions, explicit stride units and source-version identity; compare direct/converted routes including conversion, with one route trial in flight and the same 12 MiB preallocated payload arena.
+
+Chapter decision (2026-10-26 17:12 IST): Complete only M3-C04 before M3-C07. Use explicitly hypothetical resource/wave/readiness models and a fixed-output device experiment; never relabel model counts as achieved GPU occupancy or issue completion as final result completion.
+
+Chapter decision (2026-10-26 17:03 IST): Complete only M3-C06 and continue with M3-C04 after its resource prerequisites. Use explicit hypothetical allocation assumptions, identical-semantics transpose layouts and paper-only invalid collective schedules; never call resource counts proof of speed or launch known-invalid barriers.
 
 Chapter decision (2026-10-26 14:32 IST): Complete only M3-C05 this turn. Use fixed-size reuse histories and distinct dependent-chain/independent-read workloads to avoid conflating capacity, bandwidth and access latency. Preserve reading order and continue authoring with M3-C06.
 
@@ -1493,6 +1603,60 @@ Decision: create and validate the plan now with all chapter stages unstarted. Ra
 
 
 ## Outcomes & Retrospective
+
+2026-10-27 15:03 IST: M4-C05 Complete: 81/201 complete, 120 outlines remain, none active. Module 4 now 5/24; Module 3 remains 23/23 and Module 9 remains 12/30. M4-C06 is next and stays an outline. All hardware studies remain proposed.
+
+2026-10-27 14:52 IST: M4-C04 Complete: 80/201 complete, 121 outlines remain, none active. Module 4 now 4/24; Module 3 remains 23/23 and Module 9 remains 12/30. M4-C05 is next and remains an outline. Hardware/compiler/service studies remain proposed.
+
+2026-10-27 14:41 IST: M4-C03 Complete: 79/201 complete, 122 outlines remain, none active. Module 4 now 3/24; Module 3 remains 23/23 and Module 9 remains 12/30. M4-C04 is next and remains an outline.
+
+2026-10-27 14:32 IST: M4-C02 is Complete; 78/201 complete, 123 outlines remain, none active. Module 4 has 2/24 complete, Module 3 remains 23/23 and Module 9 remains 12/30. Four proposed experiment/verification designs and two diagrams reviewed. M4-C03 is next and remains an outline; hardware studies remain proposed.
+
+2026-10-27 14:17 IST: M4-C01 is Complete; 77/201 complete, 124 outlines remain, none active. Module 4 has 1/24 complete, Module 3 remains 23/23 and Module 9 remains 12/30. Four proposed experiment/verification designs and two diagrams reviewed. Milestone 5 now has its contract foundation; M4-C02 is next and remains an outline.
+
+2026-10-27 14:02 IST: M3-C23 is Complete; 76/201 complete, 125 outlines remain, none active. Module 3 has 23/23 complete; Module 9 remains 12/30. Milestone 4 positions 51–76 are all Complete, covering 26 individually reviewed records from GPU execution organization through useful-result profile interpretation. The milestone develops ownership, timing, traffic, numerical and hardware-evidence contracts without claiming an implemented engine or measured hardware performance. M4-C01 starts the next milestone and remains an outline.
+
+2026-10-27 13:27 IST: M3-C22 is Complete; 75/201 complete, 126 outlines remain, none active. Module 3 has 22/23 complete; Module 9 remains 12/30. Five proposed experiment/verification designs and two diagrams reviewed. Hardware experiments remain proposed; M3-C23 is next.
+
+2026-10-27 13:01 IST: M3-C21 is Complete; 74/201 complete, 127 outlines remain, none active. Module 3 has 21/23 complete; Module 9 remains 12/30. Four proposed experiment/verification designs and two diagrams reviewed. Hardware experiments remain proposed; M3-C22 is next.
+
+2026-10-27 08:55 IST: M3-C20 is Complete; 73/201 complete, 128 outlines remain, none active. Module 3 has 20/23 complete; Module 9 remains 12/30. Four proposed experiment/verification designs and two diagrams reviewed. Hardware experiments remain proposed; M3-C21 is next.
+
+2026-10-27 08:07 IST: M3-C19 is Complete; 72/201 complete, 129 outlines remain, none active. Module 3 has 19/23 complete; Module 9 remains 12/30. Four proposed experiment/verification designs and two diagrams reviewed. Hardware benchmark experiments remain proposed; M3-C20 is next.
+
+2026-10-27 07:49 IST: M9-C13 is Complete; 71/201 complete, 130 outlines remain, none active. Module 9 has 12/30 complete; Module 3 remains 18/23. Four proposed experiment/verification designs and two diagrams reviewed. Hardware profiler experiments remain proposed; M3-C19 is next.
+
+2026-10-27 07:40 IST: M9-C12 is Complete; 70/201 complete, 131 outlines remain, none active. Module 9 has 11/30 complete; Module 3 remains 18/23. Four proposed experiment/verification designs and two diagrams reviewed. Hardware tracing experiments remain proposed; M9-C13 is next.
+
+2026-10-27 07:26 IST: M3-C18 is Complete; 69/201 complete, 132 outlines remain, none active. Module 3 has 18/23 complete; Module 9 remains 10/30. Four proposed experiment/verification designs and two diagrams reviewed. Hardware experiments remain proposed; M9-C12 is next in authoring order.
+
+2026-10-27 07:17 IST: M3-C17 is Complete; 68/201 complete, 133 outlines remain, none active. Module 3 has 17/23 complete; Module 9 remains 10/30. Four proposed experiment/verification designs and two diagrams reviewed. Hardware experiments remain proposed; M3-C18 is next.
+
+2026-10-27 07:08 IST: M3-C16 is Complete; 67/201 complete, 134 outlines remain, none active. Module 3 has 16/23 complete; Module 9 remains 10/30. Four proposed experiment/verification designs and two diagrams reviewed. GPU experiments remain proposed; M3-C17 is next.
+
+2026-10-26 19:42 IST: M3-C15 is Complete; 66/201 complete, 135 outlines remain, none active. Module 3 has 15/23 complete; Module 9 remains 10/30. Four experiment/verification designs and two diagrams reviewed. Device experiments remain proposed; M3-C16 is next.
+
+2026-10-26 19:30 IST: M9-C16 is Complete; 65/201 complete, 136 outlines remain, none active. Module 9 has 10/30 complete; Module 3 remains 14/23. Four experiment/verification designs and two diagrams reviewed. Hardware and telemetry work remain proposed; M3-C15 is next.
+
+2026-10-26 19:19 IST: M3-C14 is Complete; 64/201 complete, 137 outlines remain, none active. Module 3 has 14/23 complete. Four experiment/verification designs and two diagrams reviewed. Device/network work remains proposed; M9-C16 is next in authoring order.
+
+2026-10-26 19:06 IST: M3-C13 is Complete; 63/201 complete, 138 outlines remain, none active. Module 3 has 13/23 complete. Four experiment/verification designs and two diagrams reviewed. Hardware experiments remain proposed; M3-C14 is next.
+
+2026-10-26 18:55 IST: M3-C12 is Complete; 62/201 complete, 139 outlines remain, none active. Module 3 has 12/23 complete. Four experiment/verification designs and two diagrams reviewed. Device experiments remain proposed; M3-C13 is next.
+
+2026-10-26 18:46 IST: M3-C11 is Complete; 61/201 complete, 140 outlines remain, none active. Module 3 has 11/23 complete. Four experiment/verification designs and two diagrams reviewed. Device experiments remain proposed; M3-C12 is next.
+
+2026-10-26 18:32 IST: M3-C10 is Complete; 60/201 complete, 141 outlines remain, none active. Module 3 has 10/23 complete. Four experiment/verification designs and two diagrams reviewed. Device experiments remain proposed; M3-C11 is next.
+
+Chapter outcome (2026-10-26 17:59 IST): M3-C09 is Complete; 59/201 complete, 142 outlines remain, none active. Module 3 has 9/23 complete. Four experiment/verification designs, two diagrams and numerical/descriptor/sparse references passed review. Device experiments remain proposed; M3-C10 is next.
+
+Chapter outcome (2026-10-26 17:46 IST): M3-C08 is Complete; 58/201 complete, 143 outlines remain, none active. Module 3 has 8/23 complete. Four experiment/verification designs, two diagrams and independent matrix/count references passed review. GPU measurements remain proposed; M3-C09 is next.
+
+Chapter outcome (2026-10-26 17:21 IST): M3-C07 is Complete; 57/201 complete, 144 outlines remain, none active. Module 3 has 7/23 complete. Four experiment/verification designs, two diagrams and exact layout/cost/byte references passed review. Device experiments remain proposed. M3-C08 is next.
+
+Chapter outcome (2026-10-26 17:12 IST): M3-C04 is Complete; 56/201 complete, 145 outlines remaining, none active. Module 3 has 6/23 complete (C01–C06). Four experiments, two diagrams and exact model/reference checks passed review. GPU measurement remains proposed. M3-C07 is next.
+
+Chapter outcome (2026-10-26 17:03 IST): M3-C06 is Complete; 55/201 complete, 146 outlines remaining, no active chapter. Module 3 has 5/23 complete. Resource/bank/ordering reference examples, four experiments and two diagrams passed review. Device experiments remain proposed; M3-C04 is next.
 
 Chapter outcome (2026-10-26 14:32 IST): M3-C05 is Complete; 54/201 complete, 147 outlines remaining, no active chapter. Module 3 has 4/23 complete. Four experiments and two diagrams provide memory-level byte and timing contracts; hardware experiments remain proposed. M3-C06 is next.
 
@@ -1624,7 +1788,7 @@ The repository-root `PLANS.md` is the uploaded execution-plan guidance. This fil
 
 `docs/learning-approach.md` defines the shared learning contract. `templates/chapter.md` is the authoring scaffold. `docs/module-1.md` through `docs/module-7.md`, plus `docs/module-9.md`, provide module reading orders. The 14 category directories organize subjects; their `index.md` pages list member chapters. A chapter ID such as M2-C04 identifies Module 2, Chapter 4; authoring position is separate and controls creation order. Do not create Module 8 or infer chapters for the empty Storage and persistence category.
 
-The chapter files already exist and contain target-concept paragraphs. M1-C01–M1-C20, M2-C01–M2-C21, M3-C01–M3-C03, M9-C01–M9-C05, M9-C07, M9-C15, M9-C17 and M9-C19 are Complete; the remaining 148 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
+The chapter files already exist and contain target-concept paragraphs. M1-C01–M1-C20, M2-C01–M2-C21, M3-C01–M3-C23, M4-C01–M4-C05, M9-C01–M9-C05, M9-C07, M9-C12–M9-C13, M9-C15–M9-C17 and M9-C19 are Complete; the remaining 120 chapters retain Outline banners. Replace their placeholders in place while preserving the target scope, ID, category, and module navigation. Keep existing local modifications; do not reset the worktree or rebuild outlines from scratch. No particular CPU, GPU, network adapter, model, or benchmark results have been supplied. Hardware-dependent experiments must specify requirements and assumptions rather than claim a real machine was used.
 
 
 ## Plan of Work
@@ -1795,6 +1959,60 @@ The working tree already contains curriculum and inventory changes from prior re
 
 
 ## Artifacts and Notes
+
+2026-10-27 15:03 IST: Observed M4-C05 QA passed all teaching-table counts, 776,520 exact reference outputs and 52,347,600 bounded products, e=0 tiled comparisons, sector/intensity/register/barrier arithmetic, 45 experiment fields and local links/tables/SVG XML. Browser reviewed both full SVGs, revised data-flow/units, formulas, edge table and clickable plan destination. Initial strict build passed in 4.27 seconds; final acceptance follows below.
+
+2026-10-27 14:52 IST: Observed M4-C04 QA passed mathematical cache/cost/quantile/queue references, 4,015,260 exact FP32 coordinates, mapping coverage, 36 fields, local links/tables and both SVG XML files. Browser reviewed formulas, cache-policy table, both full diagrams and clicked the execution-plan destination. Initial strict build passed in 4.20 seconds; final acceptance follows below.
+
+2026-10-27 14:41 IST: Observed M4-C03 reference/document QA passed: ownership, 17,052,480 FP32 references, padded row reductions, 45 fields, links and SVG XML. Browser reviewed formulas, both diagrams and clickable plan destination. Initial strict build passed in 4.02 seconds; final acceptance follows below. All hardware studies proposed.
+
+2026-10-27 14:32 IST: Observed M4-C02 evidence: chapter, coordinate-ownership.svg and cooperation-scope.svg reviewed; reference/document QA passed, including all 16,600,800 proposed E2 coordinates and 57,600 E3 peer outputs. Browser verified both full diagrams, rendered indexing formulas/scope table and clickable plan destination. Initial strict build passed without warnings (4.11 seconds); final validation below.
+
+2026-10-27 14:17 IST: Observed M4-C01 evidence: chapter, view-and-range.svg and admission-and-lifetime.svg reviewed; numerical/reference/document QA passed, including eighteen admission verdicts and all 7,599,960 proposed E3 reference output coordinates. Browser verified both full diagrams, rendered range formulas/admission table and clickable plan destination. Initial strict build passed without warnings (4.01 seconds); final validation below.
+
+2026-10-27 14:02 IST: Observed M3-C23 evidence: chapter, request-join.svg and evidence-and-outcomes.svg reviewed; numerical/reference/document QA passed, including all 1,013,760 proposed E2 reference output coordinates. Browser verified both full diagrams, rendered profile/tail tables and formulas, and clickable plan destination. Initial strict build passed without warnings (3.95 seconds); final validation below.
+
+2026-10-27 13:27 IST: Observed M3-C22 evidence: chapter, columns-and-reuse.svg and edges-and-padding.svg reviewed; numerical/reference/document QA passed, including all 26,480,820 proposed E2 reference output coordinates. Browser verified both full diagrams, rendered reuse table/precision formulas and clickable plan destination. Initial strict build passed without warnings (4.36 seconds); final validation below.
+
+2026-10-27 13:01 IST: Observed M3-C21 evidence: chapter, work-and-byte-boundaries.svg and reuse-and-completion.svg reviewed; numerical/reference/document QA passed, including all 819,900 proposed E2 reference output coordinates. Browser verified both diagrams, rendered shape table/formulas and clickable plan destination. Initial strict build passed without warnings (5.79 seconds); final validation below.
+
+2026-10-27 08:55 IST: Observed M3-C20 evidence: chapter, copy-paths.svg and overlap-and-contention.svg reviewed; numerical/reference/document QA passed. Browser verified both diagrams, rendered model table/formulas and clickable plan destination. Initial strict build passed without warnings (6.44 seconds); final validation below.
+
+2026-10-27 08:07 IST: Observed M3-C19 evidence: chapter, timing-boundaries.svg and trial-and-population.svg reviewed; numerical/reference/document QA passed. Browser verified both diagrams, rendered timing ledger and clickable plan destination. Initial strict build passed without warnings (6.38 seconds); final validation below.
+
+2026-10-27 07:49 IST: Observed M9-C13 evidence: chapter, scope-and-hypothesis.svg and residency-and-progress.svg reviewed; numerical/reference/document QA passed. Browser verified both diagrams, rendered formulas/profile ledger and clickable plan destination. Initial strict build passed without warnings (6.35 seconds); final validation below.
+
+2026-10-27 07:40 IST: Observed M9-C12 evidence: chapter, host-and-device.svg and readiness-and-evidence.svg reviewed; numerical/reference/document QA passed. Browser verified both diagrams, event ledger and clickable plan destination. Initial strict build passed without warnings (6.35 seconds); final validation below.
+
+2026-10-27 07:26 IST: Observed M3-C18 evidence: chapter, validation-gates.svg and completion-and-retirement.svg reviewed; numerical/reference/layout/document QA passed. Browser verified both diagrams, numerical formulas and clickable plan destination. Initial strict build passed without warnings (6.34 seconds); final validation below.
+
+2026-10-27 07:17 IST: Observed M3-C17 evidence: chapter, rows-and-reuse.svg and batch-delay.svg reviewed; exact numerical/reference/document QA passed. Browser verified both diagrams, formulas and clickable plan destination, including the corrected timeline units. Initial strict build passed without warnings (5.91 seconds); final validation below.
+
+2026-10-27 07:08 IST: Observed M3-C16 evidence: chapter, roofline.svg and bound-and-path.svg reviewed; numerical reference and document QA passed. Browser verified both full diagrams, formulas/table and clickable execution-plan destination. Initial strict build passed without warnings (3.92 seconds); final validation below.
+
+2026-10-26 19:42 IST: Observed M3-C15 evidence: chapter, boundaries-and-reuse.svg and rate-scopes.svg reviewed; exact numerical/count/document QA and initial strict build (3.77 seconds) passed. Browser verified both diagrams, formula/count table and clickable plan destination. Final validation below.
+
+2026-10-26 19:30 IST: Observed M9-C16 evidence: chapter, sampling-and-windows.svg and manifest-and-comparison.svg reviewed; exact reference/document QA and initial strict build (3.93 seconds) passed. Browser verified both diagrams, comparison table and clickable plan destination. Final validation below.
+
+2026-10-26 19:19 IST: Observed M3-C14 evidence: chapter, transfer-routes.svg and completion-domains.svg reviewed; layout/label/byte/count/document QA and initial strict build (3.87 seconds) passed. Browser verified both diagrams, milestone table and clickable plan destination. Final validation below.
+
+2026-10-26 19:06 IST: Observed M3-C13 evidence: chapter, topology-paths.svg and evidence-and-contention.svg reviewed; exact rate/byte/label/count/document QA and initial strict build (3.77 seconds) passed. Browser verified both diagrams, revised labels, formula/rate table and clickable plan destination. Final validation below.
+
+2026-10-26 18:55 IST: Observed M3-C12 evidence: chapter, double-buffer-schedule.svg and admission-and-retirement.svg reviewed; arithmetic/schedule/queue/document QA and initial strict build (3.64 seconds) passed. Browser verified both diagrams, timing table and clickable plan destination. Final validation below.
+
+2026-10-26 18:46 IST: Observed M3-C11 evidence: chapter, dependency-join.svg and completion-and-reuse.svg reviewed; graph/numerical/document QA and initial strict build (3.64 seconds) passed. Browser verified both diagrams, default-stream table and clickable plan destination. Final validation below.
+
+2026-10-26 18:32 IST: Observed M3-C10 evidence: chapter, transfer-lifetimes.svg and placement-and-reuse.svg reviewed; reference arithmetic/document QA and initial strict build (3.60 seconds) passed. Browser verified both diagrams, timing specification and clickable plan destination. Final validation below.
+
+Observed M3-C09 evidence (2026-10-26 17:59 IST): Chapter and m3-c09-capability-and-evidence.svg / m3-c09-numerics-and-sparsity.svg reviewed. Exact arithmetic/document QA and initial strict build (3.60 seconds) passed; browser verified format table, numerical example, both diagrams and clicked plan destination. Final validation below.
+
+Observed M3-C08 evidence (2026-10-26 17:46 IST): Chapter and m3-c08-panel-lifecycle.svg / m3-c08-reuse-and-edge-cost.svg reviewed. Exact reference/document QA, initial strict build (3.62 seconds), browser edge-table/formula/tile-grid/lifecycle review and clicked plan navigation passed. Final validation below.
+
+Observed M3-C07 evidence (2026-10-26 17:21 IST): Chapter and m3-c07-sectors-and-masks.svg / m3-c07-conversion-and-reuse.svg reviewed. Exact reference/document QA and initial strict build (3.64 seconds) passed; browser confirmed both full diagrams, readable sector/layout tables and clickable plan navigation. Final validation below.
+
+Observed M3-C04 evidence (2026-10-26 17:12 IST): Chapter plus m3-c04-resident-to-useful.svg and m3-c04-waves-and-readiness.svg reviewed. Arithmetic/document QA, initial strict build (3.60 seconds) and browser navigation/diagram/table checks passed. Final validation below.
+
+Observed M3-C06 evidence (2026-10-26 17:03 IST): Chapter and m3-c06-scope-and-pressure.svg / m3-c06-banks-and-publication.svg reviewed. Exact references, document QA, initial strict build (3.56 seconds) and browser checks passed. Final validation recorded below.
 
 Observed M3-C05 evidence (2026-10-26 14:32 IST): Chapter source and m3-c05-memory-levels.svg / m3-c05-sectors-and-reuse.svg reviewed. Reference QA passed; strict build initially 5.79 seconds without warnings; browser verified readable sector table, both diagrams and clickable plan destination. Final reconciliation validation recorded below.
 
@@ -2226,3 +2444,165 @@ Primary-source research is required when writing each chapter, not as a claim th
 2026-10-26 14:32 IST: Completed M3-C05 and reconciled progress to 54 complete/147 outlines; M3-C06 is next. Added exact perturbation-buffer sum and explicit hardware-variant sources to make experiment controls reproducible. Existing changes preserved; no later chapter started.
 
 2026-10-26 14:32 IST: Final M3-C05 acceptance passed: strict build without warnings (5.73 seconds), whitespace check, exact arithmetic and document QA, rendered sector table/formulas and both diagrams, clickable execution-plan navigation. Reconciled 201 ordered unique records and source banners: 54 Complete, 147 Not started, none active/blocked; Module 3 4/23. M3-C06 remains first incomplete. GPU experiments and performance claims remain unexecuted.
+
+2026-10-26 16:56 IST: Began M3-C06 as sole active chapter; prerequisites confirmed and existing working-tree changes preserved. M3-C04 is next in authoring order after acceptance.
+
+2026-10-26 17:03 IST: Completed M3-C06, reconciled all current summaries to 55 complete/146 outlines and repaired stale current-context counts. M3-C04 is next in authoring order, while M3-C07 remains the reading successor. Existing workspace changes preserved; no later chapter started.
+
+2026-10-26 17:03 IST: Final M3-C06 acceptance passed: strict build without warnings (3.79 seconds), whitespace validation, exact reference/document QA, rendered resource formula/table and both full diagrams, clickable execution-plan navigation. Reconciled 201 ordered unique records and matching source banners at 55 Complete/146 Not started; Module 3 5/23. M3-C04 remains first incomplete; no later chapter started. GPU compiler/runtime, sanitizer and profiler experiments remain proposed.
+
+2026-10-26 17:05 IST: Began M3-C04 as sole active chapter after completed prerequisites. Existing working-tree changes preserved. M3-C07 is next after acceptance.
+
+2026-10-26 17:12 IST: Completed M3-C04; reconciled current summaries to 56 complete/145 outlines, Module 3 6/23. Preserved reading order and existing working-tree changes; M3-C07 is next in authoring order and no later chapter started.
+
+2026-10-26 17:13 IST: Final M3-C04 acceptance passed: strict build without warnings (3.72 seconds), whitespace validation, seven occupancy/five wave/four readiness and output/count/byte reference checks, document field/link/table/SVG QA, browser resource and scheduler tables plus both full diagrams, clickable execution-plan destination. Reconciled 201 ordered unique records and matching source banners at 56 Complete/145 Not started, Module 3 6/23. M3-C07 remains first incomplete; GPU/profiler/timing experiments remain proposed.
+
+2026-10-26 17:14 IST: Began M3-C07 as sole active chapter; prerequisites confirmed and existing workspace changes preserved. M3-C08 is next after acceptance.
+
+2026-10-26 17:21 IST: Completed M3-C07 and reconciled current summaries to 57 complete/144 outlines, Module 3 7/23. Added completed status to the kernels category and preserved reading order/existing workspace changes. M3-C08 is next; no later chapter started.
+
+2026-10-26 17:22 IST: Final M3-C07 acceptance passed: strict build without warnings (3.87 seconds), whitespace validation, exact sector/mask/stride/view/descriptor/cost/field-conversion/output/byte/trial QA, 36-field/local-link/table/SVG checks, browser sector/layout tables and both full diagrams, clickable execution-plan destination. Reconciled 201 ordered unique records and matching banners at 57 Complete/144 Not started, Module 3 7/23. M3-C08 remains first incomplete. No GPU/runtime/profiler/timing benchmark executed.
+
+2026-10-26 17:26 IST: Began M3-C08 as sole active chapter after checking prerequisites; existing changes preserved. M3-C09 is next after acceptance.
+
+2026-10-26 17:46 IST: Completed M3-C08; reconciled current summaries to 58 complete/143 outlines and Module 3 8/23. Preserved current changes and reading order; M3-C09 is next and no later chapter started.
+
+2026-10-26 17:46 IST: Final M3-C08 acceptance passed: strict build without warnings (3.61 seconds), whitespace validation, independent direct/tiled product and tile/mask/work/byte/shape/fault/count QA, 36-field/link/table/SVG checks, browser edge formula/table and both full diagrams, clickable execution-plan destination. Reconciled all 201 ordered unique records and matching banners at 58 Complete/143 Not started, Module 3 8/23. M3-C09 remains first incomplete; GPU/sanitizer/profiler/timing experiments remain proposed.
+
+2026-10-26 17:49 IST: Began M3-C09 as sole active chapter; prerequisites confirmed and existing changes preserved. M3-C10 is next after acceptance.
+
+2026-10-26 17:59 IST: Completed M3-C09; reconciled current summaries to 59 complete/142 outlines and Module 3 9/23. Preserved existing changes and reading order; M3-C10 is next and no later chapter started.
+
+2026-10-26 17:59 IST: Final M3-C09 acceptance passed: strict build without warnings (3.62 seconds), whitespace validation, independent seeded-MMA/descriptor/padding/rounding/sparse/work/output/storage/count QA, all 36 experiment fields, local links, table shapes and SVG XML. Browser verified format table/numerical example, both full diagrams and clickable execution-plan destination. Reconciled all 201 ordered unique records and matching banners at 59 Complete/142 Not started, Module 3 9/23. M3-C10 remains first incomplete; no GPU tensor/scalar, sparse-library, profiler or timing experiment executed.
+
+2026-10-26 18:20 IST: Began M3-C10 as sole active chapter; prerequisites confirmed and existing changes preserved. M3-C11 is next after acceptance.
+
+2026-10-26 18:32 IST: Completed M3-C10; reconciled current summaries to 60 complete/141 outlines and Module 3 10/23. Preserved existing changes and reading order; M3-C11 is next and no later chapter started.
+
+2026-10-26 18:33 IST: Final M3-C10 acceptance passed: strict build without warnings (4.12 seconds), independent reference arithmetic/document QA, 36 experiment fields, links, tables, SVG XML, both rendered diagrams and timing specification, and clicked execution-plan destination. All 201 unique ordered ledger records match chapter banners: 60 Complete/141 Not started, Module 3 10/23. M3-C11 remains first incomplete. GPU transfer, migration, profiling and timing experiments remain proposed.
+
+2026-10-26 18:38 IST: Began M3-C11 as sole active chapter; prerequisites confirmed and existing working-tree changes preserved. M3-C12 follows after acceptance.
+
+2026-10-26 18:46 IST: Completed M3-C11; reconciled current summaries to 61 complete/140 outlines and Module 3 11/23. Preserved existing changes and reading order; M3-C12 is next and no later chapter started.
+
+2026-10-26 18:46 IST: Final M3-C11 acceptance passed: strict build without warnings (3.73 seconds), reference graph/exact arithmetic and eight fault-witness checks, all 36 experiment fields, links, table shapes and SVG XML; browser reviewed both full diagrams and default-stream table and clicked execution-plan destination. All 201 unique ordered records match completion banners at 61 Complete/140 Not started, Module 3 11/23. M3-C12 remains first incomplete. No GPU stream/event, transfer, profiling or timing experiment executed.
+
+2026-10-26 18:47 IST: Began M3-C12 as sole active chapter; prerequisite confirmed and existing local changes preserved. M3-C13 follows after acceptance.
+
+2026-10-26 18:55 IST: Completed M3-C12; reconciled current summaries to 62 complete/139 outlines and Module 3 12/23. Preserved existing changes and reading order; M3-C13 is next and no later chapter started.
+
+2026-10-26 18:55 IST: Final M3-C12 acceptance passed: strict build without warnings (3.86 seconds), finite-slot/retained-reader schedules, exact arithmetic and wide sums, byte/storage/work/trial counts, admission/expiry conservation and cancellation last-user checks, all 36 experiment fields, links, tables and SVG XML. Browser reviewed both full diagrams and rendered timing table and clicked execution-plan destination. All 201 unique ordered records match completion banners at 62 Complete/139 Not started, Module 3 12/23. M3-C13 remains first incomplete; no GPU copy/overlap, cancellation, profiling or timing experiment executed.
+
+2026-10-26 18:57 IST: Began M3-C13 as sole active chapter; prerequisites confirmed and existing changes preserved. M3-C14 follows after acceptance.
+
+2026-10-26 19:06 IST: Completed M3-C13; reconciled current summaries to 63 complete/138 outlines and Module 3 13/23. Preserved existing changes and reading order; M3-C14 is next and no later chapter started.
+
+2026-10-26 19:06 IST: Final M3-C13 acceptance passed: strict build without warnings (3.89 seconds), PCIe/latency/shared-edge bounds, exact 60-epoch byte/checksum/sentinel and unique-block references, trial/byte/storage counts and directional capability distinction; all 36 fields, links, tables and SVG XML passed. Browser reviewed both diagrams with revised labels, rendered formula/rate table and clicked execution-plan destination. All 201 ordered unique records match completion banners at 63 Complete/138 Not started, Module 3 13/23. M3-C14 remains first incomplete; no actual inventory, GPU/NUMA/peer/network/profile/timing experiment executed.
+
+2026-10-26 19:09 IST: Began M3-C14 as sole active chapter; prerequisites confirmed and existing changes preserved. Next authoring chapter after acceptance is M9-C16, distinct from Module 3 reading successor M3-C15.
+
+2026-10-26 19:19 IST: Completed M3-C14; reconciled current summaries to 64 complete/137 outlines and Module 3 14/23. Preserved existing changes; M9-C16 is next in authoring order, M3-C15 remains next Module 3 reading chapter and no later chapter started.
+
+2026-10-26 19:19 IST: Final M3-C14 acceptance passed: strict build without warnings (3.92 seconds), padded/packed reference, exact epoch/message labels and wide sums, sentinel/byte/storage/trial checks, common-clock milestones and handoff gates; 36 fields, links, table shapes and SVG XML passed. Browser reviewed both full diagrams and milestone table and clicked execution-plan destination. All 201 ordered unique records match completion banners at 64 Complete/137 Not started, Module 3 14/23. M9-C16 remains first incomplete; M3-C15 is the reading successor. No GPU, peer/staged, RDMA/network, profiling or timing experiment executed.
+
+2026-10-26 19:21 IST: Began M9-C16 as sole active chapter; prerequisites confirmed and existing changes preserved. M3-C15 follows after acceptance, while Module 9 reading successor M9-C17 is already complete.
+
+2026-10-26 19:30 IST: Completed M9-C16; reconciled current summaries to 65 complete/136 outlines and Module 9 10/30, with Module 3 unchanged at 14/23. Preserved existing changes; M3-C15 is next and no later chapter started.
+
+2026-10-26 19:31 IST: Final M9-C16 acceptance passed: strict build without warnings (4.04 seconds), capacity/sampling/energy/overhead/confounding arithmetic, all 60 exact epoch sums and encoding, permutation/epoch/endian reference faults and trial/byte/storage counts; 36 fields, links, tables and SVG XML passed. Browser reviewed both diagrams, final precise latency wording, comparison table and clicked execution-plan destination. All 201 ordered unique records match banners at 65 Complete/136 Not started, Module 9 10/30 and Module 3 14/23. M3-C15 remains first incomplete. No actual hardware inventory, telemetry/sensor capture, GPU copy, profiling or timing experiment executed.
+
+2026-10-26 19:33 IST: Began M3-C15 as sole active chapter; prerequisites confirmed and existing changes preserved. M3-C16 follows after acceptance.
+
+2026-10-26 19:42 IST: Completed M3-C15; reconciled current summaries to 66 complete/135 outlines and Module 3 15/23, with Module 9 unchanged at 10/30. Preserved existing changes; M3-C16 is next and no later chapter started.
+
+2026-10-26 19:42 IST: Final M3-C15 acceptance passed: strict build without warnings (3.85 seconds); exact small GEMV/GEMM/seed outputs, count/byte/request/tile/storage/rate arithmetic, all E3 coordinates across 60 epochs with FP32 primitive rounding, wide sums and work/output/trial totals; 36 fields, links, tables and SVG XML passed. Browser reviewed both full diagrams and exact formula/count table, and clicked execution-plan destination. All 201 ordered unique records match banners at 66 Complete/135 Not started, Module 3 15/23 and Module 9 10/30. M3-C16 remains first incomplete. No GPU GEMV/GEMM, kernel dispatch, counter/profile or hardware timing experiment executed.
+
+2026-10-26 19:43 IST: Began M3-C16 as sole active chapter; prerequisites confirmed and existing changes preserved. M3-C17 follows after acceptance.
+
+2026-10-27 07:08 IST: Resumed and completed M3-C16 after interruption; reconciled current summaries to 67 complete/134 outlines and Module 3 16/23, Module 9 unchanged at 10/30. Preserved existing changes; M3-C17 is next and no later chapter started.
+
+2026-10-27 07:08 IST: Final M3-C16 acceptance passed: strict build without warnings (6.30 seconds), roof/ridge/hierarchy/intervention/path arithmetic, 1,536,000 fixture reference coordinates using independent 64-term FP32 residue checks, work/storage/trial/rank totals, 36 fields, links, tables and both SVGs. Browser reviewed both full diagrams and rendered formulas/table; execution-plan link opened the expected destination. All 201 ordered unique records match banners at 67 Complete/134 Not started; Module 3 16/23, Module 9 10/30, M3-C17 first incomplete. No GPU GEMM, profiling/counter, hardware timing or serving experiment executed.
+
+2026-10-27 07:10 IST: Began M3-C17 as sole active chapter; confirmed prerequisites and preserved existing changes. M3-C18 follows acceptance.
+
+2026-10-27 07:17 IST: Completed M3-C17; reconciled current summaries to 68 complete/133 outlines and Module 3 17/23, Module 9 unchanged at 10/30. Preserved existing changes; M3-C18 is next and no later chapter started.
+
+2026-10-27 07:17 IST: Final M3-C17 acceptance passed: strict build without warnings (5.73 seconds), projection/intensity/ridge/asymptote and KV growth/budget arithmetic, all 1,966,080 E2 reference coordinates and row mappings through independent 64-term FP32 residue checks, bundle/work/storage/trial totals and both arrival replays; 36 fields, links, tables and both SVGs passed. Browser reviewed both full diagrams, rendered formulas and execution-plan destination; timeline unit revision rechecked. All 201 ordered unique records match banners at 68 Complete/133 Not started, Module 3 17/23 and Module 9 10/30; M3-C18 first incomplete. No GPU projection, hardware timing, counter/profile or model-serving experiment executed.
+
+2026-10-27 07:18 IST: Began M3-C18 as sole active chapter; prerequisites confirmed, existing changes preserved. M9-C12 is next in authoring order after acceptance.
+
+2026-10-27 07:26 IST: Completed M3-C18; reconciled current summaries to 69 complete/132 outlines and Module 3 18/23, Module 9 unchanged at 10/30. Preserved existing changes; M9-C12 is next and no later chapter started.
+
+2026-10-27 07:27 IST: Final M3-C18 acceptance passed: strict build without warnings (6.61 seconds); exact GEMV/GEMM/seed/transpose, layout/storage, binary32 cancellation/tolerance and truncated-copy references; all 53,040 E3 outputs with independent period/remainder references and rounded FP32 primitives; work/backing/guard/budget/trial/tool counts, 36 fields, links, tables and two SVGs passed. Browser reviewed both full diagrams, numerical formulas, explicit fault diagnoses and workload table, and clicked the execution-plan destination. All 201 ordered unique records match banners at 69 Complete/132 Not started, Module 3 18/23 and Module 9 10/30; M9-C12 first incomplete. No GPU operation/transfer, sanitizer, hardware timing or serving experiment executed.
+
+2026-10-27 07:28 IST: Began M9-C12 as sole active chapter; prerequisites confirmed and existing changes preserved. M9-C13 follows acceptance.
+
+2026-10-27 07:40 IST: Completed M9-C12; reconciled current summaries to 70 complete/131 outlines and Module 9 11/30, Module 3 unchanged at 18/23. Preserved existing changes; M9-C13 is next and no later chapter started.
+
+2026-10-27 07:41 IST: Final M9-C12 acceptance passed: strict build without warnings (6.35 seconds); host/device partition, interval unions/fractions, overlaps/separations, readiness interventions and perturbation arithmetic; all 55,080 E3 reference outputs through rounded FP32 primitives and independent period checks; work/storage/cohort totals, 36 fields, links, tables and both SVGs passed. Browser reviewed both full diagrams and event ledger and clicked the execution-plan destination. All 201 ordered unique records match banners at 70 Complete/131 Not started; Module 3 18/23, Module 9 11/30; M9-C13 first incomplete. No GPU pipeline, system trace, instrumentation timing or serving study executed.
+
+2026-10-27 07:42 IST: Began M9-C13 as sole active chapter; prerequisites confirmed and existing changes preserved. M3-C19 follows acceptance.
+
+2026-10-27 07:49 IST: Completed M9-C13; reconciled current summaries to 71 complete/130 outlines and Module 9 12/30, Module 3 unchanged at 18/23. Preserved existing changes; M3-C19 is next and no later chapter started.
+
+2026-10-27 07:50 IST: Final M9-C13 acceptance passed: strict build without warnings (6.37 seconds); rate/roof/inner-cache, register/warp/shared-cap, miss-count and local/request-speedup arithmetic; 254,940 unprofiled and 76,482 profiled reference coordinates via independent period and rounded FP32 residue checks; work/storage/cohort totals, 36 fields, links, tables and both SVGs passed. Browser reviewed both full diagrams and rendered formulas/profile ledger and clicked execution-plan destination. All 201 ordered unique records match banners at 71 Complete/130 Not started; Module 3 18/23, Module 9 12/30; M3-C19 first incomplete. No GPU counter capture, dispatch/spill experiment, hardware timing or serving study executed.
+
+2026-10-27 07:51 IST: Began M3-C19 as sole active chapter; prerequisites confirmed and existing changes preserved. M3-C20 follows acceptance.
+
+2026-10-27 08:07 IST: Completed M3-C19; reconciled current summaries to 72 complete/129 outlines and Module 3 19/23, Module 9 unchanged at 12/30. Preserved existing changes; M3-C20 is next and no later chapter started.
+
+2026-10-27 08:08 IST: Final M3-C19 acceptance passed: strict build without warnings (6.45 seconds); host/event boundaries, repetition/conditional endpoint bounds, warmup statistics and observation shift; all 587,520 E2 reference coordinates via independent period and rounded FP32 residue checks; bundle/priming/tracing/work/storage totals, 36 fields, links, tables and both SVGs passed. Browser reviewed both full diagrams and rendered timing ledger and clicked execution-plan destination. All 201 ordered unique records match banners at 72 Complete/129 Not started; Module 3 19/23, Module 9 12/30; M3-C20 first incomplete. No hardware timing, GPU benchmark, trace capture or serving measurement executed.
+
+2026-10-27 08:09 IST: Began M3-C20 as sole active chapter; prerequisites confirmed and existing changes preserved. M3-C21 follows acceptance.
+
+2026-10-27 08:55 IST: Completed M3-C20; reconciled current summaries to 73 complete/128 outlines and Module 3 20/23, Module 9 unchanged at 12/30. Preserved existing changes; M3-C21 is next and no later chapter started.
+
+2026-10-27 08:55 IST: Final M3-C20 acceptance passed: strict build without warnings (6.48 seconds); startup/rate/units, setup crossover, overlap/intersection/savings, byte-pattern period/complement/boundary/truncation references, size/payload/storage/trial/scenario totals, 36 fields, local links, tables and two SVGs passed. Browser reviewed both full diagrams and rendered model table/formulas and clicked execution-plan destination. All 201 ordered unique records match banners at 73 Complete/128 Not started; Module 3 20/23, Module 9 12/30; M3-C21 first incomplete. No hardware copy, GPU timing, timeline capture or serving measurement executed.
+
+2026-10-27 09:46 IST: Began M3-C21 as sole active chapter; prerequisites confirmed and existing changes preserved. M3-C22 follows acceptance.
+
+2026-10-27 13:01 IST: Completed M3-C21; reconciled current summaries to 74 complete/127 outlines and Module 3 21/23, Module 9 unchanged at 12/30. Preserved existing changes; M3-C22 is next and no later chapter started.
+
+2026-10-27 13:02 IST: Final M3-C21 acceptance passed: strict build without warnings (4.04 seconds); exact/seed/transpose/padded/cancellation references; all 819,900 proposed E2 output coordinates via direct rounded FP32 residue checks and independent period/algebra; traffic/rate/roof/capacity/cohort/priming counts, 36 fields, local links, tables and two SVGs passed. Browser reviewed both full diagrams and rendered shape table/formulas and clicked execution-plan destination. All 201 ordered unique records match banners at 74 Complete/127 Not started; Module 3 21/23, Module 9 12/30; M3-C22 first incomplete. No GPU GEMV, hardware timing, counter capture or serving experiment executed.
+
+2026-10-27 13:16 IST: Began M3-C22 as sole active chapter; prerequisites confirmed and existing changes preserved. M3-C23 follows acceptance.
+
+2026-10-27 13:27 IST: Completed M3-C22; reconciled current summaries to 75 complete/126 outlines and Module 3 22/23, Module 9 unchanged at 12/30. Preserved existing changes; M3-C23 is next and no later chapter started.
+
+2026-10-27 13:27 IST: Final M3-C22 acceptance passed: strict build without warnings (4.28 seconds); small/seed/layout/FP16 references; all 26,480,820 proposed E2 output coordinates via direct rounded FP32 residue checks plus independent period/separable references; padded layouts, traffic/intensity/rates/geometry/storage/cohort and arrival ledgers, 45 fields, links, tables and two SVGs passed. Final links/fields/SVG XML rechecked after diagram wording refinement. Browser reviewed both full diagrams and rendered reuse table/precision formulas and clicked execution-plan destination. All 201 ordered unique records match banners at 75 Complete/126 Not started; Module 3 22/23, Module 9 12/30; M3-C23 first incomplete. No GPU GEMM/GEMV, hardware timing, tensor-instruction/counter capture or serving experiment executed.
+
+2026-10-27 13:50 IST: Began M3-C23 as sole active chapter after interrupted read-only startup; prerequisites confirmed and existing changes preserved. M4-C01 follows acceptance.
+
+2026-10-27 14:02 IST: Completed M3-C23 and Module 3 documentation; reconciled current summaries to 76 complete/125 outlines, Module 3 23/23 and Module 9 unchanged at 12/30. Closed Milestone 4 with its individual evidence records; preserved existing changes. M4-C01 is next and no later chapter started.
+
+2026-10-27 14:02 IST: Final M3-C23 acceptance passed: strict build without warnings (4.36 seconds); dependency/union/join/intervention, profile/rate/roof/residency, tail/outcome/quantile and faulty-record references; all 1,013,760 proposed E2 output coordinates via direct rounded FP32 residue and independent period/separable checks; metadata/storage/cohort totals, 36 fields, links, tables and two SVGs passed. Browser reviewed both full diagrams, profile/tail tables and formulas and clicked execution-plan destination. All 201 ordered unique records match banners at 76 Complete/125 Not started; Module 3 23/23, Module 9 12/30. All 26 Milestone 4 records (positions 51–76) are Complete with all four stages Done; M4-C01 first incomplete and still Outline. No GPU computation, hardware timing, trace/counter capture or serving experiment executed.
+
+2026-10-27 14:06 IST: Began M4-C01 as sole active chapter, opening Milestone 5. Prerequisites confirmed; existing changes preserved. M4-C02 follows acceptance.
+
+2026-10-27 14:17 IST: Completed M4-C01; reconciled current summaries to 77 complete/124 outlines and Module 4 1/24, with Module 3 23/23 and Module 9 12/30 unchanged. Preserved existing changes; M4-C02 is next and no later chapter started.
+
+2026-10-27 14:18 IST: Final M4-C01 acceptance passed: strict build without warnings (4.21 seconds); exact/layout/range references; eighteen admission verdicts (four accept/fourteen reject) plus negative/overflow offset rejection; all 7,599,960 proposed E3 reference coordinates through retained integer images, pitched gathers, independent FP32 expression and legal coverage checks; numerical/byte/storage/cold/steady/cohort/lifetime counts, 36 fields, links, tables and two SVGs passed. Browser reviewed both final full diagrams and rendered range formulas/admission table and clicked execution-plan destination. All 201 ordered unique records match banners at 77 Complete/124 Not started; Module 4 1/24, Module 3 23/23, Module 9 12/30; M4-C02 first incomplete and still Outline. No GPU kernel, hardware timing, sanitizer or generator experiment executed; no candidate implementation supplied.
+
+2026-10-27 14:22 IST: Began M4-C02 as sole active chapter; direct prerequisites confirmed and existing changes preserved. M4-C03 follows acceptance.
+
+2026-10-27 14:32 IST: Completed M4-C02; reconciled current summaries to 78 complete/123 outlines and Module 4 2/24, with Module 3 23/23 and Module 9 12/30 unchanged. Preserved existing changes; M4-C03 is next and no later chapter started.
+
+2026-10-27 14:32 IST: Final M4-C02 acceptance passed: strict build without warnings (4.43 seconds); forward/inverse ownership, wrong-mask/floor/duplicate references, warp/sector geometry; all 16,600,800 proposed E2 coordinate references through retained integer images, pitched gathers, independent FP32 evaluation and ownership maps, plus all 57,600 E3 direct/staged/rotated-peer references; scope membership/twelve-case ledger, storage/cohort counts, 36 fields, links, tables and two SVGs passed. Browser reviewed both full diagrams, rendered indexing formulas/scope table and clicked execution-plan destination. All 201 ordered unique records match banners at 78 Complete/123 Not started; Module 4 2/24, Module 3 23/23, Module 9 12/30; M4-C03 first incomplete and still Outline. No GPU kernel, hardware timing, sanitizer/counter capture or generator experiment executed; no implementation supplied.
+
+2026-10-27 14:35 IST: Began M4-C03, position 79, after confirming prerequisites.
+
+2026-10-27 14:41 IST: Completed M4-C03 and reconciled summaries to 79 complete/122 outlines, Module 4 3/24. Preserved existing changes; no later chapter started.
+
+2026-10-27 14:42 IST: Final M4-C03 acceptance: strict documentation build passed without warnings (4.17 seconds); reference/document QA and diff whitespace check passed. Ledger audit confirmed 201 unique ordered records, 79 Complete, 122 Not started, no Active/Blocked, Module 4 3/24, Module 3 23/23 and Module 9 12/30. First incomplete M4-C04 remains an outline. Hardware studies remain proposed.
+
+2026-10-27 14:43 IST: Began M4-C04, authoring position 80; confirmed prerequisites and selected Module 9 support. Preserve all existing local changes.
+
+2026-10-27 14:52 IST: Completed only M4-C04 and reconciled current summaries to 80 complete/121 outlines, Module 4 4/24. Preserved existing local work; M4-C05 remains unstarted.
+
+2026-10-27 14:53 IST: Final M4-C04 acceptance: strict documentation build passed without warnings (4.28 seconds); independent reference/document QA and diff whitespace checks passed. Full ledger/source audit verified 201 ordered unique records/paths, matching target concepts and status banners, earlier completed prerequisites and four Done stages per completed record: 80 Complete/121 Not started, no Active/Blocked; Module 4 4/24, Module 3 23/23, Module 9 12/30. Browser verified the final Complete banner and independent fixture/reference text after reviewing formulas, policy table, both full SVG diagrams and clickable execution-plan destination. M4-C05 remains an outline; all compiler/hardware/service experiments remain proposed.
+
+2026-10-27 14:54 IST: Began M4-C05 at position 81 after confirming prerequisites. Preserve existing local changes and keep later chapters unstarted.
+
+2026-10-27 15:03 IST: Completed only M4-C05 and reconciled summaries to 81 complete/120 outlines and Module 4 5/24; Module 3/9 totals unchanged. Preserved existing changes; M4-C06 remains unstarted.
+
+2026-10-27 15:04 IST: Final M4-C05 acceptance: strict documentation build passed without warnings (4.33 seconds); independent reference/document QA and diff whitespace checks passed. Ledger/source audit verified 201 unique ordered records/paths, matching target concepts/status banners and completed prerequisites/stages: 81 Complete, 120 Not started, no Active/Blocked; Module 4 5/24, Module 3 23/23, Module 9 12/30. Browser verified final Complete status, warmup controls and M4-C06 navigation after reviewing formulas, edge table, both full diagrams (including final panel flow/units) and clickable execution-plan destination. M4-C06 remains an outline. Device benchmarks, diagnostics and generator studies remain proposed.

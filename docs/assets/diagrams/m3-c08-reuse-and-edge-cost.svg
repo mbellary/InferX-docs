@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="540" viewBox="0 0 1100 540" role="img">
+<title>Partial output tiles and zero-filled reduction edges</title>
+<rect width="1100" height="540" fill="#f4f7fb"/>
+<text x="30" y="38" font-family="sans-serif" font-size="25" fill="#152c49">M = 5, N = 7, K = 6; square tile side T = 4</text>
+<text x="30" y="77" font-family="sans-serif" font-size="20" fill="#263d53">Output ownership: four blocks, 35 valid coordinates</text>
+<rect x="30" y="96" width="41" height="35" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="43" y="120" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="72" y="96" width="41" height="35" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="85" y="120" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="114" y="96" width="41" height="35" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="127" y="120" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="156" y="96" width="41" height="35" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="169" y="120" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="198" y="96" width="41" height="35" fill="#ffe1ac" stroke="#a3b3c4"/>
+<text x="211" y="120" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="240" y="96" width="41" height="35" fill="#ffe1ac" stroke="#a3b3c4"/>
+<text x="253" y="120" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="282" y="96" width="41" height="35" fill="#ffe1ac" stroke="#a3b3c4"/>
+<text x="295" y="120" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="324" y="96" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="30" y="132" width="41" height="35" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="43" y="156" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="72" y="132" width="41" height="35" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="85" y="156" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="114" y="132" width="41" height="35" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="127" y="156" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="156" y="132" width="41" height="35" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="169" y="156" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="198" y="132" width="41" height="35" fill="#ffe1ac" stroke="#a3b3c4"/>
+<text x="211" y="156" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="240" y="132" width="41" height="35" fill="#ffe1ac" stroke="#a3b3c4"/>
+<text x="253" y="156" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="282" y="132" width="41" height="35" fill="#ffe1ac" stroke="#a3b3c4"/>
+<text x="295" y="156" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="324" y="132" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="30" y="168" width="41" height="35" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="43" y="192" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="72" y="168" width="41" height="35" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="85" y="192" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="114" y="168" width="41" height="35" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="127" y="192" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="156" y="168" width="41" height="35" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="169" y="192" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="198" y="168" width="41" height="35" fill="#ffe1ac" stroke="#a3b3c4"/>
+<text x="211" y="192" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="240" y="168" width="41" height="35" fill="#ffe1ac" stroke="#a3b3c4"/>
+<text x="253" y="192" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="282" y="168" width="41" height="35" fill="#ffe1ac" stroke="#a3b3c4"/>
+<text x="295" y="192" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="324" y="168" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="30" y="204" width="41" height="35" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="43" y="228" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="72" y="204" width="41" height="35" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="85" y="228" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="114" y="204" width="41" height="35" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="127" y="228" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="156" y="204" width="41" height="35" fill="#cfe8e0" stroke="#a3b3c4"/>
+<text x="169" y="228" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="198" y="204" width="41" height="35" fill="#ffe1ac" stroke="#a3b3c4"/>
+<text x="211" y="228" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="240" y="204" width="41" height="35" fill="#ffe1ac" stroke="#a3b3c4"/>
+<text x="253" y="228" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="282" y="204" width="41" height="35" fill="#ffe1ac" stroke="#a3b3c4"/>
+<text x="295" y="228" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="324" y="204" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="30" y="240" width="41" height="35" fill="#ffe1ac" stroke="#a3b3c4"/>
+<text x="43" y="264" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="72" y="240" width="41" height="35" fill="#ffe1ac" stroke="#a3b3c4"/>
+<text x="85" y="264" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="114" y="240" width="41" height="35" fill="#ffe1ac" stroke="#a3b3c4"/>
+<text x="127" y="264" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="156" y="240" width="41" height="35" fill="#ffe1ac" stroke="#a3b3c4"/>
+<text x="169" y="264" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="198" y="240" width="41" height="35" fill="#ffe1ac" stroke="#a3b3c4"/>
+<text x="211" y="264" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="240" y="240" width="41" height="35" fill="#ffe1ac" stroke="#a3b3c4"/>
+<text x="253" y="264" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="282" y="240" width="41" height="35" fill="#ffe1ac" stroke="#a3b3c4"/>
+<text x="295" y="264" font-family="sans-serif" font-size="16" fill="#263d53">C</text>
+<rect x="324" y="240" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="30" y="276" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="72" y="276" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="114" y="276" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="156" y="276" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="198" y="276" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="240" y="276" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="282" y="276" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="324" y="276" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="30" y="312" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="72" y="312" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="114" y="312" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="156" y="312" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="198" y="312" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="240" y="312" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="282" y="312" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="324" y="312" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="30" y="348" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="72" y="348" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="114" y="348" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="156" y="348" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="198" y="348" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="240" y="348" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="282" y="348" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="324" y="348" width="41" height="35" fill="#e5e9ef" stroke="#a3b3c4"/>
+<rect x="30" y="96" width="168" height="144" fill="none" stroke="#16496d" stroke-width="2"/>
+<rect x="198" y="96" width="168" height="144" fill="none" stroke="#16496d" stroke-width="2"/>
+<rect x="30" y="240" width="168" height="144" fill="none" stroke="#16496d" stroke-width="2"/>
+<rect x="198" y="240" width="168" height="144" fill="none" stroke="#16496d" stroke-width="2"/>
+<text x="395" y="115" font-family="sans-serif" font-size="19" fill="#263d53">Top blocks own 16 and 12 outputs.</text>
+<text x="395" y="148" font-family="sans-serif" font-size="19" fill="#263d53">Bottom blocks own 4 and 3 outputs.</text>
+<text x="395" y="195" font-family="sans-serif" font-size="20" fill="#16496d">Reduction stage 0: k = 0, 1, 2, 3</text>
+<text x="395" y="230" font-family="sans-serif" font-size="20" fill="#16496d">Reduction stage 1: k = 4, 5 valid; 6, 7 zero</text>
+<text x="395" y="275" font-family="sans-serif" font-size="19" fill="#263d53">Every shared panel position is initialized.</text>
+<text x="395" y="310" font-family="sans-serif" font-size="19" fill="#263d53">Every block thread reaches both stage barriers.</text>
+<text x="395" y="355" font-family="sans-serif" font-size="19" fill="#263d53">Gray output positions are never stored.</text>
+<text x="30" y="425" font-family="sans-serif" font-size="20" fill="#152c49">Same 210 useful multiply-accumulates; different padded work and input demand:</text>
+<text x="30" y="460" font-family="sans-serif" font-size="19" fill="#263d53">T = 2: 246 input reads / 288 updates.  T = 4: 144 / 512.  T = 8: 72 / 512.</text>
+<text x="30" y="500" font-family="sans-serif" font-size="18" fill="#263d53">Exact teaching-model counts; requested input values are not measured DRAM transactions.</text>
+</svg>

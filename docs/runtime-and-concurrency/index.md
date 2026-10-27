@@ -16,7 +16,7 @@ Processes, threads, async execution, synchronization, ownership, buffer lifetime
 
 ## Chapters
 
-[M1-C18](m1-c18-understanding-prefill-and-decode.md), [M2-C10](m2-c10-request-state-transitions-and-safe-block-reuse.md) and [M2-C19](m2-c19-connecting-block-allocation-to-the-request-generator.md) are completed detailed chapters; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
+[M1-C18](m1-c18-understanding-prefill-and-decode.md), [M2-C10](m2-c10-request-state-transitions-and-safe-block-reuse.md), [M2-C19](m2-c19-connecting-block-allocation-to-the-request-generator.md), [M3-C11](m3-c11-streams-events-and-dependency-ordering.md) and [M3-C12](m3-c12-asynchronous-copies-and-useful-overlap.md) are completed detailed chapters; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
 
 ### Module 1
 

@@ -16,7 +16,7 @@ Collectives, dispatch/combine, RPC transport, RDMA, transfer completion, congest
 
 ## Chapters
 
-Chapter outlines are grouped by module. Full content will be developed one chapter at a time.
+[M3-C14](m3-c14-moving-tensors-between-devices-and-hosts.md) is a completed detailed chapter; the other chapters in this category remain outlines. Entries are grouped by module. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
 
 ### Module 3
 

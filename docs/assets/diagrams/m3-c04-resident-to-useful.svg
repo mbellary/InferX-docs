@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="480" viewBox="0 0 1100 480" role="img">
+<title>Capacity, readiness and useful completion are separate gates</title>
+<rect width="1100" height="480" fill="#f4f7fb"/>
+<text x="35" y="48" font-family="sans-serif" font-size="25" fill="#152c49">Capacity, readiness and useful completion are separate gates</text>
+<rect x="35" y="78" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="108" font-family="sans-serif" font-size="21" fill="#16496d">Resource budgets → resident (active) warps</text>
+<text x="55" y="137" font-family="sans-serif" font-size="18" fill="#263d53">Registers, shared memory and other limits constrain how much state can reside.</text>
+<rect x="35" y="178" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="208" font-family="sans-serif" font-size="21" fill="#16496d">Resident warps → eligible warps → issued instructions</text>
+<text x="55" y="237" font-family="sans-serif" font-size="18" fill="#263d53">Dependencies and available execution resources decide readiness; scheduler choice decides issue.</text>
+<rect x="35" y="278" width="1030" height="82" rx="10" fill="white" stroke="#7c9ab9"/>
+<text x="55" y="308" font-family="sans-serif" font-size="21" fill="#16496d">Issued instructions → completed correct useful outputs</text>
+<text x="55" y="337" font-family="sans-serif" font-size="18" fill="#263d53">Issue can precede result availability. Occupancy does not establish correctness or service latency.</text>
+<text x="35" y="420" font-family="sans-serif" font-size="18" fill="#263d53">Warp-slot occupancy, active lanes, pipeline throughput and sampled GPU busy time differ.</text>
+<text x="35" y="450" font-family="sans-serif" font-size="18" fill="#263d53">Compare metrics only after matching scope, normalization, workload and completion boundaries.</text>
+</svg>
