@@ -307,4 +307,4 @@ No GPU specification or achieved speedup is assumed. All device timing, counter/
 
 Select a tile by proving its ownership and numerical contract, counting its useful and padded work, and explaining which data is reused at each memory boundary. Then measure whether that reuse outweighs resource and synchronization costs at the intended workload.
 
-Next in authoring and Module 4 reading order is [M4-C06: Parallel reductions and synchronization](m4-c06-parallel-reductions-and-synchronization.md). Track acceptance in the [execution plan and progress tracker](../chapter-execution-plan.md).
+Next in Module 4 reading order is the completed [M4-C06: Parallel reductions and synchronization](m4-c06-parallel-reductions-and-synchronization.md). The next authoring chapter is [M4-C07](../numerics-and-correctness/m4-c07-online-softmax-and-stable-incremental-reductions.md). Track acceptance in the [execution plan and progress tracker](../chapter-execution-plan.md).
