@@ -240,4 +240,4 @@ Record actual specifications rather than borrowing peak marketing numbers as exp
 
 ## Continue learning
 
-Next in Module 4 reading order is the completed [M4-C14: CPU-GPU synchronization and hidden serialization](m4-c14-cpu-gpu-synchronization-and-hidden-serialization.md). The next authoring chapter is [M4-C17](../kernels-compilers-and-execution/m4-c17-designing-a-fused-normalization-kernel.md). Follow the [execution plan and progress tracker](../chapter-execution-plan.md) for acceptance evidence and the next authorized chapter. No second chapter has been started here.
+Next in Module 4 reading order is the completed [M4-C14: CPU-GPU synchronization and hidden serialization](m4-c14-cpu-gpu-synchronization-and-hidden-serialization.md). The next authoring chapter is [M5-C18: Choosing chunk sizes and balancing prefill with decode](../scheduling-and-queueing/m5-c18-choosing-chunk-sizes-and-balancing-prefill-with-decode.md), position 125. Follow the [execution plan and progress tracker](../chapter-execution-plan.md) for acceptance evidence and the next authorized chapter. No second chapter has been started here.

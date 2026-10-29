@@ -233,4 +233,4 @@ E4 supplies the hardware/software manifest requirements; no unprovided device sp
 
 Declare the start, end, clock, population, unit and denominator before reporting a number. Distinguish final content from terminal completion; distinguish accepted output from drafts and successful output from partial failure. Fixed windows count events, while drained cohorts close a selected set’s outcomes. Preserve both views when diagnosing latency, throughput and backlog.
 
-The Module 9 reading successor is [M9-C06](m9-c06-defining-slos-goodput-and-useful-capacity.md). The next authoring chapter is **M1-C20**, after this chapter’s acceptance; consult the [execution plan](../chapter-execution-plan.md) for current progress.
+The Module 9 reading successor is completed [M9-C06](m9-c06-defining-slos-goodput-and-useful-capacity.md). The next authoring chapter is [M5-C18: Choosing chunk sizes and balancing prefill with decode](../scheduling-and-queueing/m5-c18-choosing-chunk-sizes-and-balancing-prefill-with-decode.md), position 125; consult the [execution plan](../chapter-execution-plan.md) for current progress.

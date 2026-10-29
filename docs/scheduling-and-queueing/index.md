@@ -16,7 +16,7 @@ Continuous batching, chunked prefill, priorities, fairness, admission, backpress
 
 ## Chapters
 
-[M2-C15](m2-c15-admission-and-growth-under-a-finite-kv-budget.md) and [M3-C17](m3-c17-batching-weight-reuse-and-shifting-bottlenecks.md) are completed detailed chapters; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
+[M2-C15](m2-c15-admission-and-growth-under-a-finite-kv-budget.md), [M3-C17](m3-c17-batching-weight-reuse-and-shifting-bottlenecks.md), [M5-C01](m5-c01-separating-the-model-executor-from-the-serving-scheduler.md), [M5-C08](m5-c08-queueing-delay-service-time-and-request-latency.md), [M5-C09](m5-c09-applying-little-s-law-with-consistent-boundaries.md), [M5-C10](m5-c10-utilization-variability-and-tail-latency.md), [M5-C11](m5-c11-defining-a-static-batching-baseline.md), [M5-C12](m5-c12-continuous-batching-at-execution-boundaries.md), [M5-C13](m5-c13-budgeting-work-for-each-execution-iteration.md), [M5-C14](m5-c14-planning-for-future-kv-cache-growth.md), [M5-C15](m5-c15-admission-control-and-backpressure.md), [M5-C16](m5-c16-fairness-priorities-and-starvation-prevention.md) and [M5-C17](m5-c17-chunked-prefill-and-resumable-prompt-processing.md) are completed detailed chapters; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
 
 ### Module 2
 

@@ -252,4 +252,4 @@ Use [M9-C15](../state-memory-and-caching/m9-c15-accounting-for-weights-kv-state-
 
 ## Continue learning
 
-Next in Module 4 reading order is the completed [M4-C16: Replay constraints, graph variants, and buffer lifetimes](../runtime-and-concurrency/m4-c16-replay-constraints-graph-variants-and-buffer-lifetimes.md). The next authoring chapter is [M4-C17](../kernels-compilers-and-execution/m4-c17-designing-a-fused-normalization-kernel.md). Track acceptance in the [execution plan and progress tracker](../chapter-execution-plan.md). Only M4-C15 is authored in this step.
+Next in Module 4 reading order is the completed [M4-C16: Replay constraints, graph variants, and buffer lifetimes](../runtime-and-concurrency/m4-c16-replay-constraints-graph-variants-and-buffer-lifetimes.md). The next authoring chapter is [M5-C18: Choosing chunk sizes and balancing prefill with decode](../scheduling-and-queueing/m5-c18-choosing-chunk-sizes-and-balancing-prefill-with-decode.md), position 125. Track acceptance in the [execution plan and progress tracker](../chapter-execution-plan.md). Only M4-C15 is authored in this step.

@@ -238,4 +238,4 @@ Apply [M9-C15](../state-memory-and-caching/m9-c15-accounting-for-weights-kv-stat
 
 ## Continue learning
 
-Next in Module 4 reading order is [M4-C17: Designing a fused normalization kernel](../kernels-compilers-and-execution/m4-c17-designing-a-fused-normalization-kernel.md). The next authoring chapter is [M4-C17](../kernels-compilers-and-execution/m4-c17-designing-a-fused-normalization-kernel.md). Follow the [execution plan and progress tracker](../chapter-execution-plan.md) for acceptance and dependency order. Only M4-C16 is authored in this step.
+Next in Module 4 reading order is [M4-C17: Designing a fused normalization kernel](../kernels-compilers-and-execution/m4-c17-designing-a-fused-normalization-kernel.md). The next authoring chapter is [M5-C18: Choosing chunk sizes and balancing prefill with decode](../scheduling-and-queueing/m5-c18-choosing-chunk-sizes-and-balancing-prefill-with-decode.md), position 125. Follow the [execution plan and progress tracker](../chapter-execution-plan.md) for acceptance and dependency order. Only M4-C16 is authored in this step.

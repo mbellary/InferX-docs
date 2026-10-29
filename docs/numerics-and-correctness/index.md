@@ -16,7 +16,7 @@ Precision, quantization, numerical stability, determinism, batch invariance, qua
 
 ## Chapters
 
-[M1-C06](m1-c06-reductions-probabilities-and-stable-softmax.md), [M1-C07](m1-c07-floating-point-arithmetic-and-numerical-correctness.md), [M1-C19](m1-c19-validating-cached-and-uncached-generation.md), [M9-C01](m9-c01-defining-reference-behavior-and-evidence-before-optimizing.md), [M9-C17](m9-c17-comparing-logits-with-justified-numerical-tolerances.md), [M2-C20](m2-c20-validating-allocator-and-cache-safety.md), [M3-C18](m3-c18-validating-gpu-computation-and-memory-movement.md) and [M4-C07](m4-c07-online-softmax-and-stable-incremental-reductions.md) are completed detailed chapters; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
+[M1-C06](m1-c06-reductions-probabilities-and-stable-softmax.md), [M1-C07](m1-c07-floating-point-arithmetic-and-numerical-correctness.md), [M1-C19](m1-c19-validating-cached-and-uncached-generation.md), [M9-C01](m9-c01-defining-reference-behavior-and-evidence-before-optimizing.md), [M9-C17](m9-c17-comparing-logits-with-justified-numerical-tolerances.md), [M2-C20](m2-c20-validating-allocator-and-cache-safety.md), [M3-C18](m3-c18-validating-gpu-computation-and-memory-movement.md), [M4-C07](m4-c07-online-softmax-and-stable-incremental-reductions.md), [M4-C19](m4-c19-randomness-reproducibility-and-sampling-equivalence.md) and [M4-C20](m4-c20-validating-fused-kernels-and-graph-replay.md) are completed detailed chapters; the other chapters in this category remain outlines. Full content is developed one chapter at a time using the [execution plan](../chapter-execution-plan.md).
 
 ### Module 1
 

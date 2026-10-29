@@ -248,4 +248,4 @@ Use [M9-C15](../state-memory-and-caching/m9-c15-accounting-for-weights-kv-state-
 
 ## Continue learning
 
-Next in Module 9 reading order is the completed [M9-C12: Reading CPU-GPU timelines and scheduling gaps](m9-c12-reading-cpu-gpu-timelines-and-scheduling-gaps.md). The next authoring chapter is [M4-C17: Designing a fused normalization kernel](../kernels-compilers-and-execution/m4-c17-designing-a-fused-normalization-kernel.md). Follow the [execution plan and progress tracker](../chapter-execution-plan.md). Only M9-C11 is authored in this step.
+Next in Module 9 reading order is the completed [M9-C12: Reading CPU-GPU timelines and scheduling gaps](m9-c12-reading-cpu-gpu-timelines-and-scheduling-gaps.md). The next authoring chapter is [M5-C18: Choosing chunk sizes and balancing prefill with decode](../scheduling-and-queueing/m5-c18-choosing-chunk-sizes-and-balancing-prefill-with-decode.md), position 125. Follow the [execution plan and progress tracker](../chapter-execution-plan.md). Only M9-C11 is authored in this step.
